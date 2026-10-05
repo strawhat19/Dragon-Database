@@ -1,0 +1,16 @@
+// DragonSlapper by Allison James (NAL), original FontStruct release, CC BY-SA 3.0.
+// Keep dragon-slapper-fontstruct/ATTRIBUTION.md and the original notices with distribution.
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'DragonSlapper';
+  src: url('./dragon-slapper-fontstruct/dragonslapper.ttf') format('truetype');
+}
+
+.dragon-slapper-display {
+  line-height: 1.12;
+  font-weight: 400;
+  font-synthesis: none;
+  font-family: 'DragonSlapper', Georgia, serif;
+}

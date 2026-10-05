@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Dragon Database",
+    "slug": "dragon-database",
+    "version": "0.1.0",
+    "scheme": "dragondatabase",
+    "icon": "./assets/brand/app-icon.png",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "plugins": ["expo-router", "expo-font"],
+    "web": {
+      "output": "static",
+      "bundler": "metro",
+      "favicon": "./assets/brand/favicon.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.piratechs.dragondatabase"
+    },
+    "android": {
+      "package": "com.piratechs.dragondatabase",
+      "adaptiveIcon": {
+        "backgroundColor": "#e8ebef",
+        "foregroundImage": "./assets/brand/adaptive-icon.png"
+      }
+    }
+  }
+}

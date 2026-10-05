@@ -1,0 +1,16 @@
+.site-footer { max-width: 1280px; margin: 0 auto; padding: 22px 0 28px; border-top: 1px solid var(--line); }
+.site-footer-main { gap: 18px; display: flex; align-items: center; justify-content: space-between; }
+.site-footer-copyright { margin: 0; font-size: 18px; color: var(--muted); }
+.site-footer-navigation { gap: 22px; display: flex; align-items: center; }
+.site-footer-page-link { gap: 6px; display: inline-flex; align-items: center; min-height: 38px; font-size: 18px; text-decoration: none; &:hover { color: var(--red); } }
+.site-footer-piratechs { gap: 5px; display: inline-flex; align-items: center; font-size: 18px; text-decoration: none; font-family: 'AlegreyaSansMedium', var(--font-body); &:hover { color: var(--red); } }
+.site-footer-font-credit { margin: 13px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.site-footer-credit-link { text-underline-offset: 3px; text-decoration-color: var(--line); &:hover { color: var(--ink); } }
+.site-footer-font-notices { gap: 6px; display: inline-flex; align-items: center; min-height: 38px; font-size: 15px; color: var(--muted); text-underline-offset: 3px; text-decoration-color: var(--line); transition: color 180ms ease; &:hover { color: var(--ink); } }
+@media (prefers-reduced-motion: reduce) { .site-footer-font-notices { transition: none; } }
+@media (max-width: 1400px) { .site-footer { margin-inline: 5.5%; } }
+@media (max-width: 700px) {
+  .site-footer { margin-inline: 24px; padding-bottom: max(28px, env(safe-area-inset-bottom)); }
+  .site-footer-main { gap: 12px; align-items: flex-start; flex-direction: column; }
+  .site-footer-font-credit { font-size: 12px; }
+}

@@ -1,0 +1,52 @@
+import { StyleSheet } from 'react-native';
+import { palette } from '../../styles/theme/theme';
+
+export default StyleSheet.create({
+  scroll: { flex: 1 },
+  page: { flex: 1, backgroundColor: palette.silver },
+  hero: {
+    marginTop: 16,
+    minHeight: 225,
+    overflow: `hidden`,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderColor: palette.line,
+    backgroundColor: palette.steel,
+  },
+  artwork: { ...StyleSheet.absoluteFillObject },
+  heroContent: {
+    zIndex: 1,
+    width: `100%`,
+    maxWidth: 1280,
+    alignSelf: `center`,
+    paddingVertical: 35,
+    alignItems: `center`,
+  },
+  accent: { width: 44, height: 2, marginBottom: 21, backgroundColor: palette.red },
+  titleContainer: { width: `100%` },
+  titleVisual: { gap: 14, flexWrap: `wrap`, flexDirection: `row`, justifyContent: `center` },
+  title: { color: palette.ink, textAlign: `center`, fontFamily: `DragonSlapper` },
+  description: {
+    fontSize: 21,
+    lineHeight: 28,
+    maxWidth: 730,
+    marginTop: 16,
+    color: palette.muted,
+    textAlign: `center`,
+    fontFamily: `AlegreyaSans`,
+  },
+  wideDescription: { fontSize: 24, lineHeight: 31 },
+  body: { width: `100%`, maxWidth: 1180, alignSelf: `center`, paddingVertical: 44 },
+  topButton: { right: 24, position: `absolute` },
+  topButtonAction: {
+    gap: 8,
+    minHeight: 48,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    flexDirection: `row`,
+    alignItems: `center`,
+    backgroundColor: palette.ink,
+  },
+  topButtonLabel: { fontSize: 18, color: palette.paper, fontFamily: `AlegreyaSansMedium` },
+  pressed: { opacity: 0.72 },
+});

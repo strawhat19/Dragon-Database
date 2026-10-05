@@ -1,0 +1,42 @@
+{
+  "name": "dragon-database",
+  "private": true,
+  "version": "0.0.0.0",
+  "main": "expo-router/entry",
+  "engines": { "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >=25.0.0" },
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web",
+    "ios": "expo start --ios",
+    "android": "expo start --android",
+    "export:web": "expo export --platform web"
+  },
+  "dependencies": {
+    "expo": "57.0.26",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "expo-blur": "57.0.3",
+    "expo-font": "57.0.4",
+    "expo-crypto": "57.0.3",
+    "expo-router": "57.0.24",
+    "expo-linking": "57.0.11",
+    "lucide-react": "1.49.0",
+    "react-native": "0.86.3",
+    "expo-constants": "57.0.20",
+    "expo-status-bar": "57.0.1",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "0.21.3",
+    "react-native-worklets": "0.10.1",
+    "@expo/metro-runtime": "57.0.16",
+    "react-native-screens": "4.26.2",
+    "lucide-react-native": "1.49.0",
+    "react-native-reanimated": "4.5.1",
+    "react-native-safe-area-context": "5.7.0",
+    "@react-native-async-storage/async-storage": "2.2.0"
+  },
+  "devDependencies": {
+    "sass": "1.105.1",
+    "typescript": "6.0.3",
+    "@types/react": "19.2.18"
+  }
+}

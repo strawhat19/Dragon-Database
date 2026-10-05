@@ -1,0 +1,54 @@
+.text-reveal {
+  --text-reveal-stagger: 0.065s;
+  --text-reveal-duration: 0.82s;
+  --text-reveal-rotation: -42deg;
+  position: relative;
+
+  &--chars {
+    --text-reveal-stagger: 0.022s;
+    --text-reveal-duration: 0.72s;
+    --text-reveal-rotation: -58deg;
+  }
+}
+
+.text-reveal__visual { white-space: inherit; }
+
+.text-reveal__mask {
+  overflow: hidden;
+  perspective: 600px;
+  display: inline-block;
+  vertical-align: bottom;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+
+.text-reveal__piece {
+  opacity: 0;
+  display: inline-block;
+  transform-origin: 50% 100%;
+  transform: translateY(110%) rotateX(var(--text-reveal-rotation));
+}
+
+.text-reveal--visible .text-reveal__piece {
+  animation: text-reveal-enter var(--text-reveal-duration) cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(var(--text-reveal-delay, 0s) + var(--text-reveal-index, 0) * var(--text-reveal-stagger));
+}
+
+.text-reveal__accessible {
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@keyframes text-reveal-enter { to { opacity: 1; transform: none; } }
+
+.text-reveal--reduced .text-reveal__piece { opacity: 1; transform: none; animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .text-reveal__piece { opacity: 1; transform: none; animation: none !important; }
+}

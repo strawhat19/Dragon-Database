@@ -1,0 +1,20 @@
+.dragon-app-shell {
+  flex: 1;
+  min-width: 0;
+  height: 100dvh;
+  min-height: 0;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+
+// Expo's absolutely positioned screens need a full-height flex parent.
+.dragon-app-shell-content {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}

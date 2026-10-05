@@ -1,0 +1,57 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  root: {
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 1000,
+    elevation: 50,
+    overflow: `hidden`,
+    position: `absolute`,
+    alignItems: `center`,
+    justifyContent: `center`,
+  },
+  backdrop: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: `#e8ebef`,
+  },
+  frame: {
+    width: `88%`,
+    maxWidth: 1100,
+    paddingVertical: 24,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderColor: `#c7cdd5`,
+  },
+  frameWide: { paddingVertical: 34 },
+  content: { gap: 25, alignItems: `center`, paddingVertical: 26 },
+  contentWide: { gap: 75, flexDirection: `row`, justifyContent: `center`, paddingVertical: 38 },
+  readout: { alignItems: `center` },
+  readoutWide: { alignItems: `flex-start` },
+  eyebrow: { color: `#626b77`, fontSize: 15, letterSpacing: 1.6, fontFamily: `AlegreyaSansMedium` },
+  title: { color: `#101115`, fontSize: 31, marginBottom: 25, fontFamily: `DragonSlapper` },
+  titleWide: { fontSize: 48, marginBottom: 34 },
+  percent: { gap: 12, flexDirection: `row`, alignItems: `flex-start` },
+  digits: { position: `relative` },
+  percentWide: { justifyContent: `flex-start` },
+  number: { color: `#101115`, fontSize: 104, lineHeight: 104, letterSpacing: -4, fontVariant: [`tabular-nums`], fontFamily: `AlegreyaSansMedium` },
+  numberWide: { fontSize: 162, lineHeight: 162 },
+  unit: { color: `#8d3038`, fontSize: 27, paddingTop: 11, fontFamily: `AlegreyaSansMedium` },
+  status: { color: `#626b77`, fontSize: 21, marginTop: 16, fontFamily: `AlegreyaSans` },
+  credit: { color: `#626b77`, fontSize: 15, marginTop: 19, fontFamily: `AlegreyaSans` },
+  sword: { width: `100%`, position: `relative` },
+  swordBase: { opacity: 0.13 },
+  swordFill: { top: 0, left: 0, overflow: `hidden`, position: `absolute` },
+  progressFlame: { position: `absolute` },
+  flameCurtain: { top: 0, left: 0, right: 0, zIndex: 2, position: `absolute` },
+  flameCurtainBody: { left: 0, right: 0, position: `absolute`, backgroundColor: `#101115` },
+  flameEdge: { left: 0, right: 0, position: `absolute`, alignItems: `flex-end`, flexDirection: `row` },
+  exitFlame: { flex: 1, minWidth: 0 },
+  // Native uses a quiet offset ghost instead of relying on SVG filters across devices.
+  digitTrail: { top: 0, left: -5, position: `absolute` },
+  markTrail: { top: 4, left: -5, opacity: 0.07, position: `absolute` },
+});
+
+export default styles;

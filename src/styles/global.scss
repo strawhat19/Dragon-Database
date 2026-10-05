@@ -1,0 +1,30 @@
+:root {
+  --ink: #101115;
+  --red: #8d3038;
+  --line: #c7cdd5;
+  --paper: #f4f5f7;
+  --steel: #bec6d0;
+  --muted: #626b77;
+  --silver: #e8ebef;
+  --font-body: 'AlegreyaSans', Arial, sans-serif;
+  --font-brand: 'DragonSlapper', Georgia, serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--silver); }
+body { margin: 0; color: var(--ink); background: var(--silver); font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
+button, input, textarea { font: inherit; }
+button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
+button, a { touch-action: manipulation; }
+button { cursor: pointer; }
+button:disabled { cursor: default; }
+a { color: inherit; }
+img, svg { max-width: 100%; }
+::selection { color: var(--paper); background: var(--red); }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 5px; }
+.visually-hidden { width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; position: absolute; overflow: hidden; white-space: nowrap; clip-path: inset(50%); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}

@@ -1,6 +1,8 @@
 dist/
 .expo/
+.vercel/
 .DS_Store
 node_modules/
 *.tsbuildinfo
 .env*.local
+.vercel

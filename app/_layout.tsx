@@ -18,6 +18,8 @@ const RootLayout = () => (
               <Stack.Screen name={`index`} options={{ title: `Dragon Database` }} />
               <Stack.Screen name={`about`} options={{ title: `About | Dragon Database` }} />
               <Stack.Screen name={`contact`} options={{ title: `Contact | Dragon Database` }} />
+              <Stack.Screen name={`terms`} options={{ title: `Terms | Dragon Database` }} />
+              <Stack.Screen name={`privacy`} options={{ title: `Privacy Policy | Dragon Database` }} />
             </Stack>
           </AppShell>
         </DragonDataProvider>

@@ -11,6 +11,7 @@ export default StyleSheet.create({
   },
   row: {
     gap: 16,
+    flexWrap: `wrap`,
     flexDirection: `row`,
     alignItems: `center`,
     justifyContent: `space-between`,
@@ -22,6 +23,7 @@ export default StyleSheet.create({
   },
   navigation: {
     gap: 22,
+    flexWrap: `wrap`,
     flexDirection: `row`,
     alignItems: `center`,
   },

@@ -1,7 +1,7 @@
 import { Link } from 'expo-router';
 import { useState } from 'react';
 import FontNotices from '../FontNotices';
-import { Info, Mail, FileText, ExternalLink } from 'lucide-react-native';
+import { Info, Mail, FileText, ShieldCheck, ExternalLink } from 'lucide-react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text, View, Alert, Linking, Pressable, useWindowDimensions } from 'react-native';
 import styles from './styles.native';
@@ -39,6 +39,18 @@ const SiteFooter = () => {
             <Pressable nativeID={`site-footer-contact`} accessibilityRole={`link`} accessibilityLabel={`Contact Dragon Database`} style={({ pressed }) => [styles.link, pressed && styles.pressed]}>
               <Mail size={16} color={palette.ink} accessibilityElementsHidden />
               <Text nativeID={`site-footer-contact-label`} style={styles.linkLabel}>Contact</Text>
+            </Pressable>
+          </Link>
+          <Link href={routes.terms.path} asChild>
+            <Pressable nativeID={`site-footer-terms`} accessibilityRole={`link`} accessibilityLabel={`Terms for Dragon Database`} style={({ pressed }) => [styles.link, pressed && styles.pressed]}>
+              <FileText size={16} color={palette.ink} accessibilityElementsHidden />
+              <Text nativeID={`site-footer-terms-label`} style={styles.linkLabel}>Terms</Text>
+            </Pressable>
+          </Link>
+          <Link href={routes.privacy.path} asChild>
+            <Pressable nativeID={`site-footer-privacy`} accessibilityRole={`link`} accessibilityLabel={`Dragon Database Privacy Policy`} style={({ pressed }) => [styles.link, pressed && styles.pressed]}>
+              <ShieldCheck size={16} color={palette.ink} accessibilityElementsHidden />
+              <Text nativeID={`site-footer-privacy-label`} style={styles.linkLabel}>Privacy Policy</Text>
             </Pressable>
           </Link>
         </View>

@@ -2,6 +2,8 @@ export const routes = {
   home: { path: `/`, label: `Dragon Database`, icon: `home` },
   about: { path: `/about`, label: `About`, icon: `info` },
   contact: { path: `/contact`, label: `Contact`, icon: `mail` },
+  terms: { path: `/terms`, label: `Terms`, icon: `file-text` },
+  privacy: { path: `/privacy`, label: `Privacy Policy`, icon: `shield-check` },
 } as const;
 
 export const routeAliases = {
@@ -17,6 +19,8 @@ export const routeAliases = {
   [`/contact-me`]: routes.contact.path,
   [`/contact-us`]: routes.contact.path,
   [`/get-in-touch`]: routes.contact.path,
+  [`/privacy-policy`]: routes.privacy.path,
+  [`/terms-of-service`]: routes.terms.path,
 } as const;
 
 export const resolveRouteAlias = (path: string) => Object.hasOwn(routeAliases, path)

@@ -1,7 +1,7 @@
 .site-footer { max-width: 1280px; margin: 0 auto; padding: 22px 0 28px; border-top: 1px solid var(--line); }
-.site-footer-main { gap: 18px; display: flex; align-items: center; justify-content: space-between; }
+.site-footer-main { gap: 18px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
 .site-footer-copyright { margin: 0; font-size: 18px; color: var(--muted); }
-.site-footer-navigation { gap: 22px; display: flex; align-items: center; }
+.site-footer-navigation { gap: 8px 22px; display: flex; flex-wrap: wrap; align-items: center; }
 .site-footer-page-link { gap: 6px; display: inline-flex; align-items: center; min-height: 38px; font-size: 18px; text-decoration: none; &:hover { color: var(--red); } }
 .site-footer-piratechs { gap: 5px; display: inline-flex; align-items: center; font-size: 18px; text-decoration: none; font-family: 'AlegreyaSansMedium', var(--font-body); &:hover { color: var(--red); } }
 .site-footer-font-credit { margin: 13px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }

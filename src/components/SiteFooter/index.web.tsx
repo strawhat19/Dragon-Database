@@ -1,5 +1,5 @@
 import { Link } from 'expo-router';
-import { Info, Mail, FileText, ArrowUpRight } from 'lucide-react';
+import { Info, Mail, FileText, ShieldCheck, ArrowUpRight } from 'lucide-react';
 import WebAnchor from '../WebAnchor';
 import { routes } from '../../shared/routes';
 import { fontNoticeLinks } from '../../shared/fontNotices';
@@ -20,6 +20,18 @@ const SiteFooter = () => (
           <WebAnchor id={`site-footer-contact`} className={`site-footer-page-link`}>
             <Mail id={`site-footer-contact-icon`} size={16} aria-hidden={true} />
             <span id={`site-footer-contact-label`} className={`site-footer-page-label`}>Contact</span>
+          </WebAnchor>
+        </Link>
+        <Link href={routes.terms.path} asChild>
+          <WebAnchor id={`site-footer-terms`} className={`site-footer-page-link`}>
+            <FileText id={`site-footer-terms-icon`} size={16} aria-hidden={true} />
+            <span id={`site-footer-terms-label`} className={`site-footer-page-label`}>Terms</span>
+          </WebAnchor>
+        </Link>
+        <Link href={routes.privacy.path} asChild>
+          <WebAnchor id={`site-footer-privacy`} className={`site-footer-page-link`}>
+            <ShieldCheck id={`site-footer-privacy-icon`} size={16} aria-hidden={true} />
+            <span id={`site-footer-privacy-label`} className={`site-footer-page-label`}>Privacy Policy</span>
           </WebAnchor>
         </Link>
       </nav>

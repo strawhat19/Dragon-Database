@@ -1,0 +1,104 @@
+<svg
+  role="img"
+  viewBox="0 0 960 360"
+  style="color: #141418"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-razorwing-title db-razorwing-description"
+>
+  <title id="db-razorwing-title">Dragon Database — DB Razorwing</title>
+  <desc id="db-razorwing-description">A threatening right-facing dragon grows from a broad angular DB ligature. Its long open jaw, backward horns, blood-red angry eye, and silver fang pair with a large swept bat wing containing three open membrane cuts. The black letters have generous counters and a shared baseline; the Dragon Database serif wordmark remains editable.</desc>
+  <g
+    id="db-razorwing-mark"
+    class="db-razorwing-mark"
+  >
+    <path
+      fill="#BC2135"
+      fill-rule="evenodd"
+      id="db-razorwing-swept-membrane"
+      class="db-razorwing-swept-membrane"
+      d="M43 38 L154 75 L191 117 L214 174 L193 208 L169 183 L150 186 L142 164 L114 168 L115 146 L80 153 L89 127 L53 131 Z M70 68 L150 92 L183 143 L150 117 Z M67 101 L136 130 L177 159 L131 146 Z M105 150 L158 159 L177 177 L143 171 Z"
+    />
+    <path
+      fill="currentColor"
+      id="db-razorwing-leading-wing-bone"
+      class="db-razorwing-leading-wing-bone"
+      d="M43 38 L154 75 L191 117 L214 174 L207 181 L183 125 L149 84 Z"
+    />
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      id="db-razorwing-letter-d"
+      class="db-razorwing-letter-d"
+      d="M62 185 L86 166 L135 166 L178 202 L178 272 L139 314 L88 314 L63 297 L78 280 L78 198 Z M107 196 L129 196 L150 214 L150 262 L129 283 L107 283 Z"
+    />
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      id="db-razorwing-dragon-letter-b"
+      class="db-razorwing-dragon-letter-b"
+      d="M177 161 L195 141 L174 100 L213 121 L193 51 L226 87 L241 109 L259 120 L286 128 L319 147 L310 165 L283 169 L272 190 L316 180 L304 208 L268 223 L251 226 L282 246 L282 279 L250 314 L165 314 L165 287 L188 287 L188 177 Z M215 180 L236 180 L245 193 L240 211 L215 224 Z M215 245 L241 245 L254 257 L254 269 L240 286 L215 286 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-razorwing-d-stem-facet"
+      class="db-razorwing-letter-facet"
+      d="M89 195 L97 190 L97 288 L89 295 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-razorwing-b-stem-facet"
+      class="db-razorwing-letter-facet"
+      d="M197 187 L205 182 L205 292 L197 298 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-razorwing-backward-horn-facet"
+      class="db-razorwing-backward-horn-facet"
+      d="M203 74 L225 100 L231 113 L221 111 Z"
+    />
+    <path
+      fill="#BC2135"
+      id="db-razorwing-angry-eye"
+      class="db-razorwing-angry-eye"
+      d="M247 134 L279 149 L253 152 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-razorwing-exposed-fang"
+      class="db-razorwing-exposed-fang"
+      d="M290 161 L301 161 L291 181 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-razorwing-long-jaw-facet"
+      class="db-razorwing-long-jaw-facet"
+      d="M275 205 L305 189 L299 201 L274 213 Z"
+    />
+  </g>
+  <g
+    fill="currentColor"
+    id="db-razorwing-wordmark"
+    class="db-razorwing-wordmark"
+  >
+    <text
+      x="380"
+      y="171"
+      font-size="60"
+      font-weight="700"
+      letter-spacing="-1"
+      id="db-razorwing-dragon-wordmark"
+      class="db-razorwing-dragon-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Dragon</text>
+    <text
+      x="380"
+      y="228"
+      font-size="29"
+      font-weight="400"
+      letter-spacing="3"
+      id="db-razorwing-database-wordmark"
+      class="db-razorwing-database-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Database</text>
+  </g>
+</svg>

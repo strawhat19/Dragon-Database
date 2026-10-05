@@ -1,0 +1,40 @@
+<svg
+  role="img"
+  viewBox="0 0 960 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="ember-index-title ember-index-description"
+>
+  <title id="ember-index-title">Dragon Database — Ember Index</title>
+  <desc id="ember-index-description">An angular dragon in profile rises above three archive tiers. Vermilion and charcoal give this collection identity a bold, compact silhouette.</desc>
+  <g id="ember-index-mark" class="ember-index-mark">
+    <path
+      fill="#E4573D"
+      id="ember-index-dragon"
+      d="M80 129 70 66 119 93 146 64 153 107 192 91 223 114 279 123 258 153 220 160 193 184 156 195 137 220 106 220 88 204 118 173 105 153Z"
+    />
+    <path
+      fill="#FFF8EE"
+      id="ember-index-eye"
+      d="m181 121 27 9-21 11Z"
+    />
+    <path
+      fill="#202B32"
+      id="ember-index-records"
+      d="M87 231h181v18H87Zm18 30h163v18H105Z"
+    />
+    <path
+      fill="#E4573D"
+      id="ember-index-index-tab"
+      d="M73 231h18v18H73Zm0 30h18v18H73Z"
+    />
+  </g>
+  <g
+    fill="#202B32"
+    id="ember-index-wordmark"
+    class="ember-index-wordmark"
+    font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"
+  >
+    <text x="360" y="171" font-size="60" font-weight="650" letter-spacing="-2">Dragon</text>
+    <text x="363" y="228" font-size="29" font-weight="450" letter-spacing="3">Database</text>
+  </g>
+</svg>

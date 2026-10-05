@@ -1,0 +1,53 @@
+<svg
+  role="img"
+  viewBox="0 0 960 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="crimson-folio-title crimson-folio-description"
+>
+  <title id="crimson-folio-title">Dragon Database — Crimson Folio</title>
+  <desc id="crimson-folio-description">A refinement of Winged Archive: crimson page-wings sweep upward beside a black dragon head and book spine. Layered page edges and a serif wordmark retain the original archive idea.</desc>
+  <g id="crimson-folio-mark" class="crimson-folio-mark">
+    <path
+      fill="#CA263B"
+      id="crimson-folio-left-page"
+      d="M175 181 61 82 78 164 108 183 101 210 133 206 146 231 174 241Z"
+    />
+    <path
+      fill="#CA263B"
+      id="crimson-folio-right-page"
+      d="m185 181 114-99-17 82-30 19 7 27-32-4-13 25-28 10Z"
+    />
+    <path
+      fill="#161619"
+      id="crimson-folio-layered-binding"
+      d="m74 229 71 19 35 18 35-18 71-19v12l-72 19-34 19-34-19-72-19Zm10 27 62 17 34 20 34-20 62-17v9l-60 17-36 21-36-21-60-17Z"
+    />
+    <path
+      fill="#161619"
+      id="crimson-folio-dragon-spine"
+      d="m166 112-10-38 22 21 13-30 3 36 21 12 12 18-18 14-17-5-10 19 10 21-5 77-7 16-7-16 3-77-16-31-2-20Z"
+    />
+    <path
+      fill="#CA263B"
+      id="crimson-folio-eye"
+      d="m191 116 15 6-15 5Z"
+    />
+    <path
+      fill="none"
+      stroke="#161619"
+      stroke-width="5"
+      stroke-linecap="round"
+      id="crimson-folio-page-folds"
+      d="m82 119 81 80m-55-45 48 55m122-90-81 80m55-45-48 55"
+    />
+  </g>
+  <g
+    fill="#161619"
+    id="crimson-folio-wordmark"
+    class="crimson-folio-wordmark"
+    font-family="Georgia, 'Times New Roman', serif"
+  >
+    <text x="360" y="171" font-size="60" font-weight="700" letter-spacing="-1">Dragon</text>
+    <text x="360" y="228" font-size="29" font-weight="400" letter-spacing="3">Database</text>
+  </g>
+</svg>

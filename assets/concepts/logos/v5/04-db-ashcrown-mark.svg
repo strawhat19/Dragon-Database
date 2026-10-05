@@ -1,0 +1,127 @@
+<svg
+  role="img"
+  viewBox="0 0 360 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-ashcrown-title db-ashcrown-description"
+>
+  <title id="db-ashcrown-title">Dragon Database — DB Ashcrown</title>
+  <desc id="db-ashcrown-description">A compact black flame crest rises into a jagged crown around a threatening right-facing dragon. Swept horns, a heavy diagonal brow, a pale angry eye, and a silver fang frame original angular silver D and B letter paths. Silver flame facets reveal the wing geometry, and a short silver blade point finishes the lower crest. The surrounding canvas is transparent.</desc>
+  <g
+    id="db-ashcrown-mark"
+    class="db-ashcrown-mark"
+  >
+    <path
+      fill="#101115"
+      id="db-ashcrown-flame-boundary"
+      class="db-ashcrown-flame-boundary"
+      d="M180 338 C158 316 116 314 94 300 C75 286 74 270 56 251 C35 231 55 190 44 163 C35 144 72 127 47 100 C55 92 77 83 69 20 C74 100 52 89 100 92 C139 103 135 49 147 21 C149 79 161 93 182 63 C190 46 203 55 207 31 C222 77 192 97 220 110 C250 103 247 74 268 60 C259 116 296 130 307 94 C320 142 293 161 315 180 C331 203 315 229 293 240 C286 270 269 289 245 303 C224 317 200 320 180 338 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-ashcrown-left-flame-wing-facet"
+      class="db-ashcrown-flame-wing-facet"
+      d="M74 125 C105 142 128 140 139 109 C137 147 112 169 77 190 L87 172 L64 178 L84 155 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-ashcrown-upper-flame-crown-facet"
+      class="db-ashcrown-flame-crown-facet"
+      d="M144 70 C147 111 166 121 184 100 C179 132 158 143 143 152 L132 139 C149 124 138 102 144 70 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-ashcrown-left-wing-flame-tip"
+      class="db-ashcrown-wing-flame-tip"
+      d="M60 204 C67 191 81 186 94 184 L83 207 L70 223 Z"
+    />
+    <path
+      fill="#101115"
+      id="db-ashcrown-horned-dragon-profile"
+      class="db-ashcrown-horned-dragon-profile"
+      d="M191 133 L200 109 L185 72 L211 92 L213 45 L232 91 L247 112 L267 119 L294 124 L337 143 L325 156 L304 161 L289 177 L319 170 L307 193 L277 206 L252 209 L234 234 L211 225 L207 183 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-ashcrown-long-horn-facet"
+      class="db-ashcrown-long-horn-facet"
+      d="M217 65 L227 96 L240 116 L230 111 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-ashcrown-back-horn-facet"
+      class="db-ashcrown-back-horn-facet"
+      d="M195 86 L213 103 L219 119 L209 113 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-ashcrown-armored-brow"
+      class="db-ashcrown-armored-brow"
+      d="M244 126 L264 130 L286 143 L260 136 L249 145 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-ashcrown-angry-eye"
+      class="db-ashcrown-angry-eye"
+      d="M263 147 L290 157 L267 162 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-ashcrown-snout-armor"
+      class="db-ashcrown-snout-armor"
+      d="M307 135 L324 143 L313 149 L304 148 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-ashcrown-exposed-fang"
+      class="db-ashcrown-exposed-fang"
+      d="M302 159 L313 157 L301 179 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-ashcrown-angular-jaw-facet"
+      class="db-ashcrown-angular-jaw-facet"
+      d="M262 184 L281 180 L273 193 L251 203 L242 197 Z"
+    />
+    <g
+      fill="#C5CBD3"
+      fill-rule="evenodd"
+      id="db-ashcrown-silver-initials"
+      class="db-ashcrown-silver-initials"
+    >
+      <path
+        id="db-ashcrown-letter-d"
+        class="db-ashcrown-initial-letter"
+        d="M88 172 L129 172 L159 195 L159 257 L130 284 L85 284 L98 272 L98 184 Z M119 194 L119 262 L132 262 L141 253 L141 204 L132 194 Z"
+      />
+      <path
+        id="db-ashcrown-letter-b"
+        class="db-ashcrown-initial-letter"
+        d="M167 172 L218 172 L243 190 L243 214 L230 228 L249 244 L249 266 L226 284 L167 284 L179 271 L179 185 Z M199 191 L199 217 L213 217 L225 207 L225 200 L215 191 Z M199 238 L199 263 L217 263 L230 253 L230 249 L217 238 Z"
+      />
+    </g>
+    <path
+      fill="#E4E7EB"
+      id="db-ashcrown-d-stem-glint"
+      class="db-ashcrown-letter-glint"
+      d="M103 185 L108 181 L108 271 L103 275 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-ashcrown-b-stem-glint"
+      class="db-ashcrown-letter-glint"
+      d="M184 187 L189 183 L189 270 L184 275 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-ashcrown-lower-blade-point"
+      class="db-ashcrown-lower-blade-point"
+      d="M160 295 L200 295 L200 300 L184 300 L184 315 L180 326 L176 315 L176 300 L160 300 Z"
+    />
+    <path
+      fill="#101115"
+      id="db-ashcrown-blade-ridge"
+      class="db-ashcrown-blade-ridge"
+      d="M180 301 L182 312 L180 321 Z"
+    />
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+<svg
+  role="img"
+  viewBox="0 0 960 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-nightmaw-seal-title db-nightmaw-seal-description"
+>
+  <title id="db-nightmaw-seal-title">Dragon Database — DB Nightmaw Seal</title>
+  <desc id="db-nightmaw-seal-description">An angular octagonal seal contains a compact custom DB ligature. Its D shares a broad lower foundation with the seal, while its B rises into a threatening right-facing dragon with swept horns, a diagonal red eye, a long armored snout, and a silver fang. A crimson dragon wing follows the seal's upper left geometry.</desc>
+  <g
+    id="db-nightmaw-seal-mark"
+    class="db-nightmaw-seal-mark"
+  >
+    <path
+      fill="#141418"
+      fill-rule="evenodd"
+      id="db-nightmaw-seal-octagonal-boundary"
+      class="db-nightmaw-seal-octagonal-boundary"
+      d="M111 34 L249 34 L316 101 L316 251 L249 318 L111 318 L44 251 L44 101 Z M117 47 L57 107 L57 245 L117 305 L243 305 L303 245 L303 107 L243 47 Z"
+    />
+    <path
+      fill="#BC2135"
+      id="db-nightmaw-seal-crimson-wing"
+      class="db-nightmaw-seal-crimson-wing"
+      d="M171 193 L149 142 L126 65 L66 123 L77 162 L101 168 L90 189 L119 192 L116 216 L143 209 L153 236 L177 218 L185 201 Z"
+    />
+    <path
+      fill="#141418"
+      id="db-nightmaw-seal-wing-bone"
+      class="db-nightmaw-seal-wing-bone"
+      d="M126 65 L156 141 L182 196 L172 202 L145 147 L120 78 Z M77 155 L143 163 L153 177 L99 168 Z"
+    />
+    <path
+      fill="#141418"
+      fill-rule="evenodd"
+      id="db-nightmaw-seal-letter-d"
+      class="db-nightmaw-seal-initial-letter"
+      d="M80 156 L99 138 L142 138 L171 167 L171 267 L142 293 L101 293 L80 272 Z M106 165 L106 270 L131 270 L148 254 L148 180 L132 165 Z"
+    />
+    <path
+      fill="#141418"
+      fill-rule="evenodd"
+      id="db-nightmaw-seal-dragon-letter-b"
+      class="db-nightmaw-seal-initial-letter"
+      d="M173 150 L184 133 L165 103 L195 118 L185 62 L219 99 L233 122 L250 132 L280 141 L298 157 L285 170 L269 172 L258 186 L283 181 L271 201 L249 209 L231 216 L265 240 L265 268 L241 293 L154 293 L154 272 L180 272 L180 171 Z M209 170 L209 203 L226 195 L235 182 L229 170 Z M209 236 L209 273 L230 273 L242 259 L242 247 L230 236 Z"
+    />
+    <path
+      fill="#141418"
+      id="db-nightmaw-seal-shared-letter-foundation"
+      class="db-nightmaw-seal-shared-letter-foundation"
+      d="M102 284 L238 284 L255 296 L243 306 L116 306 L99 289 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-nightmaw-seal-d-stem-facet"
+      class="db-nightmaw-seal-letter-facet"
+      d="M92 160 L99 154 L99 274 L92 269 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-nightmaw-seal-b-stem-facet"
+      class="db-nightmaw-seal-letter-facet"
+      d="M189 174 L197 170 L197 279 L189 282 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-nightmaw-seal-swept-horn-facet"
+      class="db-nightmaw-seal-swept-horn-facet"
+      d="M195 83 L215 105 L225 122 L215 117 Z"
+    />
+    <path
+      fill="#BC2135"
+      id="db-nightmaw-seal-angry-eye"
+      class="db-nightmaw-seal-angry-eye"
+      d="M238 146 L265 157 L244 162 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-nightmaw-seal-exposed-fang"
+      class="db-nightmaw-seal-exposed-fang"
+      d="M273 168 L283 167 L274 184 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-nightmaw-seal-snout-armor"
+      class="db-nightmaw-seal-snout-armor"
+      d="M276 148 L287 157 L277 155 Z"
+    />
+  </g>
+  <g
+    fill="#141418"
+    id="db-nightmaw-seal-wordmark"
+    class="db-nightmaw-seal-wordmark"
+  >
+    <text
+      x="380"
+      y="171"
+      font-size="60"
+      font-weight="700"
+      letter-spacing="-1"
+      id="db-nightmaw-seal-dragon-wordmark"
+      class="db-nightmaw-seal-dragon-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Dragon</text>
+    <text
+      x="380"
+      y="228"
+      font-size="29"
+      font-weight="400"
+      letter-spacing="3"
+      id="db-nightmaw-seal-database-wordmark"
+      class="db-nightmaw-seal-database-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Database</text>
+  </g>
+</svg>

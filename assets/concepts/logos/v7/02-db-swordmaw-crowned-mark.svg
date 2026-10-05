@@ -1,0 +1,204 @@
+<svg
+  role="img"
+  viewBox="0 0 360 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-swordmaw-crowned-mark-title db-swordmaw-crowned-mark-description"
+>
+  <title id="db-swordmaw-crowned-mark-title">Dragon Database — DB Swordmaw Crowned Mark</title>
+  <desc id="db-swordmaw-crowned-mark-description">The selected Swordmaw Prime dragon, wing, DB letters, and facial details remain unchanged. Crossed swords retain Prime blade thickness and gain curved ceremonial guards, silver grip bands, modest diamond guard ends, faceted diamond pommels, and slightly taller tips. Black and silver editable paths surround transparent letter counters and a transparent canvas.</desc>
+  <g
+    id="db-swordmaw-crowned-mark"
+    class="db-swordmaw-crowned-mark"
+  >
+    <defs>
+      <mask
+        x="0"
+        y="0"
+        width="360"
+        height="360"
+        id="db-swordmaw-crowned-mark-counter-mask"
+        maskUnits="userSpaceOnUse"
+      >
+        <rect
+          x="0"
+          y="0"
+          width="360"
+          height="360"
+          fill="#FFFFFF"
+        />
+        <path
+          fill="#000000"
+          d="M105 199 L134 199 L151 215 L151 264 L134 286 L105 286 Z M216 189 L242 189 L255 202 L248 222 L216 237 Z M216 255 L244 255 L257 267 L257 277 L243 290 L216 290 Z"
+        />
+      </mask>
+    </defs>
+    <g
+      fill="#C5CBD3"
+      stroke="#101115"
+      stroke-width="7"
+      stroke-linejoin="round"
+      id="db-swordmaw-crowned-mark-crossed-swords"
+      class="db-swordmaw-crowned-mark-crossed-swords"
+      mask="url(#db-swordmaw-crowned-mark-counter-mask)"
+    >
+      <path
+        id="db-swordmaw-crowned-mark-right-blade"
+        class="db-swordmaw-crowned-mark-sword-blade"
+        d="M84 273 L310 45 L332 21.5 L316 62 L99 286 Z"
+      />
+      <path
+        id="db-swordmaw-crowned-mark-left-blade"
+        class="db-swordmaw-crowned-mark-sword-blade"
+        d="M276 273 L50 45 L28 21.5 L44 62 L261 286 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-crowned-mark-right-blade-facet"
+        class="db-swordmaw-crowned-mark-blade-facet"
+        d="M97 271 L315 51 L100 281 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-crowned-mark-left-blade-facet"
+        class="db-swordmaw-crowned-mark-blade-facet"
+        d="M263 271 L45 51 L260 281 Z"
+      />
+      <path
+        fill="#101115"
+        stroke="none"
+        id="db-swordmaw-crowned-mark-left-grip"
+        class="db-swordmaw-crowned-mark-sword-grip"
+        d="M78 289 L92 302 L61 334 L46 319 Z"
+      />
+      <path
+        fill="#101115"
+        stroke="none"
+        id="db-swordmaw-crowned-mark-right-grip"
+        class="db-swordmaw-crowned-mark-sword-grip"
+        d="M282 289 L268 302 L299 334 L314 319 Z"
+      />
+      <path
+        fill="#C5CBD3"
+        stroke="none"
+        id="db-swordmaw-crowned-mark-left-grip-band"
+        class="db-swordmaw-crowned-mark-grip-band"
+        d="M66 304 L79 317 L76 320 L63 307 Z"
+      />
+      <path
+        fill="#C5CBD3"
+        stroke="none"
+        id="db-swordmaw-crowned-mark-right-grip-band"
+        class="db-swordmaw-crowned-mark-grip-band"
+        d="M294 304 L281 317 L284 320 L297 307 Z"
+      />
+      <path
+        id="db-swordmaw-crowned-mark-left-curved-guard"
+        class="db-swordmaw-crowned-mark-sword-crossguard"
+        d="M62 256 Q78 250 89 268 L116 288 L123 298 L113 307 L101 291 L82 280 Q70 265 55 270 Z"
+      />
+      <path
+        id="db-swordmaw-crowned-mark-right-curved-guard"
+        class="db-swordmaw-crowned-mark-sword-crossguard"
+        d="M298 256 Q282 250 271 268 L244 288 L237 298 L247 307 L259 291 L278 280 Q290 265 305 270 Z"
+      />
+      <path
+        id="db-swordmaw-crowned-mark-left-diamond-guard-end"
+        class="db-swordmaw-crowned-mark-diamond-guard-end"
+        d="M52 257 L64 249 L72 259 L60 269 Z"
+      />
+      <path
+        id="db-swordmaw-crowned-mark-right-diamond-guard-end"
+        class="db-swordmaw-crowned-mark-diamond-guard-end"
+        d="M308 257 L296 249 L288 259 L300 269 Z"
+      />
+      <path
+        id="db-swordmaw-crowned-mark-left-diamond-pommel"
+        class="db-swordmaw-crowned-mark-sword-pommel"
+        d="M43 315 L61 329 L50 338 L37 329 Z"
+      />
+      <path
+        id="db-swordmaw-crowned-mark-right-diamond-pommel"
+        class="db-swordmaw-crowned-mark-sword-pommel"
+        d="M317 315 L299 329 L310 338 L323 329 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-crowned-mark-left-pommel-facet"
+        class="db-swordmaw-crowned-mark-pommel-facet"
+        d="M43 320 L56 329 L49 333 L44 329 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-crowned-mark-right-pommel-facet"
+        class="db-swordmaw-crowned-mark-pommel-facet"
+        d="M317 320 L304 329 L311 333 L316 329 Z"
+      />
+    </g>
+    <path
+      fill="#101115"
+      id="db-swordmaw-crowned-mark-swept-wing"
+      class="db-swordmaw-crowned-mark-swept-wing"
+      d="M47 81 L145 110 L185 155 L218 225 L191 238 L166 205 L135 207 L130 183 L91 188 L103 157 L57 161 L67 132 L48 127 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-crowned-mark-wing-membranes"
+      class="db-swordmaw-crowned-mark-wing-membranes"
+      d="M72 109 L132 129 L165 166 L129 150 Z M83 149 L139 166 L177 203 L134 188 Z"
+    />
+    <path
+      fill="#101115"
+      fill-rule="evenodd"
+      id="db-swordmaw-crowned-mark-letter-d"
+      class="db-swordmaw-crowned-mark-letter-d"
+      d="M61 190 L82 173 L137 173 L178 208 L178 276 L141 314 L79 314 L60 293 L78 273 L78 193 Z M105 199 L134 199 L151 215 L151 264 L134 286 L105 286 Z"
+    />
+    <path
+      fill="#101115"
+      fill-rule="evenodd"
+      id="db-swordmaw-crowned-mark-dragon-letter-b"
+      class="db-swordmaw-crowned-mark-dragon-letter-b"
+      d="M176 173 L189 154 L164 108 L204 129 L173 43 L211 75 L238 114 L258 127 L283 139 L311 147 L330 163 L313 181 L284 179 L279 199 L329 189 L316 216 L276 229 L252 240 L284 257 L284 281 L250 314 L162 314 L162 290 L190 290 L190 193 Z M216 189 L242 189 L255 202 L248 222 L216 237 Z M216 255 L244 255 L257 267 L257 277 L243 290 L216 290 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-crowned-mark-d-stem-facet"
+      class="db-swordmaw-crowned-mark-letter-facet"
+      d="M86 197 L94 190 L94 293 L86 300 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-crowned-mark-b-stem-facet"
+      class="db-swordmaw-crowned-mark-letter-facet"
+      d="M198 194 L205 189 L205 296 L198 302 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-crowned-mark-long-horn-facet"
+      class="db-swordmaw-crowned-mark-long-horn-facet"
+      d="M188 68 L217 99 L229 119 L218 114 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-swordmaw-crowned-mark-angry-eye"
+      class="db-swordmaw-crowned-mark-angry-eye"
+      d="M251 145 L286 158 L257 163 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-swordmaw-crowned-mark-long-fang"
+      class="db-swordmaw-crowned-mark-long-fang"
+      d="M293 173 L306 173 L293 194 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-crowned-mark-broad-jaw-facet"
+      class="db-swordmaw-crowned-mark-broad-jaw-facet"
+      d="M281 216 L316 199 L309 212 L279 225 Z"
+    />
+  </g>
+</svg>

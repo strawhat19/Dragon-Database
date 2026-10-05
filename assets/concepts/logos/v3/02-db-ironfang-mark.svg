@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="db-ironfang-symbol" role="img" viewBox="32 32 296 296" style="color: #131419" aria-labelledby="db-ironfang-symbol-title db-ironfang-symbol-description">
+  <title id="db-ironfang-symbol-title">Dragon Database — DB Ironfang Mark</title>
+  <desc id="db-ironfang-symbol-description">The standalone DB monogram with a fierce horned, winged dragon and angry eyes on a transparent square canvas.</desc>
+  <g id="db-ironfang-mark" class="db-ironfang-mark">
+    <g id="db-ironfang-wings" class="db-ironfang-wings">
+      <path fill="#131419" id="db-ironfang-left-wing-outline" class="db-ironfang-wing-outline" d="M127 162 L85 137 L48 111 L59 171 L78 196 L67 217 L96 217 L116 243 L137 246 L140 218 L129 189 Z" />
+      <path fill="#131419" id="db-ironfang-right-wing-outline" class="db-ironfang-wing-outline" d="M233 162 L275 137 L312 111 L301 171 L282 196 L293 217 L264 217 L244 243 L223 246 L220 218 L231 189 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-left-wing-membrane" class="db-ironfang-wing-membrane" d="M61 132 L121 171 L127 192 L102 188 L88 177 L79 169 L92 198 L114 215 L124 231 L121 208 L135 217 L129 231 L121 224 L97 207 L84 209 L89 194 L69 166 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-right-wing-membrane" class="db-ironfang-wing-membrane" d="M299 132 L239 171 L233 192 L258 188 L272 177 L281 169 L268 198 L246 215 L236 231 L239 208 L225 217 L231 231 L239 224 L263 207 L276 209 L271 194 L291 166 Z" />
+    </g>
+    <g id="db-ironfang-horns" class="db-ironfang-horns">
+      <path fill="#131419" id="db-ironfang-left-swept-horn" class="db-ironfang-swept-horn" d="M135 118 C119 103 85 82 87 41 C97 67 115 78 138 89 L153 113 Z" />
+      <path fill="#131419" id="db-ironfang-right-swept-horn" class="db-ironfang-swept-horn" d="M225 118 C241 103 275 82 273 41 C263 67 245 78 222 89 L207 113 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-left-horn-facet" class="db-ironfang-horn-facet" d="M96 66 C106 89 121 100 139 110 L136 98 C120 89 108 79 96 66 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-right-horn-facet" class="db-ironfang-horn-facet" d="M264 66 C254 89 239 100 221 110 L224 98 C240 89 252 79 264 66 Z" />
+    </g>
+    <g id="db-ironfang-dragon-head" class="db-ironfang-dragon-head">
+      <path fill="#131419" id="db-ironfang-armored-head-outline" class="db-ironfang-armored-head-outline" d="M140 91 L165 99 L180 87 L195 99 L220 91 L233 113 L236 147 L255 168 L234 171 L242 188 L219 187 L213 202 L199 220 L193 229 L180 239 L167 229 L161 220 L147 202 L141 187 L118 188 L126 171 L105 168 L124 147 L127 113 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-forehead-armor" class="db-ironfang-forehead-armor" d="M141 106 L161 111 L180 98 L199 111 L219 106 L224 119 L201 125 L188 138 L180 155 L172 138 L159 125 L136 119 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-left-cheek-scales" class="db-ironfang-cheek-scales" d="M132 151 L144 162 L155 158 L153 178 L162 196 L150 184 L144 174 L125 171 L136 166 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-right-cheek-scales" class="db-ironfang-cheek-scales" d="M228 151 L216 162 L205 158 L207 178 L198 196 L210 184 L216 174 L235 171 L224 166 Z" />
+      <path fill="#C4253A" id="db-ironfang-left-angry-eye" class="db-ironfang-angry-eye" d="M134 136 L169 148 L158 155 L138 146 Z" />
+      <path fill="#C4253A" id="db-ironfang-right-angry-eye" class="db-ironfang-angry-eye" d="M226 136 L191 148 L202 155 L222 146 Z" />
+      <path fill="#B7BEC8" fill-rule="evenodd" id="db-ironfang-reptilian-muzzle" class="db-ironfang-reptilian-muzzle" d="M167 156 L180 162 L193 156 L208 174 L201 184 L180 181 L159 184 L152 174 Z M161 169 L173 172 L166 178 Z M199 169 L187 172 L194 178 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-left-exposed-fang" class="db-ironfang-exposed-fang" d="M157 188 L167 188 L162 203 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-right-exposed-fang" class="db-ironfang-exposed-fang" d="M203 188 L193 188 L198 203 Z" />
+      <path fill="#B7BEC8" id="db-ironfang-lower-jaw-armor" class="db-ironfang-lower-jaw-armor" d="M169 196 L180 202 L191 196 L190 211 L180 221 L170 211 Z" />
+    </g>
+    <g fill="#131419" fill-rule="evenodd" id="db-ironfang-initials" class="db-ironfang-initials">
+      <path id="db-ironfang-letter-d" class="db-ironfang-initial-letter" d="M107 229 L134 229 C157 229 170 244 170 269 C170 294 157 309 134 309 L107 309 Z M124 245 L124 293 L133 293 C145 293 153 284 153 269 C153 254 145 245 133 245 Z" />
+      <path id="db-ironfang-letter-b" class="db-ironfang-initial-letter" d="M183 229 L214 229 C236 229 247 238 247 251 C247 260 242 267 234 270 C245 274 252 280 252 290 C252 303 240 309 216 309 L183 309 Z M200 245 L200 262 L213 262 C223 262 230 258 230 253 C230 248 223 245 213 245 Z M200 278 L200 293 L215 293 C227 293 234 290 234 285 C234 280 227 278 215 278 Z" />
+    </g>
+  </g>
+</svg>

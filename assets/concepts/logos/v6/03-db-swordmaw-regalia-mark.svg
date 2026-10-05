@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 360 360" aria-labelledby="db-swordmaw-regalia-title db-swordmaw-regalia-description">
+  <title id="db-swordmaw-regalia-title">Dragon Database — DB Swordmaw Regalia Mark</title>
+  <desc id="db-swordmaw-regalia-description">A more ceremonial Swordmaw with long slender crossed swords, swept crown horns, a scalloped wing, and broad DB letterforms. Silver and black editable paths on a transparent canvas.</desc>
+  <g id="db-swordmaw-regalia-mark" class="db-swordmaw-regalia-mark">
+    <defs>
+      <mask x="0" y="0" width="360" height="360" id="db-swordmaw-regalia-open-counters-mask" maskUnits="userSpaceOnUse">
+        <rect x="0" y="0" width="360" height="360" fill="#FFFFFF" />
+        <path fill="#000000" d="M107 189v89h23l20-22v-45l-20-22Z M216 186v41l25-13 8-17-10-11Z M216 245v35h24l14-10v-13l-11-12Z" />
+      </mask>
+    </defs>
+    <g fill="#C5CBD3" stroke="#101115" stroke-width="7" stroke-linejoin="round" id="db-swordmaw-regalia-crossed-swords" class="db-swordmaw-regalia-crossed-swords" mask="url(#db-swordmaw-regalia-open-counters-mask)">
+      <path id="db-swordmaw-regalia-right-pointing-blade" class="db-swordmaw-regalia-sword-blade" d="M90 270 307 52l15-23-4 36-211 221Z" />
+      <path id="db-swordmaw-regalia-left-pointing-blade" class="db-swordmaw-regalia-sword-blade" d="M270 270 53 52 38 29l4 36 211 221Z" />
+      <path fill="#E4E7EB" stroke="none" id="db-swordmaw-regalia-right-blade-fuller" class="db-swordmaw-regalia-blade-fuller" d="M103 269 308 55 109 280Z" />
+      <path fill="#E4E7EB" stroke="none" id="db-swordmaw-regalia-left-blade-fuller" class="db-swordmaw-regalia-blade-fuller" d="M257 269 52 55 251 280Z" />
+      <path fill="#101115" stroke="none" id="db-swordmaw-regalia-left-sword-grip" class="db-swordmaw-regalia-sword-grip" d="M78 289 L92 302 L61 334 L46 319 Z" />
+      <path fill="#101115" stroke="none" id="db-swordmaw-regalia-right-sword-grip" class="db-swordmaw-regalia-sword-grip" d="M282 289 L268 302 L299 334 L314 319 Z" />
+      <path id="db-swordmaw-regalia-left-crossguard" class="db-swordmaw-regalia-sword-crossguard" d="M63 256q14-6 25 11l27 20 9 10-9 10-13-16-21-13q-11-14-26-10Z" />
+      <path id="db-swordmaw-regalia-right-crossguard" class="db-swordmaw-regalia-sword-crossguard" d="M297 256q-14-6-25 11l-27 20-9 10 9 10 13-16 21-13q11-14 26-10Z" />
+      <path id="db-swordmaw-regalia-left-pommel" class="db-swordmaw-regalia-sword-pommel" d="M44 315 L61 332 L49 338 L37 327 Z" />
+      <path id="db-swordmaw-regalia-right-pommel" class="db-swordmaw-regalia-sword-pommel" d="M316 315 L299 332 L311 338 L323 327 Z" />
+    </g>
+    <path fill="#101115" id="db-swordmaw-regalia-swept-wing" class="db-swordmaw-regalia-swept-wing" d="M181 191C146 119 122 91 60 105l21 29-10 30 38 6-11 22 42 3 13 32 29-4Z" mask="url(#db-swordmaw-regalia-open-counters-mask)" />
+    <path fill="#C5CBD3" id="db-swordmaw-regalia-wing-membrane-facets" class="db-swordmaw-regalia-wing-membrane-facets" d="m78 119 49 10 36 40-44-21Zm17 45 40 10 35 37-31-19Z" mask="url(#db-swordmaw-regalia-open-counters-mask)" />
+    <path fill="#101115" fill-rule="evenodd" id="db-swordmaw-regalia-letter-d" class="db-swordmaw-regalia-letter-d" d="M67 179 88 159h48l39 39v77l-36 32H82l-15-20 14-15v-91Zm40 10v89h23l20-22v-45l-20-22Z" />
+    <path fill="#101115" fill-rule="evenodd" id="db-swordmaw-regalia-dragon-letter-b" class="db-swordmaw-regalia-dragon-letter-b" d="M176 169 190 149l-22-33 37 13-16-80 36 36 17 28 19 12 18 10 30 11 19 15-19 17-26-1-7 16 44-8-16 27-35 8-21 13 31 19v26l-32 31h-86v-23h28v-94Zm40 17v41l25-13 8-17-10-11Zm0 59v35h24l14-10v-13l-11-12Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-regalia-d-stem-facet" class="db-swordmaw-regalia-letter-facet" d="M86 191 L94 184 L94 284 L86 291 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-regalia-b-stem-facet" class="db-swordmaw-regalia-letter-facet" d="M198 190 L205 185 L205 286 L198 292 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-regalia-backward-horn-facet" class="db-swordmaw-regalia-backward-horn-facet" d="m202 75 24 29 10 17-16-9Z" />
+    <path fill="#E4E7EB" id="db-swordmaw-regalia-angry-slit-eye" class="db-swordmaw-regalia-angry-slit-eye" d="M248 141 L282 153 L253 156 Z" />
+    <path fill="#E4E7EB" id="db-swordmaw-regalia-exposed-fang" class="db-swordmaw-regalia-exposed-fang" d="M292 170 L304 170 L292 188 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-regalia-jaw-armor" class="db-swordmaw-regalia-jaw-armor" d="M278 208 L307 194 L301 204 L276 214 Z" />
+  </g>
+</svg>

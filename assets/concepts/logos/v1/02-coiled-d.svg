@@ -1,0 +1,85 @@
+<svg
+  id="coiled-d-logo"
+  role="img"
+  width="960"
+  height="360"
+  viewBox="0 0 960 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="coiled-d-title coiled-d-description"
+  style="color: #102D35"
+>
+  <title id="coiled-d-title">Dragon Database — Coiled D</title>
+  <desc id="coiled-d-description">
+    A sleek dragon coils into a bold capital D. Its angular head has one horn
+    and a transparent eye; a sea-glass tail closes the curve. The editable
+    Dragon Database wordmark sits to the right on a transparent canvas.
+  </desc>
+  <g
+    id="coiled-d-mark"
+    fill="currentColor"
+    aria-label="Coiled Dragon D Mark"
+  >
+    <path
+      id="coiled-d-dragon-body"
+      fill-rule="evenodd"
+      d="M 82 116
+         L 103 97
+         L 98 68
+         L 126 88
+         L 161 87
+         L 143 102
+         L 162 116
+         L 133 124
+         L 124 143
+         L 124 231
+         C 142 245 164 251 188 248
+         C 231 244 256 219 256 180
+         C 256 141 231 119 191 116
+         L 177 84
+         C 246 82 294 120 294 180
+         C 294 245 250 282 187 283
+         C 145 284 111 271 84 253
+         L 84 148
+         L 68 138
+         Z
+         M 105 112
+         L 119 108
+         L 114 118
+         Z"
+    />
+    <path
+      id="coiled-d-sea-glass-tail"
+      fill="#39BAAE"
+      d="M 84 230
+         L 84 253
+         C 111 271 145 284 187 283
+         C 206 283 224 279 239 273
+         L 219 249
+         C 209 253 198 255 186 255
+         C 144 256 108 243 84 230
+         Z"
+    />
+  </g>
+  <g
+    id="coiled-d-wordmark"
+    fill="currentColor"
+    font-family="Avenir Next, Avenir, Inter, Segoe UI, Arial, sans-serif"
+  >
+    <text
+      x="360"
+      y="171"
+      font-size="60"
+      font-weight="650"
+      letter-spacing="-1.6"
+      id="coiled-d-wordmark-dragon"
+    >Dragon</text>
+    <text
+      x="362"
+      y="228"
+      font-size="29"
+      font-weight="500"
+      letter-spacing="3"
+      id="coiled-d-wordmark-database"
+    >Database</text>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" style="color: #101115" aria-labelledby="db-ashcrown-title db-ashcrown-description">
+<title id="db-ashcrown-title">Dragon Database — DB Ashcrown</title>
+<desc id="db-ashcrown-description">A silver-and-black dragon DB emblem with flames or medieval sword details, paired with original black path lettering spelling Dragon Database on a silver background. The lettering has uneven fantasy proportions, pointed medieval terminals, and a sword underline.</desc>
+<defs><linearGradient id="db-ashcrown-silver-background" x1="0" y1="0" x2="0.85" y2="1"><stop offset="0" stop-color="#B9C1CC"/><stop offset="0.5" stop-color="#E4E7EB"/><stop offset="1" stop-color="#C5CBD3"/></linearGradient></defs>
+<rect id="db-ashcrown-background" width="960" height="360" fill="url(#db-ashcrown-silver-background)"/>
+<g xmlns="http://www.w3.org/2000/svg" id="db-ashcrown-mark" class="db-ashcrown-mark">
+    <path fill="#101115" id="db-ashcrown-flame-boundary" class="db-ashcrown-flame-boundary" d="M180 338 C158 316 116 314 94 300 C75 286 74 270 56 251 C35 231 55 190 44 163 C35 144 72 127 47 100 C55 92 77 83 69 20 C74 100 52 89 100 92 C139 103 135 49 147 21 C149 79 161 93 182 63 C190 46 203 55 207 31 C222 77 192 97 220 110 C250 103 247 74 268 60 C259 116 296 130 307 94 C320 142 293 161 315 180 C331 203 315 229 293 240 C286 270 269 289 245 303 C224 317 200 320 180 338 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-left-flame-wing-facet" class="db-ashcrown-flame-wing-facet" d="M74 125 C105 142 128 140 139 109 C137 147 112 169 77 190 L87 172 L64 178 L84 155 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-upper-flame-crown-facet" class="db-ashcrown-flame-crown-facet" d="M144 70 C147 111 166 121 184 100 C179 132 158 143 143 152 L132 139 C149 124 138 102 144 70 Z" />
+    <path fill="#E4E7EB" id="db-ashcrown-left-wing-flame-tip" class="db-ashcrown-wing-flame-tip" d="M60 204 C67 191 81 186 94 184 L83 207 L70 223 Z" />
+    <path fill="#101115" id="db-ashcrown-horned-dragon-profile" class="db-ashcrown-horned-dragon-profile" d="M191 133 L200 109 L185 72 L211 92 L213 45 L232 91 L247 112 L267 119 L294 124 L337 143 L325 156 L304 161 L289 177 L319 170 L307 193 L277 206 L252 209 L234 234 L211 225 L207 183 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-long-horn-facet" class="db-ashcrown-long-horn-facet" d="M217 65 L227 96 L240 116 L230 111 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-back-horn-facet" class="db-ashcrown-back-horn-facet" d="M195 86 L213 103 L219 119 L209 113 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-armored-brow" class="db-ashcrown-armored-brow" d="M244 126 L264 130 L286 143 L260 136 L249 145 Z" />
+    <path fill="#E4E7EB" id="db-ashcrown-angry-eye" class="db-ashcrown-angry-eye" d="M263 147 L290 157 L267 162 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-snout-armor" class="db-ashcrown-snout-armor" d="M307 135 L324 143 L313 149 L304 148 Z" />
+    <path fill="#E4E7EB" id="db-ashcrown-exposed-fang" class="db-ashcrown-exposed-fang" d="M302 159 L313 157 L301 179 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-angular-jaw-facet" class="db-ashcrown-angular-jaw-facet" d="M262 184 L281 180 L273 193 L251 203 L242 197 Z" />
+    <g fill="#C5CBD3" fill-rule="evenodd" id="db-ashcrown-silver-initials" class="db-ashcrown-silver-initials">
+      <path id="db-ashcrown-letter-d" class="db-ashcrown-initial-letter" d="M88 172 L129 172 L159 195 L159 257 L130 284 L85 284 L98 272 L98 184 Z M119 194 L119 262 L132 262 L141 253 L141 204 L132 194 Z" />
+      <path id="db-ashcrown-letter-b" class="db-ashcrown-initial-letter" d="M167 172 L218 172 L243 190 L243 214 L230 228 L249 244 L249 266 L226 284 L167 284 L179 271 L179 185 Z M199 191 L199 217 L213 217 L225 207 L225 200 L215 191 Z M199 238 L199 263 L217 263 L230 253 L230 249 L217 238 Z" />
+    </g>
+    <path fill="#E4E7EB" id="db-ashcrown-d-stem-glint" class="db-ashcrown-letter-glint" d="M103 185 L108 181 L108 271 L103 275 Z" />
+    <path fill="#E4E7EB" id="db-ashcrown-b-stem-glint" class="db-ashcrown-letter-glint" d="M184 187 L189 183 L189 270 L184 275 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-lower-blade-point" class="db-ashcrown-lower-blade-point" d="M160 295 L200 295 L200 300 L184 300 L184 315 L180 326 L176 315 L176 300 L160 300 Z" />
+    <path fill="#101115" id="db-ashcrown-blade-ridge" class="db-ashcrown-blade-ridge" d="M180 301 L182 312 L180 321 Z" />
+  </g>
+
+<g id="db-ashcrown-wordmark" class="db-ashcrown-wordmark" fill="#101115" role="img" aria-label="Dragon Database">
+<g id="db-ashcrown-dragon-lettering" transform="translate(411 73) scale(1.12)" aria-label="Dragon">
+<path id="db-ashcrown-dragon-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(-4 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-ashcrown-dragon-letter-1-r" fill-rule="evenodd" transform="translate(61 -5) rotate(3 25.0 44)" d="M4 20h14l5 10 11-10h13v18H33l-10 7v25l6 12H2l7-12V33Z"/>
+<path id="db-ashcrown-dragon-letter-2-a" fill-rule="evenodd" transform="translate(116 -7) rotate(-2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-ashcrown-dragon-letter-3-g" fill-rule="evenodd" transform="translate(175 -4) rotate(2 25.5 44)" d="M12 20h20l16 12v49L34 98H12L2 88l14-4h14l4-6v-4l-10 6H12L0 68V32Zm3 16v26l6 5 13-6V37l-6-5h-7Z"/>
+<path id="db-ashcrown-dragon-letter-4-o" fill-rule="evenodd" transform="translate(231 -2) rotate(-3 25.0 44)" d="M13 20h22l14 15v32L35 82H13L0 68V34Zm2 17v28l5 3h8l6-5V38l-6-5h-7Z"/>
+<path id="db-ashcrown-dragon-letter-5-n" fill-rule="evenodd" transform="translate(286 1) rotate(2 30.5 44)" d="M0 20h18l4 8 10-8h11l12 14v35l5 13H36l5-12V40l-5-5h-6l-7 7v28l5 12H1l7-12V33Z"/>
+</g>
+<g id="db-ashcrown-database-lettering" transform="translate(414 198) scale(1.0)" aria-label="Database">
+<path id="db-ashcrown-database-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(1 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-ashcrown-database-letter-1-a" fill-rule="evenodd" transform="translate(61 -5) rotate(-2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-ashcrown-database-letter-2-t" fill-rule="evenodd" transform="translate(120 -7) rotate(2 23.0 44)" d="m13 10 16-7v20h13v12H29v31l6 5h10L35 82H21l-8-8V35H3V25h10Z"/>
+<path id="db-ashcrown-database-letter-3-a" fill-rule="evenodd" transform="translate(171 -4) rotate(-1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-ashcrown-database-letter-4-b" fill-rule="evenodd" transform="translate(230 -2) rotate(2 27.0 44)" d="M1 0h21l-4 15v12l11-7h11l12 14v34L38 82H17L1 75l6-9V14Zm21 38v27l5 4h7l5-7V41l-5-6h-6Z"/>
+<path id="db-ashcrown-database-letter-5-a" fill-rule="evenodd" transform="translate(289 1) rotate(-2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-ashcrown-database-letter-6-s" fill-rule="evenodd" transform="translate(348 -1) rotate(1 25.0 44)" d="M13 20h26l11 11-14 5-7-5h-8l-5 6 7 6 17 4 10 12v11L38 82H12L0 70l14-6 7 7h9l5-6-6-6-18-5L0 42V32Z"/>
+<path id="db-ashcrown-database-letter-7-e" fill-rule="evenodd" transform="translate(403 2) rotate(-1 26.0 44)" d="M13 20h24l13 14v22H15v7l6 6h13l8-7 9 9-13 11H13L0 69V34Zm2 16v8h20v-7l-5-5h-9Z"/>
+</g>
+<g id="db-ashcrown-wordmark-sword">
+<path id="db-ashcrown-underline-blade" d="M465 307h422l31 9-31 9H465Z"/>
+<path id="db-ashcrown-blade-fuller" fill="#E4E7EB" d="M478 312h410l13 4H478Z"/>
+<path id="db-ashcrown-underline-guard" d="M447 298h10l7 9v18l-7 9h-10l4-12v-12Z"/>
+<path id="db-ashcrown-underline-grip" d="M411 309h37v14h-37l-10-7Z"/>
+<path id="db-ashcrown-grip-wrap" fill="#C5CBD3" d="M417 310h4v12h-4Zm10 0h4v12h-4Zm10 0h4v12h-4Z"/>
+</g>
+</g>
+</svg>

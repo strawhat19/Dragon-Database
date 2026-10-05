@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" style="color: #101115" aria-labelledby="db-blackflame-title db-blackflame-description">
+<title id="db-blackflame-title">Dragon Database — DB Blackflame</title>
+<desc id="db-blackflame-description">A silver-and-black dragon DB emblem with flames or medieval sword details, paired with original black path lettering spelling Dragon Database on a silver background. The lettering has uneven fantasy proportions, pointed medieval terminals, and a sword underline.</desc>
+<defs><linearGradient id="db-blackflame-silver-background" x1="0" y1="0" x2="0.85" y2="1"><stop offset="0" stop-color="#B9C1CC"/><stop offset="0.5" stop-color="#E4E7EB"/><stop offset="1" stop-color="#C5CBD3"/></linearGradient></defs>
+<rect id="db-blackflame-background" width="960" height="360" fill="url(#db-blackflame-silver-background)"/>
+<g xmlns="http://www.w3.org/2000/svg" id="db-blackflame-mark" class="db-blackflame-mark">
+    <path fill="#101115" id="db-blackflame-curling-flames" d="M157 252c-46-13-89-34-81-87-24 15-35 25-38 49-14-32-7-65 24-96 10-35-19-53-7-88 8 33 44 28 48 73 9-20 9-48-4-64 49 20 59 54 38 91-7 21-10 32 5 47-2-26 8-44 27-55-20 55 36 72 42 116-8 43-50 83-105 78 34-11 36-32 51-64Z" />
+    <g fill="#C5CBD3" stroke="#101115" stroke-width="7" stroke-linejoin="bevel" id="db-blackflame-silver-initials" class="db-blackflame-silver-initials" aria-label="DB">
+      <path fill-rule="evenodd" id="db-blackflame-letter-d" d="m82 147 22-17h40l30 30v121l-31 30H81Zm27 15v119h21l17-18v-84l-17-17Z" />
+      <path fill-rule="evenodd" id="db-blackflame-letter-b" d="M169 146h48l35 29v34l-20 20 30 22v31l-29 29h-70v-27h24V166Zm41 28v40h17l13-18v-10l-13-12Zm0 72v36h18l14-14v-9l-14-13Z" />
+    </g>
+    <path fill="#101115" id="db-blackflame-horned-dragon" d="m169 168 16-37-20-37 37 17-15-73 36 42 19 28 13 10 33 7 32 19-8 17-22 7-12 16 27-6-11 24-29 14-26-2-16-10-19 14-22 12-5-37Z" />
+    <path fill="#C5CBD3" id="db-blackflame-horn-and-jaw-facets" d="m197 63 23 30 14 23-14-11Zm66 137 28-14-6 14-21 14Zm28-64 18 11-14-2Z" />
+    <path fill="#E4E7EB" id="db-blackflame-angry-eye" d="m250 139 24 11-21 3Z" />
+    <path fill="#E4E7EB" id="db-blackflame-exposed-fang" d="m286 164 11-3-11 25Z" />
+  </g>
+
+<g id="db-blackflame-wordmark" class="db-blackflame-wordmark" fill="#101115" role="img" aria-label="Dragon Database">
+<g id="db-blackflame-dragon-lettering" transform="translate(411 73) scale(1.12)" aria-label="Dragon">
+<path id="db-blackflame-dragon-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(-3 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-blackflame-dragon-letter-1-r" fill-rule="evenodd" transform="translate(61 -5) rotate(2 25.0 44)" d="M4 20h14l5 10 11-10h13v18H33l-10 7v25l6 12H2l7-12V33Z"/>
+<path id="db-blackflame-dragon-letter-2-a" fill-rule="evenodd" transform="translate(116 -7) rotate(-2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-blackflame-dragon-letter-3-g" fill-rule="evenodd" transform="translate(175 -4) rotate(1 25.5 44)" d="M12 20h20l16 12v49L34 98H12L2 88l14-4h14l4-6v-4l-10 6H12L0 68V32Zm3 16v26l6 5 13-6V37l-6-5h-7Z"/>
+<path id="db-blackflame-dragon-letter-4-o" fill-rule="evenodd" transform="translate(231 -2) rotate(3 25.0 44)" d="M13 20h22l14 15v32L35 82H13L0 68V34Zm2 17v28l5 3h8l6-5V38l-6-5h-7Z"/>
+<path id="db-blackflame-dragon-letter-5-n" fill-rule="evenodd" transform="translate(286 1) rotate(-1 30.5 44)" d="M0 20h18l4 8 10-8h11l12 14v35l5 13H36l5-12V40l-5-5h-6l-7 7v28l5 12H1l7-12V33Z"/>
+</g>
+<g id="db-blackflame-database-lettering" transform="translate(414 198) scale(1.0)" aria-label="Database">
+<path id="db-blackflame-database-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(-1 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-blackflame-database-letter-1-a" fill-rule="evenodd" transform="translate(61 -5) rotate(2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-blackflame-database-letter-2-t" fill-rule="evenodd" transform="translate(120 -7) rotate(0 23.0 44)" d="m13 10 16-7v20h13v12H29v31l6 5h10L35 82H21l-8-8V35H3V25h10Z"/>
+<path id="db-blackflame-database-letter-3-a" fill-rule="evenodd" transform="translate(171 -4) rotate(-3 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-blackflame-database-letter-4-b" fill-rule="evenodd" transform="translate(230 -2) rotate(1 27.0 44)" d="M1 0h21l-4 15v12l11-7h11l12 14v34L38 82H17L1 75l6-9V14Zm21 38v27l5 4h7l5-7V41l-5-6h-6Z"/>
+<path id="db-blackflame-database-letter-5-a" fill-rule="evenodd" transform="translate(289 1) rotate(-1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-blackflame-database-letter-6-s" fill-rule="evenodd" transform="translate(348 -1) rotate(3 25.0 44)" d="M13 20h26l11 11-14 5-7-5h-8l-5 6 7 6 17 4 10 12v11L38 82H12L0 70l14-6 7 7h9l5-6-6-6-18-5L0 42V32Z"/>
+<path id="db-blackflame-database-letter-7-e" fill-rule="evenodd" transform="translate(403 2) rotate(-2 26.0 44)" d="M13 20h24l13 14v22H15v7l6 6h13l8-7 9 9-13 11H13L0 69V34Zm2 16v8h20v-7l-5-5h-9Z"/>
+</g>
+<g id="db-blackflame-wordmark-sword">
+<path id="db-blackflame-underline-blade" d="M465 307h422l31 9-31 9H465Z"/>
+<path id="db-blackflame-blade-fuller" fill="#E4E7EB" d="M478 312h410l13 4H478Z"/>
+<path id="db-blackflame-underline-guard" d="M447 298h10l7 9v18l-7 9h-10l4-12v-12Z"/>
+<path id="db-blackflame-underline-grip" d="M411 309h37v14h-37l-10-7Z"/>
+<path id="db-blackflame-grip-wrap" fill="#C5CBD3" d="M417 310h4v12h-4Zm10 0h4v12h-4Zm10 0h4v12h-4Z"/>
+</g>
+</g>
+</svg>

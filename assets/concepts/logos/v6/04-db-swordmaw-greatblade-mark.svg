@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 360 360" aria-labelledby="db-swordmaw-greatblade-title db-swordmaw-greatblade-description">
+  <title id="db-swordmaw-greatblade-title">Dragon Database — DB Swordmaw Greatblade Mark</title>
+  <desc id="db-swordmaw-greatblade-description">A compact DB dragon between broad claymore blades, with angular guards, a reinforced lower jaw, and black armored wings. Silver and black editable paths on a transparent canvas.</desc>
+  <g id="db-swordmaw-greatblade-mark" class="db-swordmaw-greatblade-mark">
+    <defs>
+      <mask x="0" y="0" width="360" height="360" id="db-swordmaw-greatblade-open-counters-mask" maskUnits="userSpaceOnUse">
+        <rect x="0" y="0" width="360" height="360" fill="#FFFFFF" />
+        <path fill="#000000" d="M109 196v83h23l16-22v-44l-16-17Z M216 184v42l25-12 8-17-10-13Z M216 245v38h25l15-12v-13l-13-13Z" />
+      </mask>
+    </defs>
+    <g fill="#C5CBD3" stroke="#101115" stroke-width="7" stroke-linejoin="round" id="db-swordmaw-greatblade-crossed-swords" class="db-swordmaw-greatblade-crossed-swords" mask="url(#db-swordmaw-greatblade-open-counters-mask)">
+      <path id="db-swordmaw-greatblade-right-pointing-blade" class="db-swordmaw-greatblade-sword-blade" d="M81 264 306 50l24-23-10 49-221 213Z" />
+      <path id="db-swordmaw-greatblade-left-pointing-blade" class="db-swordmaw-greatblade-sword-blade" d="M279 264 54 50 30 27l10 49 221 213Z" />
+      <path fill="#E4E7EB" stroke="none" id="db-swordmaw-greatblade-right-blade-fuller" class="db-swordmaw-greatblade-blade-fuller" d="M99 269 309 52 104 284Z" />
+      <path fill="#E4E7EB" stroke="none" id="db-swordmaw-greatblade-left-blade-fuller" class="db-swordmaw-greatblade-blade-fuller" d="M261 269 51 52 256 284Z" />
+      <path fill="#101115" stroke="none" id="db-swordmaw-greatblade-left-sword-grip" class="db-swordmaw-greatblade-sword-grip" d="M78 289 L92 302 L61 334 L46 319 Z" />
+      <path fill="#101115" stroke="none" id="db-swordmaw-greatblade-right-sword-grip" class="db-swordmaw-greatblade-sword-grip" d="M282 289 L268 302 L299 334 L314 319 Z" />
+      <path id="db-swordmaw-greatblade-left-crossguard" class="db-swordmaw-greatblade-sword-crossguard" d="M54 257 66 244l21 21 28 19 14 17-12 12-24-26-28-16Z" />
+      <path id="db-swordmaw-greatblade-right-crossguard" class="db-swordmaw-greatblade-sword-crossguard" d="M306 257 294 244l-21 21-28 19-14 17 12 12 24-26 28-16Z" />
+      <path id="db-swordmaw-greatblade-left-pommel" class="db-swordmaw-greatblade-sword-pommel" d="M44 315 L61 332 L49 338 L37 327 Z" />
+      <path id="db-swordmaw-greatblade-right-pommel" class="db-swordmaw-greatblade-sword-pommel" d="M316 315 L299 332 L311 338 L323 327 Z" />
+    </g>
+    <path fill="#101115" id="db-swordmaw-greatblade-swept-wing" class="db-swordmaw-greatblade-swept-wing" d="M48 82 141 99l42 42 30 75-26 15-23-33-28 3-8-27-39 5 9-30-43 5 9-33-19-11Z" mask="url(#db-swordmaw-greatblade-open-counters-mask)" />
+    <path fill="#C5CBD3" id="db-swordmaw-greatblade-wing-membrane-facets" class="db-swordmaw-greatblade-wing-membrane-facets" d="m70 105 60 13 37 46-41-26Zm16 43 44 14 42 41-41-23Z" mask="url(#db-swordmaw-greatblade-open-counters-mask)" />
+    <path fill="#101115" fill-rule="evenodd" id="db-swordmaw-greatblade-letter-d" class="db-swordmaw-greatblade-letter-d" d="M77 183 97 164h45l33 36v76l-32 35H85l-8-24 16-18v-86Zm32 13v83h23l16-22v-44l-16-17Z" />
+    <path fill="#101115" fill-rule="evenodd" id="db-swordmaw-greatblade-dragon-letter-b" class="db-swordmaw-greatblade-dragon-letter-b" d="M175 167 189 148l-19-37 38 17-24-74 37 31 17 29 21 10 27 12 25 8 19 17-20 18-30-3-8 18 49-11-17 28-36 9-23 12 32 22v27l-32 35h-85v-24h27v-96Zm41 17v42l25-12 8-17-10-13Zm0 61v38h25l15-12v-13l-13-13Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-greatblade-d-stem-facet" class="db-swordmaw-greatblade-letter-facet" d="M86 191 L94 184 L94 284 L86 291 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-greatblade-b-stem-facet" class="db-swordmaw-greatblade-letter-facet" d="M198 190 L205 185 L205 286 L198 292 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-greatblade-backward-horn-facet" class="db-swordmaw-greatblade-backward-horn-facet" d="m200 78 24 26 8 18-15-9Z" />
+    <path fill="#E4E7EB" id="db-swordmaw-greatblade-angry-slit-eye" class="db-swordmaw-greatblade-angry-slit-eye" d="M248 141 L282 153 L253 156 Z" />
+    <path fill="#E4E7EB" id="db-swordmaw-greatblade-exposed-fang" class="db-swordmaw-greatblade-exposed-fang" d="M292 170 L304 170 L292 188 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-greatblade-jaw-armor" class="db-swordmaw-greatblade-jaw-armor" d="m278 209 29-15-7 14-24 8Z" />
+  </g>
+</svg>

@@ -1,0 +1,206 @@
+<svg
+  role="img"
+  viewBox="0 0 360 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-swordmaw-forged-title db-swordmaw-forged-description"
+>
+  <title id="db-swordmaw-forged-title">Dragon Database — DB Swordmaw Forged Mark</title>
+  <desc id="db-swordmaw-forged-description">The original Swordmaw Prime dragon, wing, DB letters, and facial details pair with two ceremonial forged swords. The swords retain the Prime blade width, angle, pointed tips, and black edge weight, adding broad silver blade facets, sturdy curved guard shoulders, compact black grips, and faceted pommels. The Prime letter counters remain transparent through the swords.</desc>
+  <g
+    id="db-swordmaw-forged-mark"
+    class="db-swordmaw-forged-mark"
+  >
+    <defs>
+      <mask
+        x="0"
+        y="0"
+        width="360"
+        height="360"
+        id="db-swordmaw-forged-counter-mask"
+        maskUnits="userSpaceOnUse"
+      >
+        <rect
+          x="0"
+          y="0"
+          width="360"
+          height="360"
+          fill="#FFFFFF"
+        />
+        <path
+          fill="#000000"
+          d="M105 199 L134 199 L151 215 L151 264 L134 286 L105 286 Z M216 189 L242 189 L255 202 L248 222 L216 237 Z M216 255 L244 255 L257 267 L257 277 L243 290 L216 290 Z"
+        />
+      </mask>
+    </defs>
+    <g
+      fill="#C5CBD3"
+      stroke="#101115"
+      stroke-width="7"
+      stroke-linejoin="round"
+      id="db-swordmaw-forged-crossed-swords"
+      class="db-swordmaw-forged-crossed-swords"
+      mask="url(#db-swordmaw-forged-counter-mask)"
+    >
+      <path
+        id="db-swordmaw-forged-right-blade"
+        class="db-swordmaw-forged-sword-blade"
+        d="M84 273 L309 48 L329 22 L315 64 L99 286 Z"
+      />
+      <path
+        id="db-swordmaw-forged-left-blade"
+        class="db-swordmaw-forged-sword-blade"
+        d="M276 273 L51 48 L31 22 L45 64 L261 286 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-forged-right-broad-blade-fuller"
+        class="db-swordmaw-forged-blade-fuller"
+        d="M91 272 L310 55 L320 37 L307 65 L102 279 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-forged-left-broad-blade-fuller"
+        class="db-swordmaw-forged-blade-fuller"
+        d="M269 272 L50 55 L40 37 L53 65 L258 279 Z"
+      />
+      <path
+        fill="#101115"
+        stroke="none"
+        id="db-swordmaw-forged-left-compact-grip"
+        class="db-swordmaw-forged-sword-grip"
+        d="M76 291 L90 305 L67 329 L53 316 Z"
+      />
+      <path
+        fill="#101115"
+        stroke="none"
+        id="db-swordmaw-forged-right-compact-grip"
+        class="db-swordmaw-forged-sword-grip"
+        d="M284 291 L270 305 L293 329 L307 316 Z"
+      />
+      <path
+        stroke="none"
+        id="db-swordmaw-forged-left-grip-wrap"
+        class="db-swordmaw-forged-grip-wrap"
+        d="M63 317 L70 323 L73 320 L66 314 Z"
+      />
+      <path
+        stroke="none"
+        id="db-swordmaw-forged-right-grip-wrap"
+        class="db-swordmaw-forged-grip-wrap"
+        d="M297 317 L290 323 L287 320 L294 314 Z"
+      />
+      <path
+        id="db-swordmaw-forged-left-curved-crossguard"
+        class="db-swordmaw-forged-sword-crossguard"
+        d="M55 252 Q74 244 89 266 L112 284 Q122 290 128 298 L116 312 Q105 301 99 294 L78 281 Q65 264 47 269 Z"
+      />
+      <path
+        id="db-swordmaw-forged-right-curved-crossguard"
+        class="db-swordmaw-forged-sword-crossguard"
+        d="M305 252 Q286 244 271 266 L248 284 Q238 290 232 298 L244 312 Q255 301 261 294 L282 281 Q295 264 313 269 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-forged-left-guard-shoulder-facet"
+        class="db-swordmaw-forged-guard-shoulder-facet"
+        d="M56 257 Q71 253 84 269 L77 271 Q66 261 51 264 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-forged-right-guard-shoulder-facet"
+        class="db-swordmaw-forged-guard-shoulder-facet"
+        d="M304 257 Q289 253 276 269 L283 271 Q294 261 309 264 Z"
+      />
+      <path
+        id="db-swordmaw-forged-left-faceted-pommel"
+        class="db-swordmaw-forged-sword-pommel"
+        d="M49 312 L68 329 L57 338 L40 326 Z"
+      />
+      <path
+        id="db-swordmaw-forged-right-faceted-pommel"
+        class="db-swordmaw-forged-sword-pommel"
+        d="M311 312 L292 329 L303 338 L320 326 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-forged-left-pommel-face"
+        class="db-swordmaw-forged-pommel-face"
+        d="M49 320 L60 330 L57 334 L46 326 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-forged-right-pommel-face"
+        class="db-swordmaw-forged-pommel-face"
+        d="M311 320 L300 330 L303 334 L314 326 Z"
+      />
+    </g>
+    <path
+      fill="#101115"
+      id="db-swordmaw-forged-swept-wing"
+      class="db-swordmaw-forged-swept-wing"
+      d="M47 81 L145 110 L185 155 L218 225 L191 238 L166 205 L135 207 L130 183 L91 188 L103 157 L57 161 L67 132 L48 127 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-forged-wing-membranes"
+      class="db-swordmaw-forged-wing-membranes"
+      d="M72 109 L132 129 L165 166 L129 150 Z M83 149 L139 166 L177 203 L134 188 Z"
+    />
+    <path
+      fill="#101115"
+      fill-rule="evenodd"
+      id="db-swordmaw-forged-letter-d"
+      class="db-swordmaw-forged-letter-d"
+      d="M61 190 L82 173 L137 173 L178 208 L178 276 L141 314 L79 314 L60 293 L78 273 L78 193 Z M105 199 L134 199 L151 215 L151 264 L134 286 L105 286 Z"
+    />
+    <path
+      fill="#101115"
+      fill-rule="evenodd"
+      id="db-swordmaw-forged-dragon-letter-b"
+      class="db-swordmaw-forged-dragon-letter-b"
+      d="M176 173 L189 154 L164 108 L204 129 L173 43 L211 75 L238 114 L258 127 L283 139 L311 147 L330 163 L313 181 L284 179 L279 199 L329 189 L316 216 L276 229 L252 240 L284 257 L284 281 L250 314 L162 314 L162 290 L190 290 L190 193 Z M216 189 L242 189 L255 202 L248 222 L216 237 Z M216 255 L244 255 L257 267 L257 277 L243 290 L216 290 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-forged-d-stem-facet"
+      class="db-swordmaw-forged-letter-facet"
+      d="M86 197 L94 190 L94 293 L86 300 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-forged-b-stem-facet"
+      class="db-swordmaw-forged-letter-facet"
+      d="M198 194 L205 189 L205 296 L198 302 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-forged-long-horn-facet"
+      class="db-swordmaw-forged-long-horn-facet"
+      d="M188 68 L217 99 L229 119 L218 114 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-swordmaw-forged-angry-eye"
+      class="db-swordmaw-forged-angry-eye"
+      d="M251 145 L286 158 L257 163 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-swordmaw-forged-long-fang"
+      class="db-swordmaw-forged-long-fang"
+      d="M293 173 L306 173 L293 194 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-forged-broad-jaw-facet"
+      class="db-swordmaw-forged-broad-jaw-facet"
+      d="M281 216 L316 199 L309 212 L279 225 Z"
+    />
+  </g>
+</svg>

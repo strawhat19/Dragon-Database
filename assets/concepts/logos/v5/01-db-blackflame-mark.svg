@@ -1,0 +1,57 @@
+<svg
+  role="img"
+  viewBox="0 0 360 360"
+  style="color: #101115"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-blackflame-symbol-title db-blackflame-symbol-description"
+>
+  <title id="db-blackflame-symbol-title">Dragon Database — DB Blackflame Mark</title>
+  <desc id="db-blackflame-symbol-description">Black flame curls rise behind silver DB letters and a fierce black dragon. Swept horns, a narrow pale eye, a long snout, and a silver fang continue the selected Nightmaw identity.</desc>
+  <g id="db-blackflame-mark" class="db-blackflame-mark">
+    <path
+      fill="#101115"
+      id="db-blackflame-curling-flames"
+      d="M157 252c-46-13-89-34-81-87-24 15-35 25-38 49-14-32-7-65 24-96 10-35-19-53-7-88 8 33 44 28 48 73 9-20 9-48-4-64 49 20 59 54 38 91-7 21-10 32 5 47-2-26 8-44 27-55-20 55 36 72 42 116-8 43-50 83-105 78 34-11 36-32 51-64Z"
+    />
+    <g
+      fill="#C5CBD3"
+      stroke="#101115"
+      stroke-width="7"
+      stroke-linejoin="bevel"
+      id="db-blackflame-silver-initials"
+      class="db-blackflame-silver-initials"
+      aria-label="DB"
+    >
+      <path
+        fill-rule="evenodd"
+        id="db-blackflame-letter-d"
+        d="m82 147 22-17h40l30 30v121l-31 30H81Zm27 15v119h21l17-18v-84l-17-17Z"
+      />
+      <path
+        fill-rule="evenodd"
+        id="db-blackflame-letter-b"
+        d="M169 146h48l35 29v34l-20 20 30 22v31l-29 29h-70v-27h24V166Zm41 28v40h17l13-18v-10l-13-12Zm0 72v36h18l14-14v-9l-14-13Z"
+      />
+    </g>
+    <path
+      fill="#101115"
+      id="db-blackflame-horned-dragon"
+      d="m169 168 16-37-20-37 37 17-15-73 36 42 19 28 13 10 33 7 32 19-8 17-22 7-12 16 27-6-11 24-29 14-26-2-16-10-19 14-22 12-5-37Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-blackflame-horn-and-jaw-facets"
+      d="m197 63 23 30 14 23-14-11Zm66 137 28-14-6 14-21 14Zm28-64 18 11-14-2Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-blackflame-angry-eye"
+      d="m250 139 24 11-21 3Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-blackflame-exposed-fang"
+      d="m286 164 11-3-11 25Z"
+    />
+  </g>
+</svg>

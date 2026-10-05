@@ -1,0 +1,405 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 1410" role="img" aria-labelledby="v2-sheet-title v2-sheet-description">
+<title id="v2-sheet-title">Dragon Database Winged Archive Logo Concepts</title>
+<desc id="v2-sheet-description">Four developments of the selected Winged Archive identity in red, silver, and black: Crimson Folio, Silver Spire, Obsidian Codex, and Archive Signet.</desc>
+<rect id="v2-sheet-background" width="1760" height="1410" fill="#EEEFF1"/>
+<g id="v2-sheet-heading" fill="#171719" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="80" y="105" font-size="56" font-weight="650" letter-spacing="-1.8">Dragon Database</text>
+<text x="82" y="154" font-size="22" fill="#636871">Winged Archive · Red / Silver / Black</text>
+<text x="1678" y="101" font-size="17" text-anchor="end" letter-spacing="2">LOGO CONCEPTS / V2</text>
+<text x="1678" y="139" font-size="17" text-anchor="end" fill="#636871">October 2026</text>
+</g>
+<g id="v2-sheet-card-1">
+<rect x="80" y="220" width="784" height="520" rx="18" fill="#FFFFFF" stroke="#D7DADE"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="120" y="269" fill="#CA263B" font-size="18" font-weight="650">01</text><text x="162" y="269" fill="#171719" font-size="21" font-weight="600">Crimson Folio</text></g>
+<svg x="108" y="304" width="730" height="274" viewBox="0 0 960 360" style="color:#161619">
+  <title id="crimson-folio-title">Dragon Database — Crimson Folio</title>
+  <desc id="crimson-folio-description">A refinement of Winged Archive: crimson page-wings sweep upward beside a black dragon head and book spine. Layered page edges and a serif wordmark retain the original archive idea.</desc>
+  <g id="crimson-folio-mark" class="crimson-folio-mark">
+    <path
+      fill="#CA263B"
+      id="crimson-folio-left-page"
+      d="M175 181 61 82 78 164 108 183 101 210 133 206 146 231 174 241Z"
+    />
+    <path
+      fill="#CA263B"
+      id="crimson-folio-right-page"
+      d="m185 181 114-99-17 82-30 19 7 27-32-4-13 25-28 10Z"
+    />
+    <path
+      fill="#161619"
+      id="crimson-folio-layered-binding"
+      d="m74 229 71 19 35 18 35-18 71-19v12l-72 19-34 19-34-19-72-19Zm10 27 62 17 34 20 34-20 62-17v9l-60 17-36 21-36-21-60-17Z"
+    />
+    <path
+      fill="#161619"
+      id="crimson-folio-dragon-spine"
+      d="m166 112-10-38 22 21 13-30 3 36 21 12 12 18-18 14-17-5-10 19 10 21-5 77-7 16-7-16 3-77-16-31-2-20Z"
+    />
+    <path
+      fill="#CA263B"
+      id="crimson-folio-eye"
+      d="m191 116 15 6-15 5Z"
+    />
+    <path
+      fill="none"
+      stroke="#161619"
+      stroke-width="5"
+      stroke-linecap="round"
+      id="crimson-folio-page-folds"
+      d="m82 119 81 80m-55-45 48 55m122-90-81 80m55-45-48 55"
+    />
+  </g>
+  <g
+    fill="#161619"
+    id="crimson-folio-wordmark"
+    class="crimson-folio-wordmark"
+    font-family="Georgia, 'Times New Roman', serif"
+  >
+    <text x="360" y="171" font-size="60" font-weight="700" letter-spacing="-1">Dragon</text>
+    <text x="360" y="228" font-size="29" font-weight="400" letter-spacing="3">Database</text>
+  </g>
+</svg>
+<path d="M120 589H824" stroke="#E7E9EC"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="120" y="631" fill="#343840" font-size="21" font-weight="500">The closest continuation of your favorite.</text>
+<text x="120" y="664" fill="#636871" font-size="18">Crimson page-wings and a layered black binding.</text>
+<rect x="120" y="696" width="19" height="19" rx="4" fill="#CA263B"/>
+<text x="150" y="711" fill="#636871" font-size="15">#CA263B</text>
+<rect x="294" y="696" width="19" height="19" rx="4" fill="#161619"/>
+<text x="324" y="711" fill="#636871" font-size="15">#161619</text>
+</g></g>
+<g id="v2-sheet-card-2">
+<rect x="896" y="220" width="784" height="520" rx="18" fill="#FFFFFF" stroke="#D7DADE"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="936" y="269" fill="#AEB5BF" font-size="18" font-weight="650">02</text><text x="978" y="269" fill="#171719" font-size="21" font-weight="600">Silver Spire</text></g>
+<svg x="924" y="304" width="730" height="274" viewBox="0 0 960 360" style="color:#15171B">
+  <title id="silver-spire-title">Dragon Database — Silver Spire</title>
+  <desc id="silver-spire-description">A compact front-facing black dragon head with tall horns crowns a narrow book spine. Two silver folio pages rise into angular architectural wings, with light silver facets and a scholarly serif Dragon Database wordmark.</desc>
+  <g
+    id="silver-spire-mark"
+    class="silver-spire-mark"
+  >
+    <path
+      fill="#AEB5BF"
+      id="silver-spire-left-page-wing"
+      class="silver-spire-page-wing"
+      d="M168 180 L103 89 L70 186 L113 205 L126 241 L172 273 L176 183 Z"
+    />
+    <path
+      fill="#AEB5BF"
+      id="silver-spire-right-page-wing"
+      class="silver-spire-page-wing"
+      d="M192 180 L257 89 L290 186 L247 205 L234 241 L188 273 L184 183 Z"
+    />
+    <path
+      fill="#DCE0E5"
+      id="silver-spire-left-wing-facet"
+      class="silver-spire-wing-facet"
+      d="M103 89 L168 180 L113 205 L70 186 Z"
+    />
+    <path
+      fill="#DCE0E5"
+      id="silver-spire-right-wing-facet"
+      class="silver-spire-wing-facet"
+      d="M257 89 L192 180 L247 205 L290 186 Z"
+    />
+    <path
+      fill="#15171B"
+      id="silver-spire-book-binding"
+      class="silver-spire-book-binding"
+      d="M94 238 L132 254 L180 282 L228 254 L266 238 L266 250 L228 266 L180 296 L132 266 L94 250 Z"
+    />
+    <path
+      fill="#15171B"
+      fill-rule="evenodd"
+      id="silver-spire-dragon-head-spine"
+      class="silver-spire-dragon-head-spine"
+      d="M151 58 L170 93 L190 93 L209 58 L217 111 L206 147 L192 160 L187 179 L186 253 L180 286 L174 253 L173 179 L168 160 L154 147 L143 111 Z M154 117 L169 122 L169 129 L157 124 Z M206 117 L191 122 L191 129 L203 124 Z"
+    />
+    <path
+      fill="#AEB5BF"
+      id="silver-spire-dragon-brow-facet"
+      class="silver-spire-dragon-brow-facet"
+      d="M176 104 L184 104 L180 126 Z"
+    />
+  </g>
+  <g
+    fill="#15171B"
+    id="silver-spire-wordmark"
+    class="silver-spire-wordmark"
+  >
+    <text
+      x="360"
+      y="171"
+      font-size="60"
+      font-weight="700"
+      letter-spacing="-1"
+      id="silver-spire-dragon-wordmark"
+      class="silver-spire-dragon-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Dragon</text>
+    <text
+      x="360"
+      y="228"
+      font-size="29"
+      font-weight="400"
+      letter-spacing="3"
+      id="silver-spire-database-wordmark"
+      class="silver-spire-database-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Database</text>
+  </g>
+</svg>
+<path d="M936 589H1640" stroke="#E7E9EC"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="936" y="631" fill="#343840" font-size="21" font-weight="500">A taller, more architectural archive.</text>
+<text x="936" y="664" fill="#636871" font-size="18">Faceted silver wings and a front-facing dragon.</text>
+<rect x="936" y="696" width="19" height="19" rx="4" fill="#AEB5BF"/>
+<text x="966" y="711" fill="#636871" font-size="15">#AEB5BF</text>
+<rect x="1110" y="696" width="19" height="19" rx="4" fill="#15171B"/>
+<text x="1140" y="711" fill="#636871" font-size="15">#15171B</text>
+<rect x="1284" y="696" width="19" height="19" rx="4" fill="#DCE0E5"/>
+<text x="1314" y="711" fill="#636871" font-size="15">#DCE0E5</text>
+</g></g>
+<g id="v2-sheet-card-3">
+<rect x="80" y="790" width="784" height="520" rx="18" fill="#FFFFFF" stroke="#D7DADE"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="120" y="839" fill="#BD2638" font-size="18" font-weight="650">03</text><text x="162" y="839" fill="#171719" font-size="21" font-weight="600">Obsidian Codex</text></g>
+<svg x="108" y="874" width="730" height="274" viewBox="0 0 960 360" style="color:#171719">
+  <title id="obsidian-codex-title">Dragon Database — Obsidian Codex</title>
+  <desc id="obsidian-codex-description">
+    A black dragon with broad swept wings guards an open book. Its front-facing
+    horned head, spacious transparent page folds, and strong central spine form
+    a compact library emblem. A crimson bookmark falls from the book, paired
+    with an editable serif Dragon Database wordmark on a transparent canvas.
+  </desc>
+  <g
+    fill="currentColor"
+    id="obsidian-codex-mark"
+    class="obsidian-codex-mark"
+  >
+    <path
+      id="obsidian-codex-left-swept-wing"
+      class="obsidian-codex-swept-wing"
+      d="M 169 190
+         C 141 170 107 161 75 165
+         L 63 140
+         L 56 101
+         C 79 113 105 114 127 119
+         L 107 83
+         C 141 104 162 129 171 156
+         Z"
+    />
+    <path
+      id="obsidian-codex-right-swept-wing"
+      class="obsidian-codex-swept-wing"
+      d="M 191 190
+         C 219 170 253 161 285 165
+         L 297 140
+         L 304 101
+         C 281 113 255 114 233 119
+         L 253 83
+         C 219 104 198 129 189 156
+         Z"
+    />
+    <path
+      fill-rule="evenodd"
+      id="obsidian-codex-dragon-head"
+      class="obsidian-codex-dragon-head"
+      d="M 157 89
+         L 145 58
+         L 166 76
+         L 180 70
+         L 194 76
+         L 215 58
+         L 203 89
+         L 207 117
+         L 195 136
+         L 190 152
+         L 187 205
+         L 180 214
+         L 173 205
+         L 170 152
+         L 165 136
+         L 153 117
+         Z
+         M 161 101
+         L 175 108
+         L 164 114
+         Z
+         M 199 101
+         L 185 108
+         L 196 114
+         Z
+         M 175 128
+         L 185 128
+         L 180 137
+         Z"
+    />
+    <path
+      fill-rule="evenodd"
+      id="obsidian-codex-left-open-page"
+      class="obsidian-codex-open-page"
+      d="M 58 180
+         C 99 176 138 193 169 217
+         L 169 265
+         C 133 246 98 236 62 234
+         Z
+         M 75 195
+         C 105 198 131 210 155 230
+         L 155 243
+         C 128 226 102 217 75 214
+         Z"
+    />
+    <path
+      fill-rule="evenodd"
+      id="obsidian-codex-right-open-page"
+      class="obsidian-codex-open-page"
+      d="M 302 180
+         C 261 176 222 193 191 217
+         L 191 265
+         C 227 246 262 236 298 234
+         Z
+         M 285 195
+         C 255 198 229 210 205 230
+         L 205 243
+         C 232 226 258 217 285 214
+         Z"
+    />
+    <path
+      id="obsidian-codex-left-book-cover"
+      class="obsidian-codex-book-cover"
+      d="M 62 244
+         C 101 246 136 256 169 274
+         L 169 286
+         C 134 269 98 259 62 257
+         Z"
+    />
+    <path
+      id="obsidian-codex-right-book-cover"
+      class="obsidian-codex-book-cover"
+      d="M 298 244
+         C 259 246 224 256 191 274
+         L 191 286
+         C 226 269 262 259 298 257
+         Z"
+    />
+    <path
+      id="obsidian-codex-book-spine"
+      class="obsidian-codex-book-spine"
+      d="M 176 225 L 184 225 L 184 279 L 180 286 L 176 279 Z"
+    />
+    <path
+      fill="#BD2638"
+      id="obsidian-codex-crimson-bookmark"
+      class="obsidian-codex-crimson-bookmark"
+      d="M 176 266 L 184 266 L 184 300 L 180 295 L 176 300 Z"
+    />
+  </g>
+  <g
+    fill="currentColor"
+    id="obsidian-codex-wordmark"
+    class="obsidian-codex-wordmark"
+    font-family="Georgia, 'Times New Roman', serif"
+  >
+    <text
+      x="360"
+      y="171"
+      font-size="60"
+      font-weight="700"
+      letter-spacing="-1"
+      id="obsidian-codex-dragon-wordmark"
+      class="obsidian-codex-dragon-wordmark"
+    >Dragon</text>
+    <text
+      x="360"
+      y="228"
+      font-size="29"
+      font-weight="400"
+      letter-spacing="3"
+      id="obsidian-codex-database-wordmark"
+      class="obsidian-codex-database-wordmark"
+    >Database</text>
+  </g>
+</svg>
+<path d="M120 1159H824" stroke="#E7E9EC"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="120" y="1201" fill="#343840" font-size="21" font-weight="500">A bold black silhouette with a red bookmark.</text>
+<text x="120" y="1234" fill="#636871" font-size="18">Swept wings, open pages, and generous cutouts.</text>
+<rect x="120" y="1266" width="19" height="19" rx="4" fill="#171719"/>
+<text x="150" y="1281" fill="#636871" font-size="15">#171719</text>
+<rect x="294" y="1266" width="19" height="19" rx="4" fill="#BD2638"/>
+<text x="324" y="1281" fill="#636871" font-size="15">#BD2638</text>
+</g></g>
+<g id="v2-sheet-card-4">
+<rect x="896" y="790" width="784" height="520" rx="18" fill="#FFFFFF" stroke="#D7DADE"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="936" y="839" fill="#C9283E" font-size="18" font-weight="650">04</text><text x="978" y="839" fill="#171719" font-size="21" font-weight="600">Archive Signet</text></g>
+<svg x="924" y="874" width="730" height="274" viewBox="0 0 960 360" style="color:#171719">
+  <title id="archive-signet-title">Dragon Database — Archive Signet</title>
+  <desc id="archive-signet-description">A circular black signet encloses a crimson dragon head above book-page wings. Silver page cuts and a restrained serif wordmark turn the Winged Archive idea into a collection seal.</desc>
+  <g id="archive-signet-mark" class="archive-signet-mark">
+    <circle
+      cx="180"
+      cy="180"
+      r="112"
+      fill="none"
+      stroke="#171719"
+      stroke-width="7"
+      id="archive-signet-ring"
+    />
+    <path
+      fill="#171719"
+      id="archive-signet-left-wing"
+      d="m174 183-86-54 14 61 24 4-5 21 29-1 24 30Z"
+    />
+    <path
+      fill="#171719"
+      id="archive-signet-right-wing"
+      d="m186 183 86-54-14 61-24 4 5 21-29-1-24 30Z"
+    />
+    <path
+      fill="#AEB5BF"
+      id="archive-signet-page-edges"
+      d="m103 225 43 12 34 20 34-20 43-12v9l-43 12-34 21-34-21-43-12Z"
+    />
+    <path
+      fill="#C9283E"
+      id="archive-signet-dragon"
+      d="m165 126-12-31 22 12 5-18 5 18 22-12-12 31 4 13-9 11-7 4v92l-3 10-3-10v-92l-7-4-9-11Z"
+    />
+    <path
+      fill="#171719"
+      id="archive-signet-eyes"
+      d="m167 131 9 3-3 5Zm26 0-9 3 3 5Z"
+    />
+    <path
+      fill="none"
+      stroke="#AEB5BF"
+      stroke-width="4"
+      stroke-linecap="round"
+      id="archive-signet-page-folds"
+      d="m105 156 56 40m-33-17 33 24m94-47-56 40m33-17-33 24"
+    />
+  </g>
+  <g
+    fill="#171719"
+    id="archive-signet-wordmark"
+    class="archive-signet-wordmark"
+  >
+    <text x="360" y="171" font-size="60" font-weight="600" letter-spacing="-1.5" font-family="Baskerville, Georgia, serif">Dragon</text>
+    <text x="363" y="228" font-size="29" font-weight="450" letter-spacing="3" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">Database</text>
+  </g>
+</svg>
+<path d="M936 1159H1640" stroke="#E7E9EC"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="936" y="1201" fill="#343840" font-size="21" font-weight="500">The winged archive becomes a collection seal.</text>
+<text x="936" y="1234" fill="#636871" font-size="18">A circular frame with crimson and silver details.</text>
+<rect x="936" y="1266" width="19" height="19" rx="4" fill="#C9283E"/>
+<text x="966" y="1281" fill="#636871" font-size="15">#C9283E</text>
+<rect x="1110" y="1266" width="19" height="19" rx="4" fill="#171719"/>
+<text x="1140" y="1281" fill="#636871" font-size="15">#171719</text>
+<rect x="1284" y="1266" width="19" height="19" rx="4" fill="#AEB5BF"/>
+<text x="1314" y="1281" fill="#636871" font-size="15">#AEB5BF</text>
+</g></g>
+<g id="v2-sheet-footer" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif" fill="#636871" font-size="16">
+<text x="82" y="1366">Editable SVG artwork · Full lockups and standalone marks</text>
+<text x="1678" y="1366" text-anchor="end">Dragon Database / Second concept round</text>
+</g></svg>

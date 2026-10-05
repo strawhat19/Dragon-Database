@@ -1,0 +1,63 @@
+<svg
+  role="img"
+  viewBox="0 0 960 360"
+  style="color: #141418"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-nightmaw-prime-title db-nightmaw-prime-description"
+>
+  <title id="db-nightmaw-prime-title">Dragon Database — DB Nightmaw Prime</title>
+  <desc id="db-nightmaw-prime-description">A close refinement of the selected DB Nightmaw. A curved crimson bat wing rises behind an angular DB ligature. The B becomes a horned dragon with a lowered red eye, a long jaw, silver armor, and an exposed fang.</desc>
+  <g id="db-nightmaw-prime-mark" class="db-nightmaw-prime-mark">
+    <path
+      fill="#BC2135"
+      id="db-nightmaw-prime-crimson-wing"
+      d="m191 203-46-84C117 94 77 48 44 60l14 48 26 27-11 22 39 8-10 25 40-2-2 29 31-8 19 29 16-20Z"
+    />
+    <path
+      fill="currentColor"
+      id="db-nightmaw-prime-wing-bones"
+      d="m44 60 103 51 52 82-12 7-49-73Zm16 48 91 48 4 12-71-31Z"
+    />
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      id="db-nightmaw-prime-letter-d"
+      d="m76 151 22-17h45l35 34v106l-32 35H92l-16-15 14-14V165Zm40 13v112h17l18-20v-74l-18-18Z"
+    />
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      id="db-nightmaw-prime-dragon-letter-b"
+      d="m177 146 10-18-16-36 36 18-19-68 36 41 16 26 18 12 33 7 23 18-10 17-22 5-10 14 28-6-12 24-29 11-15 6 31 20v36l-33 36h-79v-22h27V168Zm39 20v40l18-12 9-14-8-14Zm0 69v44h20l14-20v-10l-14-14Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-nightmaw-prime-letter-facets"
+      d="m100 165 7-5v120l-7 5Zm99 11 7-5v114l-7 5Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-nightmaw-prime-horn-armor"
+      d="m198 63 25 29 9 17-12-7Zm-15 35 17 11 9 17-11-6Z"
+    />
+    <path
+      fill="#BC2135"
+      id="db-nightmaw-prime-angry-eye"
+      d="m244 133 29 12-24 5Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-nightmaw-prime-fang-and-jaw-armor"
+      d="m284 164 9-2-8 20Zm-21 30 23-13-3 10-21 14Zm20-60 19 13-14-2Z"
+    />
+  </g>
+  <g
+    fill="currentColor"
+    id="db-nightmaw-prime-wordmark"
+    class="db-nightmaw-prime-wordmark"
+    font-family="Georgia, 'Times New Roman', serif"
+  >
+    <text x="380" y="171" font-size="60" font-weight="700" letter-spacing="-1">Dragon</text>
+    <text x="380" y="228" font-size="29" font-weight="400" letter-spacing="3">Database</text>
+  </g>
+</svg>

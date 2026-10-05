@@ -1,0 +1,166 @@
+<svg
+  role="img"
+  width="960"
+  height="360"
+  viewBox="0 0 960 360"
+  id="obsidian-codex-logo"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="obsidian-codex-title obsidian-codex-description"
+  style="color: #171719"
+>
+  <title id="obsidian-codex-title">Dragon Database — Obsidian Codex</title>
+  <desc id="obsidian-codex-description">
+    A black dragon with broad swept wings guards an open book. Its front-facing
+    horned head, spacious transparent page folds, and strong central spine form
+    a compact library emblem. A crimson bookmark falls from the book, paired
+    with an editable serif Dragon Database wordmark on a transparent canvas.
+  </desc>
+  <g
+    fill="currentColor"
+    id="obsidian-codex-mark"
+    class="obsidian-codex-mark"
+  >
+    <path
+      id="obsidian-codex-left-swept-wing"
+      class="obsidian-codex-swept-wing"
+      d="M 169 190
+         C 141 170 107 161 75 165
+         L 63 140
+         L 56 101
+         C 79 113 105 114 127 119
+         L 107 83
+         C 141 104 162 129 171 156
+         Z"
+    />
+    <path
+      id="obsidian-codex-right-swept-wing"
+      class="obsidian-codex-swept-wing"
+      d="M 191 190
+         C 219 170 253 161 285 165
+         L 297 140
+         L 304 101
+         C 281 113 255 114 233 119
+         L 253 83
+         C 219 104 198 129 189 156
+         Z"
+    />
+    <path
+      fill-rule="evenodd"
+      id="obsidian-codex-dragon-head"
+      class="obsidian-codex-dragon-head"
+      d="M 157 89
+         L 145 58
+         L 166 76
+         L 180 70
+         L 194 76
+         L 215 58
+         L 203 89
+         L 207 117
+         L 195 136
+         L 190 152
+         L 187 205
+         L 180 214
+         L 173 205
+         L 170 152
+         L 165 136
+         L 153 117
+         Z
+         M 161 101
+         L 175 108
+         L 164 114
+         Z
+         M 199 101
+         L 185 108
+         L 196 114
+         Z
+         M 175 128
+         L 185 128
+         L 180 137
+         Z"
+    />
+    <path
+      fill-rule="evenodd"
+      id="obsidian-codex-left-open-page"
+      class="obsidian-codex-open-page"
+      d="M 58 180
+         C 99 176 138 193 169 217
+         L 169 265
+         C 133 246 98 236 62 234
+         Z
+         M 75 195
+         C 105 198 131 210 155 230
+         L 155 243
+         C 128 226 102 217 75 214
+         Z"
+    />
+    <path
+      fill-rule="evenodd"
+      id="obsidian-codex-right-open-page"
+      class="obsidian-codex-open-page"
+      d="M 302 180
+         C 261 176 222 193 191 217
+         L 191 265
+         C 227 246 262 236 298 234
+         Z
+         M 285 195
+         C 255 198 229 210 205 230
+         L 205 243
+         C 232 226 258 217 285 214
+         Z"
+    />
+    <path
+      id="obsidian-codex-left-book-cover"
+      class="obsidian-codex-book-cover"
+      d="M 62 244
+         C 101 246 136 256 169 274
+         L 169 286
+         C 134 269 98 259 62 257
+         Z"
+    />
+    <path
+      id="obsidian-codex-right-book-cover"
+      class="obsidian-codex-book-cover"
+      d="M 298 244
+         C 259 246 224 256 191 274
+         L 191 286
+         C 226 269 262 259 298 257
+         Z"
+    />
+    <path
+      id="obsidian-codex-book-spine"
+      class="obsidian-codex-book-spine"
+      d="M 176 225 L 184 225 L 184 279 L 180 286 L 176 279 Z"
+    />
+    <path
+      fill="#BD2638"
+      id="obsidian-codex-crimson-bookmark"
+      class="obsidian-codex-crimson-bookmark"
+      d="M 176 266 L 184 266 L 184 300 L 180 295 L 176 300 Z"
+    />
+  </g>
+  <g
+    fill="currentColor"
+    id="obsidian-codex-wordmark"
+    class="obsidian-codex-wordmark"
+    font-family="Georgia, 'Times New Roman', serif"
+  >
+    <text
+      x="360"
+      y="171"
+      font-size="60"
+      font-weight="700"
+      letter-spacing="-1"
+      id="obsidian-codex-dragon-wordmark"
+      class="obsidian-codex-dragon-wordmark"
+    >Dragon</text>
+    <text
+      x="360"
+      y="228"
+      font-size="29"
+      font-weight="400"
+      letter-spacing="3"
+      id="obsidian-codex-database-wordmark"
+      class="obsidian-codex-database-wordmark"
+    >Database</text>
+  </g>
+</svg>

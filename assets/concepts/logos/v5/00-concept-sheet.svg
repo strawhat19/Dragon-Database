@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 1460" role="img" aria-labelledby="v5-sheet-title v5-sheet-description">
+<title id="v5-sheet-title">Dragon Database Silver and Black Logo Concepts</title>
+<desc id="v5-sheet-description">Four silver-and-black dragon logos with black flames, medieval swords, and original black fantasy lettering on silver backgrounds: Blackflame, Swordmaw, Silverblade, and Ashcrown.</desc>
+<rect id="v5-sheet-background" width="1760" height="1460" fill="#101115"/>
+<g id="v5-sheet-heading" fill="#E4E7EB" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="80" y="105" font-size="56" font-weight="650" letter-spacing="-1.8">Dragon Database</text>
+<text x="82" y="154" font-size="22" fill="#B5BDC8">Silver / Black · Flames, swords, and original fantasy lettering</text>
+<text x="1678" y="101" font-size="17" text-anchor="end" letter-spacing="2">LOGO CONCEPTS / V5</text>
+<text x="1678" y="139" font-size="17" text-anchor="end" fill="#B5BDC8">October 2026</text>
+</g>
+<g id="v5-sheet-card-1">
+<rect x="80" y="220" width="784" height="545" rx="18" fill="#DDE1E7"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="120" y="269" fill="#555E6B" font-size="18" font-weight="650">01</text><text x="162" y="269" fill="#101115" font-size="21" font-weight="600">DB Blackflame</text></g>
+<svg x="80" y="298" width="784" height="294" viewBox="0 0 960 360" style="color:#101115">
+<title id="db-blackflame-title">Dragon Database — DB Blackflame</title>
+<desc id="db-blackflame-description">A silver-and-black dragon DB emblem with flames or medieval sword details, paired with original black path lettering spelling Dragon Database on a silver background. The lettering has uneven fantasy proportions, pointed medieval terminals, and a sword underline.</desc>
+<defs><linearGradient id="db-blackflame-silver-background" x1="0" y1="0" x2="0.85" y2="1"><stop offset="0" stop-color="#B9C1CC"/><stop offset="0.5" stop-color="#E4E7EB"/><stop offset="1" stop-color="#C5CBD3"/></linearGradient></defs>
+<rect id="db-blackflame-background" width="960" height="360" fill="url(#db-blackflame-silver-background)"/>
+<g xmlns="http://www.w3.org/2000/svg" id="db-blackflame-mark" class="db-blackflame-mark">
+    <path fill="#101115" id="db-blackflame-curling-flames" d="M157 252c-46-13-89-34-81-87-24 15-35 25-38 49-14-32-7-65 24-96 10-35-19-53-7-88 8 33 44 28 48 73 9-20 9-48-4-64 49 20 59 54 38 91-7 21-10 32 5 47-2-26 8-44 27-55-20 55 36 72 42 116-8 43-50 83-105 78 34-11 36-32 51-64Z" />
+    <g fill="#C5CBD3" stroke="#101115" stroke-width="7" stroke-linejoin="bevel" id="db-blackflame-silver-initials" class="db-blackflame-silver-initials" aria-label="DB">
+      <path fill-rule="evenodd" id="db-blackflame-letter-d" d="m82 147 22-17h40l30 30v121l-31 30H81Zm27 15v119h21l17-18v-84l-17-17Z" />
+      <path fill-rule="evenodd" id="db-blackflame-letter-b" d="M169 146h48l35 29v34l-20 20 30 22v31l-29 29h-70v-27h24V166Zm41 28v40h17l13-18v-10l-13-12Zm0 72v36h18l14-14v-9l-14-13Z" />
+    </g>
+    <path fill="#101115" id="db-blackflame-horned-dragon" d="m169 168 16-37-20-37 37 17-15-73 36 42 19 28 13 10 33 7 32 19-8 17-22 7-12 16 27-6-11 24-29 14-26-2-16-10-19 14-22 12-5-37Z" />
+    <path fill="#C5CBD3" id="db-blackflame-horn-and-jaw-facets" d="m197 63 23 30 14 23-14-11Zm66 137 28-14-6 14-21 14Zm28-64 18 11-14-2Z" />
+    <path fill="#E4E7EB" id="db-blackflame-angry-eye" d="m250 139 24 11-21 3Z" />
+    <path fill="#E4E7EB" id="db-blackflame-exposed-fang" d="m286 164 11-3-11 25Z" />
+  </g>
+
+<g id="db-blackflame-wordmark" class="db-blackflame-wordmark" fill="#101115" role="img" aria-label="Dragon Database">
+<g id="db-blackflame-dragon-lettering" transform="translate(411 73) scale(1.12)" aria-label="Dragon">
+<path id="db-blackflame-dragon-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(-3 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-blackflame-dragon-letter-1-r" fill-rule="evenodd" transform="translate(61 -5) rotate(2 25.0 44)" d="M4 20h14l5 10 11-10h13v18H33l-10 7v25l6 12H2l7-12V33Z"/>
+<path id="db-blackflame-dragon-letter-2-a" fill-rule="evenodd" transform="translate(116 -7) rotate(-2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-blackflame-dragon-letter-3-g" fill-rule="evenodd" transform="translate(175 -4) rotate(1 25.5 44)" d="M12 20h20l16 12v49L34 98H12L2 88l14-4h14l4-6v-4l-10 6H12L0 68V32Zm3 16v26l6 5 13-6V37l-6-5h-7Z"/>
+<path id="db-blackflame-dragon-letter-4-o" fill-rule="evenodd" transform="translate(231 -2) rotate(3 25.0 44)" d="M13 20h22l14 15v32L35 82H13L0 68V34Zm2 17v28l5 3h8l6-5V38l-6-5h-7Z"/>
+<path id="db-blackflame-dragon-letter-5-n" fill-rule="evenodd" transform="translate(286 1) rotate(-1 30.5 44)" d="M0 20h18l4 8 10-8h11l12 14v35l5 13H36l5-12V40l-5-5h-6l-7 7v28l5 12H1l7-12V33Z"/>
+</g>
+<g id="db-blackflame-database-lettering" transform="translate(414 198) scale(1.0)" aria-label="Database">
+<path id="db-blackflame-database-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(-1 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-blackflame-database-letter-1-a" fill-rule="evenodd" transform="translate(61 -5) rotate(2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-blackflame-database-letter-2-t" fill-rule="evenodd" transform="translate(120 -7) rotate(0 23.0 44)" d="m13 10 16-7v20h13v12H29v31l6 5h10L35 82H21l-8-8V35H3V25h10Z"/>
+<path id="db-blackflame-database-letter-3-a" fill-rule="evenodd" transform="translate(171 -4) rotate(-3 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-blackflame-database-letter-4-b" fill-rule="evenodd" transform="translate(230 -2) rotate(1 27.0 44)" d="M1 0h21l-4 15v12l11-7h11l12 14v34L38 82H17L1 75l6-9V14Zm21 38v27l5 4h7l5-7V41l-5-6h-6Z"/>
+<path id="db-blackflame-database-letter-5-a" fill-rule="evenodd" transform="translate(289 1) rotate(-1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-blackflame-database-letter-6-s" fill-rule="evenodd" transform="translate(348 -1) rotate(3 25.0 44)" d="M13 20h26l11 11-14 5-7-5h-8l-5 6 7 6 17 4 10 12v11L38 82H12L0 70l14-6 7 7h9l5-6-6-6-18-5L0 42V32Z"/>
+<path id="db-blackflame-database-letter-7-e" fill-rule="evenodd" transform="translate(403 2) rotate(-2 26.0 44)" d="M13 20h24l13 14v22H15v7l6 6h13l8-7 9 9-13 11H13L0 69V34Zm2 16v8h20v-7l-5-5h-9Z"/>
+</g>
+<g id="db-blackflame-wordmark-sword">
+<path id="db-blackflame-underline-blade" d="M465 307h422l31 9-31 9H465Z"/>
+<path id="db-blackflame-blade-fuller" fill="#E4E7EB" d="M478 312h410l13 4H478Z"/>
+<path id="db-blackflame-underline-guard" d="M447 298h10l7 9v18l-7 9h-10l4-12v-12Z"/>
+<path id="db-blackflame-underline-grip" d="M411 309h37v14h-37l-10-7Z"/>
+<path id="db-blackflame-grip-wrap" fill="#C5CBD3" d="M417 310h4v12h-4Zm10 0h4v12h-4Zm10 0h4v12h-4Z"/>
+</g>
+</g>
+</svg>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="120" y="638" fill="#202630" font-size="21" font-weight="500">Curling black flames and silver DB letterforms.</text>
+<text x="120" y="671" fill="#555E6B" font-size="18">Original fantasy lettering with a sword underline.</text>
+<rect x="120" y="713" width="19" height="19" rx="4" fill="#101115" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="150" y="728" fill="#555E6B" font-size="15">#101115</text>
+<rect x="294" y="713" width="19" height="19" rx="4" fill="#C5CBD3" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="324" y="728" fill="#555E6B" font-size="15">#C5CBD3</text>
+<rect x="468" y="713" width="19" height="19" rx="4" fill="#E4E7EB" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="498" y="728" fill="#555E6B" font-size="15">#E4E7EB</text>
+</g></g>
+<g id="v5-sheet-card-2">
+<rect x="896" y="220" width="784" height="545" rx="18" fill="#DDE1E7"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="936" y="269" fill="#555E6B" font-size="18" font-weight="650">02</text><text x="978" y="269" fill="#101115" font-size="21" font-weight="600">DB Swordmaw</text></g>
+<svg x="896" y="298" width="784" height="294" viewBox="0 0 960 360" style="color:#101115">
+<title id="db-swordmaw-title">Dragon Database — DB Swordmaw</title>
+<desc id="db-swordmaw-description">A silver-and-black dragon DB emblem with flames or medieval sword details, paired with original black path lettering spelling Dragon Database on a silver background. The lettering has uneven fantasy proportions, pointed medieval terminals, and a sword underline.</desc>
+<defs><linearGradient id="db-swordmaw-silver-background" x1="0" y1="0" x2="0.85" y2="1"><stop offset="0" stop-color="#B9C1CC"/><stop offset="0.5" stop-color="#E4E7EB"/><stop offset="1" stop-color="#C5CBD3"/></linearGradient></defs>
+<rect id="db-swordmaw-background" width="960" height="360" fill="url(#db-swordmaw-silver-background)"/>
+<g xmlns="http://www.w3.org/2000/svg" id="db-swordmaw-mark" class="db-swordmaw-mark">
+    <defs>
+      <mask x="0" y="0" width="360" height="360" id="db-swordmaw-open-counters-mask" maskUnits="userSpaceOnUse">
+        <rect x="0" y="0" width="360" height="360" fill="#FFFFFF" />
+        <path fill="#000000" d="M105 194 L130 194 L145 209 L145 259 L130 276 L105 276 Z M216 185 L239 185 L249 197 L241 214 L216 227 Z M216 245 L243 245 L254 257 L254 270 L240 280 L216 280 Z" />
+      </mask>
+    </defs>
+    <g fill="#C5CBD3" stroke="#101115" stroke-width="7" stroke-linejoin="round" id="db-swordmaw-crossed-swords" class="db-swordmaw-crossed-swords" mask="url(#db-swordmaw-open-counters-mask)">
+      <path id="db-swordmaw-right-pointing-blade" class="db-swordmaw-sword-blade" d="M85 268 L312 40 L329 25 L314 64 L101 284 Z" />
+      <path id="db-swordmaw-left-pointing-blade" class="db-swordmaw-sword-blade" d="M275 268 L48 40 L31 25 L46 64 L259 284 Z" />
+      <path fill="#E4E7EB" stroke="none" id="db-swordmaw-right-blade-fuller" class="db-swordmaw-blade-fuller" d="M99 267 L308 53 L103 280 Z" />
+      <path fill="#E4E7EB" stroke="none" id="db-swordmaw-left-blade-fuller" class="db-swordmaw-blade-fuller" d="M261 267 L52 53 L257 280 Z" />
+      <path fill="#101115" stroke="none" id="db-swordmaw-left-sword-grip" class="db-swordmaw-sword-grip" d="M78 289 L92 302 L61 334 L46 319 Z" />
+      <path fill="#101115" stroke="none" id="db-swordmaw-right-sword-grip" class="db-swordmaw-sword-grip" d="M282 289 L268 302 L299 334 L314 319 Z" />
+      <path id="db-swordmaw-left-crossguard" class="db-swordmaw-sword-crossguard" d="M63 258 L72 247 L86 263 L106 282 L121 294 L112 305 L98 289 L78 270 Z" />
+      <path id="db-swordmaw-right-crossguard" class="db-swordmaw-sword-crossguard" d="M297 258 L288 247 L274 263 L254 282 L239 294 L248 305 L262 289 L282 270 Z" />
+      <path id="db-swordmaw-left-pommel" class="db-swordmaw-sword-pommel" d="M44 315 L61 332 L49 338 L37 327 Z" />
+      <path id="db-swordmaw-right-pommel" class="db-swordmaw-sword-pommel" d="M316 315 L299 332 L311 338 L323 327 Z" />
+    </g>
+    <path fill="#101115" id="db-swordmaw-swept-wing" class="db-swordmaw-swept-wing" d="M50 76 L143 104 L184 148 L213 211 L190 226 L166 198 L138 199 L132 177 L94 178 L106 150 L60 153 L72 125 L51 120 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-wing-membrane-facets" class="db-swordmaw-wing-membrane-facets" d="M73 103 L132 122 L169 163 L131 145 Z M86 141 L137 157 L177 195 L135 178 Z" />
+    <path fill="#101115" fill-rule="evenodd" id="db-swordmaw-letter-d" class="db-swordmaw-letter-d" d="M63 186 L83 168 L133 168 L172 201 L172 267 L137 303 L78 303 L63 283 L78 268 L78 187 Z M105 194 L130 194 L145 209 L145 259 L130 276 L105 276 Z" />
+    <path fill="#101115" fill-rule="evenodd" id="db-swordmaw-dragon-letter-b" class="db-swordmaw-dragon-letter-b" d="M176 168 L189 151 L170 119 L205 133 L184 59 L218 89 L237 116 L253 123 L275 136 L306 145 L326 160 L308 176 L281 175 L275 192 L319 184 L305 210 L271 217 L249 230 L280 249 L280 274 L249 303 L162 303 L162 282 L190 282 L190 189 Z M216 185 L239 185 L249 197 L241 214 L216 227 Z M216 245 L243 245 L254 257 L254 270 L240 280 L216 280 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-d-stem-facet" class="db-swordmaw-letter-facet" d="M86 191 L94 184 L94 284 L86 291 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-b-stem-facet" class="db-swordmaw-letter-facet" d="M198 190 L205 185 L205 286 L198 292 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-backward-horn-facet" class="db-swordmaw-backward-horn-facet" d="M198 82 L219 104 L228 120 L217 115 Z" />
+    <path fill="#E4E7EB" id="db-swordmaw-angry-slit-eye" class="db-swordmaw-angry-slit-eye" d="M248 141 L282 153 L253 156 Z" />
+    <path fill="#E4E7EB" id="db-swordmaw-exposed-fang" class="db-swordmaw-exposed-fang" d="M292 170 L304 170 L292 188 Z" />
+    <path fill="#C5CBD3" id="db-swordmaw-jaw-armor" class="db-swordmaw-jaw-armor" d="M278 208 L307 194 L301 204 L276 214 Z" />
+  </g>
+
+<g id="db-swordmaw-wordmark" class="db-swordmaw-wordmark" fill="#101115" role="img" aria-label="Dragon Database">
+<g id="db-swordmaw-dragon-lettering" transform="translate(411 73) scale(1.12)" aria-label="Dragon">
+<path id="db-swordmaw-dragon-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(-2 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-swordmaw-dragon-letter-1-r" fill-rule="evenodd" transform="translate(61 -5) rotate(1 25.0 44)" d="M4 20h14l5 10 11-10h13v18H33l-10 7v25l6 12H2l7-12V33Z"/>
+<path id="db-swordmaw-dragon-letter-2-a" fill-rule="evenodd" transform="translate(116 -7) rotate(-1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-swordmaw-dragon-letter-3-g" fill-rule="evenodd" transform="translate(175 -4) rotate(0 25.5 44)" d="M12 20h20l16 12v49L34 98H12L2 88l14-4h14l4-6v-4l-10 6H12L0 68V32Zm3 16v26l6 5 13-6V37l-6-5h-7Z"/>
+<path id="db-swordmaw-dragon-letter-4-o" fill-rule="evenodd" transform="translate(231 -2) rotate(2 25.0 44)" d="M13 20h22l14 15v32L35 82H13L0 68V34Zm2 17v28l5 3h8l6-5V38l-6-5h-7Z"/>
+<path id="db-swordmaw-dragon-letter-5-n" fill-rule="evenodd" transform="translate(286 1) rotate(-2 30.5 44)" d="M0 20h18l4 8 10-8h11l12 14v35l5 13H36l5-12V40l-5-5h-6l-7 7v28l5 12H1l7-12V33Z"/>
+</g>
+<g id="db-swordmaw-database-lettering" transform="translate(414 198) scale(1.0)" aria-label="Database">
+<path id="db-swordmaw-database-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(0 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-swordmaw-database-letter-1-a" fill-rule="evenodd" transform="translate(61 -5) rotate(1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-swordmaw-database-letter-2-t" fill-rule="evenodd" transform="translate(120 -7) rotate(-1 23.0 44)" d="m13 10 16-7v20h13v12H29v31l6 5h10L35 82H21l-8-8V35H3V25h10Z"/>
+<path id="db-swordmaw-database-letter-3-a" fill-rule="evenodd" transform="translate(171 -4) rotate(2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-swordmaw-database-letter-4-b" fill-rule="evenodd" transform="translate(230 -2) rotate(-2 27.0 44)" d="M1 0h21l-4 15v12l11-7h11l12 14v34L38 82H17L1 75l6-9V14Zm21 38v27l5 4h7l5-7V41l-5-6h-6Z"/>
+<path id="db-swordmaw-database-letter-5-a" fill-rule="evenodd" transform="translate(289 1) rotate(1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-swordmaw-database-letter-6-s" fill-rule="evenodd" transform="translate(348 -1) rotate(0 25.0 44)" d="M13 20h26l11 11-14 5-7-5h-8l-5 6 7 6 17 4 10 12v11L38 82H12L0 70l14-6 7 7h9l5-6-6-6-18-5L0 42V32Z"/>
+<path id="db-swordmaw-database-letter-7-e" fill-rule="evenodd" transform="translate(403 2) rotate(-1 26.0 44)" d="M13 20h24l13 14v22H15v7l6 6h13l8-7 9 9-13 11H13L0 69V34Zm2 16v8h20v-7l-5-5h-9Z"/>
+</g>
+<g id="db-swordmaw-wordmark-sword">
+<path id="db-swordmaw-underline-blade" d="M465 307h422l31 9-31 9H465Z"/>
+<path id="db-swordmaw-blade-fuller" fill="#E4E7EB" d="M478 312h410l13 4H478Z"/>
+<path id="db-swordmaw-underline-guard" d="M447 298h10l7 9v18l-7 9h-10l4-12v-12Z"/>
+<path id="db-swordmaw-underline-grip" d="M411 309h37v14h-37l-10-7Z"/>
+<path id="db-swordmaw-grip-wrap" fill="#C5CBD3" d="M417 310h4v12h-4Zm10 0h4v12h-4Zm10 0h4v12h-4Z"/>
+</g>
+</g>
+</svg>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="936" y="638" fill="#202630" font-size="21" font-weight="500">Crossed medieval swords frame the dragon.</text>
+<text x="936" y="671" fill="#555E6B" font-size="18">Pointed blades, armored wings, and a pale angry eye.</text>
+<rect x="936" y="713" width="19" height="19" rx="4" fill="#101115" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="966" y="728" fill="#555E6B" font-size="15">#101115</text>
+<rect x="1110" y="713" width="19" height="19" rx="4" fill="#C5CBD3" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="1140" y="728" fill="#555E6B" font-size="15">#C5CBD3</text>
+<rect x="1284" y="713" width="19" height="19" rx="4" fill="#E4E7EB" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="1314" y="728" fill="#555E6B" font-size="15">#E4E7EB</text>
+</g></g>
+<g id="v5-sheet-card-3">
+<rect x="80" y="810" width="784" height="545" rx="18" fill="#DDE1E7"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="120" y="859" fill="#555E6B" font-size="18" font-weight="650">03</text><text x="162" y="859" fill="#101115" font-size="21" font-weight="600">DB Silverblade</text></g>
+<svg x="80" y="888" width="784" height="294" viewBox="0 0 960 360" style="color:#101115">
+<title id="db-silverblade-title">Dragon Database — DB Silverblade</title>
+<desc id="db-silverblade-description">A silver-and-black dragon DB emblem with flames or medieval sword details, paired with original black path lettering spelling Dragon Database on a silver background. The lettering has uneven fantasy proportions, pointed medieval terminals, and a sword underline.</desc>
+<defs><linearGradient id="db-silverblade-silver-background" x1="0" y1="0" x2="0.85" y2="1"><stop offset="0" stop-color="#B9C1CC"/><stop offset="0.5" stop-color="#E4E7EB"/><stop offset="1" stop-color="#C5CBD3"/></linearGradient></defs>
+<rect id="db-silverblade-background" width="960" height="360" fill="url(#db-silverblade-silver-background)"/>
+<g xmlns="http://www.w3.org/2000/svg" id="db-silverblade-mark" class="db-silverblade-mark">
+    <path fill="currentColor" id="db-silverblade-black-flames" class="db-silverblade-black-flames" d="M 87 294          C 51 282 28 258 29 228          C 29 211 37 194 35 181          C 40 190 47 194 54 193          C 42 173 54 153 61 138          C 63 152 70 163 78 165          C 73 134 88 118 97 104          C 97 113 104 119 109 120          C 108 100 116 83 129 70          C 124 59 128 46 141 36          C 140 54 148 63 159 70          C 135 87 140 103 127 117          C 124 107 121 105 118 102          C 107 127 114 142 99 155          C 95 145 91 143 87 141          C 77 163 83 182 75 199          C 72 192 68 189 64 186          C 56 207 72 216 67 234          C 62 228 60 227 56 224          C 52 250 70 277 87 294          Z" />
+    <g fill="#C5CBD3" stroke="currentColor" stroke-width="5" stroke-linejoin="bevel" id="db-silverblade-custom-initials" class="db-silverblade-custom-initials" aria-label="DB">
+      <path fill-rule="evenodd" id="db-silverblade-letter-d" class="db-silverblade-letter-d" d="M 82 149            L 103 134            L 145 134            L 173 162            L 173 260            L 145 289            L 82 289            Z            M 104 160            L 131 160            L 148 175            L 148 249            L 131 264            L 104 264            Z" />
+      <path fill-rule="evenodd" id="db-silverblade-letter-b" class="db-silverblade-letter-b" d="M 184 155            L 227 155            L 267 175            L 267 206            L 244 225            L 278 245            L 278 268            L 254 289            L 184 289            Z            M 207 185            L 231 185            L 244 194            L 244 203            L 231 213            L 207 213            Z            M 207 239            L 239 239            L 254 249            L 254 257            L 240 265            L 207 265            Z" />
+    </g>
+    <path fill="currentColor" fill-rule="evenodd" id="db-silverblade-horned-dragon-profile" class="db-silverblade-horned-dragon-profile" d="M 183 161          L 198 126          L 177 96          L 223 112          L 201 47          L 243 82          L 255 102          L 280 112          L 314 118          L 335 135          L 319 146          L 299 146          L 289 159          L 321 152          L 308 171          L 278 183          L 255 176          L 238 164          L 218 161          L 201 185          L 183 199          Z          M 298 132          L 328 135          L 309 140          L 294 145          Z" />
+    <path fill="#E4E7EB" id="db-silverblade-angry-silver-eye" class="db-silverblade-angry-silver-eye" d="M 260 121 L 287 128 L 266 135 Z" />
+    <path fill="#E4E7EB" id="db-silverblade-silver-fang" class="db-silverblade-silver-fang" d="M 306 142 L 316 141 L 306 155 Z" />
+    <g id="db-silverblade-broadsword" class="db-silverblade-broadsword">
+      <path fill="currentColor" id="db-silverblade-blade-outline" class="db-silverblade-blade-outline" d="M 159 128 L 189 128 L 189 317 L 174 342 L 159 317 Z" />
+      <path fill="#C5CBD3" id="db-silverblade-blade-right-face" class="db-silverblade-blade-face" d="M 174 136 L 183 136 L 183 315 L 174 331 Z" />
+      <path fill="#E4E7EB" id="db-silverblade-blade-left-face" class="db-silverblade-blade-face" d="M 165 136 L 174 136 L 174 331 L 165 315 Z" />
+      <path fill="currentColor" id="db-silverblade-flared-crossguard" class="db-silverblade-flared-crossguard" d="M 122 112            L 142 118            L 165 114            L 183 114            L 206 118            L 226 112            L 218 136            L 197 132            L 151 132            L 130 136            Z" />
+      <path fill="#C5CBD3" id="db-silverblade-crossguard-inlay" class="db-silverblade-crossguard-inlay" d="M 133 122 L 152 124 L 196 124 L 215 122 L 212 128 L 197 127 L 151 127 L 136 128 Z" />
+      <path fill="currentColor" id="db-silverblade-wrapped-grip" class="db-silverblade-wrapped-grip" d="M 163 51 L 185 51 L 185 116 L 163 116 Z" />
+      <path fill="#C5CBD3" id="db-silverblade-grip-wraps" class="db-silverblade-grip-wraps" d="M 167 65 L 181 60 L 181 66 L 167 71 Z            M 167 82 L 181 77 L 181 83 L 167 88 Z            M 167 99 L 181 94 L 181 100 L 167 105 Z" />
+      <path fill="currentColor" id="db-silverblade-diamond-pommel" class="db-silverblade-diamond-pommel" d="M 174 18 L 191 35 L 184 53 L 164 53 L 157 35 Z" />
+      <path fill="#E4E7EB" id="db-silverblade-pommel-face" class="db-silverblade-pommel-face" d="M 174 27 L 182 36 L 179 46 L 169 46 L 166 36 Z" />
+    </g>
+  </g>
+
+<g id="db-silverblade-wordmark" class="db-silverblade-wordmark" fill="#101115" role="img" aria-label="Dragon Database">
+<g id="db-silverblade-dragon-lettering" transform="translate(411 73) scale(1.12)" aria-label="Dragon">
+<path id="db-silverblade-dragon-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(-1 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-silverblade-dragon-letter-1-r" fill-rule="evenodd" transform="translate(61 -5) rotate(0 25.0 44)" d="M4 20h14l5 10 11-10h13v18H33l-10 7v25l6 12H2l7-12V33Z"/>
+<path id="db-silverblade-dragon-letter-2-a" fill-rule="evenodd" transform="translate(116 -7) rotate(1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-silverblade-dragon-letter-3-g" fill-rule="evenodd" transform="translate(175 -4) rotate(-1 25.5 44)" d="M12 20h20l16 12v49L34 98H12L2 88l14-4h14l4-6v-4l-10 6H12L0 68V32Zm3 16v26l6 5 13-6V37l-6-5h-7Z"/>
+<path id="db-silverblade-dragon-letter-4-o" fill-rule="evenodd" transform="translate(231 -2) rotate(0 25.0 44)" d="M13 20h22l14 15v32L35 82H13L0 68V34Zm2 17v28l5 3h8l6-5V38l-6-5h-7Z"/>
+<path id="db-silverblade-dragon-letter-5-n" fill-rule="evenodd" transform="translate(286 1) rotate(1 30.5 44)" d="M0 20h18l4 8 10-8h11l12 14v35l5 13H36l5-12V40l-5-5h-6l-7 7v28l5 12H1l7-12V33Z"/>
+</g>
+<g id="db-silverblade-database-lettering" transform="translate(414 198) scale(1.0)" aria-label="Database">
+<path id="db-silverblade-database-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(0 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-silverblade-database-letter-1-a" fill-rule="evenodd" transform="translate(61 -5) rotate(-1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-silverblade-database-letter-2-t" fill-rule="evenodd" transform="translate(120 -7) rotate(1 23.0 44)" d="m13 10 16-7v20h13v12H29v31l6 5h10L35 82H21l-8-8V35H3V25h10Z"/>
+<path id="db-silverblade-database-letter-3-a" fill-rule="evenodd" transform="translate(171 -4) rotate(0 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-silverblade-database-letter-4-b" fill-rule="evenodd" transform="translate(230 -2) rotate(-1 27.0 44)" d="M1 0h21l-4 15v12l11-7h11l12 14v34L38 82H17L1 75l6-9V14Zm21 38v27l5 4h7l5-7V41l-5-6h-6Z"/>
+<path id="db-silverblade-database-letter-5-a" fill-rule="evenodd" transform="translate(289 1) rotate(1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-silverblade-database-letter-6-s" fill-rule="evenodd" transform="translate(348 -1) rotate(0 25.0 44)" d="M13 20h26l11 11-14 5-7-5h-8l-5 6 7 6 17 4 10 12v11L38 82H12L0 70l14-6 7 7h9l5-6-6-6-18-5L0 42V32Z"/>
+<path id="db-silverblade-database-letter-7-e" fill-rule="evenodd" transform="translate(403 2) rotate(-1 26.0 44)" d="M13 20h24l13 14v22H15v7l6 6h13l8-7 9 9-13 11H13L0 69V34Zm2 16v8h20v-7l-5-5h-9Z"/>
+</g>
+<g id="db-silverblade-wordmark-sword">
+<path id="db-silverblade-underline-blade" d="M465 307h422l31 9-31 9H465Z"/>
+<path id="db-silverblade-blade-fuller" fill="#E4E7EB" d="M478 312h410l13 4H478Z"/>
+<path id="db-silverblade-underline-guard" d="M447 298h10l7 9v18l-7 9h-10l4-12v-12Z"/>
+<path id="db-silverblade-underline-grip" d="M411 309h37v14h-37l-10-7Z"/>
+<path id="db-silverblade-grip-wrap" fill="#C5CBD3" d="M417 310h4v12h-4Zm10 0h4v12h-4Zm10 0h4v12h-4Z"/>
+</g>
+</g>
+</svg>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="120" y="1228" fill="#202630" font-size="21" font-weight="500">A broadsword becomes the DB monogram spine.</text>
+<text x="120" y="1261" fill="#555E6B" font-size="18">Tall silver letters with black flames and a horned head.</text>
+<rect x="120" y="1303" width="19" height="19" rx="4" fill="#101115" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="150" y="1318" fill="#555E6B" font-size="15">#101115</text>
+<rect x="294" y="1303" width="19" height="19" rx="4" fill="#C5CBD3" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="324" y="1318" fill="#555E6B" font-size="15">#C5CBD3</text>
+<rect x="468" y="1303" width="19" height="19" rx="4" fill="#E4E7EB" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="498" y="1318" fill="#555E6B" font-size="15">#E4E7EB</text>
+</g></g>
+<g id="v5-sheet-card-4">
+<rect x="896" y="810" width="784" height="545" rx="18" fill="#DDE1E7"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="936" y="859" fill="#555E6B" font-size="18" font-weight="650">04</text><text x="978" y="859" fill="#101115" font-size="21" font-weight="600">DB Ashcrown</text></g>
+<svg x="896" y="888" width="784" height="294" viewBox="0 0 960 360" style="color:#101115">
+<title id="db-ashcrown-title">Dragon Database — DB Ashcrown</title>
+<desc id="db-ashcrown-description">A silver-and-black dragon DB emblem with flames or medieval sword details, paired with original black path lettering spelling Dragon Database on a silver background. The lettering has uneven fantasy proportions, pointed medieval terminals, and a sword underline.</desc>
+<defs><linearGradient id="db-ashcrown-silver-background" x1="0" y1="0" x2="0.85" y2="1"><stop offset="0" stop-color="#B9C1CC"/><stop offset="0.5" stop-color="#E4E7EB"/><stop offset="1" stop-color="#C5CBD3"/></linearGradient></defs>
+<rect id="db-ashcrown-background" width="960" height="360" fill="url(#db-ashcrown-silver-background)"/>
+<g xmlns="http://www.w3.org/2000/svg" id="db-ashcrown-mark" class="db-ashcrown-mark">
+    <path fill="#101115" id="db-ashcrown-flame-boundary" class="db-ashcrown-flame-boundary" d="M180 338 C158 316 116 314 94 300 C75 286 74 270 56 251 C35 231 55 190 44 163 C35 144 72 127 47 100 C55 92 77 83 69 20 C74 100 52 89 100 92 C139 103 135 49 147 21 C149 79 161 93 182 63 C190 46 203 55 207 31 C222 77 192 97 220 110 C250 103 247 74 268 60 C259 116 296 130 307 94 C320 142 293 161 315 180 C331 203 315 229 293 240 C286 270 269 289 245 303 C224 317 200 320 180 338 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-left-flame-wing-facet" class="db-ashcrown-flame-wing-facet" d="M74 125 C105 142 128 140 139 109 C137 147 112 169 77 190 L87 172 L64 178 L84 155 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-upper-flame-crown-facet" class="db-ashcrown-flame-crown-facet" d="M144 70 C147 111 166 121 184 100 C179 132 158 143 143 152 L132 139 C149 124 138 102 144 70 Z" />
+    <path fill="#E4E7EB" id="db-ashcrown-left-wing-flame-tip" class="db-ashcrown-wing-flame-tip" d="M60 204 C67 191 81 186 94 184 L83 207 L70 223 Z" />
+    <path fill="#101115" id="db-ashcrown-horned-dragon-profile" class="db-ashcrown-horned-dragon-profile" d="M191 133 L200 109 L185 72 L211 92 L213 45 L232 91 L247 112 L267 119 L294 124 L337 143 L325 156 L304 161 L289 177 L319 170 L307 193 L277 206 L252 209 L234 234 L211 225 L207 183 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-long-horn-facet" class="db-ashcrown-long-horn-facet" d="M217 65 L227 96 L240 116 L230 111 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-back-horn-facet" class="db-ashcrown-back-horn-facet" d="M195 86 L213 103 L219 119 L209 113 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-armored-brow" class="db-ashcrown-armored-brow" d="M244 126 L264 130 L286 143 L260 136 L249 145 Z" />
+    <path fill="#E4E7EB" id="db-ashcrown-angry-eye" class="db-ashcrown-angry-eye" d="M263 147 L290 157 L267 162 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-snout-armor" class="db-ashcrown-snout-armor" d="M307 135 L324 143 L313 149 L304 148 Z" />
+    <path fill="#E4E7EB" id="db-ashcrown-exposed-fang" class="db-ashcrown-exposed-fang" d="M302 159 L313 157 L301 179 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-angular-jaw-facet" class="db-ashcrown-angular-jaw-facet" d="M262 184 L281 180 L273 193 L251 203 L242 197 Z" />
+    <g fill="#C5CBD3" fill-rule="evenodd" id="db-ashcrown-silver-initials" class="db-ashcrown-silver-initials">
+      <path id="db-ashcrown-letter-d" class="db-ashcrown-initial-letter" d="M88 172 L129 172 L159 195 L159 257 L130 284 L85 284 L98 272 L98 184 Z M119 194 L119 262 L132 262 L141 253 L141 204 L132 194 Z" />
+      <path id="db-ashcrown-letter-b" class="db-ashcrown-initial-letter" d="M167 172 L218 172 L243 190 L243 214 L230 228 L249 244 L249 266 L226 284 L167 284 L179 271 L179 185 Z M199 191 L199 217 L213 217 L225 207 L225 200 L215 191 Z M199 238 L199 263 L217 263 L230 253 L230 249 L217 238 Z" />
+    </g>
+    <path fill="#E4E7EB" id="db-ashcrown-d-stem-glint" class="db-ashcrown-letter-glint" d="M103 185 L108 181 L108 271 L103 275 Z" />
+    <path fill="#E4E7EB" id="db-ashcrown-b-stem-glint" class="db-ashcrown-letter-glint" d="M184 187 L189 183 L189 270 L184 275 Z" />
+    <path fill="#C5CBD3" id="db-ashcrown-lower-blade-point" class="db-ashcrown-lower-blade-point" d="M160 295 L200 295 L200 300 L184 300 L184 315 L180 326 L176 315 L176 300 L160 300 Z" />
+    <path fill="#101115" id="db-ashcrown-blade-ridge" class="db-ashcrown-blade-ridge" d="M180 301 L182 312 L180 321 Z" />
+  </g>
+
+<g id="db-ashcrown-wordmark" class="db-ashcrown-wordmark" fill="#101115" role="img" aria-label="Dragon Database">
+<g id="db-ashcrown-dragon-lettering" transform="translate(411 73) scale(1.12)" aria-label="Dragon">
+<path id="db-ashcrown-dragon-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(-4 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-ashcrown-dragon-letter-1-r" fill-rule="evenodd" transform="translate(61 -5) rotate(3 25.0 44)" d="M4 20h14l5 10 11-10h13v18H33l-10 7v25l6 12H2l7-12V33Z"/>
+<path id="db-ashcrown-dragon-letter-2-a" fill-rule="evenodd" transform="translate(116 -7) rotate(-2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-ashcrown-dragon-letter-3-g" fill-rule="evenodd" transform="translate(175 -4) rotate(2 25.5 44)" d="M12 20h20l16 12v49L34 98H12L2 88l14-4h14l4-6v-4l-10 6H12L0 68V32Zm3 16v26l6 5 13-6V37l-6-5h-7Z"/>
+<path id="db-ashcrown-dragon-letter-4-o" fill-rule="evenodd" transform="translate(231 -2) rotate(-3 25.0 44)" d="M13 20h22l14 15v32L35 82H13L0 68V34Zm2 17v28l5 3h8l6-5V38l-6-5h-7Z"/>
+<path id="db-ashcrown-dragon-letter-5-n" fill-rule="evenodd" transform="translate(286 1) rotate(2 30.5 44)" d="M0 20h18l4 8 10-8h11l12 14v35l5 13H36l5-12V40l-5-5h-6l-7 7v28l5 12H1l7-12V33Z"/>
+</g>
+<g id="db-ashcrown-database-lettering" transform="translate(414 198) scale(1.0)" aria-label="Database">
+<path id="db-ashcrown-database-letter-0-D" fill-rule="evenodd" transform="translate(0 -2) rotate(1 28.0 44)" d="M2 8 8 0h28l16 14v54L36 82H8l-6-8 6-4V12Zm20 8v50h9l7-8V24l-7-8Z"/>
+<path id="db-ashcrown-database-letter-1-a" fill-rule="evenodd" transform="translate(61 -5) rotate(-2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-ashcrown-database-letter-2-t" fill-rule="evenodd" transform="translate(120 -7) rotate(2 23.0 44)" d="m13 10 16-7v20h13v12H29v31l6 5h10L35 82H21l-8-8V35H3V25h10Z"/>
+<path id="db-ashcrown-database-letter-3-a" fill-rule="evenodd" transform="translate(171 -4) rotate(-1 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-ashcrown-database-letter-4-b" fill-rule="evenodd" transform="translate(230 -2) rotate(2 27.0 44)" d="M1 0h21l-4 15v12l11-7h11l12 14v34L38 82H17L1 75l6-9V14Zm21 38v27l5 4h7l5-7V41l-5-6h-6Z"/>
+<path id="db-ashcrown-database-letter-5-a" fill-rule="evenodd" transform="translate(289 1) rotate(-2 27.0 44)" d="M4 30 17 20h18l13 12v39l6 11H33l-2-8-11 8H8L0 70V57l14-12h20v-9l-6-4H18l-9 8Zm12 28v10l5 4 13-8v-9H21Z"/>
+<path id="db-ashcrown-database-letter-6-s" fill-rule="evenodd" transform="translate(348 -1) rotate(1 25.0 44)" d="M13 20h26l11 11-14 5-7-5h-8l-5 6 7 6 17 4 10 12v11L38 82H12L0 70l14-6 7 7h9l5-6-6-6-18-5L0 42V32Z"/>
+<path id="db-ashcrown-database-letter-7-e" fill-rule="evenodd" transform="translate(403 2) rotate(-1 26.0 44)" d="M13 20h24l13 14v22H15v7l6 6h13l8-7 9 9-13 11H13L0 69V34Zm2 16v8h20v-7l-5-5h-9Z"/>
+</g>
+<g id="db-ashcrown-wordmark-sword">
+<path id="db-ashcrown-underline-blade" d="M465 307h422l31 9-31 9H465Z"/>
+<path id="db-ashcrown-blade-fuller" fill="#E4E7EB" d="M478 312h410l13 4H478Z"/>
+<path id="db-ashcrown-underline-guard" d="M447 298h10l7 9v18l-7 9h-10l4-12v-12Z"/>
+<path id="db-ashcrown-underline-grip" d="M411 309h37v14h-37l-10-7Z"/>
+<path id="db-ashcrown-grip-wrap" fill="#C5CBD3" d="M417 310h4v12h-4Zm10 0h4v12h-4Zm10 0h4v12h-4Z"/>
+</g>
+</g>
+</svg>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="936" y="1228" fill="#202630" font-size="21" font-weight="500">Black flames form a crown around the dragon.</text>
+<text x="936" y="1261" fill="#555E6B" font-size="18">Silver DB paths and a short blade point complete the crest.</text>
+<rect x="936" y="1303" width="19" height="19" rx="4" fill="#101115" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="966" y="1318" fill="#555E6B" font-size="15">#101115</text>
+<rect x="1110" y="1303" width="19" height="19" rx="4" fill="#C5CBD3" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="1140" y="1318" fill="#555E6B" font-size="15">#C5CBD3</text>
+<rect x="1284" y="1303" width="19" height="19" rx="4" fill="#E4E7EB" stroke="#A3ACB8" stroke-width="0.75"/>
+<text x="1314" y="1318" fill="#555E6B" font-size="15">#E4E7EB</text>
+</g></g>
+<g id="v5-sheet-footer" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif" fill="#B5BDC8" font-size="16">
+<text x="82" y="1415">Editable path lettering · Silver backgrounds · Transparent standalone marks</text>
+<text x="1678" y="1415" text-anchor="end">Dragon Database / Fifth concept round</text>
+</g></svg>

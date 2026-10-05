@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="silver-spire-symbol" role="img" viewBox="40 40 280 280" style="color: #15171B" aria-labelledby="silver-spire-symbol-title silver-spire-symbol-description">
+  <title id="silver-spire-symbol-title">Dragon Database — Silver Spire Mark</title>
+  <desc id="silver-spire-symbol-description">The standalone Silver Spire dragon and book emblem on a transparent square canvas.</desc>
+  <g id="silver-spire-mark" class="silver-spire-mark">
+    <path fill="#AEB5BF" id="silver-spire-left-page-wing" class="silver-spire-page-wing" d="M168 180 L103 89 L70 186 L113 205 L126 241 L172 273 L176 183 Z" />
+    <path fill="#AEB5BF" id="silver-spire-right-page-wing" class="silver-spire-page-wing" d="M192 180 L257 89 L290 186 L247 205 L234 241 L188 273 L184 183 Z" />
+    <path fill="#DCE0E5" id="silver-spire-left-wing-facet" class="silver-spire-wing-facet" d="M103 89 L168 180 L113 205 L70 186 Z" />
+    <path fill="#DCE0E5" id="silver-spire-right-wing-facet" class="silver-spire-wing-facet" d="M257 89 L192 180 L247 205 L290 186 Z" />
+    <path fill="#15171B" id="silver-spire-book-binding" class="silver-spire-book-binding" d="M94 238 L132 254 L180 282 L228 254 L266 238 L266 250 L228 266 L180 296 L132 266 L94 250 Z" />
+    <path fill="#15171B" fill-rule="evenodd" id="silver-spire-dragon-head-spine" class="silver-spire-dragon-head-spine" d="M151 58 L170 93 L190 93 L209 58 L217 111 L206 147 L192 160 L187 179 L186 253 L180 286 L174 253 L173 179 L168 160 L154 147 L143 111 Z M154 117 L169 122 L169 129 L157 124 Z M206 117 L191 122 L191 129 L203 124 Z" />
+    <path fill="#AEB5BF" id="silver-spire-dragon-brow-facet" class="silver-spire-dragon-brow-facet" d="M176 104 L184 104 L180 126 Z" />
+  </g>
+</svg>

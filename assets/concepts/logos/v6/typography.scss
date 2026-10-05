@@ -1,0 +1,153 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Grenze';
+  src: url('./fonts/grenze/Grenze-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Grenze';
+  src: url('./fonts/grenze/Grenze-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Grenze';
+  src: url('./fonts/grenze/Grenze-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  font-family: 'Grenze Gotisch';
+  src: url('./fonts/grenze-gotisch/GrenzeGotisch%5Bwght%5D.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Metal Mania';
+  src: url('./fonts/metal-mania/MetalMania-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Pirata One';
+  src: url('./fonts/pirata-one/PirataOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Alegreya Sans';
+  src: url('./fonts/alegreya-sans/AlegreyaSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Alegreya Sans';
+  src: url('./fonts/alegreya-sans/AlegreyaSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Alegreya Sans';
+  src: url('./fonts/alegreya-sans/AlegreyaSans-Bold.ttf') format('truetype');
+}
+
+.dragon-database-typography {
+  --dragon-body-weight: 400;
+  --dragon-title-weight: 800;
+  --dragon-label-weight: 700;
+  --dragon-control-weight: 500;
+  --dragon-display-weight: 900;
+  --dragon-body-family: 'Alegreya Sans', Arial, sans-serif;
+  --dragon-title-family: 'Grenze', Georgia, serif;
+  --dragon-display-family: 'Grenze', Georgia, serif;
+  --dragon-control-family: 'Alegreya Sans', Arial, sans-serif;
+}
+
+.dragon-database-body,
+.dragon-database-title,
+.dragon-database-label,
+.dragon-database-display,
+.dragon-database-control {
+  font-synthesis: none;
+}
+
+.dragon-database-display {
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-size: clamp(2.75rem, 4.5vw, 4.5rem);
+  font-weight: var(--dragon-display-weight, 900);
+  font-family: var(--dragon-display-family, 'Grenze', Georgia, serif);
+}
+
+.dragon-database-display--prime {
+  --dragon-display-weight: 900;
+  --dragon-display-family: 'Grenze', Georgia, serif;
+}
+
+.dragon-database-display--flame {
+  --dragon-display-weight: 900;
+  --dragon-display-family: 'Grenze Gotisch', Georgia, serif;
+}
+
+.dragon-database-display--regalia {
+  --dragon-display-weight: 400;
+  --dragon-display-family: 'Metal Mania', Georgia, serif;
+}
+
+.dragon-database-display--greatblade {
+  --dragon-display-weight: 400;
+  --dragon-display-family: 'Pirata One', Georgia, serif;
+}
+
+.dragon-database-title {
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: var(--dragon-title-weight, 800);
+  font-family: var(--dragon-title-family, 'Grenze', Georgia, serif);
+}
+
+.dragon-database-body {
+  font-size: 1rem;
+  line-height: 1.55;
+  font-weight: var(--dragon-body-weight, 400);
+  font-family: var(--dragon-body-family, 'Alegreya Sans', Arial, sans-serif);
+}
+
+.dragon-database-body--scholarly {
+  --dragon-body-weight: 400;
+  --dragon-body-family: 'Grenze', Georgia, serif;
+}
+
+.dragon-database-control {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: var(--dragon-control-weight, 500);
+  font-family: var(--dragon-control-family, 'Alegreya Sans', Arial, sans-serif);
+}
+
+.dragon-database-label {
+  font-size: 0.9375rem;
+  line-height: 1.3;
+  font-weight: var(--dragon-label-weight, 700);
+  font-family: var(--dragon-control-family, 'Alegreya Sans', Arial, sans-serif);
+}

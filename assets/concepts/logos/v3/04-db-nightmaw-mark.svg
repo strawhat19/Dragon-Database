@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="db-nightmaw-symbol" role="img" viewBox="32 32 296 296" style="color: #141418" aria-labelledby="db-nightmaw-symbol-title db-nightmaw-symbol-description">
+  <title id="db-nightmaw-symbol-title">Dragon Database — DB Nightmaw Mark</title>
+  <desc id="db-nightmaw-symbol-description">The standalone DB monogram with a fierce horned, winged dragon and angry eyes on a transparent square canvas.</desc>
+  <g id="db-nightmaw-mark" class="db-nightmaw-mark">
+    <path fill="#BC2135" id="db-nightmaw-swept-wing" class="db-nightmaw-swept-wing" d="M185 196 L139 117 L49 62 L64 117 L93 144 L76 160 L116 168 L105 190 L148 190 L145 217 L175 208 L190 235 L207 218 Z" />
+    <path fill="currentColor" id="db-nightmaw-wing-bone" class="db-nightmaw-wing-bone" d="M49 62 L142 110 L193 188 L182 194 L133 123 Z M65 115 L150 153 L153 163 L94 146 Z" />
+    <path fill="currentColor" fill-rule="evenodd" id="db-nightmaw-letter-d" class="db-nightmaw-letter-d" d="M71 151 L95 133 L144 133 L177 167 L177 266 L145 300 L95 300 L71 284 L86 268 L86 166 Z M115 164 L134 164 L151 181 L151 250 L134 269 L115 269 Z" />
+    <path fill="currentColor" fill-rule="evenodd" id="db-nightmaw-dragon-letter-b" class="db-nightmaw-dragon-letter-b" d="M177 145 L188 127 L169 89 L208 111 L190 49 L223 87 L237 109 L253 120 L285 129 L310 150 L297 163 L278 165 L269 178 L298 173 L287 195 L257 207 L245 215 L276 235 L276 267 L245 300 L163 300 L163 281 L190 281 L190 164 Z M216 164 L236 164 L244 177 L237 193 L216 204 Z M216 231 L237 231 L250 244 L250 257 L237 271 L216 271 Z" />
+    <path fill="#C1C7D0" id="db-nightmaw-d-stem-facet" class="db-nightmaw-letter-facet" d="M98 161 L105 156 L105 276 L98 281 Z" />
+    <path fill="#C1C7D0" id="db-nightmaw-horn-facet" class="db-nightmaw-horn-facet" d="M199 70 L220 95 L230 113 L220 109 Z" />
+    <path fill="#C1C7D0" id="db-nightmaw-b-stem-facet" class="db-nightmaw-letter-facet" d="M198 171 L205 168 L205 280 L198 285 Z" />
+    <path fill="#BC2135" id="db-nightmaw-angry-eye" class="db-nightmaw-angry-eye" d="M243 134 L270 146 L248 149 Z" />
+    <path fill="#C1C7D0" id="db-nightmaw-jaw-fang" class="db-nightmaw-jaw-fang" d="M282 159 L291 159 L284 174 Z" />
+    <path fill="#C1C7D0" id="db-nightmaw-snout-armor" class="db-nightmaw-snout-armor" d="M281 136 L298 149 L287 147 Z" />
+  </g>
+</svg>

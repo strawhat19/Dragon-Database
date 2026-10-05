@@ -1,0 +1,166 @@
+<svg
+  role="img"
+  viewBox="0 0 360 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-swordmaw-title db-swordmaw-description"
+>
+  <title id="db-swordmaw-title">Dragon Database — DB Swordmaw Mark</title>
+  <desc id="db-swordmaw-description">A black custom DB ligature becomes a snarling right-facing dragon with backward horns, a swept bat wing, a silver angry eye, and an exposed fang. Two pointed silver medieval swords with black grips cross behind the monogram. Its open letter counters and surrounding canvas are transparent.</desc>
+  <g
+    id="db-swordmaw-mark"
+    class="db-swordmaw-mark"
+  >
+    <defs>
+      <mask
+        x="0"
+        y="0"
+        width="360"
+        height="360"
+        id="db-swordmaw-open-counters-mask"
+        maskUnits="userSpaceOnUse"
+      >
+        <rect
+          x="0"
+          y="0"
+          width="360"
+          height="360"
+          fill="#FFFFFF"
+        />
+        <path
+          fill="#000000"
+          d="M105 194 L130 194 L145 209 L145 259 L130 276 L105 276 Z M216 185 L239 185 L249 197 L241 214 L216 227 Z M216 245 L243 245 L254 257 L254 270 L240 280 L216 280 Z"
+        />
+      </mask>
+    </defs>
+    <g
+      fill="#C5CBD3"
+      stroke="#101115"
+      stroke-width="7"
+      stroke-linejoin="round"
+      id="db-swordmaw-crossed-swords"
+      class="db-swordmaw-crossed-swords"
+      mask="url(#db-swordmaw-open-counters-mask)"
+    >
+      <path
+        id="db-swordmaw-right-pointing-blade"
+        class="db-swordmaw-sword-blade"
+        d="M85 268 L312 40 L329 25 L314 64 L101 284 Z"
+      />
+      <path
+        id="db-swordmaw-left-pointing-blade"
+        class="db-swordmaw-sword-blade"
+        d="M275 268 L48 40 L31 25 L46 64 L259 284 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-right-blade-fuller"
+        class="db-swordmaw-blade-fuller"
+        d="M99 267 L308 53 L103 280 Z"
+      />
+      <path
+        fill="#E4E7EB"
+        stroke="none"
+        id="db-swordmaw-left-blade-fuller"
+        class="db-swordmaw-blade-fuller"
+        d="M261 267 L52 53 L257 280 Z"
+      />
+      <path
+        fill="#101115"
+        stroke="none"
+        id="db-swordmaw-left-sword-grip"
+        class="db-swordmaw-sword-grip"
+        d="M78 289 L92 302 L61 334 L46 319 Z"
+      />
+      <path
+        fill="#101115"
+        stroke="none"
+        id="db-swordmaw-right-sword-grip"
+        class="db-swordmaw-sword-grip"
+        d="M282 289 L268 302 L299 334 L314 319 Z"
+      />
+      <path
+        id="db-swordmaw-left-crossguard"
+        class="db-swordmaw-sword-crossguard"
+        d="M63 258 L72 247 L86 263 L106 282 L121 294 L112 305 L98 289 L78 270 Z"
+      />
+      <path
+        id="db-swordmaw-right-crossguard"
+        class="db-swordmaw-sword-crossguard"
+        d="M297 258 L288 247 L274 263 L254 282 L239 294 L248 305 L262 289 L282 270 Z"
+      />
+      <path
+        id="db-swordmaw-left-pommel"
+        class="db-swordmaw-sword-pommel"
+        d="M44 315 L61 332 L49 338 L37 327 Z"
+      />
+      <path
+        id="db-swordmaw-right-pommel"
+        class="db-swordmaw-sword-pommel"
+        d="M316 315 L299 332 L311 338 L323 327 Z"
+      />
+    </g>
+    <path
+      fill="#101115"
+      id="db-swordmaw-swept-wing"
+      class="db-swordmaw-swept-wing"
+      d="M50 76 L143 104 L184 148 L213 211 L190 226 L166 198 L138 199 L132 177 L94 178 L106 150 L60 153 L72 125 L51 120 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-wing-membrane-facets"
+      class="db-swordmaw-wing-membrane-facets"
+      d="M73 103 L132 122 L169 163 L131 145 Z M86 141 L137 157 L177 195 L135 178 Z"
+    />
+    <path
+      fill="#101115"
+      fill-rule="evenodd"
+      id="db-swordmaw-letter-d"
+      class="db-swordmaw-letter-d"
+      d="M63 186 L83 168 L133 168 L172 201 L172 267 L137 303 L78 303 L63 283 L78 268 L78 187 Z M105 194 L130 194 L145 209 L145 259 L130 276 L105 276 Z"
+    />
+    <path
+      fill="#101115"
+      fill-rule="evenodd"
+      id="db-swordmaw-dragon-letter-b"
+      class="db-swordmaw-dragon-letter-b"
+      d="M176 168 L189 151 L170 119 L205 133 L184 59 L218 89 L237 116 L253 123 L275 136 L306 145 L326 160 L308 176 L281 175 L275 192 L319 184 L305 210 L271 217 L249 230 L280 249 L280 274 L249 303 L162 303 L162 282 L190 282 L190 189 Z M216 185 L239 185 L249 197 L241 214 L216 227 Z M216 245 L243 245 L254 257 L254 270 L240 280 L216 280 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-d-stem-facet"
+      class="db-swordmaw-letter-facet"
+      d="M86 191 L94 184 L94 284 L86 291 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-b-stem-facet"
+      class="db-swordmaw-letter-facet"
+      d="M198 190 L205 185 L205 286 L198 292 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-backward-horn-facet"
+      class="db-swordmaw-backward-horn-facet"
+      d="M198 82 L219 104 L228 120 L217 115 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-swordmaw-angry-slit-eye"
+      class="db-swordmaw-angry-slit-eye"
+      d="M248 141 L282 153 L253 156 Z"
+    />
+    <path
+      fill="#E4E7EB"
+      id="db-swordmaw-exposed-fang"
+      class="db-swordmaw-exposed-fang"
+      d="M292 170 L304 170 L292 188 Z"
+    />
+    <path
+      fill="#C5CBD3"
+      id="db-swordmaw-jaw-armor"
+      class="db-swordmaw-jaw-armor"
+      d="M278 208 L307 194 L301 204 L276 214 Z"
+    />
+  </g>
+</svg>

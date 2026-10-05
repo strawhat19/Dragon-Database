@@ -1,0 +1,177 @@
+<svg
+  role="img"
+  width="960"
+  height="360"
+  viewBox="0 0 960 360"
+  id="db-silvermaw-logo"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="db-silvermaw-title db-silvermaw-description"
+  style="color: #141418"
+>
+  <title id="db-silvermaw-title">Dragon Database — DB Silvermaw</title>
+  <desc id="db-silvermaw-description">
+    A tall custom silver DB ligature has open angular counters and a shared
+    upright frame. A threatening black dragon rises from the B, with long swept
+    crown horns, an extended right-facing snout, a slanted red eye, and a silver
+    fang. A narrow crimson batwing climbs behind the letters. The exact Dragon
+    Database wordmark remains editable on the transparent canvas.
+  </desc>
+  <g
+    id="db-silvermaw-mark"
+    class="db-silvermaw-mark"
+  >
+    <path
+      fill="#BC2135"
+      id="db-silvermaw-narrow-batwing"
+      class="db-silvermaw-narrow-batwing"
+      d="M 176 223
+         L 131 156
+         L 69 110
+         L 60 48
+         L 107 116
+         L 139 139
+         L 124 144
+         L 157 166
+         L 143 174
+         L 172 194
+         Z"
+    />
+    <path
+      fill="currentColor"
+      id="db-silvermaw-wing-leading-edge"
+      class="db-silvermaw-wing-leading-edge"
+      d="M 60 48 L 107 116 L 139 139 L 176 223 L 164 198 L 128 144 L 99 120 Z"
+    />
+    <g
+      fill="#C1C7D0"
+      stroke="currentColor"
+      stroke-width="4"
+      stroke-linejoin="bevel"
+      id="db-silvermaw-custom-initials"
+      class="db-silvermaw-custom-initials"
+      aria-label="DB"
+    >
+      <path
+        fill-rule="evenodd"
+        id="db-silvermaw-letter-d"
+        class="db-silvermaw-letter-d"
+        d="M 91 146
+           L 112 129
+           L 148 129
+           L 176 155
+           L 176 286
+           L 150 315
+           L 91 315
+           Z
+           M 116 158
+           L 137 158
+           L 149 171
+           L 149 273
+           L 137 287
+           L 116 287
+           Z"
+      />
+      <path
+        fill-rule="evenodd"
+        id="db-silvermaw-letter-b"
+        class="db-silvermaw-letter-b"
+        d="M 165 154
+           L 198 148
+           L 225 158
+           L 253 180
+           L 253 206
+           L 230 228
+           L 260 248
+           L 260 283
+           L 233 315
+           L 165 315
+           Z
+           M 198 190
+           L 215 183
+           L 227 193
+           L 227 204
+           L 215 218
+           L 198 218
+           Z
+           M 192 246
+           L 219 246
+           L 233 259
+           L 233 272
+           L 219 287
+           L 192 287
+           Z"
+      />
+    </g>
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      id="db-silvermaw-crowned-dragon-head"
+      class="db-silvermaw-crowned-dragon-head"
+      d="M 172 173
+         L 188 138
+         L 155 89
+         L 209 110
+         L 184 32
+         L 232 72
+         L 244 96
+         L 260 107
+         L 279 112
+         L 310 128
+         L 303 142
+         L 282 146
+         L 274 162
+         L 297 154
+         L 285 173
+         L 257 184
+         L 237 177
+         L 222 168
+         L 207 172
+         L 190 195
+         L 172 209
+         L 166 187
+         Z
+         M 266 140
+         L 301 130
+         L 289 141
+         L 277 148
+         Z"
+    />
+    <path
+      fill="#BC2135"
+      id="db-silvermaw-angry-eye"
+      class="db-silvermaw-angry-eye"
+      d="M 249 123 L 275 132 L 253 137 Z"
+    />
+    <path
+      fill="#C1C7D0"
+      id="db-silvermaw-exposed-fang"
+      class="db-silvermaw-exposed-fang"
+      d="M 288 140 L 298 137 L 288 159 Z"
+    />
+  </g>
+  <g
+    fill="currentColor"
+    id="db-silvermaw-wordmark"
+    class="db-silvermaw-wordmark"
+    font-family="Georgia, 'Times New Roman', serif"
+  >
+    <text
+      x="380"
+      y="171"
+      font-size="60"
+      font-weight="700"
+      letter-spacing="-1"
+      id="db-silvermaw-dragon-wordmark"
+      class="db-silvermaw-dragon-wordmark"
+    >Dragon</text>
+    <text
+      x="380"
+      y="228"
+      font-size="29"
+      font-weight="400"
+      letter-spacing="3"
+      id="db-silvermaw-database-wordmark"
+      class="db-silvermaw-database-wordmark"
+    >Database</text>
+  </g>
+</svg>

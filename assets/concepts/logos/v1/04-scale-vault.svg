@@ -1,0 +1,39 @@
+<svg
+  role="img"
+  viewBox="0 0 960 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="scale-vault-title scale-vault-description"
+>
+  <title id="scale-vault-title">Dragon Database — Scale Vault</title>
+  <desc id="scale-vault-description">Three nested dragon scales form a tapered collection seal, pairing layered records with the idea of a dragon guarding its hoard. Plum, lilac, and a serif wordmark create a quiet archival identity.</desc>
+  <g id="scale-vault-mark" class="scale-vault-mark">
+    <path
+      fill="#332A4E"
+      id="scale-vault-outer-scale"
+      d="M180 67 286 109 267 217 180 292 93 217 74 109Z"
+    />
+    <path
+      fill="#B9A4E4"
+      id="scale-vault-record-scale"
+      d="m180 105 73 30-14 67-59 52-59-52-14-67Z"
+    />
+    <path
+      fill="#332A4E"
+      id="scale-vault-inner-scale"
+      d="m180 137 44 18-8 36-36 34-36-34-8-36Z"
+    />
+    <path
+      fill="#EEE7FA"
+      id="scale-vault-dragon-eye"
+      d="m180 160 12 19-12 21-12-21Z"
+    />
+  </g>
+  <g
+    fill="#332A4E"
+    id="scale-vault-wordmark"
+    class="scale-vault-wordmark"
+  >
+    <text x="360" y="171" font-size="60" letter-spacing="-1.5" font-family="Baskerville, Georgia, serif">Dragon</text>
+    <text x="363" y="228" font-size="29" font-weight="450" letter-spacing="3" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">Database</text>
+  </g>
+</svg>

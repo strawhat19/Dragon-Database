@@ -1,0 +1,61 @@
+<svg
+  role="img"
+  viewBox="0 0 960 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="archive-signet-title archive-signet-description"
+>
+  <title id="archive-signet-title">Dragon Database — Archive Signet</title>
+  <desc id="archive-signet-description">A circular black signet encloses a crimson dragon head above book-page wings. Silver page cuts and a restrained serif wordmark turn the Winged Archive idea into a collection seal.</desc>
+  <g id="archive-signet-mark" class="archive-signet-mark">
+    <circle
+      cx="180"
+      cy="180"
+      r="112"
+      fill="none"
+      stroke="#171719"
+      stroke-width="7"
+      id="archive-signet-ring"
+    />
+    <path
+      fill="#171719"
+      id="archive-signet-left-wing"
+      d="m174 183-86-54 14 61 24 4-5 21 29-1 24 30Z"
+    />
+    <path
+      fill="#171719"
+      id="archive-signet-right-wing"
+      d="m186 183 86-54-14 61-24 4 5 21-29-1-24 30Z"
+    />
+    <path
+      fill="#AEB5BF"
+      id="archive-signet-page-edges"
+      d="m103 225 43 12 34 20 34-20 43-12v9l-43 12-34 21-34-21-43-12Z"
+    />
+    <path
+      fill="#C9283E"
+      id="archive-signet-dragon"
+      d="m165 126-12-31 22 12 5-18 5 18 22-12-12 31 4 13-9 11-7 4v92l-3 10-3-10v-92l-7-4-9-11Z"
+    />
+    <path
+      fill="#171719"
+      id="archive-signet-eyes"
+      d="m167 131 9 3-3 5Zm26 0-9 3 3 5Z"
+    />
+    <path
+      fill="none"
+      stroke="#AEB5BF"
+      stroke-width="4"
+      stroke-linecap="round"
+      id="archive-signet-page-folds"
+      d="m105 156 56 40m-33-17 33 24m94-47-56 40m33-17-33 24"
+    />
+  </g>
+  <g
+    fill="#171719"
+    id="archive-signet-wordmark"
+    class="archive-signet-wordmark"
+  >
+    <text x="360" y="171" font-size="60" font-weight="600" letter-spacing="-1.5" font-family="Baskerville, Georgia, serif">Dragon</text>
+    <text x="363" y="228" font-size="29" font-weight="450" letter-spacing="3" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">Database</text>
+  </g>
+</svg>

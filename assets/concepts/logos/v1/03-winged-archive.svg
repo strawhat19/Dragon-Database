@@ -1,0 +1,90 @@
+<svg
+  role="img"
+  viewBox="0 0 960 360"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="winged-archive-title winged-archive-description"
+>
+  <title id="winged-archive-title">Dragon Database — Winged Archive</title>
+  <desc id="winged-archive-description">An amber open folio unfolds into two angular dragon wings. A dark brown dragon head rises above the central book spine, paired with an editable Dragon Database wordmark.</desc>
+  <g
+    id="winged-archive-mark"
+    class="winged-archive-mark"
+  >
+    <path
+      fill="#C58A32"
+      id="winged-archive-left-page-wing"
+      class="winged-archive-page-wing"
+      d="M174 183 L58 104 L70 178 L99 196 L91 221 L126 216 L139 244 L170 234 L180 265 L180 187 Z"
+    />
+    <path
+      fill="#C58A32"
+      id="winged-archive-right-page-wing"
+      class="winged-archive-page-wing"
+      d="M186 183 L302 104 L290 178 L261 196 L269 221 L234 216 L221 244 L190 234 L180 265 L180 187 Z"
+    />
+    <path
+      fill="#29251F"
+      id="winged-archive-book-binding"
+      class="winged-archive-book-binding"
+      d="M64 229 L143 249 L180 267 L217 249 L296 229 L296 241 L217 261 L180 282 L143 261 L64 241 Z"
+    />
+    <path
+      fill="#29251F"
+      id="winged-archive-dragon-head-spine"
+      class="winged-archive-dragon-head-spine"
+      d="M164 107 L155 79 L176 92 L187 68 L193 99 L213 112 L224 130 L208 143 L192 139 L183 156 L190 178 L187 257 L180 274 L173 257 L174 179 L160 151 L158 129 Z"
+    />
+    <path
+      fill="#C58A32"
+      id="winged-archive-dragon-eye"
+      class="winged-archive-dragon-eye"
+      d="M191 116 L205 121 L191 126 Z"
+    />
+    <path
+      fill="none"
+      stroke="#29251F"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      id="winged-archive-left-page-fold"
+      class="winged-archive-page-fold"
+      d="M76 132 L163 201 M101 168 L156 211"
+    />
+    <path
+      fill="none"
+      stroke="#29251F"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      id="winged-archive-right-page-fold"
+      class="winged-archive-page-fold"
+      d="M284 132 L197 201 M259 168 L204 211"
+    />
+  </g>
+  <g
+    fill="#29251F"
+    id="winged-archive-wordmark"
+    class="winged-archive-wordmark"
+  >
+    <text
+      x="360"
+      y="171"
+      font-size="60"
+      font-weight="700"
+      letter-spacing="-1"
+      id="winged-archive-dragon-wordmark"
+      class="winged-archive-dragon-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Dragon</text>
+    <text
+      x="360"
+      y="228"
+      font-size="29"
+      font-weight="400"
+      letter-spacing="3"
+      id="winged-archive-database-wordmark"
+      class="winged-archive-database-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Database</text>
+  </g>
+</svg>

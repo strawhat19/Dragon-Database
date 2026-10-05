@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 1410" role="img" aria-labelledby="concept-sheet-title concept-sheet-description">
+<title id="concept-sheet-title">Dragon Database Logo Concepts</title>
+<desc id="concept-sheet-description">Four original editable logo directions: Ember Index, Coiled D, Winged Archive, and Scale Vault. Each card shows the actual vector lockup, its idea, and its proposed palette.</desc>
+<rect id="concept-sheet-background" width="1760" height="1410" fill="#F4F1EB"/>
+<g id="concept-sheet-heading" fill="#252C30" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="80" y="105" font-size="56" font-weight="650" letter-spacing="-1.8">Dragon Database</text>
+<text x="82" y="154" font-size="22" fill="#6D706F">Four original logo directions</text>
+<text x="1678" y="101" font-size="17" text-anchor="end" letter-spacing="2">LOGO CONCEPTS / V1</text>
+<text x="1678" y="139" font-size="17" text-anchor="end" fill="#6D706F">October 2026</text>
+</g>
+<g id="concept-sheet-card-1">
+<rect x="80" y="220" width="784" height="520" rx="18" fill="#FFFFFF" stroke="#DED9D0"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="120" y="269" fill="#E4573D" font-size="18" font-weight="650">01</text><text x="162" y="269" fill="#252C30" font-size="21" font-weight="600">Ember Index</text></g>
+<svg x="108" y="304" width="730" height="274" viewBox="0 0 960 360" style="color:#202B32">
+  <title id="ember-index-title">Dragon Database — Ember Index</title>
+  <desc id="ember-index-description">An angular dragon in profile rises above three archive tiers. Vermilion and charcoal give this collection identity a bold, compact silhouette.</desc>
+  <g id="ember-index-mark" class="ember-index-mark">
+    <path
+      fill="#E4573D"
+      id="ember-index-dragon"
+      d="M80 129 70 66 119 93 146 64 153 107 192 91 223 114 279 123 258 153 220 160 193 184 156 195 137 220 106 220 88 204 118 173 105 153Z"
+    />
+    <path
+      fill="#FFF8EE"
+      id="ember-index-eye"
+      d="m181 121 27 9-21 11Z"
+    />
+    <path
+      fill="#202B32"
+      id="ember-index-records"
+      d="M87 231h181v18H87Zm18 30h163v18H105Z"
+    />
+    <path
+      fill="#E4573D"
+      id="ember-index-index-tab"
+      d="M73 231h18v18H73Zm0 30h18v18H73Z"
+    />
+  </g>
+  <g
+    fill="#202B32"
+    id="ember-index-wordmark"
+    class="ember-index-wordmark"
+    font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"
+  >
+    <text x="360" y="171" font-size="60" font-weight="650" letter-spacing="-2">Dragon</text>
+    <text x="363" y="228" font-size="29" font-weight="450" letter-spacing="3">Database</text>
+  </g>
+</svg>
+<path d="M120 589H824" stroke="#ECE8E1"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="120" y="631" fill="#343C40" font-size="21" font-weight="500">A dragon guarding an organized collection.</text>
+<text x="120" y="664" fill="#6D706F" font-size="18">Expressive silhouette with indexed record tiers.</text>
+<rect x="120" y="696" width="19" height="19" rx="4" fill="#E4573D"/>
+<text x="150" y="711" fill="#6D706F" font-size="15">#E4573D</text>
+<rect x="294" y="696" width="19" height="19" rx="4" fill="#202B32"/>
+<text x="324" y="711" fill="#6D706F" font-size="15">#202B32</text>
+</g></g>
+<g id="concept-sheet-card-2">
+<rect x="896" y="220" width="784" height="520" rx="18" fill="#FFFFFF" stroke="#DED9D0"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="936" y="269" fill="#39BAAE" font-size="18" font-weight="650">02</text><text x="978" y="269" fill="#252C30" font-size="21" font-weight="600">Coiled D</text></g>
+<svg x="924" y="304" width="730" height="274" viewBox="0 0 960 360" style="color:#102D35">
+  <title id="coiled-d-title">Dragon Database — Coiled D</title>
+  <desc id="coiled-d-description">
+    A sleek dragon coils into a bold capital D. Its angular head has one horn
+    and a transparent eye; a sea-glass tail closes the curve. The editable
+    Dragon Database wordmark sits to the right on a transparent canvas.
+  </desc>
+  <g
+    id="coiled-d-mark"
+    fill="currentColor"
+    aria-label="Coiled Dragon D Mark"
+  >
+    <path
+      id="coiled-d-dragon-body"
+      fill-rule="evenodd"
+      d="M 82 116
+         L 103 97
+         L 98 68
+         L 126 88
+         L 161 87
+         L 143 102
+         L 162 116
+         L 133 124
+         L 124 143
+         L 124 231
+         C 142 245 164 251 188 248
+         C 231 244 256 219 256 180
+         C 256 141 231 119 191 116
+         L 177 84
+         C 246 82 294 120 294 180
+         C 294 245 250 282 187 283
+         C 145 284 111 271 84 253
+         L 84 148
+         L 68 138
+         Z
+         M 105 112
+         L 119 108
+         L 114 118
+         Z"
+    />
+    <path
+      id="coiled-d-sea-glass-tail"
+      fill="#39BAAE"
+      d="M 84 230
+         L 84 253
+         C 111 271 145 284 187 283
+         C 206 283 224 279 239 273
+         L 219 249
+         C 209 253 198 255 186 255
+         C 144 256 108 243 84 230
+         Z"
+    />
+  </g>
+  <g
+    id="coiled-d-wordmark"
+    fill="currentColor"
+    font-family="Avenir Next, Avenir, Inter, Segoe UI, Arial, sans-serif"
+  >
+    <text
+      x="360"
+      y="171"
+      font-size="60"
+      font-weight="650"
+      letter-spacing="-1.6"
+      id="coiled-d-wordmark-dragon"
+    >Dragon</text>
+    <text
+      x="362"
+      y="228"
+      font-size="29"
+      font-weight="500"
+      letter-spacing="3"
+      id="coiled-d-wordmark-database"
+    >Database</text>
+  </g>
+</svg>
+<path d="M936 589H1640" stroke="#ECE8E1"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="936" y="631" fill="#343C40" font-size="21" font-weight="500">One letter. One unmistakable creature.</text>
+<text x="936" y="664" fill="#6D706F" font-size="18">A compact dragon monogram with a sea-glass tail.</text>
+<rect x="936" y="696" width="19" height="19" rx="4" fill="#39BAAE"/>
+<text x="966" y="711" fill="#6D706F" font-size="15">#39BAAE</text>
+<rect x="1110" y="696" width="19" height="19" rx="4" fill="#102D35"/>
+<text x="1140" y="711" fill="#6D706F" font-size="15">#102D35</text>
+</g></g>
+<g id="concept-sheet-card-3">
+<rect x="80" y="790" width="784" height="520" rx="18" fill="#FFFFFF" stroke="#DED9D0"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="120" y="839" fill="#C58A32" font-size="18" font-weight="650">03</text><text x="162" y="839" fill="#252C30" font-size="21" font-weight="600">Winged Archive</text></g>
+<svg x="108" y="874" width="730" height="274" viewBox="0 0 960 360" style="color:#29251F">
+  <title id="winged-archive-title">Dragon Database — Winged Archive</title>
+  <desc id="winged-archive-description">An amber open folio unfolds into two angular dragon wings. A dark brown dragon head rises above the central book spine, paired with an editable Dragon Database wordmark.</desc>
+  <g
+    id="winged-archive-mark"
+    class="winged-archive-mark"
+  >
+    <path
+      fill="#C58A32"
+      id="winged-archive-left-page-wing"
+      class="winged-archive-page-wing"
+      d="M174 183 L58 104 L70 178 L99 196 L91 221 L126 216 L139 244 L170 234 L180 265 L180 187 Z"
+    />
+    <path
+      fill="#C58A32"
+      id="winged-archive-right-page-wing"
+      class="winged-archive-page-wing"
+      d="M186 183 L302 104 L290 178 L261 196 L269 221 L234 216 L221 244 L190 234 L180 265 L180 187 Z"
+    />
+    <path
+      fill="#29251F"
+      id="winged-archive-book-binding"
+      class="winged-archive-book-binding"
+      d="M64 229 L143 249 L180 267 L217 249 L296 229 L296 241 L217 261 L180 282 L143 261 L64 241 Z"
+    />
+    <path
+      fill="#29251F"
+      id="winged-archive-dragon-head-spine"
+      class="winged-archive-dragon-head-spine"
+      d="M164 107 L155 79 L176 92 L187 68 L193 99 L213 112 L224 130 L208 143 L192 139 L183 156 L190 178 L187 257 L180 274 L173 257 L174 179 L160 151 L158 129 Z"
+    />
+    <path
+      fill="#C58A32"
+      id="winged-archive-dragon-eye"
+      class="winged-archive-dragon-eye"
+      d="M191 116 L205 121 L191 126 Z"
+    />
+    <path
+      fill="none"
+      stroke="#29251F"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      id="winged-archive-left-page-fold"
+      class="winged-archive-page-fold"
+      d="M76 132 L163 201 M101 168 L156 211"
+    />
+    <path
+      fill="none"
+      stroke="#29251F"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      id="winged-archive-right-page-fold"
+      class="winged-archive-page-fold"
+      d="M284 132 L197 201 M259 168 L204 211"
+    />
+  </g>
+  <g
+    fill="#29251F"
+    id="winged-archive-wordmark"
+    class="winged-archive-wordmark"
+  >
+    <text
+      x="360"
+      y="171"
+      font-size="60"
+      font-weight="700"
+      letter-spacing="-1"
+      id="winged-archive-dragon-wordmark"
+      class="winged-archive-dragon-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Dragon</text>
+    <text
+      x="360"
+      y="228"
+      font-size="29"
+      font-weight="400"
+      letter-spacing="3"
+      id="winged-archive-database-wordmark"
+      class="winged-archive-database-wordmark"
+      font-family="Georgia, 'Times New Roman', serif"
+    >Database</text>
+  </g>
+</svg>
+<path d="M120 1159H824" stroke="#ECE8E1"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="120" y="1201" fill="#343C40" font-size="21" font-weight="500">The archive takes flight.</text>
+<text x="120" y="1234" fill="#6D706F" font-size="18">An open folio transforms into dragon wings.</text>
+<rect x="120" y="1266" width="19" height="19" rx="4" fill="#C58A32"/>
+<text x="150" y="1281" fill="#6D706F" font-size="15">#C58A32</text>
+<rect x="294" y="1266" width="19" height="19" rx="4" fill="#29251F"/>
+<text x="324" y="1281" fill="#6D706F" font-size="15">#29251F</text>
+</g></g>
+<g id="concept-sheet-card-4">
+<rect x="896" y="790" width="784" height="520" rx="18" fill="#FFFFFF" stroke="#DED9D0"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif"><text x="936" y="839" fill="#B9A4E4" font-size="18" font-weight="650">04</text><text x="978" y="839" fill="#252C30" font-size="21" font-weight="600">Scale Vault</text></g>
+<svg x="924" y="874" width="730" height="274" viewBox="0 0 960 360" style="color:#332A4E">
+  <title id="scale-vault-title">Dragon Database — Scale Vault</title>
+  <desc id="scale-vault-description">Three nested dragon scales form a tapered collection seal, pairing layered records with the idea of a dragon guarding its hoard. Plum, lilac, and a serif wordmark create a quiet archival identity.</desc>
+  <g id="scale-vault-mark" class="scale-vault-mark">
+    <path
+      fill="#332A4E"
+      id="scale-vault-outer-scale"
+      d="M180 67 286 109 267 217 180 292 93 217 74 109Z"
+    />
+    <path
+      fill="#B9A4E4"
+      id="scale-vault-record-scale"
+      d="m180 105 73 30-14 67-59 52-59-52-14-67Z"
+    />
+    <path
+      fill="#332A4E"
+      id="scale-vault-inner-scale"
+      d="m180 137 44 18-8 36-36 34-36-34-8-36Z"
+    />
+    <path
+      fill="#EEE7FA"
+      id="scale-vault-dragon-eye"
+      d="m180 160 12 19-12 21-12-21Z"
+    />
+  </g>
+  <g
+    fill="#332A4E"
+    id="scale-vault-wordmark"
+    class="scale-vault-wordmark"
+  >
+    <text x="360" y="171" font-size="60" letter-spacing="-1.5" font-family="Baskerville, Georgia, serif">Dragon</text>
+    <text x="363" y="228" font-size="29" font-weight="450" letter-spacing="3" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">Database</text>
+  </g>
+</svg>
+<path d="M936 1159H1640" stroke="#ECE8E1"/>
+<g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif">
+<text x="936" y="1201" fill="#343C40" font-size="21" font-weight="500">A quiet seal for a treasured collection.</text>
+<text x="936" y="1234" fill="#6D706F" font-size="18">Nested scales, layered records, and a watchful eye.</text>
+<rect x="936" y="1266" width="19" height="19" rx="4" fill="#B9A4E4"/>
+<text x="966" y="1281" fill="#6D706F" font-size="15">#B9A4E4</text>
+<rect x="1110" y="1266" width="19" height="19" rx="4" fill="#332A4E"/>
+<text x="1140" y="1281" fill="#6D706F" font-size="15">#332A4E</text>
+</g></g>
+<g id="concept-sheet-footer" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif" fill="#6D706F" font-size="16">
+<text x="82" y="1366">Editable SVG artwork · Proposed palettes</text>
+<text x="1678" y="1366" text-anchor="end">Dragon Database / First concept round</text>
+</g></svg>

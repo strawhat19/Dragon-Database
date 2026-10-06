@@ -19,7 +19,7 @@ export default StyleSheet.create({
   title: {
     fontSize: 28,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   close: {
     gap: 6,
@@ -42,13 +42,13 @@ export default StyleSheet.create({
   fontTitle: {
     fontSize: 25,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   copy: {
     fontSize: 18,
     lineHeight: 25,
     color: palette.ink,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   links: {
     gap: 18,
@@ -64,7 +64,7 @@ export default StyleSheet.create({
   linkLabel: {
     fontSize: 18,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   document: {
     gap: 12,
@@ -75,13 +75,13 @@ export default StyleSheet.create({
   documentTitle: {
     fontSize: 20,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   documentText: {
     fontSize: 16,
     lineHeight: 24,
     color: palette.ink,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   pressed: {
     opacity: 0.65,

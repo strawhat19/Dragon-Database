@@ -3,7 +3,7 @@
 .site-footer-copyright { margin: 0; font-size: 18px; color: var(--muted); }
 .site-footer-navigation { gap: 8px 22px; display: flex; flex-wrap: wrap; align-items: center; }
 .site-footer-page-link { gap: 6px; display: inline-flex; align-items: center; min-height: 38px; font-size: 18px; text-decoration: none; &:hover { color: var(--red); } }
-.site-footer-piratechs { gap: 5px; display: inline-flex; align-items: center; font-size: 18px; text-decoration: none; font-family: 'AlegreyaSansMedium', var(--font-body); &:hover { color: var(--red); } }
+.site-footer-piratechs { gap: 5px; display: inline-flex; align-items: center; font-size: 18px; text-decoration: none; font-family: 'DragonSlapper', var(--font-body); &:hover { color: var(--red); } }
 .site-footer-font-credit { margin: 13px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .site-footer-credit-link { text-underline-offset: 3px; text-decoration-color: var(--line); &:hover { color: var(--ink); } }
 .site-footer-font-notices { gap: 6px; display: inline-flex; align-items: center; min-height: 38px; font-size: 15px; color: var(--muted); text-underline-offset: 3px; text-decoration-color: var(--line); transition: color 180ms ease; &:hover { color: var(--ink); } }

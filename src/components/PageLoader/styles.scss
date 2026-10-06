@@ -71,7 +71,7 @@
 
 .page-loader__eyebrow,
 .page-loader__status,
-.page-loader__credit { font-family: var(--font-body, 'AlegreyaSans', Arial, sans-serif); }
+.page-loader__credit { font-family: var(--font-body, 'DragonSlapper', Arial, sans-serif); }
 
 .page-loader__eyebrow {
   font-size: 17px;
@@ -94,7 +94,7 @@
   position: relative;
   align-items: flex-start;
   font-variant-numeric: tabular-nums;
-  font-family: 'AlegreyaSansMedium', Arial, sans-serif;
+  font-family: 'DragonSlapper', Arial, sans-serif;
 }
 
 .page-loader__number { min-width: 2.5ch; line-height: 0.8; letter-spacing: -0.05em; font-size: clamp(96px, 13vw, 180px); }
@@ -160,7 +160,7 @@
   position: absolute;
   top: var(--loader-exit-fringe);
   bottom: var(--loader-exit-fringe);
-  background: var(--ink, #101115);
+  background: var(--control-background, #101115);
 }
 
 .page-loader__flame-edge {

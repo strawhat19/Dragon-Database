@@ -5,9 +5,11 @@ import { usePageLoader } from './usePageLoader';
 import { brandMarkXml } from '../../shared/artwork';
 import { flameHeights, flameImageSource, swordImageSource } from './artwork';
 import { useEffect, useId, useRef, type CSSProperties } from 'react';
+import { useThemedArtwork } from '../../shared/themeContext/ThemeContext';
 
 const PageLoader = (props: PageLoaderProps) => {
   const rootRef = useRef<HTMLDivElement>(null);
+  const markXml = useThemedArtwork(brandMarkXml);
   const blurRef = useRef<SVGFEGaussianBlurElement>(null);
   const blurAmountRef = useRef(0);
   const filterId = `page-loader-digit-blur-${useId().replaceAll(`:`, ``)}`;
@@ -69,7 +71,7 @@ const PageLoader = (props: PageLoaderProps) => {
             aria-hidden={`true`}
             id={`dragon-page-loader-mark`}
             className={`page-loader__mark`}
-            dangerouslySetInnerHTML={{ __html: brandMarkXml }}
+            dangerouslySetInnerHTML={{ __html: markXml }}
           />
           <div id={`dragon-page-loader-readout`} className={`page-loader__readout`}>
             <p id={`dragon-page-loader-title`} className={`page-loader__title`}>{`Dragon Database`}</p>

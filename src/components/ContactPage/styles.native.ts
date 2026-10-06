@@ -22,7 +22,7 @@ export default StyleSheet.create({
     lineHeight: 35,
     marginBottom: 14,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   availability: {
     fontSize: 19,
@@ -34,7 +34,7 @@ export default StyleSheet.create({
     color: palette.muted,
     borderLeftColor: palette.steel,
     backgroundColor: palette.silver,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   form: {
     alignItems: `stretch`,
@@ -43,7 +43,7 @@ export default StyleSheet.create({
     fontSize: 17,
     marginBottom: 22,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   fieldGrid: {
     gap: 24,
@@ -60,7 +60,7 @@ export default StyleSheet.create({
   labelText: {
     fontSize: 19,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   input: {
     fontSize: 19,
@@ -72,7 +72,7 @@ export default StyleSheet.create({
     color: palette.ink,
     borderColor: palette.line,
     backgroundColor: palette.paper,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   textarea: {
     minHeight: 174,
@@ -86,14 +86,14 @@ export default StyleSheet.create({
     lineHeight: 23,
     marginTop: 8,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   fieldError: {
     fontSize: 16,
     lineHeight: 23,
     marginTop: 8,
     color: palette.red,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   submit: {
     gap: 10,
@@ -114,14 +114,14 @@ export default StyleSheet.create({
   submitLabel: {
     fontSize: 19,
     color: palette.paper,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   submitNotice: {
     fontSize: 19,
     lineHeight: 28,
     marginTop: 18,
     color: palette.ink,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   writingNotes: {
     borderTopWidth: 1,
@@ -136,20 +136,20 @@ export default StyleSheet.create({
     lineHeight: 29,
     marginBottom: 14,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   noteHeading: {
     fontSize: 21,
     marginTop: 28,
     marginBottom: 10,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   noteCopy: {
     fontSize: 19,
     lineHeight: 28,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   draftNote: {
     fontSize: 17,
@@ -159,6 +159,6 @@ export default StyleSheet.create({
     borderTopWidth: 1,
     color: palette.muted,
     borderTopColor: palette.line,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
 });

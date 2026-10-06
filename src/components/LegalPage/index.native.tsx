@@ -1,19 +1,21 @@
-import { Link } from 'expo-router';
-import { Mail, ArrowLeft, ExternalLink } from 'lucide-react-native';
-import { Text, View, Alert, Linking, Pressable } from 'react-native';
 import Reveal from '../Reveal';
+import { Link } from 'expo-router';
 import PageLayout from '../PageLayout';
 import { legalPages } from './content';
-import styles from './styles.native';
-import type { LegalPageProps } from './types';
+import baseStyles from './styles.native';
 import { routes } from '../../shared/routes';
-import { palette } from '../../styles/theme/theme';
+import type { LegalPageProps } from './types';
+import { Mail, ArrowLeft, ExternalLink } from 'lucide-react-native';
+import { Text, View, Alert, Linking, Pressable } from 'react-native';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const openSource = (url: string) => {
   void Linking.openURL(url).catch(() => Alert.alert(`Unable to open link`, `Please try again later.`));
 };
 
 const LegalPage = ({ kind }: LegalPageProps) => {
+  const { palette } = useTheme();
+  const styles = useThemedStyles(baseStyles);
   const page = legalPages[kind];
 
   return (

@@ -3,6 +3,7 @@ import sys
 from pathlib import Path
 from html import escape
 from icon_badges import create_icon_badges
+from brand_refinements import smooth_flames, without_logo_eyes
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -10,10 +11,9 @@ sys.path.insert(0, str(ROOT / 'assets/concepts/mockups/v9/source'))
 
 from artwork import Canvas
 from dragons import dragon
-from lettering import scaled_heading
+from scaling_collection import scaled_heading
 from materials import metal
 from banner import flying_dragon
-from banner_stage import angular_flames
 
 
 BRAND = ROOT / 'assets/brand'
@@ -33,20 +33,20 @@ def save(name, markup):
     return markup
 
 
-logo = (ROOT / 'assets/concepts/logos/v8/01-db-swordslapper-classic-transparent.svg').read_text()
+logo = without_logo_eyes((ROOT / 'assets/concepts/logos/v8/01-db-swordslapper-classic-transparent.svg').read_text())
 save('logo', logo)
 mark = Canvas('brand-mark', 360, 360, 'Dragon Database swordmaw mark', 'Selected original mark')
 mark.logo(0, 0, 360, mark=True)
-mark_xml = save('mark', vector(mark))
+mark_xml = save('mark', without_logo_eyes(vector(mark)))
 
-subheading = Canvas('scaling-subheading', 1080, 110, 'The Scaling Collection', 'S scales and one eye in the upper g counter')
+subheading = Canvas('scaling-subheading', 1080, 110, 'The Scaling Collection', 'DragonSlapper lettering with steel scales on the S')
 scaled_heading(subheading, 'The Scaling Collection', 540, 82, 90, 1020)
-subheading_xml = save('scaling-collection', vector(subheading))
+subheading_xml = save('scaling-collection', vector(subheading).replace(' Alegreya Sans outlined subheading is SIL OFL.', ''))
 
 flames = {}
 for side in ['left', 'right']:
-    art = Canvas(f'angular-flame-{side}', 200, 100, 'Angular black flame silhouette', 'Original tapered black flame artwork')
-    angular_flames(art, f'{side}-flames', 0, 0, 200, 100, mirrored=side == 'right')
+    art = Canvas(f'smooth-flame-{side}', 200, 100, 'Flowing black flame silhouette', 'Original smooth tapered black flame artwork')
+    smooth_flames(art, f'{side}-flames', 0, 0, 200, 100, mirrored=side == 'right')
     flames[side] = save(f'flames-{side}', vector(art).replace('<svg ', '<svg preserveAspectRatio="none" ', 1))
 
 flight = Canvas('flying-dragon', 64, 36, 'Flying dragon', 'Original horned winged long-tail silhouette')

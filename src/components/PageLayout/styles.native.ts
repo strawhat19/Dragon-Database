@@ -33,7 +33,7 @@ export default StyleSheet.create({
     marginTop: 16,
     color: palette.muted,
     textAlign: `center`,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   wideDescription: { fontSize: 24, lineHeight: 31 },
   body: { width: `100%`, maxWidth: 1180, alignSelf: `center`, paddingVertical: 44 },
@@ -47,6 +47,6 @@ export default StyleSheet.create({
     alignItems: `center`,
     backgroundColor: palette.ink,
   },
-  topButtonLabel: { fontSize: 18, color: palette.paper, fontFamily: `AlegreyaSansMedium` },
+  topButtonLabel: { fontSize: 18, color: palette.paper, fontFamily: `DragonSlapper` },
   pressed: { opacity: 0.72 },
 });

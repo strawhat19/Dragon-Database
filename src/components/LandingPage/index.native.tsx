@@ -1,6 +1,18 @@
-import { BlurTargetView } from 'expo-blur';
+import Reveal from '../Reveal';
+import DragonEye from '../DragonEye';
+import SiteFooter from '../SiteFooter';
+import SiteHeader from '../SiteHeader';
+import TextReveal from '../TextReveal';
+import baseStyles from './styles.native';
 import { SvgXml } from 'react-native-svg';
+import { BlurTargetView } from 'expo-blur';
+import DragonTypeCard from '../DragonTypeCard';
+import LandingSections from '../LandingSections';
+import useLandingPage from './useLandingPage.native';
+import AngledSurface from '../AngledSurface/index.native';
+import { wordmarkSwordXml } from '../../shared/landingArtwork';
 import { Search, X, ArrowUp, ArrowRight, RotateCcw } from 'lucide-react-native';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 import {
   Text,
   View,
@@ -9,16 +21,6 @@ import {
   ScrollView,
   TextInput,
 } from 'react-native';
-import Reveal from '../Reveal';
-import TextReveal from '../TextReveal';
-import SiteHeader from '../SiteHeader';
-import SiteFooter from '../SiteFooter';
-import DragonTypeCard from '../DragonTypeCard';
-import LandingSections from '../LandingSections';
-import styles from './styles.native';
-import useLandingPage from './useLandingPage.native';
-import { palette } from '../../styles/theme/theme';
-import { wordmarkSwordXml } from '../../shared/landingArtwork';
 import {
   flameLeftXml,
   flameRightXml,
@@ -27,7 +29,12 @@ import {
   scalingCollectionXml,
 } from '../../shared/artwork';
 
+const controlInk = `#101115`;
+const controlPaper = `#f4f5f7`;
+
 const LandingPage = () => {
+  const styles = useThemedStyles(baseStyles);
+  const { palette, isDark, themeArtwork } = useTheme();
   const {
     wide,
     types,
@@ -92,11 +99,12 @@ const LandingPage = () => {
             onLayout={onHeroLayout}
           >
             <View style={styles.artwork} pointerEvents={`none`} accessibilityElementsHidden importantForAccessibility={`no-hide-descendants`}>
-              <SvgXml xml={steelTextureXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
-              <View style={[styles.flame, { left: 0, width: flameWidth, height: flameHeight }]} nativeID={`landing-left-flames`} testID={`landing-left-flames`}>
+              <SvgXml xml={themeArtwork(steelTextureXml)} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
+              {isDark && <View pointerEvents={`none`} nativeID={`landing-hero-dark-tint`} testID={`landing-hero-dark-tint`} style={[styles.artwork, { opacity: 0.76, backgroundColor: palette.silver }]} />}
+              <View style={[styles.flame, { left: 6, width: flameWidth, height: flameHeight }]} nativeID={`landing-left-flames`} testID={`landing-left-flames`}>
                 <SvgXml xml={flameLeftXml} width={`100%`} height={`100%`} />
               </View>
-              <View style={[styles.flame, { right: 0, width: flameWidth, height: flameHeight }]} nativeID={`landing-right-flames`} testID={`landing-right-flames`}>
+              <View style={[styles.flame, { right: 6, width: flameWidth, height: flameHeight }]} nativeID={`landing-right-flames`} testID={`landing-right-flames`}>
                 <SvgXml xml={flameRightXml} width={`100%`} height={`100%`} />
               </View>
               {[`left`, `right`].map((side) => (
@@ -115,7 +123,7 @@ const LandingPage = () => {
                     },
                   ]}
                 >
-                  <SvgXml xml={flyingDragonXml} width={`100%`} height={`100%`} />
+                  <SvgXml xml={themeArtwork(flyingDragonXml)} width={`100%`} height={`100%`} />
                 </View>
               ))}
               {wide && [`left`, `right`].map((side) => (
@@ -134,7 +142,7 @@ const LandingPage = () => {
                     },
                   ]}
                 >
-                  <SvgXml xml={flyingDragonXml} width={`100%`} height={`100%`} />
+                  <SvgXml xml={themeArtwork(flyingDragonXml)} width={`100%`} height={`100%`} />
                 </View>
               ))}
             </View>
@@ -168,12 +176,13 @@ const LandingPage = () => {
                     delay={0.18}
                     id={`landing-brand-database-reveal`}
                     textStyle={[styles.title, { fontSize: titleSize, lineHeight: titleSize * 1.08 }]}
+                    renderDecoration={(piece, index) => index === 0 && piece === `D` ? <DragonEye fontSize={titleSize} lineHeight={titleSize * 1.08} /> : null}
                   />
                 </View>
               </View>
               <Reveal id={`landing-wordmark-sword-reveal`} delay={0.12}>
                 <View style={[styles.wordmarkSword, { width: subtitleWidth }]} nativeID={`landing-wordmark-sword`}>
-                  <SvgXml xml={wordmarkSwordXml} width={`100%`} height={`100%`} />
+                  <SvgXml xml={themeArtwork(wordmarkSwordXml)} width={`100%`} height={`100%`} />
                 </View>
               </Reveal>
               <Reveal id={`landing-scaling-subtitle-reveal`} delay={0.15}>
@@ -185,17 +194,18 @@ const LandingPage = () => {
                   nativeID={`landing-scaling-subtitle`}
                   testID={`landing-scaling-subtitle`}
                 >
-                  <SvgXml xml={scalingCollectionXml} width={subtitleWidth} height={subtitleWidth * 110 / 1080} />
+                  <SvgXml xml={themeArtwork(scalingCollectionXml)} width={subtitleWidth} height={subtitleWidth * 110 / 1080} />
                 </View>
               </Reveal>
-              <Reveal id={`landing-introduction-reveal`} delay={0.22}>
+              {/* <Reveal id={`landing-introduction-reveal`} delay={0.22}>
                 <Text style={[styles.introduction, wide && styles.wideIntroduction]} nativeID={`landing-introduction`} testID={`landing-introduction`}>
                   {wide ? `Explore dragon forms, compare their traits, and follow the lore.` : `Forms, traits, and lore.`}
                 </Text>
-              </Reveal>
+              </Reveal> */}
               <View style={styles.searchReveal} nativeID={`landing-search-container`} testID={`landing-search-container`}>
                 <Reveal id={`landing-search-reveal`} delay={0.28}>
-                  <View style={[styles.search, searchFocused && styles.searchFocused]} nativeID={`landing-search-field`} testID={`landing-search-field`}>
+                  <View style={styles.search} nativeID={`landing-search-field`} testID={`landing-search-field`}>
+                    <AngledSurface id={`landing-search-surface`} fill={palette.paper} stroke={searchFocused ? palette.ink : palette.line} />
                     <Search size={22} color={palette.muted} accessibilityElementsHidden />
                     <TextInput
                       value={query}
@@ -235,8 +245,9 @@ const LandingPage = () => {
                       testID={`landing-search-submit`}
                       style={({ pressed }) => [styles.searchSubmit, pressed && styles.pressed]}
                     >
-                      <Text style={styles.searchSubmitLabel}>Search</Text>
-                      {wide && <ArrowRight size={18} color={palette.paper} />}
+                      <AngledSurface id={`landing-search-submit-surface`} fill={controlInk} />
+                      <Text style={[styles.searchSubmitLabel, { color: controlPaper }]}>Search</Text>
+                      {wide && <ArrowRight size={18} color={controlPaper} />}
                     </Pressable>
                   </View>
                 </Reveal>

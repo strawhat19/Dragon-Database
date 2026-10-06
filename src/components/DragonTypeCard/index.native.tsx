@@ -1,13 +1,15 @@
+import baseStyles from './styles.native';
 import { SvgXml } from 'react-native-svg';
 import { ArrowUpRight } from 'lucide-react-native';
-import { Text, View, Pressable } from 'react-native';
-import styles from './styles.native';
 import type { DragonTypeCardProps } from './types';
+import { Text, View, Pressable } from 'react-native';
 import { getDragonTypeCardContent } from './content';
-import { palette } from '../../styles/theme/theme';
 import { dragonTypeGraphics } from '../../shared/landingArtwork';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const DragonTypeCard = ({ type, onSelect }: DragonTypeCardProps) => {
+  const styles = useThemedStyles(baseStyles);
+  const { palette, themeArtwork } = useTheme();
   const { traits, specimen } = getDragonTypeCardContent(type);
 
   return (
@@ -33,7 +35,7 @@ const DragonTypeCard = ({ type, onSelect }: DragonTypeCardProps) => {
         nativeID={`dragon-type-art-frame-${type.id}`}
         testID={`dragon-type-art-frame-${type.id}`}
       >
-        <SvgXml xml={dragonTypeGraphics[type.kind]} width={`100%`} height={`100%`} />
+        <SvgXml xml={themeArtwork(dragonTypeGraphics[type.kind])} width={`100%`} height={`100%`} />
       </View>
       <View style={styles.body} nativeID={`dragon-type-body-${type.id}`} testID={`dragon-type-body-${type.id}`}>
         <Text

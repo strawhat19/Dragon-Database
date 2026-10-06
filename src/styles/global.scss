@@ -6,14 +6,47 @@
   --steel: #bec6d0;
   --muted: #626b77;
   --silver: #e8ebef;
-  --font-body: 'AlegreyaSans', Arial, sans-serif;
+  --control-hover: #292c33;
+  --control-background: #101115;
+  --control-foreground: #f4f5f7;
+  --angled-corners: polygon(5px 0, calc(100% - 5px) 0, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0 calc(100% - 5px), 0 5px);
+  --header-scrolled: rgba(232, 235, 239, .83);
+  --hero-metal-background: linear-gradient(103deg, #aab4c2 0%, #d3d9e1 19%, #edf0f4 39%, #dce2e9 55%, #bec8d4 80%, #9da9b9 100%);
+  --font-body: 'DragonSlapper', Arial, sans-serif;
   --font-brand: 'DragonSlapper', Georgia, serif;
   color-scheme: light;
 }
 
+:root[data-theme='dark'] {
+  --ink: #e5e9ef;
+  --red: #d16a71;
+  --line: #35404e;
+  --paper: #151a22;
+  --steel: #343e4d;
+  --muted: #aab4c2;
+  --silver: #0e1219;
+  --header-scrolled: rgba(14, 18, 25, .86);
+  --hero-metal-background: linear-gradient(103deg, #202834 0%, #343e4d 19%, #434e5f 39%, #333e4d 55%, #26303e 80%, #19222e 100%);
+  color-scheme: dark;
+
+  .page-layout__hero { border-color: var(--line); background: repeating-linear-gradient(0deg, #ffffff0a 0, #ffffff0a 1px, transparent 1px, transparent 5px), var(--hero-metal-background); }
+  .landing-anatomy { color: var(--ink); background: var(--paper); border-color: var(--line); }
+  .landing-anatomy .landing-section-eyebrow, .landing-anatomy .landing-note-number, .landing-anatomy .landing-note-text { color: var(--muted); }
+  .landing-anatomy-plate { border-color: var(--line); background: linear-gradient(125deg, var(--steel), var(--paper) 46%, var(--line)); }
+  .landing-anatomy-caption, .landing-anatomy-note { border-color: var(--line); }
+  .landing-invitation-panel { background: linear-gradient(110deg, var(--steel), var(--paper), var(--steel)); }
+  .landing-editorial-link:hover { background: var(--steel); }
+  .landing-editorial-link-primary { color: var(--control-foreground); background: var(--control-background); border-color: var(--control-background); &:hover { background: var(--control-hover); border-color: var(--control-hover); } }
+  .dragon-type-metadata { background: linear-gradient(105deg, var(--steel), var(--paper) 48%, var(--line)); }
+  .dragon-type-art-frame { background: var(--silver); }
+  .legal-introduction { background: linear-gradient(112deg, var(--steel), var(--paper) 72%); }
+  .about-action-primary { color: var(--control-foreground); background: var(--control-background); &:hover { background: var(--control-hover); } }
+  .page-loader__sword-base, .page-loader__sword-fill { filter: brightness(0) invert(1); }
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: var(--silver); }
-body { margin: 0; color: var(--ink); background: var(--silver); font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
+body { margin: 0; color: var(--ink); background: var(--silver); font-family: var(--font-body); -webkit-font-smoothing: antialiased; transition: color 220ms, background-color 220ms; }
 button, input, textarea { font: inherit; }
 button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
 button, a { touch-action: manipulation; }

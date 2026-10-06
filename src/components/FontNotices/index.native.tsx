@@ -1,13 +1,15 @@
-import styles from './styles.native';
+import baseStyles from './styles.native';
 import type { FontNoticesProps } from './types';
-import { X, ExternalLink } from 'lucide-react-native';
 import { useFontNotices } from './useFontNotices';
+import { X, ExternalLink } from 'lucide-react-native';
 import { fontNotices } from '../../shared/fontNotices';
-import { palette } from '../../styles/theme/theme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text, View, Modal, Pressable, ScrollView } from 'react-native';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const FontNotices = ({ visible, onClose }: FontNoticesProps) => {
+  const { palette } = useTheme();
+  const styles = useThemedStyles(baseStyles);
   const insets = useSafeAreaInsets();
   const { openLink, reducedMotion } = useFontNotices();
 

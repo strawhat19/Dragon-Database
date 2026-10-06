@@ -1,16 +1,26 @@
-import { Link } from 'expo-router';
-import { Info, Mail, ArrowUpRight } from 'lucide-react-native';
-import { Text, View, Pressable, useWindowDimensions } from 'react-native';
 import Reveal from '../Reveal';
 import Artwork from '../Artwork';
+import { Link } from 'expo-router';
 import TextReveal from '../TextReveal';
-import styles from './styles.native';
+import baseStyles from './styles.native';
 import { routes } from '../../shared/routes';
-import { palette } from '../../styles/theme/theme';
 import { anatomyNotes, loreNotes } from './content';
+import { Info, Mail, ArrowUpRight } from 'lucide-react-native';
+import { Text, View, Pressable, useWindowDimensions } from 'react-native';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 import { wordmarkSwordXml, dragonTypeGraphics } from '../../shared/landingArtwork';
 
 const LandingSections = () => {
+  const { palette, isDark } = useTheme();
+  const themedStyles = useThemedStyles(baseStyles);
+  const styles = isDark ? {
+    ...themedStyles,
+    noteNumber: { ...themedStyles.noteNumber, color: palette.muted },
+    darkEyebrow: { ...themedStyles.darkEyebrow, color: palette.muted },
+    darkNoteText: { ...themedStyles.darkNoteText, color: palette.muted },
+    lightHeading: { ...themedStyles.lightHeading, color: palette.ink },
+    anatomy: { ...themedStyles.anatomy, backgroundColor: palette.paper },
+  } : themedStyles;
   const { width } = useWindowDimensions();
   const wide = width >= 900;
   const gutter = width >= 720 ? Math.max(40, (width - 1280) / 2) : 24;

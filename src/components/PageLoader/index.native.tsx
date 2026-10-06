@@ -1,14 +1,17 @@
+import baseStyles from './styles.native';
 import { SvgXml } from 'react-native-svg';
-import styles from './styles.native';
 import type { PageLoaderProps } from './types';
 import { usePageLoader } from './usePageLoader';
 import { brandMarkXml } from '../../shared/artwork';
 import { useEffect, useRef, useState } from 'react';
-import { blackFlameXml, wordmarkSwordXml } from '../../shared/landingArtwork';
-import { flameHeights, swordAspectRatio, flameAspectRatio } from './artwork';
 import { Animated, Text, View, useWindowDimensions } from 'react-native';
+import { flameHeights, swordAspectRatio, flameAspectRatio } from './artwork';
+import { blackFlameXml, wordmarkSwordXml } from '../../shared/landingArtwork';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const PageLoader = (props: PageLoaderProps) => {
+  const { themeArtwork } = useTheme();
+  const styles = useThemedStyles(baseStyles);
   const { width, height } = useWindowDimensions();
   const exit = useRef(new Animated.Value(0)).current;
   const digitTrail = useRef(new Animated.Value(0)).current;
@@ -71,8 +74,8 @@ const PageLoader = (props: PageLoaderProps) => {
         <Text nativeID={`dragon-page-loader-eyebrow`} style={styles.eyebrow}>{`The archive awaits`}</Text>
         <View nativeID={`dragon-page-loader-content`} style={[styles.content, wide && styles.contentWide]}>
           <View nativeID={`dragon-page-loader-mark`} style={{ width: markSize, height: markSize }} accessibilityElementsHidden importantForAccessibility={`no-hide-descendants`}>
-            {!reducedMotion ? <View nativeID={`dragon-page-loader-trail`} style={styles.markTrail}><SvgXml xml={brandMarkXml} width={markSize} height={markSize} /></View> : null}
-            <SvgXml xml={brandMarkXml} width={markSize} height={markSize} />
+            {!reducedMotion ? <View nativeID={`dragon-page-loader-trail`} style={styles.markTrail}><SvgXml xml={themeArtwork(brandMarkXml)} width={markSize} height={markSize} /></View> : null}
+            <SvgXml xml={themeArtwork(brandMarkXml)} width={markSize} height={markSize} />
           </View>
           <View nativeID={`dragon-page-loader-readout`} style={[styles.readout, wide && styles.readoutWide]}>
             <Text nativeID={`dragon-page-loader-title`} style={[styles.title, wide && styles.titleWide]}>{`Dragon Database`}</Text>
@@ -104,10 +107,10 @@ const PageLoader = (props: PageLoaderProps) => {
           onLayout={({ nativeEvent }) => setSwordWidth(nativeEvent.layout.width)}
         >
           <View nativeID={`dragon-page-loader-sword-base`} style={styles.swordBase}>
-            <SvgXml xml={wordmarkSwordXml} width={swordWidth} height={swordHeight} />
+            <SvgXml xml={themeArtwork(wordmarkSwordXml)} width={swordWidth} height={swordHeight} />
           </View>
           <View nativeID={`dragon-page-loader-sword-fill`} style={[styles.swordFill, { width: swordWidth * percentage / 100, height: swordHeight }]}>
-            <SvgXml xml={wordmarkSwordXml} width={swordWidth} height={swordHeight} />
+            <SvgXml xml={themeArtwork(wordmarkSwordXml)} width={swordWidth} height={swordHeight} />
           </View>
           {!reducedMotion ? (
             <Animated.View nativeID={`dragon-page-loader-progress-flame`} style={[styles.progressFlame, {
@@ -141,7 +144,7 @@ const PageLoader = (props: PageLoaderProps) => {
             }) }],
           }]}
         >
-          <View nativeID={`dragon-page-loader-flame-curtain-body`} style={[styles.flameCurtainBody, { top: fringeHeight - 1, bottom: fringeHeight - 1 }]} />
+          <View nativeID={`dragon-page-loader-flame-curtain-body`} style={[styles.flameCurtainBody, { top: fringeHeight - 1, bottom: fringeHeight - 1, backgroundColor: `#0C0D10` }]} />
           {[`top`, `bottom`].map(edge => (
             <View
               key={edge}

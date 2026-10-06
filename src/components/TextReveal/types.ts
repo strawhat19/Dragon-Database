@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { StyleProp, TextStyle } from 'react-native';
 
 export type TextRevealProps = {
@@ -8,4 +9,5 @@ export type TextRevealProps = {
   mode?: `words` | `chars`;
   textStyle?: StyleProp<TextStyle>;
   accessibilityRole?: `text` | `header`;
+  renderDecoration?: (piece: string, index: number) => ReactNode;
 };

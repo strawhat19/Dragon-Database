@@ -25,7 +25,7 @@ export default StyleSheet.create({
     fontSize: 22,
     lineHeight: 32,
     color: palette.ink,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   sections: {
     marginTop: 20,
@@ -46,14 +46,14 @@ export default StyleSheet.create({
     lineHeight: 21,
     color: palette.muted,
     letterSpacing: 0.6,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   heading: {
     flex: 1,
     fontSize: 27,
     lineHeight: 35,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   sectionBody: {
     gap: 15,
@@ -63,7 +63,7 @@ export default StyleSheet.create({
     fontSize: 20,
     lineHeight: 31,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   link: {
     gap: 9,
@@ -75,7 +75,7 @@ export default StyleSheet.create({
     fontSize: 20,
     flexShrink: 1,
     color: palette.ink,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
     textDecorationLine: `underline`,
   },
   pageLinks: {

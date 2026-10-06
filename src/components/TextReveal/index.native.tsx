@@ -1,8 +1,9 @@
-import styles from './styles.native';
+import baseStyles from './styles.native';
+import { useEffect, useMemo } from 'react';
 import type { TextRevealProps } from './types';
 import { useTextReveal } from './useTextReveal';
-import { useEffect, useMemo } from 'react';
 import { Animated, Easing, StyleSheet, Text, View } from 'react-native';
+import { useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const TextReveal = ({
   id,
@@ -10,8 +11,10 @@ const TextReveal = ({
   delay = 0,
   textStyle,
   mode = `words`,
+  renderDecoration,
   accessibilityRole = `text`,
 }: TextRevealProps) => {
+  const styles = useThemedStyles(baseStyles);
   const { visible, reducedMotion } = useTextReveal(text);
   const pieces = useMemo(() => mode === `chars` ? Array.from(text) : text.split(/(\s+)/), [text, mode]);
   const values = useMemo(() => pieces.filter(piece => !/^\s*$/.test(piece)).map(() => new Animated.Value(0)), [pieces]);
@@ -81,6 +84,7 @@ const TextReveal = ({
                   ],
                 }}
               >
+                {renderDecoration?.(piece, index)}
                 <Text nativeID={`${id}-text-${index}`} style={[styles.text, textStyle, { lineHeight }]}>{piece}</Text>
               </Animated.View>
             </View>

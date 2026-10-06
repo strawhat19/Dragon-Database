@@ -1,18 +1,20 @@
-import { BlurTargetView } from 'expo-blur';
-import { SvgXml } from 'react-native-svg';
-import { ArrowUp } from 'lucide-react-native';
-import { Text, View, Animated, Pressable, ScrollView } from 'react-native';
 import Reveal from '../Reveal';
 import SiteHeader from '../SiteHeader';
 import SiteFooter from '../SiteFooter';
 import TextReveal from '../TextReveal';
-import styles from './styles.native';
+import baseStyles from './styles.native';
+import { SvgXml } from 'react-native-svg';
+import { BlurTargetView } from 'expo-blur';
+import { ArrowUp } from 'lucide-react-native';
 import type { PageLayoutProps } from './types';
 import usePageLayout from './usePageLayout.native';
-import { palette } from '../../styles/theme/theme';
 import { steelTextureXml } from '../../shared/artwork';
+import { Text, View, Animated, Pressable, ScrollView } from 'react-native';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const PageLayout = ({ id, title, description, children }: PageLayoutProps) => {
+  const styles = useThemedStyles(baseStyles);
+  const { palette, isDark, themeArtwork } = useTheme();
   const sticky = true;
   const {
     wide, gutter, insets, scrolled, pastHero, onScroll, titleSize, scrollRef,
@@ -40,7 +42,8 @@ const PageLayout = ({ id, title, description, children }: PageLayoutProps) => {
         <BlurTargetView ref={blurTarget} nativeID={`${id}-blur-target`}>
           <View nativeID={`${id}-hero`} style={styles.hero} onLayout={onHeroLayout}>
             <View nativeID={`${id}-hero-steel`} style={styles.artwork} pointerEvents={`none`} accessibilityElementsHidden importantForAccessibility={`no-hide-descendants`}>
-              <SvgXml xml={steelTextureXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
+              <SvgXml xml={themeArtwork(steelTextureXml)} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
+              {isDark && <View pointerEvents={`none`} nativeID={`${id}-hero-dark-tint`} style={[styles.artwork, { opacity: 0.76, backgroundColor: palette.silver }]} />}
             </View>
             <View nativeID={`${id}-hero-content`} style={[styles.heroContent, { paddingHorizontal: gutter }]}>
               <Reveal id={`${id}-accent-reveal`}>

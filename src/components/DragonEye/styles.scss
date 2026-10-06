@@ -1,0 +1,4 @@
+.dragon-eye { width: 0; height: 0; position: relative; display: inline-block; vertical-align: baseline; pointer-events: none; }
+.dragon-eye .dragon-eye-canvas { left: 0; bottom: 0; width: 1em; height: 1em; max-width: none; overflow: visible; position: absolute; }
+.dragon-eye-gaze { transition: transform 120ms ease-out; }
+@media (prefers-reduced-motion: reduce) { .dragon-eye-gaze { transition: none; } }

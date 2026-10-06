@@ -1,16 +1,18 @@
-import { Link } from 'expo-router';
-import { SvgXml } from 'react-native-svg';
-import { Mail, ArrowLeft } from 'lucide-react-native';
-import { Text, View, Pressable, useWindowDimensions } from 'react-native';
 import Reveal from '../Reveal';
+import { Link } from 'expo-router';
 import PageLayout from '../PageLayout';
-import styles from './styles.native';
+import baseStyles from './styles.native';
+import { SvgXml } from 'react-native-svg';
 import { routes } from '../../shared/routes';
-import { palette } from '../../styles/theme/theme';
-import { aboutValues, aboutContact, aboutIntroduction } from './content';
+import { Mail, ArrowLeft } from 'lucide-react-native';
 import { dragonSymbols, steelTextureXml } from '../../shared/artwork';
+import { aboutValues, aboutContact, aboutIntroduction } from './content';
+import { Text, View, Pressable, useWindowDimensions } from 'react-native';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const AboutPage = () => {
+  const styles = useThemedStyles(baseStyles);
+  const { palette, themeArtwork } = useTheme();
   const { width } = useWindowDimensions();
   const wide = width >= 900;
 
@@ -53,9 +55,9 @@ const AboutPage = () => {
                         style={styles.symbolSurface}
                       >
                         <View style={styles.steelTexture} pointerEvents={`none`}>
-                          <SvgXml xml={steelTextureXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
+                          <SvgXml xml={themeArtwork(steelTextureXml)} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
                         </View>
-                        <SvgXml xml={dragonSymbols[value.kind]} width={78} height={58} />
+                        <SvgXml xml={themeArtwork(dragonSymbols[value.kind])} width={78} height={58} />
                       </View>
                       <Text accessibilityRole={`header`} nativeID={`about-value-title-${value.id}`} testID={`about-value-title-${value.id}`} style={styles.valueTitle}>
                         {value.title}

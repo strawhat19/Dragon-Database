@@ -1,28 +1,33 @@
-import type { RefObject } from 'react';
-import { Link, usePathname } from 'expo-router';
 import { BlurView } from 'expo-blur';
+import type { RefObject } from 'react';
+import baseStyles from './styles.native';
 import { SvgXml } from 'react-native-svg';
-import { X, Code, Menu, Mail, Info, LogIn, BookOpen, Bookmark, Compass, Newspaper } from 'lucide-react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Text, View, Animated, Pressable, useWindowDimensions } from 'react-native';
-import styles from './styles.native';
 import type { HeaderProps } from './types';
+import { Link, usePathname } from 'expo-router';
 import useSiteHeader from './useSiteHeader.native';
-import { routes, navigation } from '../../shared/routes';
 import { brandLogoXml } from '../../shared/artwork';
-import { palette } from '../../styles/theme/theme';
+import { routes, navigation } from '../../shared/routes';
+import AngledSurface from '../AngledSurface/index.native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
+import { Text, View, Animated, Pressable, useWindowDimensions } from 'react-native';
+import { X, Sun, Code, Moon, Menu, Mail, Info, BookOpen, Bookmark, Compass, UserRound, Newspaper } from 'lucide-react-native';
 
 type NativeHeaderProps = HeaderProps & { blurTarget?: RefObject<View | null> };
+const controlInk = `#101115`;
+const controlPaper = `#f4f5f7`;
 const icons = { code: Code, mail: Mail, info: Info, book: BookOpen, compass: Compass, bookmark: Bookmark, newspaper: Newspaper };
 
 const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeaderProps) => {
+  const styles = useThemedStyles(baseStyles);
+  const { palette, isDark, toggleTheme, themeArtwork } = useTheme();
   const insets = useSafeAreaInsets();
   const pathname = usePathname();
   const { width } = useWindowDimensions();
   const { menuOpen, closeMenu, toggleMenu, blurOpacity } = useSiteHeader({ sticky, scrolled });
   const wide = width > 1280;
   const gutter = wide ? Math.max(40, (width - 1280) / 2) : 20;
-  const logoWidth = wide ? 224 : Math.min(190, Math.max(120, width - 200));
+  const logoWidth = wide ? 184 : Math.min(156, Math.max(80, width - 254));
 
   const navigationItem = (item: (typeof navigation)[number], mobile = false) => {
     const Icon = icons[item.icon];
@@ -38,7 +43,7 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
         accessibilityState={{ disabled: !item.available, selected: active }}
         nativeID={`site-header-${mobile ? `mobile-` : ``}${item.id}`}
         testID={`site-header-${mobile ? `mobile-` : ``}${item.id}`}
-        style={({ pressed }) => [styles.navigationItem, mobile && styles.menuItem, active && styles.activeItem, pressed && styles.pressed]}
+        style={({ pressed }) => [styles.navigationItem, mobile && styles.menuItem, (active || pressed) && styles.activeItem, pressed && styles.pressed]}
       >
         <Icon size={17} color={active ? palette.ink : palette.muted} accessibilityElementsHidden />
         <Text style={[styles.navigationLabel, active && styles.activeLabel]}>{item.label}</Text>
@@ -61,7 +66,7 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
       />
       <Animated.View pointerEvents={`none`} style={[styles.blur, styles.floatingSurface, { opacity: blurOpacity }]}>
         <BlurView
-          tint={`light`}
+          tint={isDark ? `dark` : `light`}
           intensity={38}
           blurTarget={blurTarget}
           blurMethod={blurTarget ? `dimezisBlurViewSdk31Plus` : `none`}
@@ -71,7 +76,7 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
           testID={`site-header-backdrop`}
         />
       </Animated.View>
-      <View style={[styles.row, { paddingHorizontal: gutter }]} nativeID={`site-header-row`} testID={`site-header-row`}>
+      <View style={[styles.row, { paddingHorizontal: gutter, minHeight: wide ? 84 : 72 }]} nativeID={`site-header-row`} testID={`site-header-row`}>
         <Link href={routes.home.path} asChild>
           <Pressable
             onPress={closeMenu}
@@ -81,7 +86,7 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
             testID={`site-header-logo`}
             style={styles.logo}
           >
-            <SvgXml xml={brandLogoXml} width={logoWidth} height={logoWidth * 0.375} accessibilityElementsHidden />
+            <SvgXml xml={themeArtwork(brandLogoXml)} width={logoWidth} height={logoWidth * 0.375} accessibilityElementsHidden />
           </Pressable>
         </Link>
         <View style={styles.actions} nativeID={`site-header-actions`} testID={`site-header-actions`}>
@@ -100,8 +105,20 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
             testID={`site-header-sign-in`}
             style={styles.signIn}
           >
-            <Text style={styles.signInLabel}>Sign In</Text>
-            {wide && <LogIn size={17} color={palette.paper} />}
+            <AngledSurface id={`site-header-sign-in-surface`} fill={controlInk} />
+            <UserRound size={17} color={controlPaper} accessibilityElementsHidden />
+            <Text style={[styles.signInLabel, !wide && styles.mobileSignInLabel, { color: controlPaper }]}>Sign In</Text>
+          </Pressable>
+          <Pressable
+            onPress={toggleTheme}
+            accessibilityRole={`button`}
+            nativeID={`site-header-theme-toggle`}
+            testID={`site-header-theme-toggle`}
+            accessibilityLabel={`Switch To ${isDark ? `Light` : `Dark`} Mode`}
+            style={({ pressed }) => [styles.themeToggle, pressed && styles.pressed]}
+          >
+            <AngledSurface id={`site-header-theme-toggle-surface`} fill={controlInk} />
+            {isDark ? <Sun size={18} color={controlPaper} accessibilityElementsHidden /> : <Moon size={18} color={controlPaper} accessibilityElementsHidden />}
           </Pressable>
           {!wide && (
             <Pressable

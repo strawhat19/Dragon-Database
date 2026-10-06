@@ -9,3 +9,17 @@ export const palette = {
 };
 
 export type ThemePalette = typeof palette;
+export type ThemeMode = `light` | `dark`;
+
+export const themePalettes: Record<ThemeMode, ThemePalette> = {
+  light: palette,
+  dark: {
+    ink: `#e5e9ef`,
+    red: `#d16a71`,
+    line: `#35404e`,
+    paper: `#151a22`,
+    steel: `#343e4d`,
+    muted: `#aab4c2`,
+    silver: `#0e1219`,
+  },
+};

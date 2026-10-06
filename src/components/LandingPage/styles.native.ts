@@ -69,7 +69,7 @@ export default StyleSheet.create({
     marginTop: 5,
     color: palette.muted,
     textAlign: `center`,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   wideIntroduction: {
     fontSize: 24,
@@ -84,15 +84,9 @@ export default StyleSheet.create({
   search: {
     gap: 12,
     minHeight: 54,
-    borderWidth: 1,
     paddingLeft: 16,
     flexDirection: `row`,
     alignItems: `center`,
-    borderColor: palette.line,
-    backgroundColor: palette.paper,
-  },
-  searchFocused: {
-    borderColor: palette.ink,
   },
   input: {
     flex: 1,
@@ -101,7 +95,7 @@ export default StyleSheet.create({
     fontSize: 21,
     paddingVertical: 0,
     color: palette.ink,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   wideInput: {
     minHeight: 60,
@@ -121,7 +115,6 @@ export default StyleSheet.create({
     flexDirection: `row`,
     alignItems: `center`,
     justifyContent: `center`,
-    backgroundColor: palette.ink,
   },
   searchSubmitLabel: {
     fontSize: 18,
@@ -129,7 +122,7 @@ export default StyleSheet.create({
     fontFamily: `DragonSlapper`,
   },
   flame: {
-    bottom: 0,
+    bottom: -2,
     position: `absolute`,
   },
   flyingDragon: {
@@ -158,7 +151,7 @@ export default StyleSheet.create({
     fontSize: 19,
     lineHeight: 24,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   cards: {
     gap: 12,
@@ -191,7 +184,7 @@ export default StyleSheet.create({
     fontSize: 20,
     lineHeight: 26,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   feedbackAction: {
     gap: 8,
@@ -205,7 +198,7 @@ export default StyleSheet.create({
   feedbackActionLabel: {
     fontSize: 19,
     color: palette.paper,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   skeleton: {
     minHeight: 100,
@@ -251,7 +244,7 @@ export default StyleSheet.create({
   topButtonLabel: {
     fontSize: 18,
     color: palette.paper,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   pressed: {
     opacity: 0.72,

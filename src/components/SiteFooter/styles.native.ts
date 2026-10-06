@@ -30,7 +30,7 @@ export default StyleSheet.create({
   copy: {
     fontSize: 17,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   link: {
     gap: 6,
@@ -41,7 +41,7 @@ export default StyleSheet.create({
   linkLabel: {
     fontSize: 18,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   credits: {
     gap: 2,
@@ -55,14 +55,14 @@ export default StyleSheet.create({
     lineHeight: 21,
     flexShrink: 1,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
     textDecorationLine: `underline`,
   },
   creditCopy: {
     fontSize: 15,
     lineHeight: 21,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   pressed: {
     opacity: 0.7,

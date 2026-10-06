@@ -1,11 +1,11 @@
 import { useRef } from 'react';
-import { Mail, Tag, UserRound, MessageSquare } from 'lucide-react-native';
-import { Text, View, Keyboard, TextInput, Pressable, AccessibilityInfo, useWindowDimensions } from 'react-native';
-import styles from './styles.native';
 import PageLayout from '../PageLayout';
+import baseStyles from './styles.native';
 import type { ContactField } from './useContactForm';
-import { palette } from '../../styles/theme/theme';
+import { Mail, Tag, UserRound, MessageSquare } from 'lucide-react-native';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 import { contactFields, useContactForm, contactPreviewNotice } from './useContactForm';
+import { Text, View, Keyboard, TextInput, Pressable, AccessibilityInfo, useWindowDimensions } from 'react-native';
 
 const fieldIcons = {
   name: UserRound,
@@ -15,6 +15,8 @@ const fieldIcons = {
 };
 
 const ContactPage = () => {
+  const { palette } = useTheme();
+  const styles = useThemedStyles(baseStyles);
   const { width } = useWindowDimensions();
   const wide = width >= 900;
   const { notice, errors, values, updateField, previewSubmit } = useContactForm();

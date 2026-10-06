@@ -1,6 +1,7 @@
 import { X, Search, ArrowUp, ArrowRight, RotateCcw } from 'lucide-react';
 import Reveal from '../Reveal';
 import Artwork from '../Artwork';
+import DragonEye from '../DragonEye';
 import SiteHeader from '../SiteHeader';
 import SiteFooter from '../SiteFooter';
 import TextReveal from '../TextReveal';
@@ -52,7 +53,13 @@ const LandingPage = () => {
             </Reveal>
             <h1 id={`landing-brand-title`} className={`landing-brand-title`} aria-label={`Dragon Database`}>
               <TextReveal id={`landing-brand-dragon`} text={`Dragon`} mode={`chars`} delay={0.08} />
-              <TextReveal id={`landing-brand-database`} text={`Database`} mode={`chars`} delay={0.24} />
+              <TextReveal
+                mode={`chars`}
+                text={`Database`}
+                delay={0.24}
+                id={`landing-brand-database`}
+                renderDecoration={(piece, index) => index === 0 && piece === `D` ? <DragonEye /> : null}
+              />
             </h1>
             <Reveal id={`landing-wordmark-sword-reveal`} delay={0.24} className={`landing-wordmark-sword-reveal`}>
               <Artwork id={`landing-wordmark-sword`} className={`landing-wordmark-sword`} xml={wordmarkSwordXml} />
@@ -63,12 +70,12 @@ const LandingPage = () => {
                 <Artwork id={`landing-subtitle-artwork`} xml={scalingCollectionXml} />
               </h2>
             </Reveal>
-            <Reveal id={`landing-introduction-reveal`} delay={0.38}>
+            {/* <Reveal id={`landing-introduction-reveal`} delay={0.38}>
               <p id={`landing-introduction`} className={`landing-introduction`}>
                 <span id={`landing-introduction-wide`} className={`landing-introduction-wide`}>Explore dragon forms, compare their traits, and follow the lore.</span>
                 <span id={`landing-introduction-compact`} className={`landing-introduction-compact`}>Forms, traits, and lore.</span>
               </p>
-            </Reveal>
+            </Reveal> */}
             <Reveal id={`landing-search-reveal`} delay={0.46} className={`landing-search-reveal`}>
               <form
                 role={`search`}

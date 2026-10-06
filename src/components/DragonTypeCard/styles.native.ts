@@ -25,13 +25,13 @@ export default StyleSheet.create({
     lineHeight: 20,
     color: palette.ink,
     letterSpacing: 0.8,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   category: {
     fontSize: 15,
     lineHeight: 20,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   artFrame: {
     width: `100%`,
@@ -57,13 +57,13 @@ export default StyleSheet.create({
     fontSize: 17,
     lineHeight: 23,
     color: palette.muted,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   description: {
     fontSize: 20,
     lineHeight: 28,
     color: palette.ink,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   action: {
     gap: 16,
@@ -79,7 +79,7 @@ export default StyleSheet.create({
     fontSize: 18,
     lineHeight: 23,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   pressed: {
     opacity: 0.84,

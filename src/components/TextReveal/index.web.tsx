@@ -4,7 +4,7 @@ import type { CSSProperties } from 'react';
 import type { TextRevealProps } from './types';
 import { useTextReveal } from './useTextReveal';
 
-const TextReveal = ({ id, text, delay = 0, mode = `words`, className = `` }: TextRevealProps) => {
+const TextReveal = ({ id, text, delay = 0, mode = `words`, className = ``, renderDecoration }: TextRevealProps) => {
   const { visible, reducedMotion } = useTextReveal(text);
   const pieces = mode === `chars` ? Array.from(text) : text.split(/(\s+)/);
   let animatedIndex = 0;
@@ -29,6 +29,7 @@ const TextReveal = ({ id, text, delay = 0, mode = `words`, className = `` }: Tex
                 className={`text-reveal__piece`}
                 style={{ [`--text-reveal-index`]: order } as CSSProperties}
               >
+                {renderDecoration?.(piece, index)}
                 {piece}
               </span>
             </span>

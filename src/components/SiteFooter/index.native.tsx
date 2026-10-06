@@ -1,19 +1,21 @@
-import { Link } from 'expo-router';
 import { useState } from 'react';
+import { Link } from 'expo-router';
 import FontNotices from '../FontNotices';
-import { Info, Mail, FileText, ShieldCheck, ExternalLink } from 'lucide-react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Text, View, Alert, Linking, Pressable, useWindowDimensions } from 'react-native';
-import styles from './styles.native';
+import baseStyles from './styles.native';
 import { routes } from '../../shared/routes';
-import { palette } from '../../styles/theme/theme';
 import { fontNoticeLinks } from '../../shared/fontNotices';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
+import { Info, Mail, FileText, ShieldCheck, ExternalLink } from 'lucide-react-native';
+import { Text, View, Alert, Linking, Pressable, useWindowDimensions } from 'react-native';
 
 const openLink = (url: string) => {
   Linking.openURL(url).catch(() => Alert.alert(`Unable to open link`, `Please try again later.`));
 };
 
 const SiteFooter = () => {
+  const { palette } = useTheme();
+  const styles = useThemedStyles(baseStyles);
   const insets = useSafeAreaInsets();
   const [noticesOpen, setNoticesOpen] = useState(false);
   const { width } = useWindowDimensions();

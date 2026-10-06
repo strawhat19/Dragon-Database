@@ -5,5 +5,5 @@ export default StyleSheet.create({
   mask: { overflow: `hidden` },
   characters: { flexWrap: `nowrap` },
   visual: { flexDirection: `row`, alignItems: `flex-end` },
-  text: { color: `#101115`, fontSize: 22, fontFamily: `AlegreyaSans` },
+  text: { color: `#101115`, fontSize: 22, fontFamily: `DragonSlapper` },
 });

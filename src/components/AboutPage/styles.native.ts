@@ -16,7 +16,7 @@ export default StyleSheet.create({
     fontSize: 21,
     lineHeight: 30,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   leadParagraph: {
     color: palette.ink,
@@ -28,7 +28,7 @@ export default StyleSheet.create({
     fontSize: 27,
     lineHeight: 33,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   valuesGrid: {
     gap: 14,
@@ -82,13 +82,13 @@ export default StyleSheet.create({
     fontSize: 26,
     lineHeight: 31,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   valueDescription: {
     fontSize: 20,
     lineHeight: 28,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   contactPanel: {
     gap: 10,
@@ -108,7 +108,7 @@ export default StyleSheet.create({
     fontSize: 21,
     lineHeight: 29,
     color: palette.muted,
-    fontFamily: `AlegreyaSans`,
+    fontFamily: `DragonSlapper`,
   },
   actions: {
     gap: 12,
@@ -134,12 +134,12 @@ export default StyleSheet.create({
   primaryLabel: {
     fontSize: 20,
     color: palette.paper,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   secondaryLabel: {
     fontSize: 20,
     color: palette.ink,
-    fontFamily: `AlegreyaSansMedium`,
+    fontFamily: `DragonSlapper`,
   },
   pressed: {
     opacity: 0.72,

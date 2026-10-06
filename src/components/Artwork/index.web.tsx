@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import type { ArtworkProps } from './types';
+import { useThemedArtwork } from '../../shared/themeContext/ThemeContext';
 
 const scopedArtwork = (xml: string, prefix: string) => xml
   .replace(/\bid="([^"]+)"/g, (_, value: string) => `id="${prefix}-${value}"`)
@@ -8,7 +9,8 @@ const scopedArtwork = (xml: string, prefix: string) => xml
   .replace(/\baria-labelledby="([^"]+)"/g, (_, value: string) => `aria-labelledby="${value.split(/\s+/).map((key) => `${prefix}-${key}`).join(` `)}"`);
 
 const Artwork = ({ id, xml, label, className = `` }: ArtworkProps) => {
-  const markup = useMemo(() => scopedArtwork(xml, id), [xml, id]);
+  const themedXml = useThemedArtwork(xml);
+  const markup = useMemo(() => scopedArtwork(themedXml, id), [themedXml, id]);
   return (
     <span
       id={id}

@@ -7,9 +7,9 @@ import { useSiteHeader } from './useSiteHeader';
 import { brandLogoXml } from '../../shared/artwork';
 import { routes, navigation } from '../../shared/routes';
 import { useTheme } from '../../shared/themeContext/ThemeContext';
-import { X, Sun, Moon, Code, Menu, Mail, Info, BookOpen, Bookmark, Compass, UserRound, Newspaper } from 'lucide-react';
+import { X, Sun, Moon, Code, Menu, Mail, Info, House, BookOpen, UserRound, Newspaper } from 'lucide-react';
 
-const icons = { code: Code, mail: Mail, info: Info, book: BookOpen, compass: Compass, bookmark: Bookmark, newspaper: Newspaper };
+const icons = { code: Code, mail: Mail, info: Info, home: House, book: BookOpen, newspaper: Newspaper };
 
 const SiteHeader = ({ sticky = true, scrolled = false }: HeaderProps) => {
   const pathname = usePathname();

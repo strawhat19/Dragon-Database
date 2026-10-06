@@ -28,8 +28,7 @@ export const resolveRouteAlias = (path: string) => Object.hasOwn(routeAliases, p
   : null;
 
 export const navigation = [
-  { id: `dragons`, path: routes.home.path, label: `Dragons`, icon: `compass`, available: true },
-  { id: `collections`, path: ``, label: `Collections`, icon: `bookmark`, available: false },
+  { id: `home`, path: routes.home.path, label: `Home`, icon: routes.home.icon, available: true },
   { id: `lore`, path: ``, label: `Lore`, icon: `book`, available: false },
   { id: `api`, path: ``, label: `API`, icon: `code`, available: false },
   { id: `blog`, path: ``, label: `Blog`, icon: `newspaper`, available: false },

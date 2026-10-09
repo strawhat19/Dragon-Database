@@ -16,6 +16,7 @@ type ThemeContextValue = ThemePalette & {
 };
 
 const artworkColorKeys: Record<string, keyof ThemePalette> = {
+  '#0c0d10': `ink`,
   '#b9c1cc': `steel`,
   '#c5cbd3': `steel`,
   '#e4e7eb': `silver`,

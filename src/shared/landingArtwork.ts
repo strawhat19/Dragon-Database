@@ -13,7 +13,7 @@ export const wordmarkSwordXml = `<svg xmlns="http://www.w3.org/2000/svg" viewBox
   <g id="wordmark-sword" class="wordmark-sword"><g id="01-db-swordslapper-classic-db-swordmaw-hybrid-wordmark-sword" fill="#101115">
 <path id="01-db-swordslapper-classic-db-swordmaw-hybrid-underline-blade" d="M465 307h422l31 9-31 9H465Z" />
 <path id="01-db-swordslapper-classic-db-swordmaw-hybrid-blade-fuller" fill="#E4E7EB" d="M478 312h410l13 4H478Z" />
-<path id="01-db-swordslapper-classic-wordmark-blood-smears" class="dragon-sword-blood-smear" fill="#8d3038" opacity=".78" d="M794 313L817 314L809 318L791 317L798 315ZM854 316L862 315L870 317L860 319Z" />
+<path id="01-db-swordslapper-classic-wordmark-blood-smears" class="dragon-sword-blood-smear" fill="#8d3038" opacity=".78" d="M790 315C796 313 802 314 808 315C813 316 818 315 823 316C816 318 810 319 804 318C798 318 794 316 790 315ZM848 317C852 315 857 315 862 316C866 317 870 317 873 317C868 319 862 320 857 319C853 319 850 318 848 317Z" />
 <path id="01-db-swordslapper-classic-db-swordmaw-hybrid-underline-guard" d="M447 298h10l7 9v18l-7 9h-10l4-12v-12Z" />
 <path id="01-db-swordslapper-classic-db-swordmaw-hybrid-underline-grip" d="M411 309h37v14h-37l-10-7Z" />
 <path id="01-db-swordslapper-classic-db-swordmaw-hybrid-grip-wrap" fill="#C5CBD3" d="M417 310h4v12h-4Zm10 0h4v12h-4Zm10 0h4v12h-4Z" />

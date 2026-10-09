@@ -20,25 +20,44 @@ export default StyleSheet.create({
     flexDirection: `row`,
     paddingHorizontal: 20,
     borderBottomColor: palette.line,
-    backgroundColor: palette.silver,
+    backgroundColor: palette.ink,
     justifyContent: `space-between`,
-  },
-  blackMetadata: {
-    backgroundColor: `#0b0c10`,
   },
   metadataArtwork: {
     ...StyleSheet.absoluteFillObject,
   },
-  form: {
-    fontSize: 16,
+  titleGroup: {
+    gap: 8,
+    flex: 1,
+    minWidth: 0,
+    alignItems: `center`,
+    flexDirection: `row`,
+  },
+  titleIcon: {
+    width: 30,
+    height: 26,
     flexShrink: 0,
+    transform: [{ scale: 1.18 }],
+  },
+  form: {
+    gap: 6,
+    flexShrink: 0,
+    flexDirection: `row`,
+    alignItems: `baseline`,
+  },
+  formLabel: {
+    fontSize: 16,
     lineHeight: 20,
-    color: palette.ink,
+    color: palette.red,
     letterSpacing: 0.8,
     fontFamily: `DragonSlapper`,
   },
-  lightMetadataText: {
-    color: `#f4f5f7`,
+  formNumber: {
+    fontSize: 24,
+    lineHeight: 28,
+    color: palette.paper,
+    letterSpacing: 0.8,
+    fontFamily: `DragonSlapper`,
   },
   artFrame: {
     width: `100%`,
@@ -66,7 +85,7 @@ export default StyleSheet.create({
     fontSize: 26,
     flexShrink: 1,
     lineHeight: 32,
-    color: palette.ink,
+    color: palette.paper,
     fontFamily: `DragonSlapper`,
   },
   traits: {

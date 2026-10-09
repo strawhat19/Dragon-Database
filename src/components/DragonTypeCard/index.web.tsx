@@ -1,4 +1,5 @@
 import './styles.scss';
+import Artwork from '../Artwork';
 import { Asset } from 'expo-asset';
 import { ArrowUpRight } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
@@ -13,7 +14,7 @@ const DragonTypeCard = ({ type, onSelect }: DragonTypeCardProps) => {
   const [pressed, setPressed] = useState(false);
   const alternateRef = useRef<HTMLImageElement>(null);
   const [loadedAlternate, setLoadedAlternate] = useState<number>();
-  const { traits, form } = getDragonTypeCardContent(type);
+  const { traits, iconXml, formNumber } = getDragonTypeCardContent(type);
 
   useEffect(() => {
     const alternate = alternateRef.current;
@@ -39,8 +40,18 @@ const DragonTypeCard = ({ type, onSelect }: DragonTypeCardProps) => {
       aria-describedby={`dragon-type-traits-${type.id} dragon-type-description-${type.id}`}
     >
       <span className={`dragon-type-metadata`} id={`dragon-type-metadata-${type.id}`}>
-        <span className={`dragon-type-title`} id={`dragon-type-title-${type.id}`}>{type.name}</span>
-        <span className={`dragon-type-form`} id={`dragon-type-form-${type.id}`}>{form}</span>
+        <span className={`dragon-type-title-group`} id={`dragon-type-title-group-${type.id}`}>
+          <Artwork
+            xml={iconXml}
+            className={`dragon-type-title-icon`}
+            id={`dragon-type-title-icon-${type.id}`}
+          />
+          <span className={`dragon-type-title`} id={`dragon-type-title-${type.id}`}>{type.name}</span>
+        </span>
+        <span className={`dragon-type-form`} id={`dragon-type-form-${type.id}`}>
+          <span className={`dragon-type-form-label`} id={`dragon-type-form-label-${type.id}`}>Form</span>
+          <span className={`dragon-type-form-number`} id={`dragon-type-form-number-${type.id}`}>{formNumber}</span>
+        </span>
       </span>
       <span
         className={`dragon-type-art-frame`}

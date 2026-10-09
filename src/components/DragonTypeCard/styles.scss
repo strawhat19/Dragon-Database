@@ -41,21 +41,46 @@
 .dragon-type-metadata {
   gap: 12px;
   display: flex;
-  color: #f4f5f7;
+  isolation: isolate;
+  position: relative;
   padding: 14px 20px;
   align-items: center;
   justify-content: space-between;
+  color: var(--control-foreground);
   border-bottom: 1px solid var(--line);
-  background: repeating-linear-gradient(0deg, #ffffff06 0, #ffffff06 1px, #0000000b 1px, #0000000b 3px), linear-gradient(105deg, #0b0c10, #30343b 48%, #111318);
+  background-color: var(--control-background);
+  transition: color 220ms, background-color 220ms;
+
+  &::before {
+    inset: 0;
+    z-index: -1;
+    opacity: 1;
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 220ms;
+    background: repeating-linear-gradient(0deg, #ffffff06 0, #ffffff06 1px, #0000000b 1px, #0000000b 3px), linear-gradient(105deg, #0b0c10, #30343b 48%, #111318);
+  }
 }
+:root[data-theme='dark'] .dragon-type-metadata::before { opacity: 0; }
+.dragon-type-title-group { gap: 8px; flex: 1; min-width: 0; display: flex; align-items: center; }
+.dragon-type-title-icon { width: 28px; height: 26px; flex-shrink: 0; display: block; color: var(--red); transform: scale(1.18); }
+.dragon-type-title-icon svg { width: 100%; height: 100%; display: block; }
 .dragon-type-form {
+  gap: 6px;
+  display: flex;
   flex-shrink: 0;
-  font-size: 14px;
-  line-height: 1.25;
   white-space: nowrap;
-  letter-spacing: 0.06em;
+  align-items: baseline;
   font-family: var(--font-control);
 }
+.dragon-type-form-label {
+  font-size: 14px;
+  color: var(--red);
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+}
+.dragon-type-form-number { line-height: 1; transition: color 220ms; color: var(--control-foreground); font-size: clamp(20px, 6.3cqi, 24px); }
 .dragon-type-art-frame {
   display: block;
   overflow: hidden;

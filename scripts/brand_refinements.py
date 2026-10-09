@@ -1,6 +1,28 @@
 import re
 
 
+BLADE_BLOOD_SMEARS = {
+    'left-blade-blood-smear': 'M46 50C47 55 50 60 54 64C57 68 60 71 64 74C61 68 57 64 54 59C51 55 48 52 46 50Z',
+    'right-blade-blood-smear': 'M315 49C314 54 311 59 307 63C303 67 299 71 296 74C299 68 304 64 308 58C311 54 313 51 315 49Z',
+    'wordmark-blood-smears': 'M790 315C796 313 802 314 808 315C813 316 818 315 823 316C816 318 810 319 804 318C798 318 794 316 790 315ZM848 317C852 315 857 315 862 316C866 317 870 317 873 317C868 319 862 320 857 319C853 319 850 318 848 317Z',
+}
+
+
+def refine_brand_accents(markup):
+    markup = re.sub(
+        r'(<path\b[^>]*class="dragon-logo-eye-socket"[^>]*fill=")[^"]+',
+        lambda match: match.group(1) + '#FFFFFF',
+        markup,
+    )
+    for name, shape in BLADE_BLOOD_SMEARS.items():
+        markup = re.sub(
+            rf'(<path\b[^>]*id="[^"]*-{name}"[^>]*\bd=")[^"]+',
+            lambda match: match.group(1) + shape,
+            markup,
+        )
+    return markup.replace('small silver eye socket', 'small white eye socket').replace('small silver socket', 'small white socket')
+
+
 SMOOTH_FLAME_OUTLINE = (
     'M3 100 C6 94 16 94 17 88 C19 80 12 74 12 67 C23 73 27 82 28 91 '
     'C42 79 36 63 37 48 C38 34 46 24 49 11 C44 34 52 44 57 55 '

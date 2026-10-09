@@ -30,5 +30,6 @@ def scaled_heading(art, value, x, y, size, width, anchor='middle'):
             glyph.draw(bounds)
             if bounds.bounds:
                 _scale_details(art, glyph_id, heading_id, index, bounds.bounds, cursor)
+                art.parts[-1] = art.parts[-1].replace('#C5CBD3', '#8d3038')
         cursor += glyph.width
     art.add('</g>')

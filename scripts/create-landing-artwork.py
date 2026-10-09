@@ -1,5 +1,6 @@
 import re
 from pathlib import Path
+from brand_refinements import refine_brand_accents
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,7 +36,7 @@ def save(name, markup):
     return markup
 
 
-logo = (ROOT / 'assets/concepts/logos/v9/01-db-swordslapper-crimson-detail.svg').read_text()
+logo = refine_brand_accents((ROOT / 'assets/concepts/logos/v9/01-db-swordslapper-crimson-detail.svg').read_text())
 sword = re.search(r'<g id="[^"]+-wordmark-sword" fill="#101115">.*?</g>', logo, re.S).group(0)
 wordmark_sword = save('wordmark-sword', svg(
     'wordmark-sword',

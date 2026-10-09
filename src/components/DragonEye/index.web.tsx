@@ -1,14 +1,16 @@
 import './styles.scss';
 import type { DragonEyeProps } from './types';
 import { useDragonEye } from './useDragonEye';
+import { useTheme } from '../../shared/themeContext/ThemeContext';
 import { dragonEyeColors, dragonEyeGeometry } from './geometry';
 
 const DragonEye = (_props: DragonEyeProps) => {
+  const { red } = useTheme();
   const { eyeRef, blinkRef, pupilRef, reducedMotion } = useDragonEye();
   const { eyePath, lidPath, irisPath, browPath, glintPath, pupilPath, counterPath, unitsPerEm } = dragonEyeGeometry;
   const { centerY, blinkHeight, counterLeft, counterWidth } = dragonEyeGeometry;
   const { scalePaths, lowerLidPath, glintEchoPath, irisGlowPath, irisFiberPath, irisRidgePath, lowerScalePath, scaleHighlightPath } = dragonEyeGeometry;
-  const colors = dragonEyeColors;
+  const colors = { ...dragonEyeColors, irisRed: red };
 
   return (
     <span
@@ -35,10 +37,10 @@ const DragonEye = (_props: DragonEyeProps) => {
             <stop offset={0.55} stopColor={colors.scaleCopper} />
             <stop offset={1} stopColor={colors.scaleDeep} />
           </linearGradient>
-          <radialGradient id={`landing-database-eye-amber`} cx={`50%`} cy={`48%`} r={`58%`}>
+          <radialGradient id={`landing-database-eye-red`} cx={`50%`} cy={`48%`} r={`58%`}>
             <stop offset={0} stopColor={colors.irisLight} />
-            <stop offset={0.36} stopColor={colors.irisGold} />
-            <stop offset={0.72} stopColor={colors.irisCopper} />
+            <stop offset={0.36} stopColor={colors.irisRed} />
+            <stop offset={0.72} stopColor={colors.irisShade} />
             <stop offset={1} stopColor={colors.irisDeep} />
           </radialGradient>
           <clipPath id={`landing-database-eye-counter`} clipPathUnits={`userSpaceOnUse`}>
@@ -77,10 +79,10 @@ const DragonEye = (_props: DragonEyeProps) => {
               <path id={`landing-database-eye-shape`} d={eyePath} fill={`url(#landing-database-eye-sclera)`} stroke={colors.socket} strokeWidth={5} />
               <g id={`landing-database-eye-pupil-clip`} clipPath={`url(#landing-database-eye-opening)`}>
                 <g ref={pupilRef} id={`landing-database-eye-gaze`} className={`dragon-eye-gaze`}>
-                  <path id={`landing-database-eye-iris`} d={irisPath} fill={`url(#landing-database-eye-amber)`} stroke={colors.irisRim} strokeWidth={4} />
+                  <path id={`landing-database-eye-iris`} d={irisPath} fill={`url(#landing-database-eye-red)`} stroke={colors.irisRim} strokeWidth={4} />
                   <path id={`landing-database-eye-iris-fibers`} d={irisFiberPath} fill={`none`} opacity={0.5} strokeWidth={3} stroke={colors.irisFiber} />
                   <path id={`landing-database-eye-iris-rays`} d={irisGlowPath} fill={`none`} opacity={0.65} strokeWidth={2} stroke={colors.irisLight} />
-                  <path id={`landing-database-eye-iris-ridge`} d={irisRidgePath} fill={`none`} opacity={0.4} strokeWidth={2} stroke={colors.irisGold} />
+                  <path id={`landing-database-eye-iris-ridge`} d={irisRidgePath} fill={`none`} opacity={0.4} strokeWidth={2} stroke={colors.irisRed} />
                   <path id={`landing-database-eye-pupil`} d={pupilPath} fill={colors.pupil} />
                   <path id={`landing-database-eye-glint`} d={glintPath} fill={colors.glint} opacity={0.7} />
                   <path id={`landing-database-eye-glint-echo`} d={glintEchoPath} fill={colors.glint} opacity={0.25} />

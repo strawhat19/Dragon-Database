@@ -1,17 +1,19 @@
+import { palette } from '../../styles/theme/theme';
+
 export const dragonEyeColors = {
   pupil: `#100d0e`,
-  glint: `#fff3d0`,
+  glint: `#fff4f5`,
   socket: `#21191e`,
-  irisRim: `#57321b`,
-  irisGold: `#eab558`,
-  irisDeep: `#8b471c`,
-  irisLight: `#f6d58a`,
-  irisFiber: `#603c1b`,
+  irisRed: palette.red,
+  irisRim: `#3c161c`,
+  irisDeep: `#4b151d`,
+  irisLight: `#eab0b5`,
+  irisFiber: `#501923`,
+  irisShade: `#a54a54`,
   scaleDeep: `#453133`,
   scaleLight: `#bc8652`,
   scleraDeep: `#51442e`,
   scleraLight: `#d0c290`,
-  irisCopper: `#c37027`,
   scaleCopper: `#805540`,
 };
 

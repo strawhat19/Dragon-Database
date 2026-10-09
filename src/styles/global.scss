@@ -27,6 +27,9 @@
   --steel: #343e4d;
   --muted: #aab4c2;
   --silver: #0e1219;
+  --control-hover: #bec6d0;
+  --control-background: var(--ink);
+  --control-foreground: var(--paper);
   --header-scrolled: rgba(14, 18, 25, .86);
   --hero-metal-background: linear-gradient(103deg, #202834 0%, #343e4d 19%, #434e5f 39%, #333e4d 55%, #26303e 80%, #19222e 100%);
   color-scheme: dark;
@@ -40,7 +43,6 @@
   .landing-editorial-link:hover { background: var(--steel); }
   .landing-editorial-link-primary { color: var(--control-foreground); background: var(--control-background); border-color: var(--control-background); &:hover { background: var(--control-hover); border-color: var(--control-hover); } }
   .landing-invitation .landing-editorial-link { border-color: var(--muted); }
-  .dragon-type-metadata { color: var(--ink); background: linear-gradient(105deg, var(--steel), var(--paper) 48%, var(--line)); }
   .dragon-type-art-frame { background: var(--silver); }
   .legal-introduction { background: linear-gradient(112deg, var(--steel), var(--paper) 72%); }
   .about-action-primary { color: var(--control-foreground); background: var(--control-background); &:hover { background: var(--control-hover); } }

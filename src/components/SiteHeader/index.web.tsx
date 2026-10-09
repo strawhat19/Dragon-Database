@@ -6,10 +6,29 @@ import { Link, usePathname } from 'expo-router';
 import { useSiteHeader } from './useSiteHeader';
 import { brandLogoXml } from '../../shared/artwork';
 import { routes, navigation } from '../../shared/routes';
+import { filledHeaderIcons, filledHeaderIconNodes } from './icons';
 import { useTheme } from '../../shared/themeContext/ThemeContext';
-import { X, Sun, Moon, Code, Menu, Mail, Info, Flame, House, BookOpen, UserRound, Newspaper } from 'lucide-react';
+import { X, Sun, Moon, Code, Menu, Mail, Info, Flame, House, BookOpen, UserRound, Newspaper, createLucideIcon } from 'lucide-react';
 
-const icons = { code: Code, mail: Mail, info: Info, home: House, book: BookOpen, flame: Flame, newspaper: Newspaper };
+const outlineIcons = {
+  x: X,
+  sun: Sun,
+  code: Code,
+  mail: Mail,
+  info: Info,
+  moon: Moon,
+  menu: Menu,
+  home: House,
+  flame: Flame,
+  book: BookOpen,
+  user: UserRound,
+  newspaper: Newspaper,
+};
+const icons = filledHeaderIcons
+  ? Object.fromEntries(Object.entries(filledHeaderIconNodes).map(([name, nodes]) => [name, createLucideIcon(`Header${name}Filled`, nodes)])) as typeof outlineIcons
+  : outlineIcons;
+const iconFill = filledHeaderIcons ? `currentColor` : `none`;
+const { x: CloseIcon, sun: SunIcon, user: UserIcon, moon: MoonIcon, menu: MenuIcon } = icons;
 
 const SiteHeader = ({ sticky = true, scrolled = false }: HeaderProps) => {
   const pathname = usePathname();
@@ -34,7 +53,7 @@ const SiteHeader = ({ sticky = true, scrolled = false }: HeaderProps) => {
           setMenuOpen(false);
         }}
       >
-        <Icon id={`${prefix}-${item.id}-icon`} className={`site-navigation-icon`} size={17} aria-hidden={true} />
+        <Icon id={`${prefix}-${item.id}-icon`} className={`site-navigation-icon`} size={17} fill={iconFill} aria-hidden={true} />
         <span id={`${prefix}-${item.id}-label`} className={`site-navigation-label`}>{item.label}</span>
       </WebAnchor>
     );
@@ -53,17 +72,6 @@ const SiteHeader = ({ sticky = true, scrolled = false }: HeaderProps) => {
           {navigation.map((item) => navigationLink(item))}
         </nav>
         <div id={`site-header-actions`} className={`site-header-actions`}>
-          <a
-            href={``}
-            aria-disabled={true}
-            id={`site-sign-in-link`}
-            className={`site-sign-in-link`}
-            title={`Sign In — Coming soon`}
-            onClick={(event) => event.preventDefault()}
-          >
-            <UserRound id={`site-sign-in-icon`} className={`site-sign-in-icon`} size={17} aria-hidden={true} />
-            <span id={`site-sign-in-label`} className={`site-sign-in-label`}>Sign In</span>
-          </a>
           <button
             type={`button`}
             onClick={toggleTheme}
@@ -73,8 +81,19 @@ const SiteHeader = ({ sticky = true, scrolled = false }: HeaderProps) => {
             title={isDark ? `Switch To Light Mode` : `Switch To Dark Mode`}
             aria-label={isDark ? `Switch To Light Mode` : `Switch To Dark Mode`}
           >
-            {isDark ? <Sun id={`site-theme-sun-icon`} size={19} aria-hidden={true} /> : <Moon id={`site-theme-moon-icon`} size={19} aria-hidden={true} />}
+            {isDark ? <SunIcon id={`site-theme-sun-icon`} size={19} fill={iconFill} aria-hidden={true} /> : <MoonIcon id={`site-theme-moon-icon`} size={19} fill={iconFill} aria-hidden={true} />}
           </button>
+          <a
+            href={``}
+            aria-disabled={true}
+            id={`site-sign-in-link`}
+            className={`site-sign-in-link`}
+            title={`Sign In — Coming soon`}
+            onClick={(event) => event.preventDefault()}
+          >
+            <UserIcon id={`site-sign-in-icon`} className={`site-sign-in-icon`} size={17} fill={iconFill} aria-hidden={true} />
+            <span id={`site-sign-in-label`} className={`site-sign-in-label`}>Sign In</span>
+          </a>
           <button
             type={`button`}
             id={`site-menu-toggle`}
@@ -84,7 +103,7 @@ const SiteHeader = ({ sticky = true, scrolled = false }: HeaderProps) => {
             aria-label={menuOpen ? `Close menu` : `Open menu`}
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            {menuOpen ? <X id={`site-menu-close-icon`} size={23} aria-hidden={true} /> : <Menu id={`site-menu-open-icon`} size={23} aria-hidden={true} />}
+            {menuOpen ? <CloseIcon id={`site-menu-close-icon`} size={23} fill={iconFill} aria-hidden={true} /> : <MenuIcon id={`site-menu-open-icon`} size={23} fill={iconFill} aria-hidden={true} />}
           </button>
         </div>
       </div>

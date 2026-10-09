@@ -137,6 +137,11 @@ export default StyleSheet.create({
     paddingTop: 46,
     paddingBottom: 56,
   },
+  catalogHeadingRow: {
+    gap: 10,
+    alignItems: `center`,
+    flexDirection: `row`,
+  },
   catalogHeading: {
     fontSize: 28,
     lineHeight: 34,

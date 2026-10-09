@@ -9,9 +9,13 @@ import DragonTypeCard from '../DragonTypeCard';
 import LandingSections from '../LandingSections';
 import { useLandingPage } from './useLandingPage';
 import { wordmarkSwordXml } from '../../shared/landingArtwork';
-import { X, Search, ChevronUp, ArrowRight, RotateCcw } from 'lucide-react';
+import { filledHeaderIcons, filledHeaderIconNodes } from '../SiteHeader/icons';
 import { useScrollTopContrast } from '../../shared/motion/useScrollTopContrast';
+import { X, Flame, Search, ChevronUp, RotateCcw, createLucideIcon } from 'lucide-react';
 import { flameLeftXml, flameRightXml, flyingDragonXml, scalingCollectionXml } from '../../shared/artwork';
+
+const SearchIcon = filledHeaderIcons ? createLucideIcon(`LandingSearchFilled`, filledHeaderIconNodes.search) : Search;
+const ExploreIcon = filledHeaderIcons ? createLucideIcon(`LandingExploreFilled`, filledHeaderIconNodes.flame) : Flame;
 
 const flights = [
   { id: `left-near`, delay: 0.35 },
@@ -87,7 +91,13 @@ const LandingPage = () => {
                 onSubmit={(event) => { event.preventDefault(); submitSearch(); }}
               >
                 <label id={`landing-search-label`} className={`visually-hidden`} htmlFor={`landing-search-input`}>Search names, forms, or traits</label>
-                <Search id={`landing-search-icon`} className={`landing-search-icon`} size={23} aria-hidden={true} />
+                <SearchIcon
+                  size={23}
+                  aria-hidden={true}
+                  id={`landing-search-icon`}
+                  className={`landing-search-icon`}
+                  fill={filledHeaderIcons ? `currentColor` : `none`}
+                />
                 <input
                   type={`search`}
                   value={query}
@@ -108,7 +118,13 @@ const LandingPage = () => {
                 ) : null}
                 <button id={`landing-search-submit`} className={`landing-search-submit`} type={`submit`}>
                   <span id={`landing-search-submit-label`} className={`landing-search-submit-label`}>Search</span>
-                  <ArrowRight id={`landing-search-submit-icon`} className={`landing-search-submit-icon`} size={18} aria-hidden={true} />
+                  <SearchIcon
+                    size={18}
+                    aria-hidden={true}
+                    id={`landing-search-submit-icon`}
+                    className={`landing-search-submit-icon`}
+                    fill={filledHeaderIcons ? `currentColor` : `none`}
+                  />
                 </button>
               </form>
             </Reveal>
@@ -116,7 +132,14 @@ const LandingPage = () => {
         </section>
         <section ref={catalogRef} id={`landing-type-catalog`} className={`landing-type-catalog`} aria-labelledby={`landing-catalog-heading`}>
           <h2 id={`landing-catalog-heading`} className={`landing-catalog-heading`}>
-            <TextReveal id={`landing-catalog-heading-text`} text={hasQuery ? `Search results` : `Explore dragon forms`} delay={0.08} />
+            <ExploreIcon
+              size={26}
+              aria-hidden={true}
+              id={`landing-catalog-heading-icon`}
+              className={`landing-catalog-heading-icon`}
+              fill={filledHeaderIcons ? `currentColor` : `none`}
+            />
+            <TextReveal id={`landing-catalog-heading-text`} text={hasQuery ? `Search results` : `Explore`} delay={0.08} />
           </h2>
           <p id={`landing-result-status`} className={hasQuery ? `landing-result-status` : `visually-hidden`} role={`status`} aria-live={`polite`} aria-atomic={true}>
             {isHydrated ? `${filteredTypes.length} dragon form${filteredTypes.length === 1 ? `` : `s`}${hasQuery ? ` matching “${query.trim()}”` : ` available`}` : ``}

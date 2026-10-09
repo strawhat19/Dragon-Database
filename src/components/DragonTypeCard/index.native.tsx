@@ -23,10 +23,10 @@ const blackSteelColors: Record<string, string> = {
 const blackSteelTextureXml = steelTextureXml.replace(/#[\da-f]{6}/gi, (color) => blackSteelColors[color.toLowerCase()] ?? color);
 
 const DragonTypeCard = ({ type, onSelect }: DragonTypeCardProps) => {
-  const { palette, isDark } = useTheme();
+  const { palette, isDark, themeArtwork } = useTheme();
   const image = dragonTypeImages[type.kind];
   const styles = useThemedStyles(baseStyles);
-  const { traits, form } = getDragonTypeCardContent(type);
+  const { traits, iconXml, formNumber } = getDragonTypeCardContent(type);
   const { onPressIn, onPressOut, baseArtStyle, onAlternateLoad, alternateArtStyle } = useDragonTypeArt(image.hoverSource);
 
   return (
@@ -44,8 +44,8 @@ const DragonTypeCard = ({ type, onSelect }: DragonTypeCardProps) => {
     >
       {({ pressed }) => (
         <>
-          <View style={[styles.metadata, !isDark && styles.blackMetadata]} nativeID={`dragon-type-metadata-${type.id}`}>
-            {!isDark ? (
+          <View style={styles.metadata} nativeID={`dragon-type-metadata-${type.id}`}>
+            {!isDark && (
               <View
                 pointerEvents={`none`}
                 accessibilityElementsHidden
@@ -55,18 +55,46 @@ const DragonTypeCard = ({ type, onSelect }: DragonTypeCardProps) => {
               >
                 <SvgXml xml={blackSteelTextureXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
               </View>
-            ) : null}
-            <Text
-              numberOfLines={1}
-              adjustsFontSizeToFit
-              minimumFontScale={0.65}
-              testID={`dragon-type-title-${type.id}`}
-              nativeID={`dragon-type-title-${type.id}`}
-              style={[styles.title, !isDark && styles.lightMetadataText]}
-            >
-              {type.name}
-            </Text>
-            <Text style={[styles.form, !isDark && styles.lightMetadataText]} nativeID={`dragon-type-form-${type.id}`}>{form}</Text>
+            )}
+            <View style={styles.titleGroup} nativeID={`dragon-type-title-group-${type.id}`}>
+              <View
+                pointerEvents={`none`}
+                style={styles.titleIcon}
+                accessibilityElementsHidden
+                importantForAccessibility={`no-hide-descendants`}
+                nativeID={`dragon-type-title-icon-container-${type.id}`}
+              >
+                <SvgXml
+                  width={`100%`}
+                  height={`100%`}
+                  accessible={false}
+                  xml={themeArtwork(iconXml)}
+                  nativeID={`dragon-type-title-icon-${type.id}`}
+                />
+              </View>
+              <Text
+                style={styles.title}
+                numberOfLines={1}
+                adjustsFontSizeToFit
+                minimumFontScale={0.65}
+                testID={`dragon-type-title-${type.id}`}
+                nativeID={`dragon-type-title-${type.id}`}
+              >
+                {type.name}
+              </Text>
+            </View>
+            <View style={styles.form} nativeID={`dragon-type-form-${type.id}`}>
+              <Text style={styles.formLabel} nativeID={`dragon-type-form-label-${type.id}`}>Form</Text>
+              <Text
+                numberOfLines={1}
+                adjustsFontSizeToFit
+                minimumFontScale={0.85}
+                style={styles.formNumber}
+                nativeID={`dragon-type-form-number-${type.id}`}
+              >
+                {formNumber}
+              </Text>
+            </View>
           </View>
           <View
             style={styles.artFrame}

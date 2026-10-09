@@ -12,7 +12,8 @@ import useLandingPage from './useLandingPage.native';
 import ScrollTopButton from '../ScrollTopButton/index.native';
 import AngledSurface from '../AngledSurface/index.native';
 import { wordmarkSwordXml } from '../../shared/landingArtwork';
-import { Search, X, ArrowRight, RotateCcw } from 'lucide-react-native';
+import { X, Flame, Search, RotateCcw, createLucideIcon } from 'lucide-react-native';
+import { filledHeaderIcons, filledHeaderIconNodes } from '../SiteHeader/icons';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 import {
   Text,
@@ -30,8 +31,8 @@ import {
   scalingCollectionXml,
 } from '../../shared/artwork';
 
-const controlInk = `#101115`;
-const controlPaper = `#f4f5f7`;
+const SearchIcon = filledHeaderIcons ? createLucideIcon(`LandingSearchFilled`, filledHeaderIconNodes.search) : Search;
+const ExploreIcon = filledHeaderIcons ? createLucideIcon(`LandingExploreFilled`, filledHeaderIconNodes.flame) : Flame;
 
 const LandingPage = () => {
   const styles = useThemedStyles(baseStyles);
@@ -107,10 +108,10 @@ const LandingPage = () => {
               <SvgXml xml={themeArtwork(steelTextureXml)} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
               {isDark && <View pointerEvents={`none`} nativeID={`landing-hero-dark-tint`} testID={`landing-hero-dark-tint`} style={[styles.artwork, { opacity: 0.76, backgroundColor: palette.silver }]} />}
               <View style={[styles.flame, { left: 6, width: flameWidth, height: flameHeight }]} nativeID={`landing-left-flames`} testID={`landing-left-flames`}>
-                <SvgXml xml={flameLeftXml} width={`100%`} height={`100%`} />
+                <SvgXml xml={themeArtwork(flameLeftXml)} width={`100%`} height={`100%`} />
               </View>
               <View style={[styles.flame, { right: 6, width: flameWidth, height: flameHeight }]} nativeID={`landing-right-flames`} testID={`landing-right-flames`}>
-                <SvgXml xml={flameRightXml} width={`100%`} height={`100%`} />
+                <SvgXml xml={themeArtwork(flameRightXml)} width={`100%`} height={`100%`} />
               </View>
               {[`left`, `right`].map((side) => (
                 <View
@@ -211,7 +212,12 @@ const LandingPage = () => {
                 <Reveal id={`landing-search-reveal`} delay={0.28}>
                   <View style={styles.search} nativeID={`landing-search-field`} testID={`landing-search-field`}>
                     <AngledSurface id={`landing-search-surface`} fill={palette.paper} stroke={searchFocused ? palette.ink : palette.line} />
-                    <Search size={22} color={palette.muted} accessibilityElementsHidden />
+                    <SearchIcon
+                      size={22}
+                      color={palette.muted}
+                      accessibilityElementsHidden
+                      fill={filledHeaderIcons ? palette.muted : `none`}
+                    />
                     <TextInput
                       value={query}
                       autoCorrect={false}
@@ -250,9 +256,16 @@ const LandingPage = () => {
                       testID={`landing-search-submit`}
                       style={({ pressed }) => [styles.searchSubmit, pressed && styles.pressed]}
                     >
-                      <AngledSurface id={`landing-search-submit-surface`} fill={controlInk} />
-                      <Text style={[styles.searchSubmitLabel, { color: controlPaper }]}>Search</Text>
-                      {wide && <ArrowRight size={18} color={controlPaper} />}
+                      <AngledSurface id={`landing-search-submit-surface`} fill={palette.ink} />
+                      <Text style={styles.searchSubmitLabel}>Search</Text>
+                      <SearchIcon
+                        size={18}
+                        color={palette.red}
+                        accessibilityElementsHidden
+                        nativeID={`landing-search-submit-icon`}
+                        testID={`landing-search-submit-icon`}
+                        fill={filledHeaderIcons ? palette.red : `none`}
+                      />
                     </Pressable>
                   </View>
                 </Reveal>
@@ -260,14 +273,23 @@ const LandingPage = () => {
             </View>
           </View>
           <View style={[styles.catalog, cardGrid && styles.wideCatalog, { paddingHorizontal: gutter }]} nativeID={`landing-type-catalog`} testID={`landing-type-catalog`}>
-            <TextReveal
-              mode={`words`}
-              delay={0.32}
-              accessibilityRole={`header`}
-              id={`landing-catalog-heading`}
-              text={query.trim() ? `Search results` : `Explore dragon forms`}
-              textStyle={[styles.catalogHeading, cardGrid && styles.wideCatalogHeading]}
-            />
+            <View style={styles.catalogHeadingRow} nativeID={`landing-catalog-heading-row`}>
+              <ExploreIcon
+                size={26}
+                color={palette.red}
+                accessibilityElementsHidden
+                nativeID={`landing-catalog-heading-icon`}
+                fill={filledHeaderIcons ? palette.red : `none`}
+              />
+              <TextReveal
+                mode={`words`}
+                delay={0.32}
+                accessibilityRole={`header`}
+                id={`landing-catalog-heading`}
+                text={query.trim() ? `Search results` : `Explore`}
+                textStyle={[styles.catalogHeading, cardGrid && styles.wideCatalogHeading]}
+              />
+            </View>
             {!!query.trim() && (
               <Text accessibilityLiveRegion={`polite`} style={styles.resultLabel} nativeID={`landing-query-label`} testID={`landing-query-label`}>
                 {`Matches for “${query.trim()}”`}

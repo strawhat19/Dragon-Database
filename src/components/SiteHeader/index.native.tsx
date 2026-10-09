@@ -5,18 +5,21 @@ import { SvgXml } from 'react-native-svg';
 import type { HeaderProps } from './types';
 import { Link, usePathname } from 'expo-router';
 import useSiteHeader from './useSiteHeader.native';
+import { filledHeaderIcons, filledHeaderIconNodes } from './icons';
 import { brandLogoXml } from '../../shared/artwork';
 import { routes, navigation } from '../../shared/routes';
 import AngledSurface from '../AngledSurface/index.native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 import { Text, View, Animated, Pressable, useWindowDimensions } from 'react-native';
-import { X, Sun, Code, Moon, Menu, Mail, Info, Flame, House, BookOpen, UserRound, Newspaper } from 'lucide-react-native';
+import { X, Sun, Code, Moon, Menu, Mail, Info, Flame, House, BookOpen, UserRound, Newspaper, createLucideIcon } from 'lucide-react-native';
 
 type NativeHeaderProps = HeaderProps & { blurTarget?: RefObject<View | null> };
-const controlInk = `#101115`;
-const controlPaper = `#f4f5f7`;
-const icons = { code: Code, mail: Mail, info: Info, home: House, book: BookOpen, flame: Flame, newspaper: Newspaper };
+const outlineIcons = { x: X, sun: Sun, code: Code, mail: Mail, info: Info, moon: Moon, menu: Menu, home: House, flame: Flame, book: BookOpen, user: UserRound, newspaper: Newspaper };
+const icons = filledHeaderIcons
+  ? Object.fromEntries(Object.entries(filledHeaderIconNodes).map(([name, nodes]) => [name, createLucideIcon(`Header${name}Filled`, nodes)])) as typeof outlineIcons
+  : outlineIcons;
+const { x: CloseIcon, sun: SunIcon, moon: MoonIcon, menu: MenuIcon, user: UserIcon } = icons;
 
 const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeaderProps) => {
   const styles = useThemedStyles(baseStyles);
@@ -45,7 +48,7 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
         testID={`site-header-${mobile ? `mobile-` : ``}${item.id}`}
         style={({ pressed }) => [styles.navigationItem, mobile && styles.menuItem, (active || pressed) && styles.activeItem, pressed && styles.pressed]}
       >
-        <Icon size={17} color={active ? palette.ink : palette.muted} accessibilityElementsHidden />
+        <Icon size={17} color={palette.red} fill={filledHeaderIcons ? palette.red : `none`} accessibilityElementsHidden />
         <Text style={[styles.navigationLabel, active && styles.activeLabel]}>{item.label}</Text>
       </Pressable>
     );
@@ -96,6 +99,17 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
             </View>
           )}
           <Pressable
+            onPress={toggleTheme}
+            accessibilityRole={`button`}
+            nativeID={`site-header-theme-toggle`}
+            testID={`site-header-theme-toggle`}
+            accessibilityLabel={`Switch To ${isDark ? `Light` : `Dark`} Mode`}
+            style={({ pressed }) => [styles.themeToggle, pressed && styles.pressed]}
+          >
+            <AngledSurface id={`site-header-theme-toggle-surface`} fill={palette.ink} />
+            {isDark ? <SunIcon size={18} color={palette.paper} fill={filledHeaderIcons ? palette.paper : `none`} accessibilityElementsHidden /> : <MoonIcon size={18} color={palette.paper} fill={filledHeaderIcons ? palette.paper : `none`} accessibilityElementsHidden />}
+          </Pressable>
+          <Pressable
             disabled
             accessibilityRole={`button`}
             accessibilityLabel={`Sign In`}
@@ -105,20 +119,9 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
             testID={`site-header-sign-in`}
             style={styles.signIn}
           >
-            <AngledSurface id={`site-header-sign-in-surface`} fill={controlInk} />
-            <UserRound size={17} color={controlPaper} accessibilityElementsHidden />
-            <Text style={[styles.signInLabel, !wide && styles.mobileSignInLabel, { color: controlPaper }]}>Sign In</Text>
-          </Pressable>
-          <Pressable
-            onPress={toggleTheme}
-            accessibilityRole={`button`}
-            nativeID={`site-header-theme-toggle`}
-            testID={`site-header-theme-toggle`}
-            accessibilityLabel={`Switch To ${isDark ? `Light` : `Dark`} Mode`}
-            style={({ pressed }) => [styles.themeToggle, pressed && styles.pressed]}
-          >
-            <AngledSurface id={`site-header-theme-toggle-surface`} fill={controlInk} />
-            {isDark ? <Sun size={18} color={controlPaper} accessibilityElementsHidden /> : <Moon size={18} color={controlPaper} accessibilityElementsHidden />}
+            <AngledSurface id={`site-header-sign-in-surface`} fill={palette.ink} />
+            <UserIcon size={17} color={palette.red} fill={filledHeaderIcons ? palette.red : `none`} accessibilityElementsHidden />
+            <Text style={[styles.signInLabel, !wide && styles.mobileSignInLabel]}>Sign In</Text>
           </Pressable>
           {!wide && (
             <Pressable
@@ -130,7 +133,7 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
               onPress={toggleMenu}
               style={({ pressed }) => [styles.menuButton, pressed && styles.pressed]}
             >
-              {menuOpen ? <X size={24} color={palette.ink} /> : <Menu size={24} color={palette.ink} />}
+              {menuOpen ? <CloseIcon size={24} color={palette.ink} fill={filledHeaderIcons ? palette.ink : `none`} /> : <MenuIcon size={24} color={palette.ink} fill={filledHeaderIcons ? palette.ink : `none`} />}
             </Pressable>
           )}
         </View>

@@ -129,14 +129,16 @@
   background: var(--control-background);
   font-size: 21px;
   font-family: var(--font-control);
-  transition: background 200ms;
+  transition: color 200ms, background 200ms;
   &:hover { background: var(--control-hover); }
 }
 .landing-search-submit { flex-shrink: 0; font-weight: 400; font-synthesis: none; font-size: 18px; clip-path: var(--angled-corners); }
+.landing-search-submit-icon { flex-shrink: 0; color: var(--red); }
 .landing-search-submit:focus-visible { box-shadow: inset 0 0 0 2px var(--red); }
 
 .landing-type-catalog { max-width: 1280px; margin: 0 auto; padding: 45px 0 50px; }
-.landing-catalog-heading { margin: 0 0 28px; font-size: 32px; font-weight: 400; line-height: 1.25; font-synthesis: none; font-family: var(--font-brand); }
+.landing-catalog-heading { gap: 10px; display: flex; align-items: center; margin: 0 0 28px; font-size: 32px; font-weight: 400; line-height: 1.25; font-synthesis: none; font-family: var(--font-brand); }
+.landing-catalog-heading-icon { flex-shrink: 0; color: var(--red); }
 .landing-result-status { margin: -7px 0 20px; font-size: 19px; color: var(--muted); }
 .landing-type-grid { gap: 26px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .landing-type-grid > .reveal { min-width: 0; }
@@ -200,7 +202,6 @@
   .landing-search-icon { width: 20px; margin-left: 10px; }
   .landing-search-input { height: 42px; font-size: 20px; }
   .landing-search-submit { min-height: 42px; padding: 8px 12px; font-size: 18px; }
-  .landing-search-submit-icon { display: none; }
   .landing-search-clear { width: 24px; }
   .landing-flame { width: 42px; height: 58px; }
   .landing-dragon-flight { width: 34px; height: 24px; bottom: 75px; }

@@ -8,14 +8,15 @@
 .site-desktop-navigation { gap: 22px; display: flex; margin-left: auto; align-items: center; }
 .site-navigation-link, .site-mobile-navigation-link { gap: 7px; display: flex; position: relative; align-items: center; color: var(--muted); text-decoration: none; font-family: var(--font-brand); font-size: 16px; font-weight: 400; line-height: 1.35; transition: color 180ms ease; }
 .site-navigation-link { padding: 12px 0; }
+.site-navigation-icon { color: var(--red); transition: color 180ms ease; }
 .site-navigation-link::after, .site-mobile-navigation-link::after { left: 0; right: 0; height: 2px; bottom: 3px; content: ''; position: absolute; background: var(--red); transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; }
 .site-navigation-link:hover, .site-navigation-link.is-active, .site-mobile-navigation-link:hover, .site-mobile-navigation-link.is-active { color: var(--ink); }
 .site-navigation-link:hover::after, .site-navigation-link.is-active::after, .site-mobile-navigation-link:hover::after, .site-mobile-navigation-link.is-active::after { transform: scaleX(1); }
 .site-header-actions { gap: 8px; display: flex; flex-shrink: 0; align-items: center; }
-.site-sign-in-link, .site-theme-toggle { color: var(--control-foreground); display: flex; flex-shrink: 0; min-height: 40px; align-items: center; background: var(--control-background); clip-path: var(--angled-corners); transition: background 180ms ease; }
+.site-sign-in-link, .site-theme-toggle { color: var(--control-foreground); display: flex; flex-shrink: 0; min-height: 40px; align-items: center; background: var(--control-background); clip-path: var(--angled-corners); transition: color 180ms ease, background 180ms ease; }
 .site-sign-in-link { gap: 8px; padding: 8px 16px; text-decoration: none; font-size: 18px; white-space: nowrap; }
 .site-theme-toggle { border: 0; padding: 0; width: 40px; height: 40px; justify-content: center; }
-.site-sign-in-icon { flex-shrink: 0; }
+.site-sign-in-icon { flex-shrink: 0; color: var(--red); }
 .site-sign-in-label { font-family: var(--font-brand); }
 .site-sign-in-link:hover, .site-theme-toggle:hover { background: var(--control-hover); }
 .site-sign-in-link:focus-visible, .site-theme-toggle:focus-visible { box-shadow: inset 0 0 0 2px var(--red); }

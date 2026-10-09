@@ -1,7 +1,7 @@
 {
   "name": "dragon-database",
   "private": true,
-  "version": "0.0.0.4",
+  "version": "0.0.0.5",
   "main": "expo-router/entry",
   "engines": { "node": "24.x" },
   "scripts": {

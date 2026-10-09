@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 from html import escape
 from icon_badges import create_icon_badges
-from brand_refinements import smooth_flames
+from brand_refinements import smooth_flames, refine_brand_accents
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,9 +33,9 @@ def save(name, markup):
     return markup
 
 
-logo = (ROOT / 'assets/concepts/logos/v9/01-db-swordslapper-crimson-detail.svg').read_text()
+logo = refine_brand_accents((ROOT / 'assets/concepts/logos/v9/01-db-swordslapper-crimson-detail.svg').read_text())
 save('logo', logo)
-mark_xml = save('mark', (ROOT / 'assets/concepts/logos/v9/02-db-swordmaw-crimson-mark.svg').read_text())
+mark_xml = save('mark', refine_brand_accents((ROOT / 'assets/concepts/logos/v9/02-db-swordmaw-crimson-mark.svg').read_text()))
 
 subheading = Canvas('scaling-subheading', 1080, 110, 'The Scaling Collection', 'DragonSlapper lettering with steel scales on the S')
 scaled_heading(subheading, 'The Scaling Collection', 540, 82, 90, 1020)

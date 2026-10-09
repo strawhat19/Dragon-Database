@@ -1,13 +1,14 @@
-import { Link } from 'expo-router';
-import { Info, Mail, ArrowUpRight } from 'lucide-react';
+import './styles.scss';
+
 import Reveal from '../Reveal';
 import Artwork from '../Artwork';
+import { Link } from 'expo-router';
 import WebAnchor from '../WebAnchor';
 import TextReveal from '../TextReveal';
 import { routes } from '../../shared/routes';
 import { anatomyNotes, loreNotes } from './content';
+import { Info, Mail, ArrowUpRight } from 'lucide-react';
 import { wordmarkSwordXml, dragonTypeGraphics } from '../../shared/landingArtwork';
-import './styles.scss';
 
 const LandingSections = () => (
   <div id={`landing-editorial-sections`} className={`landing-editorial-sections`}>
@@ -62,30 +63,32 @@ const LandingSections = () => (
         ))}
       </div>
     </section>
-    <section id={`landing-invitation`} className={`landing-invitation landing-section-inner`} aria-labelledby={`landing-invitation-title`}>
-      <Reveal id={`landing-invitation-reveal`} className={`landing-invitation-panel`}>
-        <Artwork id={`landing-invitation-sword`} className={`landing-invitation-sword`} xml={wordmarkSwordXml} />
-        <p id={`landing-invitation-eyebrow`} className={`landing-section-eyebrow`}>The collection continues</p>
-        <h2 id={`landing-invitation-title`} className={`landing-section-title`}>
-          <TextReveal id={`landing-invitation-title-text`} text={`Every dragon has a story`} delay={0.1} />
-        </h2>
-        <p id={`landing-invitation-copy`} className={`landing-invitation-copy`}>Explore the forms. Learn the distinctions. Help shape the collection.</p>
-        <div id={`landing-invitation-actions`} className={`landing-invitation-actions`}>
-          <Link href={routes.about.path} asChild>
-            <WebAnchor id={`landing-about-link`} className={`landing-editorial-link landing-editorial-link-primary`}>
-              <Info id={`landing-about-link-icon`} size={18} aria-hidden={true} />
-              <span id={`landing-about-link-label`} className={`landing-editorial-link-label`}>About the archive</span>
-            </WebAnchor>
-          </Link>
-          <Link href={routes.contact.path} asChild>
-            <WebAnchor id={`landing-contact-link`} className={`landing-editorial-link`}>
-              <Mail id={`landing-contact-link-icon`} size={18} aria-hidden={true} />
-              <span id={`landing-contact-link-label`} className={`landing-editorial-link-label`}>Get in touch</span>
-              <ArrowUpRight id={`landing-contact-link-arrow`} size={17} aria-hidden={true} />
-            </WebAnchor>
-          </Link>
-        </div>
-      </Reveal>
+    <section id={`landing-invitation`} className={`landing-invitation`} aria-labelledby={`landing-invitation-title`}>
+      <div id={`landing-invitation-inner`} className={`landing-section-inner`}>
+        <Reveal id={`landing-invitation-reveal`} className={`landing-invitation-panel`}>
+          <Artwork id={`landing-invitation-sword`} className={`landing-invitation-sword`} xml={wordmarkSwordXml} />
+          <p id={`landing-invitation-eyebrow`} className={`landing-section-eyebrow`}>The collection continues</p>
+          <h2 id={`landing-invitation-title`} className={`landing-section-title`}>
+            <TextReveal id={`landing-invitation-title-text`} text={`Every dragon has a story`} delay={0.1} />
+          </h2>
+          <p id={`landing-invitation-copy`} className={`landing-invitation-copy`}>Explore the forms. Learn the distinctions. Help shape the collection.</p>
+          <div id={`landing-invitation-actions`} className={`landing-invitation-actions`}>
+            <Link href={routes.about.path} asChild>
+              <WebAnchor id={`landing-about-link`} className={`landing-editorial-link landing-editorial-link-primary`}>
+                <Info id={`landing-about-link-icon`} size={18} aria-hidden={true} />
+                <span id={`landing-about-link-label`} className={`landing-editorial-link-label`}>About the archive</span>
+              </WebAnchor>
+            </Link>
+            <Link href={routes.contact.path} asChild>
+              <WebAnchor id={`landing-contact-link`} className={`landing-editorial-link`}>
+                <Mail id={`landing-contact-link-icon`} size={18} aria-hidden={true} />
+                <span id={`landing-contact-link-label`} className={`landing-editorial-link-label`}>Get in touch</span>
+                <ArrowUpRight id={`landing-contact-link-arrow`} size={17} aria-hidden={true} />
+              </WebAnchor>
+            </Link>
+          </div>
+        </Reveal>
+      </div>
     </section>
   </div>
 );

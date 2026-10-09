@@ -18,6 +18,7 @@ const ThemedRouter = () => {
         <Stack.Screen name={`contact`} options={{ title: `Contact | Dragon Database` }} />
         <Stack.Screen name={`terms`} options={{ title: `Terms | Dragon Database` }} />
         <Stack.Screen name={`privacy`} options={{ title: `Privacy Policy | Dragon Database` }} />
+        <Stack.Screen name={`copyright`} options={{ title: `Copyright | Dragon Database` }} />
       </Stack>
     </AppShell>
   );

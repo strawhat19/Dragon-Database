@@ -9,9 +9,10 @@ import { BlurTargetView } from 'expo-blur';
 import DragonTypeCard from '../DragonTypeCard';
 import LandingSections from '../LandingSections';
 import useLandingPage from './useLandingPage.native';
+import ScrollTopButton from '../ScrollTopButton/index.native';
 import AngledSurface from '../AngledSurface/index.native';
 import { wordmarkSwordXml } from '../../shared/landingArtwork';
-import { Search, X, ArrowUp, ArrowRight, RotateCcw } from 'lucide-react-native';
+import { Search, X, ArrowRight, RotateCcw } from 'lucide-react-native';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 import {
   Text,
@@ -56,15 +57,19 @@ const LandingPage = () => {
     flameHeight,
     flyingWidth,
     topOpacity,
+    topInverted,
     clearQuery,
     backToTop,
     retryLoad,
     isHydrated,
     onHeroLayout,
+    onContentLayout,
     onSearchBlur,
     onSearchFocus,
     submitSearch,
     onHeaderLayout,
+    onContrastLayout,
+    onTopButtonLayout,
     searchFocused,
     subtitleWidth,
     filteredTypes,
@@ -91,7 +96,7 @@ const LandingPage = () => {
         >
           <SiteHeader sticky scrolled={scrolled} blurTarget={blurTarget} />
         </View>
-        <BlurTargetView ref={blurTarget} nativeID={`landing-blur-target`} testID={`landing-blur-target`}>
+        <BlurTargetView ref={blurTarget} onLayout={onContentLayout} nativeID={`landing-blur-target`} testID={`landing-blur-target`}>
           <View
             style={[styles.hero, { minHeight: heroHeight }]}
             nativeID={`dragon-landing-steel-hero`}
@@ -328,11 +333,12 @@ const LandingPage = () => {
               </View>
             )}
           </View>
-          <LandingSections />
+          <LandingSections onContrastLayout={onContrastLayout} />
           <SiteFooter />
         </BlurTargetView>
       </ScrollView>
       <Animated.View
+        onLayout={onTopButtonLayout}
         pointerEvents={pastHero ? `auto` : `none`}
         accessibilityElementsHidden={!pastHero}
         importantForAccessibility={pastHero ? `auto` : `no-hide-descendants`}
@@ -340,10 +346,7 @@ const LandingPage = () => {
         testID={`landing-scroll-top-container`}
         style={[styles.topButton, { bottom: Math.max(20, insets.bottom + 12), opacity: topOpacity }]}
       >
-        <Pressable onPress={backToTop} accessibilityRole={`button`} accessibilityLabel={`Scroll to top`} nativeID={`landing-scroll-top`} testID={`landing-scroll-top`} style={({ pressed }) => [styles.topButtonAction, pressed && styles.pressed]}>
-          <ArrowUp size={19} color={palette.paper} />
-          <Text style={styles.topButtonLabel}>Top</Text>
-        </Pressable>
+        <ScrollTopButton id={`landing-scroll-top`} onPress={backToTop} inverted={topInverted} disabled={!pastHero} />
       </Animated.View>
     </View>
   );

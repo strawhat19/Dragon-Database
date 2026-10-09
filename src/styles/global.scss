@@ -14,6 +14,8 @@
   --hero-metal-background: linear-gradient(103deg, #aab4c2 0%, #d3d9e1 19%, #edf0f4 39%, #dce2e9 55%, #bec8d4 80%, #9da9b9 100%);
   --font-body: 'DragonSlapper', Arial, sans-serif;
   --font-brand: 'DragonSlapper', Georgia, serif;
+  --font-control: var(--font-brand);
+  --font-emphasis: var(--font-brand);
   color-scheme: light;
 }
 
@@ -34,14 +36,14 @@
   .landing-anatomy .landing-section-eyebrow, .landing-anatomy .landing-note-number, .landing-anatomy .landing-note-text { color: var(--muted); }
   .landing-anatomy-plate { border-color: var(--line); background: linear-gradient(125deg, var(--steel), var(--paper) 46%, var(--line)); }
   .landing-anatomy-caption, .landing-anatomy-note { border-color: var(--line); }
-  .landing-invitation-panel { background: linear-gradient(110deg, var(--steel), var(--paper), var(--steel)); }
+  .landing-invitation-panel { background: repeating-linear-gradient(0deg, #ffffff0a 0, #ffffff0a 1px, transparent 1px, transparent 4px), var(--hero-metal-background); }
   .landing-editorial-link:hover { background: var(--steel); }
   .landing-editorial-link-primary { color: var(--control-foreground); background: var(--control-background); border-color: var(--control-background); &:hover { background: var(--control-hover); border-color: var(--control-hover); } }
-  .dragon-type-metadata { background: linear-gradient(105deg, var(--steel), var(--paper) 48%, var(--line)); }
+  .landing-invitation .landing-editorial-link { border-color: var(--muted); }
+  .dragon-type-metadata { color: var(--ink); background: linear-gradient(105deg, var(--steel), var(--paper) 48%, var(--line)); }
   .dragon-type-art-frame { background: var(--silver); }
   .legal-introduction { background: linear-gradient(112deg, var(--steel), var(--paper) 72%); }
   .about-action-primary { color: var(--control-foreground); background: var(--control-background); &:hover { background: var(--control-hover); } }
-  .page-loader__sword-base, .page-loader__sword-fill { filter: brightness(0) invert(1); }
 }
 
 * { box-sizing: border-box; }

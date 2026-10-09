@@ -35,12 +35,12 @@ def save(name, markup):
     return markup
 
 
-logo = (ROOT / 'assets/concepts/logos/v8/01-db-swordslapper-classic-transparent.svg').read_text()
+logo = (ROOT / 'assets/concepts/logos/v9/01-db-swordslapper-crimson-detail.svg').read_text()
 sword = re.search(r'<g id="[^"]+-wordmark-sword" fill="#101115">.*?</g>', logo, re.S).group(0)
 wordmark_sword = save('wordmark-sword', svg(
     'wordmark-sword',
     'Dragon Database wordmark sword',
-    'The original black blade, guard and wrapped grip from the selected Swordslapper Classic wordmark.',
+    'The original black blade, guard and wrapped grip with subtle muted-red blade smears.',
     sword,
     '390 288 540 56',
 ))

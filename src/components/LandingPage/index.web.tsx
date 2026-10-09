@@ -1,4 +1,4 @@
-import { X, Search, ArrowUp, ArrowRight, RotateCcw } from 'lucide-react';
+import './styles.scss';
 import Reveal from '../Reveal';
 import Artwork from '../Artwork';
 import DragonEye from '../DragonEye';
@@ -9,8 +9,9 @@ import DragonTypeCard from '../DragonTypeCard';
 import LandingSections from '../LandingSections';
 import { useLandingPage } from './useLandingPage';
 import { wordmarkSwordXml } from '../../shared/landingArtwork';
+import { X, Search, ChevronUp, ArrowRight, RotateCcw } from 'lucide-react';
+import { useScrollTopContrast } from '../../shared/motion/useScrollTopContrast';
 import { flameLeftXml, flameRightXml, flyingDragonXml, scalingCollectionXml } from '../../shared/artwork';
-import './styles.scss';
 
 const flights = [
   { id: `left-near`, delay: 0.35 },
@@ -20,6 +21,7 @@ const flights = [
 ];
 
 const LandingPage = () => {
+  const { buttonRef, lightButton } = useScrollTopContrast();
   const {
     query, error, types, reload, heroRef, pageRef, scrolled, pastHero,
     setQuery, searchRef, catalogRef, isHydrated, clearSearch, filteredTypes,
@@ -172,16 +174,17 @@ const LandingPage = () => {
       </main>
       <SiteFooter />
       <button
+        ref={buttonRef}
         type={`button`}
         id={`landing-scroll-top`}
         aria-label={`Scroll to top`}
         aria-hidden={!pastHero}
         tabIndex={pastHero ? 0 : -1}
         onClick={scrollToTop}
+        data-contrast={lightButton ? `light` : `dark`}
         className={`landing-scroll-top ${pastHero ? `is-visible` : ``}`}
       >
-        <ArrowUp id={`landing-scroll-top-icon`} size={19} aria-hidden={true} />
-        <span id={`landing-scroll-top-label`} className={`landing-scroll-top-label`}>Top</span>
+        <ChevronUp id={`landing-scroll-top-icon`} size={24} aria-hidden={true} />
       </button>
     </div>
   );

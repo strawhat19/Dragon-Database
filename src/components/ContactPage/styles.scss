@@ -14,7 +14,7 @@
     color: var(--ink);
     font-size: 30px;
     line-height: 1.15;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'DragonSlapper', var(--font-body);
   }
 
@@ -52,8 +52,8 @@
     align-items: center;
     color: var(--ink);
     font-size: 19px;
-    font-weight: 500;
-    font-family: 'DragonSlapper', var(--font-body);
+    font-weight: 400;
+    font-family: var(--font-control);
   }
 
   .contact-field-icon {
@@ -107,8 +107,8 @@
     justify-content: center;
     color: var(--paper);
     font-size: 19px;
-    font-weight: 500;
-    font-family: 'DragonSlapper', var(--font-body);
+    font-weight: 400;
+    font-family: var(--font-control);
     border-radius: 2px;
     border: 1px solid var(--ink);
     background: var(--ink);
@@ -132,13 +132,13 @@
     border-top: 1px solid var(--line);
   }
 
-  .contact-notes-heading { font-size: 25px; }
+  .contact-notes-heading { font-size: 25px; font-family: var(--font-emphasis); }
 
   .contact-note-heading {
     margin: 28px 0 10px;
     font-size: 21px;
-    font-weight: 500;
-    font-family: 'DragonSlapper', var(--font-body);
+    font-weight: 400;
+    font-family: var(--font-emphasis);
   }
 
   .contact-note-copy,

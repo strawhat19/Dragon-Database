@@ -17,7 +17,7 @@ def badge_svg(mark, mark_size, name):
     )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
   <title>Dragon Database steel badge</title>
-  <desc>The black swordmaw dragon mark on a rounded brushed-silver badge with a steel rim.</desc>
+  <desc>The swordmaw mark with a muted-red dragon eye and subtle blade smears on the original rounded brushed-silver badge.</desc>
   <defs>
     <linearGradient id="{name}-steel" x1="160" y1="24" x2="864" y2="1000" gradientUnits="userSpaceOnUse">
       <stop stop-color="#BEC6D0" />

@@ -1,0 +1,14 @@
+{
+  "generated": "2026-10-09",
+  "method": "Built-in image_gen",
+  "output": "Original full-resolution PNG copied intact; all previous Dragonoid artwork preserved",
+  "images": [
+    {
+      "file": "dragonoid-draconic-alternate.png",
+      "intent": "Edit",
+      "reference": "C:/Users/massa/OneDrive/Documents/XAMPP Apache/htdocs/apps/Apps/Library/Database/Dragons/Dragon-Database/assets/dragons/storybook/dragonoid-battlewear.png",
+      "original": "C:\\Users\\massa\\.codex\\generated_images\\01a11e66-7ec3-7c12-a588-9f6b18af3355\\exec-a283ad60-9401-4933-934d-ca49b3ec5202.png",
+      "prompt": "Use case: precise-object-edit.\nAsset type: landscape 5:3 colorful storybook fantasy Dragonoid card illustration.\nInput image 1 is the EDIT TARGET. Create a NEW, DIFFERENT Dragonoid warrior for this SAME scene and color palette. The user wants a much cooler, LESS HUMANLIKE dragon humanoid, while retaining practical fitted clothing and a tall lean muscular body.\nScene and palette invariants: preserve the pale icy-blue moonlit mountain cliff, snow, cool mist, large pale moon and distant gothic fortress. Preserve obsidian-black and deep crimson scales, crimson membrane wings and amber dragon eyes against this blue environment. Keep rich hand-painted brushed gouache/watercolor storybook fantasy detail, strong dragon/background separation and epic composition.\nNew character: a noble fierce upright dragon warrior with an unmistakably REPTILIAN DRAGON HEAD, a moderate projecting angular muzzle and nostrils, scaled cheek plates, swept-back horns, sharp crown fins, reptilian ears, amber slit-pupil eyes and a closed confident mouth. No human nose, lips, fleshy cheeks, hair or uncanny human face. Its expression is composed, powerful and intimidating in a heroic way, not creepy or a horror demon. Give this a distinctly different dragon head, horn arrangement, sharper scale pattern and a new powerful pose: low three-quarter camera, torso turned, one clawed arm drawn back and one poised at its side, wings spread with a dynamic asymmetry. Keep the creature dominant in the frame.\nBody: tall narrow athletic silhouette, strong but slim musculature, exactly TWO arms and TWO legs, TWO separate large bat wings, one long tail, clearly readable hands and feet. Dragon anatomy with proportionate claws; do not make it a stocky bodybuilder or quadruped.\nClothing: fitted charcoal and dark-brown knee-length leather battle shorts/breeches with separate tailored leg openings, a sturdy slim dark-bronze belt and a minimal fitted diagonal leather chest harness, wrist wraps. Keep hips and upper thighs clearly covered; no loincloth, tarp, skirt, oversized drapery or bulky armor. The natural scaled chest remains visible.\nKeep the scene, obsidian/crimson colors and equipped winged Dragonoid form, but make the creature design distinctly different and more draconic. No fire breath, no other characters, no gore, no text or watermark."
+    }
+  ]
+}

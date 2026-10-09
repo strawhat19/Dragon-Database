@@ -1,0 +1,71 @@
+{
+  "method": "Intact Copy-Item copies; no cropping, resizing, conversion or deletion",
+  "purpose": "Preserve raw original dragon artworks and preceding framing variants",
+  "existingFinalImages": "Preserved in the parent storybook folder without duplicate archive copies",
+  "images": [
+    {
+      "kind": "dragon",
+      "file": "dragon-original-storybook.png",
+      "source": "C:/Users/massa/.codex/generated_images/01a11e66-7ec3-7c12-a588-9f6b18af3355/exec-6696fcd4-6a36-4887-bf49-afdb09868081.png",
+      "publishedCopy": "../dragon.jpg",
+      "promptDocument": "../prompts.json",
+      "description": "Original amethyst dragon above a sunset castle landscape"
+    },
+    {
+      "kind": "wyvern",
+      "file": "wyvern-original-storybook.png",
+      "source": "C:/Users/massa/.codex/generated_images/01a11e66-7ec3-7c12-a588-9f6b18af3355/exec-97d885fc-28ac-4c85-81ac-c00d2be4cd4c.png",
+      "publishedCopy": "../wyvern.jpg",
+      "promptDocument": "../prompts.json",
+      "description": "Original crimson and copper wyvern above a turquoise valley"
+    },
+    {
+      "kind": "drake",
+      "file": "drake-original-storybook.png",
+      "source": "C:/Users/massa/.codex/generated_images/01a11e66-7ec3-7c12-a588-9f6b18af3355/exec-560454d4-bc0a-40d8-912a-db733cca8d84.png",
+      "publishedCopy": "../drake.jpg",
+      "promptDocument": "../prompts.json",
+      "description": "Original sapphire drake beside an alpine lake"
+    },
+    {
+      "kind": "wyrm",
+      "file": "wyrm-original-storybook.png",
+      "source": "C:/Users/massa/.codex/generated_images/01a11e66-7ec3-7c12-a588-9f6b18af3355/exec-b0fc6042-627d-4b09-ad00-6e80c7aa66f7.png",
+      "publishedCopy": "../wyrm.jpg",
+      "promptDocument": "../prompts.json",
+      "description": "Original emerald wyrm on an enchanted forest root bridge"
+    },
+    {
+      "kind": "amphiptere",
+      "file": "amphiptere-original-storybook.png",
+      "source": "C:/Users/massa/.codex/generated_images/01a11e66-7ec3-7c12-a588-9f6b18af3355/exec-f4ae19e7-06be-4f44-940b-ae6b782cc6dc.png",
+      "publishedCopy": "../amphiptere.jpg",
+      "promptDocument": "../prompts.json",
+      "description": "Original gold and coral amphiptere above jungle waterfalls"
+    },
+    {
+      "kind": "leviathan",
+      "file": "leviathan-original-storybook.png",
+      "source": "C:/Users/massa/.codex/generated_images/01a11e66-7ec3-7c12-a588-9f6b18af3355/exec-7b86208c-116e-466d-89f8-3b55edd99a46.png",
+      "publishedCopy": "../leviathan.jpg",
+      "promptDocument": "../prompts.json",
+      "description": "Original teal leviathan among ocean waves and sea stacks"
+    },
+    {
+      "kind": "dragonoid",
+      "file": "dragonoid-original-storybook.png",
+      "source": "C:/Users/massa/.codex/generated_images/01a11e66-7ec3-7c12-a588-9f6b18af3355/exec-117bda78-8ad7-48a1-af01-c5ddaa3ea366.png",
+      "publishedCopy": "../dragonoid.jpg",
+      "promptDocument": "../prompts.json",
+      "description": "Original bronze guardian in a lantern-lit twilight garden ruin"
+    },
+    {
+      "kind": "amphiptere",
+      "file": "amphiptere-focused-original-framing.png",
+      "source": "C:/Users/massa/.codex/generated_images/01a11e80-b7ab-7872-b906-0ca6949d4260/exec-a39d2228-0044-4124-8a95-e4d74e714126.png",
+      "publishedRevision": "../amphiptere-focused.png",
+      "promptDocument": "../focused-middle-prompts.json",
+      "description": "Original focused twilight composition before the documented wing-tip framing refinement"
+    }
+  ]
+}

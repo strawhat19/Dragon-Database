@@ -1,17 +1,17 @@
 import styles from './styles.native';
 import { View, Animated } from 'react-native';
 import type { DragonEyeProps } from './types';
-import { dragonEyeGeometry } from './geometry';
 import { useDragonEye } from './useDragonEye.native';
-import { useTheme } from '../../shared/themeContext/ThemeContext';
-import Svg, { G, Defs, Path, Rect, Stop, ClipPath, LinearGradient } from 'react-native-svg';
+import { dragonEyeColors, dragonEyeGeometry } from './geometry';
+import Svg, { G, Defs, Path, Rect, Stop, ClipPath, LinearGradient, RadialGradient } from 'react-native-svg';
 
 const AnimatedRect = Animated.createAnimatedComponent(Rect);
 
 const DragonEye = ({ fontSize = 64, lineHeight = fontSize * 1.08 }: DragonEyeProps) => {
   const blink = useDragonEye();
-  const { palette } = useTheme();
   const { ascent, descent, centerY, eyePath, lidPath, irisPath, browPath, glintPath, pupilPath, blinkHeight, counterPath, unitsPerEm, counterLeft, counterWidth } = dragonEyeGeometry;
+  const { scalePaths, lowerLidPath, glintEchoPath, irisGlowPath, irisFiberPath, irisRidgePath, lowerScalePath, scaleHighlightPath } = dragonEyeGeometry;
+  const colors = dragonEyeColors;
   const heightUnits = lineHeight / fontSize * unitsPerEm;
   const baselineUnits = ascent + (heightUnits - ascent - descent) / 2;
   const openingHeight = blink.interpolate({ inputRange: [0, 1], outputRange: [0, blinkHeight] });
@@ -34,11 +34,22 @@ const DragonEye = ({ fontSize = 64, lineHeight = fontSize * 1.08 }: DragonEyePro
         nativeID={`landing-database-dragon-eye-visual`}
       >
         <Defs>
-          <LinearGradient id={`landing-database-dragon-eye-silver`} x1={`0%`} y1={`0%`} x2={`0%`} y2={`100%`}>
-            <Stop offset={`0%`} stopColor={palette.paper} />
-            <Stop offset={`48%`} stopColor={palette.steel} />
-            <Stop offset={`100%`} stopColor={palette.silver} />
+          <LinearGradient id={`landing-database-dragon-eye-sclera`} x1={`0%`} y1={`0%`} x2={`0%`} y2={`100%`}>
+            <Stop offset={`0%`} stopColor={colors.scleraDeep} />
+            <Stop offset={`50%`} stopColor={colors.scleraLight} />
+            <Stop offset={`100%`} stopColor={colors.scleraDeep} />
           </LinearGradient>
+          <LinearGradient id={`landing-database-dragon-eye-scales`} x1={`0%`} y1={`0%`} x2={`100%`} y2={`100%`}>
+            <Stop offset={`0%`} stopColor={colors.scaleDeep} />
+            <Stop offset={`55%`} stopColor={colors.scaleCopper} />
+            <Stop offset={`100%`} stopColor={colors.scaleDeep} />
+          </LinearGradient>
+          <RadialGradient id={`landing-database-dragon-eye-amber`} cx={`50%`} cy={`48%`} r={`58%`}>
+            <Stop offset={`0%`} stopColor={colors.irisLight} />
+            <Stop offset={`36%`} stopColor={colors.irisGold} />
+            <Stop offset={`72%`} stopColor={colors.irisCopper} />
+            <Stop offset={`100%`} stopColor={colors.irisDeep} />
+          </RadialGradient>
           <ClipPath id={`landing-database-dragon-eye-counter`}>
             <Path d={counterPath} />
           </ClipPath>
@@ -51,15 +62,32 @@ const DragonEye = ({ fontSize = 64, lineHeight = fontSize * 1.08 }: DragonEyePro
         </Defs>
         <G transform={`translate(0 ${baselineUnits}) scale(1 -1)`}>
           <G clipPath={`url(#landing-database-dragon-eye-counter)`}>
-            <Path d={browPath} fill={palette.ink} />
+            <Path id={`landing-database-eye-brow`} d={browPath} fill={colors.socket} />
+            <Path id={`landing-database-eye-lower-scales`} d={lowerScalePath} fill={`url(#landing-database-dragon-eye-scales)`} />
+            {scalePaths.map((path, index) => (
+              <Path
+                d={path}
+                key={index}
+                strokeWidth={3}
+                stroke={colors.socket}
+                id={`landing-database-eye-brow-scale-${index}`}
+                fill={`url(#landing-database-dragon-eye-scales)`}
+              />
+            ))}
+            <Path id={`landing-database-eye-scale-highlights`} d={scaleHighlightPath} fill={`none`} opacity={0.55} strokeWidth={2} stroke={colors.scaleLight} />
             <G clipPath={`url(#landing-database-dragon-eye-blink)`}>
-              <Path d={eyePath} fill={`url(#landing-database-dragon-eye-silver)`} />
+              <Path id={`landing-database-eye-shape`} d={eyePath} fill={`url(#landing-database-dragon-eye-sclera)`} stroke={colors.socket} strokeWidth={5} />
               <G clipPath={`url(#landing-database-dragon-eye-opening)`}>
-                <Path d={irisPath} fill={palette.red} />
-                <Path d={pupilPath} fill={`#101115`} />
-                <Path d={glintPath} fill={`none`} stroke={palette.paper} strokeWidth={3} />
+                <Path id={`landing-database-eye-iris`} d={irisPath} fill={`url(#landing-database-dragon-eye-amber)`} stroke={colors.irisRim} strokeWidth={4} />
+                <Path id={`landing-database-eye-iris-fibers`} d={irisFiberPath} fill={`none`} opacity={0.5} strokeWidth={3} stroke={colors.irisFiber} />
+                <Path id={`landing-database-eye-iris-rays`} d={irisGlowPath} fill={`none`} opacity={0.65} strokeWidth={2} stroke={colors.irisLight} />
+                <Path id={`landing-database-eye-iris-ridge`} d={irisRidgePath} fill={`none`} opacity={0.4} strokeWidth={2} stroke={colors.irisGold} />
+                <Path id={`landing-database-eye-pupil`} d={pupilPath} fill={colors.pupil} />
+                <Path id={`landing-database-eye-glint`} d={glintPath} fill={colors.glint} opacity={0.7} />
+                <Path id={`landing-database-eye-glint-echo`} d={glintEchoPath} fill={colors.glint} opacity={0.25} />
               </G>
-              <Path d={lidPath} fill={`none`} stroke={palette.ink} strokeWidth={8} />
+              <Path id={`landing-database-eye-upper-lid`} d={lidPath} fill={`none`} stroke={colors.socket} strokeWidth={8} />
+              <Path id={`landing-database-eye-lower-lid`} d={lowerLidPath} fill={`none`} stroke={colors.scaleCopper} strokeWidth={5} />
             </G>
           </G>
         </G>

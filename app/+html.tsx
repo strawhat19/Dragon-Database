@@ -4,6 +4,7 @@ import { ScrollViewStyleReset } from 'expo-router/html';
 const RootHtml = ({ children }: PropsWithChildren) => (
   <html lang={`en`} id={`dragon-document`} className={`dragon-document`}>
     <head id={`dragon-head`} className={`dragon-head`}>
+      <meta charSet={`utf-8`} id={`dragon-charset-meta`} />
       <title id={`dragon-document-title`}>Dragon Database — The Scaling Collection</title>
       <ScrollViewStyleReset />
       <meta id={`dragon-theme-meta`} name={`theme-color`} content={`#e8ebef`} />

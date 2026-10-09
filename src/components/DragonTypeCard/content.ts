@@ -1,6 +1,6 @@
-import type { DragonTypeRecord } from '../../shared/models/dragons/DragonType';
+import { getDragonTypeDisplayNumber, type DragonTypeRecord } from '../../shared/models/dragons/DragonType';
 
 export const getDragonTypeCardContent = (type: DragonTypeRecord) => ({
   traits: type.traits.join(` · `),
-  specimen: `Specimen ${String(type.number).padStart(2, `0`)}`,
+  form: `Form ${String(getDragonTypeDisplayNumber(type.kind)).padStart(2, `0`)}`,
 });

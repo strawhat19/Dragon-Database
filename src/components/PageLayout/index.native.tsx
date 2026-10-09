@@ -5,11 +5,11 @@ import TextReveal from '../TextReveal';
 import baseStyles from './styles.native';
 import { SvgXml } from 'react-native-svg';
 import { BlurTargetView } from 'expo-blur';
-import { ArrowUp } from 'lucide-react-native';
 import type { PageLayoutProps } from './types';
 import usePageLayout from './usePageLayout.native';
+import ScrollTopButton from '../ScrollTopButton/index.native';
 import { steelTextureXml } from '../../shared/artwork';
-import { Text, View, Animated, Pressable, ScrollView } from 'react-native';
+import { Text, View, Animated, ScrollView } from 'react-native';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const PageLayout = ({ id, title, description, children }: PageLayoutProps) => {
@@ -81,17 +81,7 @@ const PageLayout = ({ id, title, description, children }: PageLayoutProps) => {
         importantForAccessibility={topVisible ? `auto` : `no-hide-descendants`}
         style={[styles.topButton, { opacity: topOpacity, bottom: insets.bottom + 24 }]}
       >
-        <Pressable
-          disabled={!topVisible}
-          onPress={scrollToTop}
-          accessibilityRole={`button`}
-          nativeID={`${id}-scroll-top`}
-          accessibilityLabel={`Scroll to top`}
-          style={({ pressed }) => [styles.topButtonAction, pressed && styles.pressed]}
-        >
-          <ArrowUp size={19} color={palette.paper} accessibilityElementsHidden />
-          <Text nativeID={`${id}-scroll-top-label`} style={styles.topButtonLabel}>Top</Text>
-        </Pressable>
+        <ScrollTopButton id={`${id}-scroll-top`} onPress={scrollToTop} disabled={!topVisible} />
       </Animated.View>
     </View>
   );

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
   <title>Dragon Database steel badge</title>
-  <desc>The black swordmaw dragon mark on a rounded brushed-silver badge with a steel rim.</desc>
+  <desc>The swordmaw mark with a muted-red dragon eye and subtle blade smears on the original rounded brushed-silver badge.</desc>
   <defs>
     <linearGradient id="app-icon-steel" x1="160" y1="24" x2="864" y2="1000" gradientUnits="userSpaceOnUse">
       <stop stop-color="#BEC6D0" />
@@ -145,7 +145,7 @@
   </g>
   <rect id="app-icon-inner-rim" x="40" y="40" width="944" height="944" rx="160" stroke="#F4F5F7" stroke-width="3" opacity=".65" />
   <g id="app-icon-dragon-mark">
-    <svg x="144" y="144" width="736" height="736" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill="none"><title>Dragon Database swordmaw mark</title><metadata>DragonSlapper by Allison James (NAL), Copyright 2013, FontStruct original release, CC BY-SA 3.0. Alegreya Sans outlined subheading is SIL OFL. Original font files unchanged.</metadata><defs></defs><g aria-label="Dragon Database Swordslapper Classic logo" transform="translate(0 0) scale(1.000000)" opacity="1"><g xmlns="http://www.w3.org/2000/svg" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-mark" class="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-mark">
+    <svg x="144" y="144" width="736" height="736" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill="none"><title>Dragon Database swordmaw mark</title><desc>The original Swordmaw dragon and crossed swords with a small silver socket, muted-red eye and subtle blade smears.</desc><metadata>DragonSlapper by Allison James (NAL), Copyright 2013, FontStruct original release, CC BY-SA 3.0. Alegreya Sans outlined subheading is SIL OFL. Original font files unchanged.</metadata><defs></defs><g aria-label="Dragon Database Swordslapper Classic logo" transform="translate(0 0) scale(1.000000)" opacity="1"><g xmlns="http://www.w3.org/2000/svg" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-mark" class="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-mark">
     <defs>
       <mask x="0" y="0" width="360" height="360" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-counter-mask" maskUnits="userSpaceOnUse">
         <rect x="0" y="0" width="360" height="360" fill="#FFFFFF" />
@@ -156,7 +156,9 @@
       <path id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-right-pointing-blade" class="db-swordmaw-hybrid-sword-blade" d="M84 273 L309 48 L329 22 L315 64 L99 286 Z" />
       <path id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-left-pointing-blade" class="db-swordmaw-hybrid-sword-blade" d="M276 273 L51 48 L31 22 L45 64 L261 286 Z" />
       <path fill="#E4E7EB" stroke="none" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-right-blade-fuller" class="db-swordmaw-hybrid-blade-fuller" d="M97 271 L313 54 L100 281 Z" />
+      <path id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-right-blade-blood-smear" class="dragon-sword-blood-smear" fill="#8d3038" stroke="none" opacity=".8" d="M298 62L313 45L311 52L300 65Z" />
       <path fill="#E4E7EB" stroke="none" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-left-blade-fuller" class="db-swordmaw-hybrid-blade-fuller" d="M263 271 L47 54 L260 281 Z" />
+      <path id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-left-blade-blood-smear" class="dragon-sword-blood-smear" fill="#8d3038" stroke="none" opacity=".8" d="M46 43L54 51L52 57L47 51L44 45Z" />
       <path fill="#101115" stroke="none" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-left-sword-grip" class="db-swordmaw-hybrid-sword-grip" d="M78 289 L92 302 L61 334 L46 319 Z" />
       <path fill="#101115" stroke="none" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-right-sword-grip" class="db-swordmaw-hybrid-sword-grip" d="M282 289 L268 302 L299 334 L314 319 Z" />
       <path id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-left-crossguard" class="db-swordmaw-hybrid-sword-crossguard" d="M63 256q14-6 25 11l27 20 9 10-9 10-13-16-21-13q-11-14-26-10Z" />
@@ -171,7 +173,7 @@
     <path fill="#C5CBD3" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-d-stem-facet" class="db-swordmaw-hybrid-letter-facet" d="M86 197 L94 190 L94 293 L86 300 Z" />
     <path fill="#C5CBD3" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-b-stem-facet" class="db-swordmaw-hybrid-letter-facet" d="M198 194 L205 189 L205 296 L198 302 Z" />
     <path fill="#C5CBD3" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-long-horn-facet" class="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-long-horn-facet" d="M188 68 L217 99 L229 119 L218 114 Z" />
-    <path fill="#E4E7EB" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-angry-eye" class="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-angry-eye" d="M251 145 L286 158 L257 163 Z" />
+    <g id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-dragon-eye" class="dragon-logo-eye"><path id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-dragon-eye-socket" class="dragon-logo-eye-socket" fill="#C5CBD3" d="M260 148L282 156L263 160L258 154Z" /><path id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-dragon-eye-red" class="dragon-logo-eye-red" fill="#8d3038" d="M264 152L277 156L266 158Z" /><path id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-dragon-eye-pupil" class="dragon-logo-eye-pupil" fill="#101115" d="M271 154L272 156L271 157L270 155Z" /></g>
     <path fill="#E4E7EB" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-long-fang" class="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-long-fang" d="M293 173 L306 173 L293 194 Z" />
     <path fill="#C5CBD3" id="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-broad-jaw-facet" class="brand-mark-logo-1-01-db-swordslapper-classic-logo-1-db-swordmaw-hybrid-broad-jaw-facet" d="M281 216 L316 199 L309 212 L279 225 Z" />
   </g>

@@ -1,18 +1,23 @@
-import { Platform, View } from 'react-native';
-import { useCallback, useState } from 'react';
-import type { PropsWithChildren } from 'react';
+import './styles.scss';
 import PageLoader from '../PageLoader';
+import { usePathname } from 'expo-router';
+import { useCallback, useState } from 'react';
+import { Platform, View } from 'react-native';
+import type { PropsWithChildren } from 'react';
 import { useAppFonts } from '../../shared/useAppFonts';
 import { useAuth } from '../../shared/authContext/useAuth';
+import { routes, resolveRouteAlias } from '../../shared/routes';
 import { useDragonData } from '../../shared/dragonDataContext/useDragonData';
-import './styles.scss';
 
 const AppShell = ({ children }: PropsWithChildren) => {
+  const pathname = usePathname();
   const [entered, setEntered] = useState(false);
   const [revealing, setRevealing] = useState(false);
   const [fontsLoaded, fontError] = useAppFonts();
   const { isHydrated: authReady } = useAuth();
   const { isHydrated: dataReady } = useDragonData();
+  const routePath = resolveRouteAlias(pathname) ?? pathname;
+  const pageName = routePath === routes.home.path ? `Home` : Object.values(routes).find(route => route.path === routePath)?.label ?? `Home`;
   const fontsReady = fontsLoaded || Boolean(fontError);
   const ready = fontsReady && authReady && dataReady;
   const progress = Math.round((Number(fontsReady) + Number(authReady) + Number(dataReady)) * 100 / 3);
@@ -33,7 +38,7 @@ const AppShell = ({ children }: PropsWithChildren) => {
             {children}
           </div>
         ) : null}
-        {!entered ? <PageLoader ready={ready} progress={progress} onReveal={reveal} onComplete={complete} /> : null}
+        {!entered ? <PageLoader ready={ready} progress={progress} pageName={pageName} onReveal={reveal} onComplete={complete} /> : null}
       </div>
     );
   }
@@ -51,7 +56,7 @@ const AppShell = ({ children }: PropsWithChildren) => {
           {children}
         </View>
       ) : null}
-      {!entered ? <PageLoader ready={ready} progress={progress} onReveal={reveal} onComplete={complete} /> : null}
+      {!entered ? <PageLoader ready={ready} progress={progress} pageName={pageName} onReveal={reveal} onComplete={complete} /> : null}
     </View>
   );
 };

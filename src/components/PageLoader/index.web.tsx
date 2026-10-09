@@ -3,13 +3,16 @@ import './styles.scss';
 import type { PageLoaderProps } from './types';
 import { usePageLoader } from './usePageLoader';
 import { brandMarkXml } from '../../shared/artwork';
-import { flameHeights, flameImageSource, swordImageSource } from './artwork';
+import { flameHeights, flameImageSource } from './artwork';
+import { wordmarkSwordXml } from '../../shared/landingArtwork';
 import { useEffect, useId, useRef, type CSSProperties } from 'react';
 import { useThemedArtwork } from '../../shared/themeContext/ThemeContext';
 
 const PageLoader = (props: PageLoaderProps) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const markXml = useThemedArtwork(brandMarkXml);
+  const swordXml = useThemedArtwork(wordmarkSwordXml);
+  const swordImageSource = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(swordXml)}`;
   const blurRef = useRef<SVGFEGaussianBlurElement>(null);
   const blurAmountRef = useRef(0);
   const filterId = `page-loader-digit-blur-${useId().replaceAll(`:`, ``)}`;
@@ -51,7 +54,7 @@ const PageLoader = (props: PageLoaderProps) => {
       aria-valuemax={100}
       aria-valuenow={percentage}
       aria-busy={phase === `loading`}
-      aria-label={`Preparing Dragon Database`}
+      aria-label={`Preparing ${props.pageName}`}
       aria-valuetext={`${percentage}%${phase === `loading` ? `` : `, ready`}`}
       className={`page-loader page-loader--${phase}${reducedMotion ? ` page-loader--reduced` : ``}`}
       onAnimationEnd={event => {
@@ -65,7 +68,7 @@ const PageLoader = (props: PageLoaderProps) => {
     >
       <div id={`dragon-page-loader-backdrop`} className={`page-loader__backdrop`} aria-hidden={true} />
       <div id={`dragon-page-loader-frame`} className={`page-loader__frame`}>
-        <span id={`dragon-page-loader-eyebrow`} className={`page-loader__eyebrow`}>{`The archive awaits`}</span>
+        <span id={`dragon-page-loader-eyebrow`} className={`page-loader__eyebrow`}>{props.pageName}</span>
         <div id={`dragon-page-loader-content`} className={`page-loader__content`}>
           <div
             aria-hidden={`true`}
@@ -127,7 +130,7 @@ const PageLoader = (props: PageLoaderProps) => {
         </div>
       ) : null}
       <span id={`dragon-page-loader-announcement`} className={`page-loader__announcement`} role={`status`} aria-live={`polite`}>
-        {phase === `loading` ? `Preparing Dragon Database` : `Dragon Database is ready`}
+        {phase === `loading` ? `Preparing ${props.pageName}` : `${props.pageName} is ready`}
       </span>
     </div>
   );

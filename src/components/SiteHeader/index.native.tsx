@@ -11,12 +11,12 @@ import AngledSurface from '../AngledSurface/index.native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 import { Text, View, Animated, Pressable, useWindowDimensions } from 'react-native';
-import { X, Sun, Code, Moon, Menu, Mail, Info, House, BookOpen, UserRound, Newspaper } from 'lucide-react-native';
+import { X, Sun, Code, Moon, Menu, Mail, Info, Flame, House, BookOpen, UserRound, Newspaper } from 'lucide-react-native';
 
 type NativeHeaderProps = HeaderProps & { blurTarget?: RefObject<View | null> };
 const controlInk = `#101115`;
 const controlPaper = `#f4f5f7`;
-const icons = { code: Code, mail: Mail, info: Info, home: House, book: BookOpen, newspaper: Newspaper };
+const icons = { code: Code, mail: Mail, info: Info, home: House, book: BookOpen, flame: Flame, newspaper: Newspaper };
 
 const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeaderProps) => {
   const styles = useThemedStyles(baseStyles);

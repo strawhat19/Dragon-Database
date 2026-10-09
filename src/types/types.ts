@@ -19,4 +19,4 @@ export enum ProfilePrivacy {
   Private = `private`,
 }
 
-export type DragonKind = `wyrm` | `drake` | `dragon` | `wyvern` | `dragonoid` | `leviathan` | `amphiptere`;
+export type DragonKind = `wyrm` | `drake` | `hydra` | `dragon` | `wyvern` | `eastern` | `dragonoid` | `leviathan` | `amphiptere`;

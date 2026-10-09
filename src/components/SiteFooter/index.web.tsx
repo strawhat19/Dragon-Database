@@ -1,27 +1,17 @@
+import './styles.scss';
 import { Link } from 'expo-router';
-import { Info, Mail, FileText, ShieldCheck, ArrowUpRight } from 'lucide-react';
 import WebAnchor from '../WebAnchor';
 import { routes } from '../../shared/routes';
-import { fontNoticeLinks } from '../../shared/fontNotices';
-import './styles.scss';
+import { FileText, Copyright, ShieldCheck, ArrowUpRight } from 'lucide-react';
 
 const SiteFooter = () => (
   <footer id={`site-footer`} className={`site-footer`}>
     <div id={`site-footer-main`} className={`site-footer-main`}>
-      <p id={`site-footer-copyright`} className={`site-footer-copyright`}>{`© ${new Date().getFullYear()} Dragon Database`}</p>
+      <p id={`site-footer-copyright`} className={`site-footer-copyright`}>
+        <span id={`site-footer-copyright-year`} className={`site-footer-copyright-year`}>{`© ${new Date().getFullYear()}`}</span>
+        {` `}<span id={`site-footer-copyright-brand`} className={`site-footer-copyright-brand`}>Dragon Database</span>
+      </p>
       <nav id={`site-footer-navigation`} className={`site-footer-navigation`} aria-label={`Footer navigation`}>
-        <Link href={routes.about.path} asChild>
-          <WebAnchor id={`site-footer-about`} className={`site-footer-page-link`}>
-            <Info id={`site-footer-about-icon`} size={16} aria-hidden={true} />
-            <span id={`site-footer-about-label`} className={`site-footer-page-label`}>About</span>
-          </WebAnchor>
-        </Link>
-        <Link href={routes.contact.path} asChild>
-          <WebAnchor id={`site-footer-contact`} className={`site-footer-page-link`}>
-            <Mail id={`site-footer-contact-icon`} size={16} aria-hidden={true} />
-            <span id={`site-footer-contact-label`} className={`site-footer-page-label`}>Contact</span>
-          </WebAnchor>
-        </Link>
         <Link href={routes.terms.path} asChild>
           <WebAnchor id={`site-footer-terms`} className={`site-footer-page-link`}>
             <FileText id={`site-footer-terms-icon`} size={16} aria-hidden={true} />
@@ -31,7 +21,13 @@ const SiteFooter = () => (
         <Link href={routes.privacy.path} asChild>
           <WebAnchor id={`site-footer-privacy`} className={`site-footer-page-link`}>
             <ShieldCheck id={`site-footer-privacy-icon`} size={16} aria-hidden={true} />
-            <span id={`site-footer-privacy-label`} className={`site-footer-page-label`}>Privacy Policy</span>
+            <span id={`site-footer-privacy-label`} className={`site-footer-page-label`}>Privacy</span>
+          </WebAnchor>
+        </Link>
+        <Link href={routes.copyright.path} asChild>
+          <WebAnchor id={`site-footer-copyright-link`} className={`site-footer-page-link`}>
+            <Copyright id={`site-footer-copyright-icon`} size={16} aria-hidden={true} />
+            <span id={`site-footer-copyright-label`} className={`site-footer-page-label`}>Copyright</span>
           </WebAnchor>
         </Link>
       </nav>
@@ -40,20 +36,6 @@ const SiteFooter = () => (
         <ArrowUpRight id={`site-footer-piratechs-icon`} size={16} aria-hidden={true} />
       </a>
     </div>
-    <p id={`site-footer-font-credit`} className={`site-footer-font-credit`}>
-      {`DragonSlapper by `}<a id={`site-footer-font-author`} className={`site-footer-credit-link`} href={fontNoticeLinks.dragonSlapperSource} target={`_blank`} rel={`noreferrer`}>Allison James (NAL), via FontStruct</a>
-      {`, licensed under `}<a id={`site-footer-font-license`} className={`site-footer-credit-link`} href={fontNoticeLinks.dragonSlapperLicense} target={`_blank`} rel={`noreferrer`}>CC BY-SA 3.0</a>
-      {`. Font file unchanged.`}
-    </p>
-    <a
-      id={`site-footer-font-notices`}
-      className={`site-footer-font-notices`}
-      href={fontNoticeLinks.notices}
-      aria-label={`Font Notices: DragonSlapper and Alegreya Sans licenses`}
-    >
-      <FileText id={`site-footer-font-notices-icon`} size={16} aria-hidden={true} />
-      <span id={`site-footer-font-notices-label`} className={`site-footer-font-notices-label`}>Font Notices</span>
-    </a>
   </footer>
 );
 

@@ -4,6 +4,7 @@ export const routes = {
   contact: { path: `/contact`, label: `Contact`, icon: `mail` },
   terms: { path: `/terms`, label: `Terms`, icon: `file-text` },
   privacy: { path: `/privacy`, label: `Privacy Policy`, icon: `shield-check` },
+  copyright: { path: `/copyright`, label: `Copyright`, icon: `copyright` },
 } as const;
 
 export const routeAliases = {
@@ -29,9 +30,10 @@ export const resolveRouteAlias = (path: string) => Object.hasOwn(routeAliases, p
 
 export const navigation = [
   { id: `home`, path: routes.home.path, label: `Home`, icon: routes.home.icon, available: true },
-  { id: `lore`, path: ``, label: `Lore`, icon: `book`, available: false },
-  { id: `api`, path: ``, label: `API`, icon: `code`, available: false },
-  { id: `blog`, path: ``, label: `Blog`, icon: `newspaper`, available: false },
   { id: `about`, ...routes.about, available: true },
+  { id: `blog`, path: ``, label: `Blog`, icon: `newspaper`, available: false },
+  { id: `api`, path: ``, label: `API`, icon: `code`, available: false },
+  { id: `dragons`, path: ``, label: `Dragons`, icon: `flame`, available: false },
+  { id: `lore`, path: ``, label: `Lore`, icon: `book`, available: false },
   { id: `contact`, ...routes.contact, available: true },
 ] as const;

@@ -27,6 +27,11 @@ export default StyleSheet.create({
     flexDirection: `row`,
     alignItems: `center`,
   },
+  copyright: {
+    gap: 12,
+    flexDirection: `row`,
+    alignItems: `center`,
+  },
   copy: {
     fontSize: 17,
     color: palette.muted,
@@ -41,27 +46,6 @@ export default StyleSheet.create({
   linkLabel: {
     fontSize: 18,
     color: palette.ink,
-    fontFamily: `DragonSlapper`,
-  },
-  credits: {
-    gap: 2,
-    alignItems: `flex-start`,
-  },
-  creditLink: {
-    maxWidth: `100%`,
-  },
-  creditLabel: {
-    fontSize: 15,
-    lineHeight: 21,
-    flexShrink: 1,
-    color: palette.muted,
-    fontFamily: `DragonSlapper`,
-    textDecorationLine: `underline`,
-  },
-  creditCopy: {
-    fontSize: 15,
-    lineHeight: 21,
-    color: palette.muted,
     fontFamily: `DragonSlapper`,
   },
   pressed: {

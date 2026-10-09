@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
   Animated,
@@ -6,14 +6,18 @@ import {
   useWindowDimensions,
   type View,
   type ScrollView,
+  type LayoutRectangle,
   type LayoutChangeEvent,
   type NativeScrollEvent,
   type NativeSyntheticEvent,
 } from 'react-native';
 import { useReducedMotion } from '../../shared/motion/useReducedMotion';
+import { useTheme } from '../../shared/themeContext/ThemeContext';
+import type { ScrollTopContrastLayout } from '../ScrollTopButton/types';
 import { useDragonData } from '../../shared/dragonDataContext/useDragonData';
 
 const useLandingPage = () => {
+  const { isDark } = useTheme();
   const insets = useSafeAreaInsets();
   const { width, fontScale } = useWindowDimensions();
   const reducedMotion = useReducedMotion();
@@ -24,9 +28,16 @@ const useLandingPage = () => {
   const heroEnd = useRef(460);
   const [scrolled, setScrolled] = useState(false);
   const [pastHero, setPastHero] = useState(false);
+  const [topInverted, setTopInverted] = useState(false);
   const [searchFocused, setSearchFocused] = useState(false);
   const topOpacity = useRef(new Animated.Value(0)).current;
   const loadingOpacity = useRef(new Animated.Value(1)).current;
+  const contrastGeometry = useRef<{
+    scrollY: number;
+    button?: LayoutRectangle;
+    content?: LayoutRectangle;
+    sections?: ScrollTopContrastLayout;
+  }>({ scrollY: 0 });
   const data = useDragonData();
   const wide = width >= 760;
   const cardGrid = width >= 720;
@@ -40,6 +51,22 @@ const useLandingPage = () => {
   const subtitleWidth = Math.min(wide ? 700 : 342, width - 48);
   const columns = width >= 1050 ? 3 : 2;
   const cardWidth = (width - gutter * 2 - 24 * (columns - 1)) / columns;
+
+  const updateTopContrast = useCallback(() => {
+    const { button, content, sections, scrollY } = contrastGeometry.current;
+    if (isDark || !button || !content || !sections) {
+      setTopInverted(false);
+      return;
+    }
+    const x = button.x + button.width / 2 - content.x;
+    const y = scrollY + button.y + button.height / 2 - content.y;
+    const containsCenter = (bounds?: LayoutRectangle) => !!bounds
+      && x >= bounds.x && x <= bounds.x + bounds.width
+      && y >= bounds.y && y <= bounds.y + bounds.height;
+    setTopInverted(containsCenter(sections.anatomy) && !containsCenter(sections.plate));
+  }, [isDark]);
+
+  useEffect(updateTopContrast, [updateTopContrast]);
 
   useEffect(() => {
     const transition = Animated.timing(topOpacity, {
@@ -76,6 +103,8 @@ const useLandingPage = () => {
   };
   const onScroll = ({ nativeEvent }: NativeSyntheticEvent<NativeScrollEvent>) => {
     const position = nativeEvent.contentOffset.y;
+    contrastGeometry.current.scrollY = position;
+    updateTopContrast();
     setScrolled(position > 12);
     setPastHero(position > heroEnd.current - headerHeight.current);
   };
@@ -86,6 +115,18 @@ const useLandingPage = () => {
   const onHeroLayout = ({ nativeEvent }: LayoutChangeEvent) => {
     heroLayout.current = { y: nativeEvent.layout.y, height: nativeEvent.layout.height };
     heroEnd.current = headerHeight.current + heroLayout.current.y + heroLayout.current.height;
+  };
+  const onContentLayout = ({ nativeEvent }: LayoutChangeEvent) => {
+    contrastGeometry.current.content = nativeEvent.layout;
+    updateTopContrast();
+  };
+  const onTopButtonLayout = ({ nativeEvent }: LayoutChangeEvent) => {
+    contrastGeometry.current.button = nativeEvent.layout;
+    updateTopContrast();
+  };
+  const onContrastLayout = (layout: ScrollTopContrastLayout) => {
+    contrastGeometry.current.sections = layout;
+    updateTopContrast();
   };
 
   return {
@@ -106,14 +147,18 @@ const useLandingPage = () => {
     flameHeight,
     flyingWidth,
     topOpacity,
+    topInverted,
     clearQuery,
     backToTop,
     retryLoad,
     onHeroLayout,
+    onContentLayout,
     onSearchBlur,
     onSearchFocus,
     submitSearch,
     onHeaderLayout,
+    onContrastLayout,
+    onTopButtonLayout,
     searchFocused,
     subtitleWidth,
     loadingOpacity,

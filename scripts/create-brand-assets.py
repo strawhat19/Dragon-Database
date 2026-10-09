@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 from html import escape
 from icon_badges import create_icon_badges
-from brand_refinements import smooth_flames, without_logo_eyes
+from brand_refinements import smooth_flames
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,11 +33,9 @@ def save(name, markup):
     return markup
 
 
-logo = without_logo_eyes((ROOT / 'assets/concepts/logos/v8/01-db-swordslapper-classic-transparent.svg').read_text())
+logo = (ROOT / 'assets/concepts/logos/v9/01-db-swordslapper-crimson-detail.svg').read_text()
 save('logo', logo)
-mark = Canvas('brand-mark', 360, 360, 'Dragon Database swordmaw mark', 'Selected original mark')
-mark.logo(0, 0, 360, mark=True)
-mark_xml = save('mark', without_logo_eyes(vector(mark)))
+mark_xml = save('mark', (ROOT / 'assets/concepts/logos/v9/02-db-swordmaw-crimson-mark.svg').read_text())
 
 subheading = Canvas('scaling-subheading', 1080, 110, 'The Scaling Collection', 'DragonSlapper lettering with steel scales on the S')
 scaled_heading(subheading, 'The Scaling Collection', 540, 82, 90, 1020)
@@ -79,7 +77,7 @@ exports = {
     'steelTextureXml': texture_xml,
     'scalingCollectionXml': subheading_xml,
 }
-source = '// Original local artwork; font attribution is retained in SVG metadata and the app footer.\n'
+source = '// Original local artwork; font attribution is retained in SVG metadata and the copyright page.\n'
 source += '\n'.join(f'export const {name} = {literal(markup)};\n' for name, markup in exports.items())
 source += '\nexport const dragonSymbols = {\n' + ''.join(f'  {kind}: {literal(markup)},\n' for kind, markup in symbols.items()) + '} as const;\n'
 (ROOT / 'src/shared/artwork.ts').write_text(source)

@@ -1,10 +1,11 @@
 import { useSampleData } from '../shared/config';
 import { isRecord, dataError } from '../shared/common/values';
 import { parseCollection, type CollectionSnapshot } from '../shared/common/collection';
-import { parseDragonType, type DragonTypeRecord } from '../shared/models/dragons/DragonType';
+import { orderDragonTypes, parseDragonType, type DragonTypeRecord } from '../shared/models/dragons/DragonType';
 import { storageKey, readSnapshot, writeSnapshot, withStorageLock } from '../shared/common/storage';
 import {
   sampleDragonTypes,
+  upgradeSampleHydra,
   createSampleDragonType,
   isOriginalSampleCatalogue,
   sampleDragonTypesRevision,
@@ -35,24 +36,25 @@ export const getDragonTypes = () => withStorageLock(dragonTypesStorageKey, async
   const saved = await readSnapshot(dragonTypesStorageKey, parseDragonTypesSnapshot, `Saved Dragon Types`);
   if (saved !== null) {
     if (!useSampleData || !saved.records.length || (saved.demoRevision ?? 0) >= sampleDragonTypesRevision
-      || (saved.demoRevision === undefined && !isOriginalSampleCatalogue(saved.records))) return saved.records;
+      || (saved.demoRevision === undefined && !isOriginalSampleCatalogue(saved.records))) return orderDragonTypes(saved.records);
 
     // Mark the demo update once so a later removal stays removed.
-    const missing = additionalSampleDragonTypes.filter((sample) => !saved.records.some((record) => record.kind === sample.kind));
+    const missing = additionalSampleDragonTypes.filter((sample) => sample.introducedRevision > (saved.demoRevision ?? 0)
+      && !saved.records.some((record) => record.kind === sample.kind));
     const nextNumber = saved.nextNumber + missing.length;
     if (!Number.isSafeInteger(nextNumber)) throw new Error(`Dragon Type Number Limit Reached`);
     const created = new Date().toISOString();
     const additions = await Promise.all(missing.map((sample, index) => createSampleDragonType(sample, saved.nextNumber + index, created)));
-    const records = [...saved.records, ...additions];
+    const records = [...saved.records.map((record) => upgradeSampleHydra(record, created)), ...additions];
     await writeSnapshot(dragonTypesStorageKey, { version: 1, records, nextNumber, demoRevision: sampleDragonTypesRevision }, `Dragon Types`);
-    return records;
+    return orderDragonTypes(records);
   }
 
   const records = useSampleData ? await sampleDragonTypes() : [];
   const snapshot: DragonTypeSnapshot = { version: 1, records, nextNumber: records.length + 1 };
   if (useSampleData) snapshot.demoRevision = sampleDragonTypesRevision;
   await writeSnapshot(dragonTypesStorageKey, snapshot, `Dragon Types`);
-  return records;
+  return orderDragonTypes(records);
 });
 
 export const getSearchQuery = () => withStorageLock(searchQueryStorageKey, async () =>

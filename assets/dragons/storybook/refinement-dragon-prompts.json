@@ -1,0 +1,21 @@
+{
+  "generated": "2026-10-09",
+  "method": "Built-in image_gen",
+  "output": "Original full-resolution PNGs copied intact; earlier originals preserved",
+  "images": [
+    {
+      "file": "dragon-emerald-scene.png",
+      "intent": "Edit",
+      "reference": "C:/Users/massa/OneDrive/Documents/XAMPP Apache/htdocs/apps/Apps/Library/Database/Dragons/Dragon-Database/assets/dragons/storybook/dragon-fury.png",
+      "original": "C:\\Users\\massa\\.codex\\generated_images\\01a11e66-7ec3-7c12-a588-9f6b18af3355\\exec-3b3fa6dc-372a-48ce-8a9b-306319fec862.png",
+      "prompt": "Use case: background-extraction / precise-object-edit.\nAsset type: landscape 5:3 fantasy Dragon-form card illustration.\nInput image 1 is the EDIT TARGET. The user likes this exact platinum-ivory dragon with scarlet wings, but it blends into the gray-blue background. Preserve the same dragon individual, fierce open jaws, amber eye, head and horn design, natural plate scales, muscular body, tail, exactly FOUR legs plus TWO independent wings, and its powerful forward-lunging pose.\nPrimary change: replace the entire stormy ruined city background and broken architecture with an entirely different lush DEEP EMERALD and TEAL waterfall gorge. Giant smooth natural green rock pillars and a single distant waterfall descend into a quiet turquoise basin, with soft mist restricted to the distant scenery. No buildings or gray castles. Keep the dragon standing on a darker mossy rock ledge.\nContrast: make the platinum dragon conspicuously brighter than the deep emerald setting and keep its scarlet membranes vividly separate from the green scenery. Give clear thin silver rim light on the face, horns, legs and tail. Keep the background much simpler and softer with broad painted shapes, while the dragon remains crisp and dominant. Do not wash green fog over its body. Maintain the recognizable rich watercolor/gouache colorful storybook brushwork of the input.\nComposition invariants: keep the dragon's scale, anatomy and dominant foreground composition, avoid cutting off more of it, preserve the landscape frame. It should remain badass and ferocious. No text, logos, watermark, extra creatures, people or gore."
+    },
+    {
+      "file": "dragon-fire.png",
+      "intent": "Edit",
+      "reference": "C:/Users/massa/OneDrive/Documents/XAMPP Apache/htdocs/apps/Apps/Library/Database/Dragons/Dragon-Database/assets/dragons/storybook/dragon-focused.png",
+      "original": "C:\\Users\\massa\\.codex\\generated_images\\01a11e66-7ec3-7c12-a588-9f6b18af3355\\exec-c6eb60f8-0ffb-4f2e-a832-ae14f17ef558.png",
+      "prompt": "Use case: precise-object-edit.\nAsset type: landscape 5:3 fantasy Dragon-form hover illustration.\nInput image 1 is the EDIT TARGET. Preserve this same indigo-and-plum dragon individual with the distinct ruby-red wing membranes, swept black and bronze horns, cream throat scales, long curling tail and exactly FOUR legs plus TWO independent wings. The user likes this dragon but wants the hover picture to show it BREATHING FIRE.\nPrimary change: open its jaws in a fierce commanding snarl and make a clearly visible powerful jet of fire originate INSIDE its mouth and blast diagonally toward the upper-right open sky. The flame must connect naturally to the throat and lips, have a bright pale-hot core with vivid gold/orange tongues and dark-red defined outer edges, and be unmistakable as dragon breath. Keep the face and its eye clear; no smoke plume covering it.\nPose, frame and scene: preserve its regal powerful standing pose on the rocky mountaintop and the pale cream/gold dawn mountain setting, original overall composition and identity. The fire should fill the available right-side sky without obscuring the dragon's wings or legs. Add subtle warm reflected firelight on the chin and chest.\nStyle invariants: preserve the sophisticated colorful brushed watercolor/gouache storybook look with textured painted scales. Fierce magnificent dragon, no gore, no new characters or creatures, no text or watermark, no extra limbs or wings, no modern objects. Maintain landscape5:3."
+    }
+  ]
+}

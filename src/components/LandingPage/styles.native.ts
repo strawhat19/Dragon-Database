@@ -233,18 +233,10 @@ export default StyleSheet.create({
     position: `absolute`,
   },
   topButtonAction: {
-    gap: 8,
-    minHeight: 48,
-    paddingVertical: 12,
-    paddingHorizontal: 16,
-    flexDirection: `row`,
+    width: 48,
+    height: 48,
     alignItems: `center`,
-    backgroundColor: palette.ink,
-  },
-  topButtonLabel: {
-    fontSize: 18,
-    color: palette.paper,
-    fontFamily: `DragonSlapper`,
+    justifyContent: `center`,
   },
   pressed: {
     opacity: 0.72,

@@ -41,7 +41,7 @@ export const legalPages: Record<LegalPageKind, LegalContent> = {
         title: `Content and licenses`,
         paragraphs: [
           `Respect the applicable rights and licenses when reusing text, illustrations, or other material. Access to this app does not itself grant permission to reuse every asset.`,
-          `DragonSlapper and Alegreya Sans have their own licenses and attribution requirements. Their original files are bundled with the app; credits and license text are available through Font Notices in the footer. Links to external websites are provided for reference.`,
+          `DragonSlapper and Alegreya Sans have their own licenses and attribution requirements. Their original files are bundled with the app; credits and license text are available on the Copyright page. Links to external websites are provided for reference.`,
         ],
       },
       {

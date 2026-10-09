@@ -1,14 +1,16 @@
-import { ArrowUp } from 'lucide-react';
+import './styles.scss';
 import Reveal from '../Reveal';
 import SiteHeader from '../SiteHeader';
 import SiteFooter from '../SiteFooter';
 import TextReveal from '../TextReveal';
-import type { PageLayoutProps } from './types';
+import { ChevronUp } from 'lucide-react';
 import usePageLayout from './usePageLayout';
-import './styles.scss';
+import type { PageLayoutProps } from './types';
+import { useScrollTopContrast } from '../../shared/motion/useScrollTopContrast';
 
 const PageLayout = ({ id, title, description, children }: PageLayoutProps) => {
   const sticky = true;
+  const { buttonRef, lightButton } = useScrollTopContrast();
   const { heroRef, pageRef, scrolled, pastHero, scrollToTop } = usePageLayout(id);
   const words = title.split(/\s+/).filter(Boolean);
 
@@ -46,16 +48,17 @@ const PageLayout = ({ id, title, description, children }: PageLayoutProps) => {
       </main>
       <SiteFooter />
       <button
+        ref={buttonRef}
         type={`button`}
         id={`${id}-scroll-top`}
         aria-label={`Scroll to top`}
         aria-hidden={!pastHero}
         tabIndex={pastHero ? 0 : -1}
         onClick={scrollToTop}
+        data-contrast={lightButton ? `light` : `dark`}
         className={`page-layout__scroll-top${pastHero ? ` is-visible` : ``}`}
       >
-        <ArrowUp id={`${id}-scroll-top-icon`} size={19} aria-hidden={true} />
-        <span id={`${id}-scroll-top-label`}>Top</span>
+        <ChevronUp id={`${id}-scroll-top-icon`} size={24} aria-hidden={true} />
       </button>
     </div>
   );

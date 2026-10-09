@@ -58,7 +58,7 @@ const PageLoader = (props: PageLoaderProps) => {
       nativeID={`dragon-page-loader`}
       accessibilityRole={`progressbar`}
       accessibilityViewIsModal
-      accessibilityLabel={`Preparing Dragon Database`}
+      accessibilityLabel={`Preparing ${props.pageName}`}
       accessibilityValue={{ min: 0, max: 100, now: percentage, text: `${percentage}%` }}
       style={[styles.root, {
         opacity: exit.interpolate({ inputRange: reducedMotion ? [0, 1] : [0, 0.94, 1], outputRange: reducedMotion ? [1, 0] : [1, 1, 0] }),
@@ -71,7 +71,7 @@ const PageLoader = (props: PageLoaderProps) => {
         opacity: reducedMotion ? 1 : exit.interpolate({ inputRange: [0, 0.28, 1], outputRange: [1, 0, 0] }),
         transform: [{ translateY: reducedMotion ? 0 : exit.interpolate({ inputRange: [0, 0.28, 1], outputRange: [0, -14, -14] }) }],
       }]}>
-        <Text nativeID={`dragon-page-loader-eyebrow`} style={styles.eyebrow}>{`The archive awaits`}</Text>
+        <Text nativeID={`dragon-page-loader-eyebrow`} style={styles.eyebrow}>{props.pageName}</Text>
         <View nativeID={`dragon-page-loader-content`} style={[styles.content, wide && styles.contentWide]}>
           <View nativeID={`dragon-page-loader-mark`} style={{ width: markSize, height: markSize }} accessibilityElementsHidden importantForAccessibility={`no-hide-descendants`}>
             {!reducedMotion ? <View nativeID={`dragon-page-loader-trail`} style={styles.markTrail}><SvgXml xml={themeArtwork(brandMarkXml)} width={markSize} height={markSize} /></View> : null}

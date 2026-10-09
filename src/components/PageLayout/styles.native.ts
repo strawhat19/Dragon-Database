@@ -39,14 +39,10 @@ export default StyleSheet.create({
   body: { width: `100%`, maxWidth: 1180, alignSelf: `center`, paddingVertical: 44 },
   topButton: { right: 24, position: `absolute` },
   topButtonAction: {
-    gap: 8,
-    minHeight: 48,
-    paddingVertical: 12,
-    paddingHorizontal: 16,
-    flexDirection: `row`,
+    width: 48,
+    height: 48,
     alignItems: `center`,
-    backgroundColor: palette.ink,
+    justifyContent: `center`,
   },
-  topButtonLabel: { fontSize: 18, color: palette.paper, fontFamily: `DragonSlapper` },
   pressed: { opacity: 0.72 },
 });

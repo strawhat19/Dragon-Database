@@ -123,7 +123,7 @@ const ModalDetail = (props: DragonExampleDetailViewProps) => {
   const [sourceError, setSourceError] = useState<string>();
   const { collection, metadata, currentIndex, previous, next, selectPrevious, selectNext } = useDragonExampleDetailView(props);
   const viewportHeight = size.height || windowHeight;
-  const shortChrome = viewportHeight < 400;
+  const shortChrome = viewportHeight < Math.max(400, 125 * fontScale + 220);
   const chromeScale = shortChrome ? Math.min(fontScale, 1.3) : fontScale;
   const compact = viewportHeight < 580;
   const wide = size.width >= 900 && size.height >= 460 && fontScale <= 1.3;

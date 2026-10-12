@@ -1,6 +1,8 @@
-import { dragonFormKinds } from './dragonForms';
 import type { DragonKind } from '../types/types';
 import { dragonTypeImages } from './dragonTypeImages';
+import { dragonFormKinds, getDragonFormName } from './dragonForms';
+import { referenceDragonMedia } from './models/dragons/referenceDragonMedia';
+import { franchiseDragonExamples } from './models/dragons/franchiseDragonExamples';
 import type { DragonFormDetail, DragonFormArtwork } from './models/dragons/DragonForm';
 
 const createGallery = (kind: DragonKind, extra: readonly DragonFormArtwork[]): readonly DragonFormArtwork[] => {
@@ -142,7 +144,7 @@ const details: Record<DragonKind, Omit<DragonFormDetail, `kind` | `gallery`>> = 
       `No pair of flight wings`,
       `A grounded torso and tail with variable armor, horns and proportions`,
     ],
-    note: `Drake has different meanings across settings. These examples are four-legged, wingless body-plan comparisons, not a replacement for their Pokémon classifications.`,
+    note: `Drake has different meanings across settings. These examples compare wingless, grounded body plans while keeping their original franchise classifications and identifying extra-limbed variations.`,
     examples: [
       {
         id: `appletun`,
@@ -386,4 +388,8 @@ const details: Record<DragonKind, Omit<DragonFormDetail, `kind` | `gallery`>> = 
     ],
   },
 };
-export const dragonFormDetails = Object.fromEntries(dragonFormKinds.map(kind => [kind, { kind, ...details[kind], gallery: galleries[kind] }])) as Record<DragonKind, DragonFormDetail>;
+const referenceMediaById = new Map(referenceDragonMedia.map(media => [media.id, media]));
+export const dragonFormDetails = Object.fromEntries(dragonFormKinds.map(kind => {
+  const examples = new Map([...details[kind].examples, ...franchiseDragonExamples.filter(example => example.kind === kind)].map(example => [example.id, example]));
+  return [kind, { kind, ...details[kind], name: getDragonFormName(kind), examples: [...examples.values()].map(example => ({ ...example, ...referenceMediaById.get(example.id) })), gallery: galleries[kind] }];
+})) as Record<DragonKind, DragonFormDetail>;

@@ -1,0 +1,31 @@
+import { StyleSheet } from 'react-native';
+import { palette } from '../../styles/theme/theme';
+
+export default StyleSheet.create({
+  card: { width: `100%`, overflow: `hidden`, backgroundColor: palette.paper },
+  wideCard: { width: `31%` },
+  header: { gap: 12, paddingRight: 62, paddingVertical: 16, alignItems: `center`, flexDirection: `row`, paddingLeft: 20, backgroundColor: `#101115` },
+  headerArtwork: { ...StyleSheet.absoluteFillObject },
+  titleIcon: { width: 35, height: 32, flexShrink: 0 },
+  identity: { gap: 4, flex: 1, minWidth: 0 },
+  title: { fontSize: 26, lineHeight: 33, color: `#f4f6f8`, fontFamily: `DragonSlapper` },
+  franchise: { fontSize: 18, lineHeight: 23, color: `#bfc7d1`, fontFamily: `AlegreyaSans` },
+  info: { top: 8, right: 8, width: 44, height: 44, position: `absolute`, alignItems: `center`, justifyContent: `center` },
+  artFrame: { width: `100%`, aspectRatio: 5 / 3, overflow: `hidden`, borderBottomWidth: 1, borderBottomColor: palette.line, backgroundColor: palette.silver },
+  mediaLink: { flex: 1 },
+  image: { width: `100%`, height: `100%` },
+  referenceArt: { flex: 1, gap: 14, alignItems: `center`, justifyContent: `center` },
+  referenceIcon: { width: 94, height: 82 },
+  referenceLabel: { fontSize: 18, lineHeight: 24, textAlign: `center`, color: palette.muted, fontFamily: `AlegreyaSans` },
+  playOverlay: { ...StyleSheet.absoluteFillObject, alignItems: `flex-end`, justifyContent: `flex-end` },
+  playBadge: { gap: 8, margin: 14, borderWidth: 1, paddingVertical: 10, alignItems: `center`, flexDirection: `row`, paddingHorizontal: 13, borderColor: `#747e89`, backgroundColor: `#101115e6` },
+  motionControl: { gap: 7, top: 14, right: 14, zIndex: 1, minHeight: 44, borderWidth: 1, position: `absolute`, paddingVertical: 10, alignItems: `center`, flexDirection: `row`, paddingHorizontal: 12, borderColor: `#747e89`, backgroundColor: `#101115e6` },
+  playLabel: { fontSize: 17, lineHeight: 23, color: `#f4f6f8`, fontFamily: `DragonSlapper` },
+  body: { flexGrow: 1, paddingVertical: 16, paddingHorizontal: 20 },
+  description: { fontSize: 20, lineHeight: 28, color: palette.ink, fontFamily: `AlegreyaSans` },
+  actions: { borderTopWidth: 1, paddingVertical: 4, paddingHorizontal: 16, borderTopColor: palette.line },
+  action: { gap: 9, minHeight: 44, padding: 6, alignItems: `center`, flexDirection: `row`, justifyContent: `center` },
+  actionLabel: { fontSize: 18, lineHeight: 24, color: palette.ink, fontFamily: `AlegreyaSans` },
+  disabled: { opacity: .45 },
+  pressed: { opacity: 0.82 },
+});

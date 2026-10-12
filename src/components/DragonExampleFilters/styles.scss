@@ -1,0 +1,39 @@
+.dragon-example-filters { min-width: 0; font-family: 'AlegreyaSans', Arial, sans-serif; }
+.dragon-example-filters__toolbar { display: flex; gap: 12px; min-width: 0; align-items: center; }
+.dragon-example-filters__title { display: flex; gap: 9px; margin: 0; align-items: center; color: var(--ink); font: 400 21px/1.3 'AlegreyaSansMedium', Arial, sans-serif; }
+.dragon-example-filters__title svg, .dragon-example-filters__label svg { color: var(--red); flex-shrink: 0; }
+.dragon-example-filters__count { display: flex; gap: 7px; margin: 0; flex-shrink: 0; align-items: baseline; color: var(--muted); white-space: nowrap; font: 400 17px/1.3 'AlegreyaSansMedium', Arial, sans-serif; }
+.dragon-example-filters__count strong { color: var(--red); font-size: 20px; font-weight: 400; }
+.dragon-example-filters__count small { font-size: 14px; }
+.dragon-example-filters__search { display: flex; flex: 1; gap: 9px; min-width: 0; min-height: 50px; padding-left: 15px; align-items: center; border: 1px solid var(--line); clip-path: var(--angled-corners); color: var(--red); background: var(--paper); transition: border-color 180ms, box-shadow 180ms; }
+.dragon-example-filters__search:focus-within { border-color: var(--red); box-shadow: inset 0 0 0 1px var(--red); }
+.dragon-example-filters__search > svg { flex-shrink: 0; }
+.dragon-example-filters__search-input { flex: 1; width: 100%; min-width: 0; height: 48px; padding: 10px 0; border: 0; outline: 0; color: var(--ink); background: transparent; font: 400 18px/1.3 'AlegreyaSans', Arial, sans-serif; -webkit-appearance: none; appearance: none; }
+.dragon-example-filters__search-input::placeholder { color: var(--muted); opacity: 1; }
+.dragon-example-filters__search-input::-webkit-search-cancel-button, .dragon-example-filters__search-input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
+.dragon-example-filters__search-clear { display: grid; width: 44px; min-width: 44px; height: 44px; margin: 2px; padding: 0; place-items: center; border: 0; color: var(--muted); background: transparent; cursor: pointer; }
+.dragon-example-filters__search-clear:hover { color: var(--red); }
+.dragon-example-filters__groups { display: grid; gap: 14px; }
+.dragon-example-filters__group { min-width: 0; margin: 0; padding: 0; border: 0; }
+.dragon-example-filters__label { display: flex; gap: 7px; margin-bottom: 8px; padding: 0; align-items: center; color: var(--ink); font: 400 17px/1.3 'AlegreyaSansMedium', Arial, sans-serif; }
+.dragon-example-filters__options { display: flex; gap: 8px; flex-wrap: wrap; }
+.dragon-example-filters__reset, .dragon-example-filters__done, .dragon-example-filters__option { display: inline-flex; gap: 7px; min-height: 44px; max-width: 100%; padding: 8px 13px; align-items: center; justify-content: center; border: 1px solid var(--line); clip-path: var(--angled-corners); color: var(--ink); background: var(--silver); font: 400 16px/1.3 'AlegreyaSans', Arial, sans-serif; cursor: pointer; transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease; }
+.dragon-example-filters__reset svg, .dragon-example-filters__done svg, .dragon-example-filters__option svg { flex-shrink: 0; }
+.dragon-example-filters__option span { overflow-wrap: anywhere; }
+.dragon-example-filters__option:hover, .dragon-example-filters__reset:hover:not(:disabled) { border-color: var(--red); }
+.dragon-example-filters__option--selected, .dragon-example-filters__done { color: var(--control-foreground); border-color: var(--control-background); background: var(--control-background); }
+.dragon-example-filters__reset:disabled { color: var(--muted); cursor: default; }
+.dragon-example-filters button:focus-visible { outline: 2px solid var(--red); outline-offset: -3px; }
+.dragon-example-filters__toggle { position: relative; display: grid; width: 50px; height: 50px; flex-shrink: 0; padding: 0; place-items: center; border: 0; color: var(--control-foreground); background: transparent; cursor: pointer; isolation: isolate; }
+.dragon-example-filters__toggle::before { content: ''; position: absolute; inset: 0; z-index: -1; clip-path: var(--angled-corners); background: var(--control-background); transition: background-color 180ms; }
+.dragon-example-filters__toggle:hover::before, .dragon-example-filters__toggle.is-open::before { background: var(--red); }
+.dragon-example-filters__badge { position: absolute; top: -6px; right: -5px; display: grid; min-width: 21px; height: 21px; padding-inline: 4px; place-items: center; color: var(--muted); border: 1px solid var(--line); background: var(--paper); font: 400 13px/1 'AlegreyaSansMedium', Arial, sans-serif; }
+.dragon-example-filters__badge.is-active { color: var(--paper); border-color: var(--red); background: var(--red); }
+.dragon-example-filters__panel { display: grid; grid-template-rows: 0fr; opacity: 0; visibility: hidden; transition: grid-template-rows 240ms ease, opacity 180ms ease, visibility 240ms; }
+.dragon-example-filters__panel.is-open { grid-template-rows: 1fr; opacity: 1; visibility: visible; }
+.dragon-example-filters__panel-inner { display: grid; gap: 18px; min-height: 0; overflow: hidden; }
+.dragon-example-filters__panel.is-open .dragon-example-filters__panel-inner { margin-top: 16px; padding: 20px; border: 1px solid var(--line); background: var(--paper); }
+.dragon-example-filters__panel-header, .dragon-example-filters__panel-actions { display: flex; gap: 12px; align-items: center; justify-content: space-between; }
+.dragon-example-filters__close { display: grid; width: 44px; height: 44px; padding: 0; place-items: center; border: 1px solid var(--line); color: var(--ink); background: var(--silver); clip-path: var(--angled-corners); cursor: pointer; }
+@media (max-width: 600px) { .dragon-example-filters__toolbar { flex-wrap: wrap; gap: 10px; } .dragon-example-filters__count { width: 100%; } .dragon-example-filters__panel.is-open .dragon-example-filters__panel-inner { padding: 16px; } }
+@media (prefers-reduced-motion: reduce) { .dragon-example-filters__panel, .dragon-example-filters__search, .dragon-example-filters__toggle::before, .dragon-example-filters__reset, .dragon-example-filters__done, .dragon-example-filters__option { transition: none; } }

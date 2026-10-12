@@ -1,7 +1,11 @@
+import { dragonFormRoutes, resolveDragonFormName } from './dragonForms';
+
 export const routes = {
-  forms: { path: `/forms/[kind]`, label: `Dragon Forms`, icon: `flame` },
+  ...dragonFormRoutes,
   home: { path: `/`, label: `Dragon Database`, icon: `home` },
   about: { path: `/about`, label: `About`, icon: `info` },
+  allDragons: { path: `/all-dragons`, label: `All Dragons`, icon: `flame` },
+  example: { path: `/[form]/[id]`, label: `Dragon Example`, icon: `info` },
   contact: { path: `/contact`, label: `Contact`, icon: `mail` },
   terms: { path: `/terms`, label: `Terms`, icon: `file-text` },
   privacy: { path: `/privacy`, label: `Privacy Policy`, icon: `shield-check` },
@@ -29,12 +33,20 @@ export const resolveRouteAlias = (path: string) => Object.hasOwn(routeAliases, p
   ? routeAliases[path as keyof typeof routeAliases]
   : null;
 
+export const resolveRouteLabel = (path: string) => {
+  const normalizedPath = path.replace(/\/+$/, ``) || `/`;
+  const routePath = resolveRouteAlias(normalizedPath) ?? normalizedPath;
+  const detailFormPath = routePath.match(/^(\/[^/]+)\/[^/]+$/)?.[1];
+  if (detailFormPath && (detailFormPath === `/examples` || Object.values(dragonFormRoutes).some(route => route.path === detailFormPath))) return routes.example.label;
+  return resolveDragonFormName(routePath) ?? Object.values(routes).find(route => route.path === routePath)?.label;
+};
+
 export const navigation = [
   { id: `home`, path: routes.home.path, label: `Home`, icon: routes.home.icon, available: true },
   { id: `about`, ...routes.about, available: true },
   { id: `blog`, path: ``, label: `Blog`, icon: `newspaper`, available: false },
   { id: `api`, path: ``, label: `API`, icon: `code`, available: false },
-  { id: `dragons`, path: ``, label: `Dragons`, icon: `flame`, available: false },
+  { id: `dragons`, ...routes.allDragons, label: `Dragons`, available: true },
   { id: `lore`, path: ``, label: `Lore`, icon: `book`, available: false },
   { id: `contact`, ...routes.contact, available: true },
 ] as const;

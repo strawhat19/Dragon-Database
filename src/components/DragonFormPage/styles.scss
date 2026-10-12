@@ -7,25 +7,24 @@
 .dragon-form-eyebrow { margin: 0 0 10px; color: var(--red); letter-spacing: .06em; }
 .dragon-form-overview { display: grid; grid-template-columns: 1.35fr 1fr; gap: 34px; align-items: start; }
 .dragon-form-section-title { margin: 0; color: var(--ink); font: 400 32px/1.2 var(--font-brand); }
-.dragon-form-lead { margin: 18px 0 0; color: var(--muted); font-size: 22px; line-height: 1.5; }
+.dragon-form-lead { margin: 18px 0 0; color: var(--muted); font-size: 22px; line-height: 1.5; font-family: 'AlegreyaSans', Arial, sans-serif; }
 .dragon-form-anatomy { padding: 25px; border: 1px solid var(--line); background: var(--paper); clip-path: var(--angled-corners); }
 .dragon-form-anatomy h3 { margin: 0 0 17px; font: 400 24px/1.2 var(--font-brand); }
-.dragon-form-anatomy ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 19px; line-height: 1.45; }
+.dragon-form-anatomy ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 19px; line-height: 1.45; font-family: 'AlegreyaSans', Arial, sans-serif; }
 .dragon-form-anatomy li + li { margin-top: 10px; }
 .dragon-form-anatomy li::marker { color: var(--red); }
 .dragon-form-section { display: grid; gap: 22px; }
 .dragon-form-section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 26px; }
 .dragon-form-section-heading > p { max-width: 300px; margin: 0; color: var(--muted); font-size: 18px; line-height: 1.45; }
-.dragon-form-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.dragon-form-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .dragon-form-art { margin: 0; border: 1px solid var(--line); background: var(--paper); }
 .dragon-form-art-button { position: relative; display: block; width: 100%; padding: 0; border: 0; overflow: hidden; color: var(--paper); background: var(--silver); cursor: pointer; }
-.dragon-form-gallery-image { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: contain; }
+.dragon-form-gallery-image { display: block; width: 100%; height: auto; }
 .dragon-form-art-expand { display: flex; align-items: center; gap: 7px; position: absolute; right: 14px; bottom: 14px; padding: 8px 10px; color: var(--paper); background: var(--ink); font-family: var(--font-control); font-size: 12px; opacity: .94; transform: translateY(0); transition: background 180ms ease, transform 180ms ease; }
 .dragon-form-art-button:hover .dragon-form-art-expand { background: var(--red); transform: translateY(-3px); }
 .dragon-form-art figcaption { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; padding: 16px 18px; font-size: 21px; }
 .dragon-form-art-credit, .dragon-form-reference-credit { color: var(--muted); font-size: 12px; line-height: 1.4; }
-.dragon-form-canon-note { margin: 0; padding-left: 18px; border-left: 2px solid var(--red); color: var(--muted); font-size: 19px; line-height: 1.5; }
-.dragon-form-examples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.dragon-form-canon-note { margin: 0; padding-left: 18px; border-left: 2px solid var(--red); color: var(--muted); font-size: 19px; line-height: 1.5; font-family: 'AlegreyaSans', Arial, sans-serif; }
 .dragon-form-example { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); background: var(--paper); }
 .dragon-form-example-art { display: grid; place-items: center; height: 230px; border-bottom: 1px solid var(--line); background: #fff; }
 .dragon-form-example-image { display: block; width: 100%; height: 100%; max-height: 230px; padding: 16px; object-fit: contain; }
@@ -57,7 +56,7 @@
 .dragon-form-viewer-credit { margin: 12px 0 0; text-align: center; color: var(--muted); font-size: 13px; }
 @media (max-width: 720px) {
   .dragon-form-content { gap: 36px; }
-  .dragon-form-overview, .dragon-form-gallery, .dragon-form-examples { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .dragon-form-overview, .dragon-form-gallery { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   .dragon-form-section-heading { flex-direction: column; align-items: flex-start; gap: 14px; }
   .dragon-form-section-title { font-size: 28px; }
   .dragon-form-lead { font-size: 21px; }

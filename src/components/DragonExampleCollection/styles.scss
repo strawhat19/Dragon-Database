@@ -1,0 +1,7 @@
+.dragon-example-collection { display: grid; gap: 24px; }
+.dragon-example-collection__grid { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.dragon-example-collection__state { display: grid; gap: 16px; margin: 0; padding: 26px; border: 1px solid var(--line); background: var(--paper); font: 400 20px/1.4 'AlegreyaSans', Arial, sans-serif; }
+.dragon-example-collection__state p { margin: 0; }
+.dragon-example-collection__state button { display: flex; gap: 8px; width: fit-content; min-height: 44px; padding: 10px 14px; align-items: center; border: 1px solid var(--line); color: var(--ink); background: var(--silver); clip-path: var(--angled-corners); }
+.dragon-example-collection__state button:focus-visible { outline: 2px solid var(--red); outline-offset: -3px; }
+@media (max-width: 720px) { .dragon-example-collection__grid { gap: 20px; grid-template-columns: minmax(0, 1fr); } }

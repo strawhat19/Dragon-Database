@@ -4,9 +4,9 @@ import type { PageLoaderProps } from './types';
 import { usePageLoader } from './usePageLoader';
 import { brandMarkXml } from '../../shared/artwork';
 import { useEffect, useRef, useState } from 'react';
-import { Animated, Text, View, useWindowDimensions } from 'react-native';
-import { flameHeights, swordAspectRatio, flameAspectRatio } from './artwork';
+import { flameEdgeXml, swordAspectRatio, flameAspectRatio } from './artwork';
 import { blackFlameXml, wordmarkSwordXml } from '../../shared/landingArtwork';
+import { Animated, Easing, Text, View, useWindowDimensions } from 'react-native';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const PageLoader = (props: PageLoaderProps) => {
@@ -25,6 +25,7 @@ const PageLoader = (props: PageLoaderProps) => {
   const swordHeight = swordWidth / swordAspectRatio;
   const flameHeight = wide ? 76 : 46;
   const flameWidth = flameHeight * flameAspectRatio;
+  const edgeHeight = Math.min(100, Math.max(40, height * 0.1));
   const fringeHeight = Math.min(240, Math.max(120, height * 0.24));
 
   useEffect(() => {
@@ -33,8 +34,8 @@ const PageLoader = (props: PageLoaderProps) => {
       return;
     }
     const animation = Animated.loop(Animated.sequence([
-      Animated.timing(flamePulse, { toValue: 1, duration: 320, useNativeDriver: true }),
-      Animated.timing(flamePulse, { toValue: 0, duration: 320, useNativeDriver: true }),
+      Animated.timing(flamePulse, { toValue: 1, duration: 850, useNativeDriver: true, easing: Easing.inOut(Easing.sin) }),
+      Animated.timing(flamePulse, { toValue: 0, duration: 850, useNativeDriver: true, easing: Easing.inOut(Easing.sin) }),
     ]));
     animation.start();
     return () => animation.stop();
@@ -67,6 +68,24 @@ const PageLoader = (props: PageLoaderProps) => {
       <Animated.View nativeID={`dragon-page-loader-backdrop`} style={[styles.backdrop, {
         opacity: reducedMotion ? 1 : exit.interpolate({ inputRange: [0, 0.38, 0.4, 1], outputRange: [1, 1, 0, 0] }),
       }]} />
+      {[`top`, `bottom`].map(edge => (
+        <Animated.View
+          key={edge}
+          pointerEvents={`none`}
+          accessibilityElementsHidden
+          importantForAccessibility={`no-hide-descendants`}
+          nativeID={`dragon-page-loader-viewport-flame-${edge}`}
+          style={[styles.viewportFlame, { height: edgeHeight }, edge === `top` ? { top: -2, transform: [{ rotate: `180deg` }] } : { bottom: -2 }, {
+            opacity: reducedMotion ? 1 : exit.interpolate({ inputRange: [0, 0.28, 1], outputRange: [1, 0, 0] }),
+          }]}
+        >
+          <Animated.View nativeID={`dragon-page-loader-viewport-flame-artwork-${edge}`} style={[styles.viewportFlameArtwork, {
+            transform: [{ scaleY: reducedMotion ? 1 : flamePulse.interpolate({ inputRange: [0, 1], outputRange: [0.96, 1.04] }) }],
+          }]}>
+            <SvgXml xml={flameEdgeXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
+          </Animated.View>
+        </Animated.View>
+      ))}
       <Animated.View nativeID={`dragon-page-loader-frame`} style={[styles.frame, wide && styles.frameWide, {
         opacity: reducedMotion ? 1 : exit.interpolate({ inputRange: [0, 0.28, 1], outputRange: [1, 0, 0] }),
         transform: [{ translateY: reducedMotion ? 0 : exit.interpolate({ inputRange: [0, 0.28, 1], outputRange: [0, -14, -14] }) }],
@@ -120,8 +139,8 @@ const PageLoader = (props: PageLoaderProps) => {
               left: swordWidth * percentage / 100 - flameWidth * 0.5,
               opacity: phase === `loading` && percentage > 0 && percentage < 100 ? 1 : 0,
               transform: [
-                { scaleY: flamePulse.interpolate({ inputRange: [0, 1], outputRange: [0.88, 1.04] }) },
-                { rotate: flamePulse.interpolate({ inputRange: [0, 1], outputRange: [`-5deg`, `4deg`] }) },
+                { scaleY: flamePulse.interpolate({ inputRange: [0, 1], outputRange: [0.96, 1.04] }) },
+                { rotate: flamePulse.interpolate({ inputRange: [0, 1], outputRange: [`-2deg`, `2deg`] }) },
               ],
             }]}>
               <SvgXml xml={blackFlameXml} width={flameWidth} height={flameHeight} />
@@ -144,18 +163,14 @@ const PageLoader = (props: PageLoaderProps) => {
             }) }],
           }]}
         >
-          <View nativeID={`dragon-page-loader-flame-curtain-body`} style={[styles.flameCurtainBody, { top: fringeHeight - 1, bottom: fringeHeight - 1, backgroundColor: `#0C0D10` }]} />
+          <View nativeID={`dragon-page-loader-flame-curtain-body`} style={[styles.flameCurtainBody, { top: fringeHeight - 2, bottom: fringeHeight - 2, backgroundColor: `#101115` }]} />
           {[`top`, `bottom`].map(edge => (
             <View
               key={edge}
               nativeID={`dragon-page-loader-flame-edge-${edge}`}
-              style={[styles.flameEdge, { height: fringeHeight }, edge === `top` ? { top: 1 } : { bottom: 1, transform: [{ rotate: `180deg` }] }]}
+              style={[styles.flameEdge, { height: fringeHeight }, edge === `top` ? { top: 0 } : { bottom: 0, transform: [{ rotate: `180deg` }] }]}
             >
-              {flameHeights.map((relativeHeight, index) => (
-                <View key={index} nativeID={`dragon-page-loader-exit-flame-${edge}-${index}`} style={[styles.exitFlame, { height: fringeHeight * relativeHeight }]}>
-                  <SvgXml xml={blackFlameXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
-                </View>
-              ))}
+              <SvgXml xml={flameEdgeXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
             </View>
           ))}
         </Animated.View>

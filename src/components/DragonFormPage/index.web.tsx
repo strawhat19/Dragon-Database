@@ -1,23 +1,15 @@
 import './styles.scss';
-import Artwork from '../Artwork';
 import { Asset } from 'expo-asset';
 import WebAnchor from '../WebAnchor';
 import PageLayout from '../PageLayout';
+import DragonExampleCollection from '../DragonExampleCollection';
 import { Link, Stack } from 'expo-router';
 import { routes } from '../../shared/routes';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import useDragonFormPage from './useDragonFormPage';
-import { dragonTypeIcons } from '../../shared/dragonTypeIcons';
-import type { DragonExample } from '../../shared/models/dragons/DragonForm';
 import { ArrowLeft, ArrowUpRight, Expand, RotateCcw, X } from 'lucide-react';
 import { dragonFormKinds, dragonFormPath, getDragonFormName } from '../../shared/dragonForms';
 
-const ExampleArtwork = ({ example, id, iconXml }: { example: DragonExample; id: string; iconXml: string }) => {
-  const [failed, setFailed] = useState(false);
-  return <div id={`${id}-art`} className={`dragon-form-example-art`}>
-    {example.imageUrl && !failed ? <img id={`${id}-image`} className={`dragon-form-example-image`} src={example.imageUrl} alt={`${example.name} — Official ${example.franchise} Artwork`} loading={`lazy`} decoding={`async`} onError={() => setFailed(true)} /> : <div id={`${id}-art-reference`} className={`dragon-form-example-reference`}><Artwork id={`${id}-reference-symbol`} xml={iconXml} className={`dragon-form-example-symbol`} /><span>{failed ? `Artwork Unavailable · View Source` : `Explore The Source`}</span></div>}
-  </div>;
-};
 const DragonFormPage = () => {
   const dialog = useRef<HTMLDialogElement>(null);
   const { kind, details, error, loading, retry, viewedArtwork, viewArtwork, closeArtwork } = useDragonFormPage();
@@ -49,13 +41,7 @@ const DragonFormPage = () => {
           <section id={`${id}-examples`} className={`dragon-form-section`} aria-labelledby={`${id}-examples-title`}>
             <div id={`${id}-examples-heading`} className={`dragon-form-section-heading`}><div id={`${id}-examples-heading-copy`}><p id={`${id}-examples-eyebrow`} className={`dragon-form-eyebrow`}>Games · Film · Fiction</p><h2 id={`${id}-examples-title`} className={`dragon-form-section-title`}>Across Different Worlds</h2></div></div>
             <p id={`${id}-canon-note`} className={`dragon-form-canon-note`}>{details.note}</p>
-            <div id={`${id}-examples-grid`} className={`dragon-form-examples`}>{details.examples.map(example => {
-              const exampleId = `${id}-example-${example.id}`;
-              return <article key={example.id} id={exampleId} className={`dragon-form-example`} aria-labelledby={`${exampleId}-title`}>
-                <ExampleArtwork key={example.imageUrl ?? example.id} id={exampleId} example={example} iconXml={dragonTypeIcons[kind]} />
-                <div id={`${exampleId}-body`} className={`dragon-form-example-body`}><p id={`${exampleId}-franchise`} className={`dragon-form-eyebrow`}>{example.franchise}</p><h3 id={`${exampleId}-title`}>{example.name}</h3><p id={`${exampleId}-description`} className={`dragon-form-example-description`}>{example.description}</p><p id={`${exampleId}-canon`} className={`dragon-form-example-canon`}>{example.canonLabel}</p>{example.imageCredit && <p id={`${exampleId}-credit`} className={`dragon-form-reference-credit`}>{example.imageCredit}</p>}<a id={`${exampleId}-source`} href={example.sourceUrl} className={`dragon-form-source-link`} target={`_blank`} rel={`noopener noreferrer`} aria-label={`View Source For ${example.name} (Opens In A New Tab)`}>View Source<ArrowUpRight size={17} aria-hidden={true} /></a>{example.anatomySourceUrl && <a id={`${exampleId}-anatomy-source`} href={example.anatomySourceUrl} className={`dragon-form-source-link`} target={`_blank`} rel={`noopener noreferrer`} aria-label={`View Anatomy Reference For ${example.name} (Opens In A New Tab)`}>Anatomy Reference<ArrowUpRight size={17} aria-hidden={true} /></a>}</div>
-              </article>;
-            })}</div>
+            <DragonExampleCollection id={`${id}-examples-collection`} kind={kind} />
           </section>
         </>}
         <nav id={`${id}-related`} className={`dragon-form-related`} aria-labelledby={`${id}-related-title`}><h2 id={`${id}-related-title`} className={`dragon-form-section-title`}>Explore More Forms</h2><div id={`${id}-related-links`} className={`dragon-form-related-links`}>{dragonFormKinds.filter(related => related !== kind).map(related => <Link key={related} href={dragonFormPath(related)} asChild><WebAnchor id={`${id}-related-${related}`} className={`dragon-form-related-link`}>{getDragonFormName(related)}<ArrowUpRight size={17} aria-hidden={true} /></WebAnchor></Link>)}</div></nav>

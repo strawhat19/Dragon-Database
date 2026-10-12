@@ -17,11 +17,11 @@ const Reveal = ({ id, children, delay = 0, className = `` }: RevealProps) => {
       return;
     }
 
-    const observer = new IntersectionObserver(([entry]) => {
-      if (!entry?.isIntersecting) return;
+    const observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
       setVisible(true);
       observer.disconnect();
-    }, { threshold: 0.12, rootMargin: `0px 0px -6% 0px` });
+    }, { threshold: 0, rootMargin: `0px 0px -6% 0px` });
 
     observer.observe(root);
     return () => observer.disconnect();

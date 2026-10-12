@@ -5,30 +5,18 @@ import CardCorners from './CardCorners.native';
 import { ArrowUpRight } from 'lucide-react-native';
 import type { DragonTypeCardProps } from './types';
 import { getDragonTypeCardContent } from './content';
-import { steelTextureXml } from '../../shared/artwork';
 import useDragonTypeArt from './useDragonTypeArt.native';
 import { dragonFormPath } from '../../shared/dragonForms';
 import { Text, View, Animated, Pressable } from 'react-native';
 import { dragonTypeImages } from '../../shared/dragonTypeImages';
+import { blackSteelTextureXml } from '../../shared/cardArtwork';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
-
-const blackSteelColors: Record<string, string> = {
-  '#aab3bf': `#0b0c10`,
-  '#e1e5ea': `#272c32`,
-  '#f3f4f6': `#30343b`,
-  '#bac3ce': `#15191f`,
-  '#d6dce4': `#111318`,
-  '#a2adb9': `#11151a`,
-  '#67717d': `#d1d8df`,
-  '#f4f6f8': `#747e89`,
-};
-const blackSteelTextureXml = steelTextureXml.replace(/#[\da-f]{6}/gi, (color) => blackSteelColors[color.toLowerCase()] ?? color);
 
 const DragonTypeCard = ({ type }: DragonTypeCardProps) => {
   const { palette, isDark, themeArtwork } = useTheme();
   const image = dragonTypeImages[type.kind];
   const styles = useThemedStyles(baseStyles);
-  const { traits, iconXml, formNumber } = getDragonTypeCardContent(type);
+  const { traits, iconXml, formName, formNumber } = getDragonTypeCardContent(type);
   const { onPressIn, onPressOut, baseArtStyle, onAlternateLoad, alternateArtStyle } = useDragonTypeArt(image.hoverSource);
 
   return (
@@ -37,7 +25,7 @@ const DragonTypeCard = ({ type }: DragonTypeCardProps) => {
         onPressIn={onPressIn}
         onPressOut={onPressOut}
         accessibilityRole={`link`}
-        accessibilityLabel={`Explore ${type.name} Examples And Artwork`}
+        accessibilityLabel={`Explore ${formName} Examples And Artwork`}
         accessibilityHint={`${traits}. ${type.description} Opens this form’s artwork and examples.`}
         nativeID={`dragon-type-card-${type.id}`}
         testID={`dragon-type-card-${type.id}`}
@@ -45,18 +33,16 @@ const DragonTypeCard = ({ type }: DragonTypeCardProps) => {
       >
         {({ pressed }) => (
           <>
-            <View style={styles.metadata} nativeID={`dragon-type-metadata-${type.id}`}>
-              {!isDark && (
-                <View
-                  pointerEvents={`none`}
-                  accessibilityElementsHidden
-                  style={styles.metadataArtwork}
-                  importantForAccessibility={`no-hide-descendants`}
-                  nativeID={`dragon-type-metadata-steel-${type.id}`}
-                >
-                  <SvgXml xml={blackSteelTextureXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
-                </View>
-              )}
+            <View style={[styles.metadata, isDark && { backgroundColor: `#101115` }]} nativeID={`dragon-type-metadata-${type.id}`}>
+              <View
+                pointerEvents={`none`}
+                accessibilityElementsHidden
+                style={styles.metadataArtwork}
+                importantForAccessibility={`no-hide-descendants`}
+                nativeID={`dragon-type-metadata-steel-${type.id}`}
+              >
+                <SvgXml xml={blackSteelTextureXml} width={`100%`} height={`100%`} preserveAspectRatio={`none`} />
+              </View>
               <View style={styles.titleGroup} nativeID={`dragon-type-title-group-${type.id}`}>
                 <View
                   pointerEvents={`none`}
@@ -74,14 +60,14 @@ const DragonTypeCard = ({ type }: DragonTypeCardProps) => {
                   />
                 </View>
                 <Text
-                  style={styles.title}
                   numberOfLines={1}
                   adjustsFontSizeToFit
                   minimumFontScale={0.65}
                   testID={`dragon-type-title-${type.id}`}
                   nativeID={`dragon-type-title-${type.id}`}
+                  style={[styles.title, isDark && { color: palette.ink }]}
                 >
-                  {type.name}
+                  {formName}
                 </Text>
               </View>
               <View style={styles.form} nativeID={`dragon-type-form-${type.id}`}>
@@ -90,8 +76,8 @@ const DragonTypeCard = ({ type }: DragonTypeCardProps) => {
                   numberOfLines={1}
                   adjustsFontSizeToFit
                   minimumFontScale={0.85}
-                  style={styles.formNumber}
                   nativeID={`dragon-type-form-number-${type.id}`}
+                  style={[styles.formNumber, isDark && { color: palette.ink }]}
                 >
                   {formNumber}
                 </Text>

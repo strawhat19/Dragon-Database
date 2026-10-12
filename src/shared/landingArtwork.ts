@@ -1,9 +1,9 @@
 // Original anatomy graphics and exact selected wordmark sword; previous concept artwork is preserved.
 export const blackFlameXml = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" fill="none">
   <title>Black forge flame</title>
-  <desc>An elongated, tapered black flame with a cut steel silhouette.</desc>
+  <desc>A flowing black flame with curved tongues, a rounded base and inset tips.</desc>
   <metadata>Original Dragon Database vector artwork. Editable anatomy plate; illustrative fantasy classification.</metadata>
-  <g id="black-flame" class="black-flame"><path id="black-flame-silhouette" d="M18 280C-2 242 8 209 28 183L54 145C52 182 43 191 49 212C58 183 93 159 92 122C91 101 82 82 92 57L119 0C110 62 139 78 144 103C154 77 165 66 171 43C182 90 160 119 150 151C173 141 182 121 184 104C208 152 185 186 178 207C192 217 203 247 187 280Z" fill="#101115" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></g>
+  <g id="black-flame" class="black-flame"><path id="black-flame-silhouette" d="M46 258C12 252 8 227 20 201C28 181 48 173 54 147C64 168 56 192 60 210C84 197 101 178 98 151C94 124 77 103 87 74C93 55 111 37 122 12C116 42 114 60 124 82C134 103 149 118 145 143C160 130 173 112 178 87C192 118 181 146 168 167C154 190 152 211 163 226C170 207 180 193 181 172C198 202 190 226 180 244C158 271 82 272 46 258Z" fill="#101115" /></g>
 </svg>`;
 
 export const wordmarkSwordXml = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="390 288 540 56" fill="none">

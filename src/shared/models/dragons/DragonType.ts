@@ -1,6 +1,7 @@
-import { Types, type DragonKind } from '../../../types/types';
+import { dragonFormKinds } from '../../dragonForms';
 import { isRecord, dataError } from '../../common/values';
 import { Data, parseData, type DataRecord } from '../Data';
+import { Types, type DragonKind } from '../../../types/types';
 
 export interface DragonTypeRecord extends DataRecord {
   kind: DragonKind;
@@ -9,9 +10,7 @@ export interface DragonTypeRecord extends DataRecord {
   searchTerms: string[];
 }
 
-const dragonKindOrder: DragonKind[] = [`dragon`, `wyvern`, `drake`, `wyrm`, `amphiptere`, `leviathan`, `dragonoid`, `hydra`, `eastern`];
-
-export const getDragonTypeDisplayNumber = (kind: DragonKind) => dragonKindOrder.indexOf(kind) + 1;
+export const getDragonTypeDisplayNumber = (kind: DragonKind) => dragonFormKinds.indexOf(kind) + 1;
 
 export const orderDragonTypes = (records: DragonTypeRecord[]) => [...records].sort((first, second) =>
   getDragonTypeDisplayNumber(first.kind) - getDragonTypeDisplayNumber(second.kind));

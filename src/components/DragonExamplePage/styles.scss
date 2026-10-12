@@ -1,0 +1,8 @@
+.dragon-example-page { display: grid; gap: 26px; }
+.dragon-example-page__back { display: flex; gap: 10px; width: fit-content; min-height: 44px; align-items: center; color: var(--ink); text-decoration: none; font: 400 19px/1.3 'AlegreyaSans', Arial, sans-serif; }
+.dragon-example-page__back:hover { color: var(--red); }
+.dragon-example-page__state { display: grid; gap: 18px; margin: 0; padding: 26px; border: 1px solid var(--line); background: var(--paper); font: 400 21px/1.4 'AlegreyaSans', Arial, sans-serif; }
+.dragon-example-page__state p, .dragon-example-page__state h2 { margin: 0; }
+.dragon-example-page__state h2 { font: 400 28px/1.3 var(--font-brand); }
+.dragon-example-page__state button { display: flex; gap: 8px; min-height: 44px; padding: 10px 14px; width: fit-content; align-items: center; border: 1px solid var(--line); color: var(--ink); background: var(--silver); clip-path: var(--angled-corners); }
+.dragon-example-page :is(button, a):focus-visible { outline: 2px solid var(--red); outline-offset: -3px; }

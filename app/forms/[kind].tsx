@@ -1,5 +1,5 @@
 import { dragonFormKinds } from '../../src/shared/dragonForms';
-import DragonFormPage from '../../src/components/DragonFormPage';
+import DragonFormRedirect from '../../src/components/DragonFormRedirect';
 
 export const generateStaticParams = () => dragonFormKinds.map(kind => ({ kind }));
-export default DragonFormPage;
+export default DragonFormRedirect;

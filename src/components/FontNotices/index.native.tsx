@@ -8,7 +8,7 @@ import { Text, View, Modal, Pressable, ScrollView } from 'react-native';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 
 const FontNotices = ({ visible, onClose }: FontNoticesProps) => {
-  const { palette } = useTheme();
+  const { palette, isDark } = useTheme();
   const styles = useThemedStyles(baseStyles);
   const insets = useSafeAreaInsets();
   const { openLink, reducedMotion } = useFontNotices();
@@ -43,6 +43,7 @@ const FontNotices = ({ visible, onClose }: FontNoticesProps) => {
         <ScrollView
           nativeID={`font-notices-content`}
           style={styles.scroll}
+          indicatorStyle={isDark ? `white` : `black`}
           contentContainerStyle={[styles.content, { paddingBottom: Math.max(32, insets.bottom + 24) }]}
         >
           {fontNotices.map(notice => (

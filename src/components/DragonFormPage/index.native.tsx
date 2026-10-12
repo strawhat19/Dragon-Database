@@ -1,26 +1,16 @@
-import Artwork from '../Artwork';
-import { useState } from 'react';
 import PageLayout from '../PageLayout';
 import baseStyles from './styles.native';
+import DragonExampleCollection from '../DragonExampleCollection';
 import { Link, Stack } from 'expo-router';
 import { routes } from '../../shared/routes';
 import useDragonFormPage from './useDragonFormPage';
-import { dragonTypeIcons } from '../../shared/dragonTypeIcons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useReducedMotion } from '../../shared/motion/useReducedMotion';
-import type { DragonExample } from '../../shared/models/dragons/DragonForm';
 import { useTheme, useThemedStyles } from '../../shared/themeContext/ThemeContext';
 import { ArrowLeft, ArrowUpRight, Expand, RotateCcw, X } from 'lucide-react-native';
 import { Text, View, Image, Modal, Pressable, useWindowDimensions } from 'react-native';
 import { dragonFormKinds, dragonFormPath, getDragonFormName } from '../../shared/dragonForms';
 
-const ExampleArtwork = ({ example, id, iconXml }: { example: DragonExample; id: string; iconXml: string }) => {
-  const [failed, setFailed] = useState(false);
-  const styles = useThemedStyles(baseStyles);
-  return <View nativeID={`${id}-art`} style={styles.exampleArt}>
-    {example.imageUrl && !failed ? <Image nativeID={`${id}-image`} source={{ uri: example.imageUrl }} resizeMode={`contain`} accessibilityLabel={`${example.name} — Official ${example.franchise} Artwork`} style={styles.exampleImage} onError={() => setFailed(true)} /> : <View nativeID={`${id}-art-reference`} style={styles.referenceArt}><View nativeID={`${id}-reference-symbol-wrap`} style={styles.referenceSymbol}><Artwork id={`${id}-reference-symbol`} xml={iconXml} /></View><Text style={styles.referenceLabel}>{failed ? `Artwork Unavailable · View Source` : `Explore The Source`}</Text></View>}
-  </View>;
-};
 const DragonFormPage = () => {
   const styles = useThemedStyles(baseStyles);
   const { palette } = useTheme();
@@ -46,16 +36,14 @@ const DragonFormPage = () => {
           </View>
           <View nativeID={`${id}-gallery`} style={styles.section}>
             <View nativeID={`${id}-gallery-heading`} style={styles.sectionHeading}><Text nativeID={`${id}-gallery-eyebrow`} style={styles.eyebrow}>Original Illustrations</Text><Text accessibilityRole={`header`} nativeID={`${id}-gallery-title`} style={styles.sectionTitle}>The Art Collection</Text><Text style={styles.body}>Open an illustration to explore the full scene.</Text></View>
-            <View nativeID={`${id}-gallery-grid`} style={[styles.gallery, wide && styles.wideGrid]}>{details.gallery.map(artwork => <View key={artwork.id} nativeID={`${id}-art-${artwork.id}`} style={[styles.artCard, wide && styles.wideCard]}><Pressable nativeID={`${id}-view-${artwork.id}`} accessibilityRole={`button`} accessibilityLabel={`View ${artwork.title} Full Size`} onPress={() => viewArtwork(artwork)} style={({ pressed }) => [styles.artButton, pressed && styles.pressed]}><Image nativeID={`${id}-image-${artwork.id}`} source={artwork.source} resizeMode={`contain`} accessibilityLabel={artwork.alt} style={styles.galleryImage} /><View nativeID={`${id}-expand-${artwork.id}`} style={styles.artExpand}><Expand size={16} color={palette.paper} /><Text style={styles.artExpandLabel}>View Artwork</Text></View></Pressable><View nativeID={`${id}-caption-${artwork.id}`} style={styles.artCaption}><Text style={styles.artTitle}>{artwork.title}</Text><Text style={styles.credit}>Dragon Database · Original Art</Text></View></View>)}</View>
+            <View nativeID={`${id}-gallery-grid`} style={[styles.gallery, wide && styles.wideGrid]}>{details.gallery.map(artwork => {
+              const source = Image.resolveAssetSource(artwork.source);
+              const aspectRatio = source?.height ? source.width / source.height : 1.5;
+              return <View key={artwork.id} nativeID={`${id}-art-${artwork.id}`} style={[styles.artCard, wide && styles.wideCard]}><Pressable nativeID={`${id}-view-${artwork.id}`} accessibilityRole={`button`} accessibilityLabel={`View ${artwork.title} Full Size`} onPress={() => viewArtwork(artwork)} style={({ pressed }) => [styles.artButton, pressed && styles.pressed]}><Image nativeID={`${id}-image-${artwork.id}`} source={artwork.source} resizeMode={`contain`} accessibilityLabel={artwork.alt} style={[styles.galleryImage, { aspectRatio }]} /><View nativeID={`${id}-expand-${artwork.id}`} style={styles.artExpand}><Expand size={16} color={palette.paper} /><Text style={styles.artExpandLabel}>View Artwork</Text></View></Pressable><View nativeID={`${id}-caption-${artwork.id}`} style={styles.artCaption}><Text style={styles.artTitle}>{artwork.title}</Text><Text style={styles.credit}>Dragon Database · Original Art</Text></View></View>;
+            })}</View>
           </View>
           <View nativeID={`${id}-examples`} style={styles.section}><View nativeID={`${id}-examples-heading`} style={styles.sectionHeading}><Text nativeID={`${id}-examples-eyebrow`} style={styles.eyebrow}>Games · Film · Fiction</Text><Text accessibilityRole={`header`} nativeID={`${id}-examples-title`} style={styles.sectionTitle}>Across Different Worlds</Text></View><Text nativeID={`${id}-canon-note`} style={styles.canonNote}>{details.note}</Text>
-            <View nativeID={`${id}-examples-grid`} style={[styles.examples, wide && styles.wideGrid]}>{details.examples.map(example => {
-              const exampleId = `${id}-example-${example.id}`;
-              return <View key={example.id} nativeID={exampleId} testID={exampleId} style={[styles.exampleCard, wide && styles.wideCard]}>
-                <ExampleArtwork key={example.imageUrl ?? example.id} id={exampleId} example={example} iconXml={dragonTypeIcons[kind]} />
-                <View nativeID={`${exampleId}-body`} style={styles.exampleBody}><Text nativeID={`${exampleId}-franchise`} style={styles.eyebrow}>{example.franchise}</Text><Text nativeID={`${exampleId}-title`} accessibilityRole={`header`} style={styles.cardTitle}>{example.name}</Text><Text nativeID={`${exampleId}-description`} style={styles.body}>{example.description}</Text><Text nativeID={`${exampleId}-canon`} style={styles.canonLabel}>{example.canonLabel}</Text>{example.imageCredit && <Text nativeID={`${exampleId}-credit`} style={styles.credit}>{example.imageCredit}</Text>}<Pressable nativeID={`${exampleId}-source`} accessibilityRole={`link`} accessibilityLabel={`View Source For ${example.name}`} onPress={() => { void openSource(example.sourceUrl); }} style={({ pressed }) => [styles.sourceLink, pressed && styles.pressed]}><Text style={styles.linkText}>View Source</Text><ArrowUpRight size={17} color={palette.ink} /></Pressable>{example.anatomySourceUrl && <Pressable nativeID={`${exampleId}-anatomy-source`} accessibilityRole={`link`} accessibilityLabel={`View Anatomy Reference For ${example.name}`} onPress={() => { void openSource(example.anatomySourceUrl ?? example.sourceUrl); }} style={({ pressed }) => [styles.sourceLink, pressed && styles.pressed]}><Text style={styles.linkText}>Anatomy Reference</Text><ArrowUpRight size={17} color={palette.ink} /></Pressable>}</View>
-              </View>;
-            })}</View>
+            <DragonExampleCollection id={`${id}-examples-collection`} kind={kind} onOpenSource={openSource} />
             {sourceError && <Text nativeID={`${id}-source-error`} accessibilityLiveRegion={`polite`} style={styles.error}>{sourceError}</Text>}
           </View>
         </>}

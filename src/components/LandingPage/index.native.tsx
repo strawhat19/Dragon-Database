@@ -83,6 +83,7 @@ const LandingPage = () => {
         ref={scrollRef}
         style={styles.scroll}
         stickyHeaderIndices={[0]}
+        indicatorStyle={isDark ? `white` : `black`}
         scrollEventThrottle={16}
         keyboardShouldPersistTaps={`handled`}
         keyboardDismissMode={`on-drag`}

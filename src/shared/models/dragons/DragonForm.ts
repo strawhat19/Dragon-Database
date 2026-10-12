@@ -9,7 +9,15 @@ export type DragonExample = {
   description: string;
   canonLabel: string;
   imageUrl?: string;
+  imageAlt?: string;
+  gifUrl?: string;
+  videoUrl?: string;
+  videoEmbedUrl?: string;
+  videoSourceUrl?: string;
   imageCredit?: string;
+  colors?: readonly string[];
+  mediums?: readonly string[];
+  elements?: readonly string[];
   anatomySourceUrl?: string;
 };
 export type DragonFormArtwork = {

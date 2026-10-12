@@ -3,8 +3,8 @@ import './styles.scss';
 import type { PageLoaderProps } from './types';
 import { usePageLoader } from './usePageLoader';
 import { brandMarkXml } from '../../shared/artwork';
-import { flameHeights, flameImageSource } from './artwork';
 import { wordmarkSwordXml } from '../../shared/landingArtwork';
+import { flameImageSource, flameEdgeImageSource } from './artwork';
 import { useEffect, useId, useRef, type CSSProperties } from 'react';
 import { useThemedArtwork } from '../../shared/themeContext/ThemeContext';
 
@@ -67,6 +67,17 @@ const PageLoader = (props: PageLoaderProps) => {
       }}
     >
       <div id={`dragon-page-loader-backdrop`} className={`page-loader__backdrop`} aria-hidden={true} />
+      {[`top`, `bottom`].map(edge => (
+        <div key={edge} id={`dragon-page-loader-screen-flames-${edge}`} className={`page-loader__screen-flames page-loader__screen-flames--${edge}`} aria-hidden={true}>
+          <img
+            alt={``}
+            draggable={false}
+            src={flameEdgeImageSource}
+            className={`page-loader__screen-flame-artwork`}
+            id={`dragon-page-loader-screen-flame-artwork-${edge}`}
+          />
+        </div>
+      ))}
       <div id={`dragon-page-loader-frame`} className={`page-loader__frame`}>
         <span id={`dragon-page-loader-eyebrow`} className={`page-loader__eyebrow`}>{props.pageName}</span>
         <div id={`dragon-page-loader-content`} className={`page-loader__content`}>
@@ -114,17 +125,13 @@ const PageLoader = (props: PageLoaderProps) => {
           <div id={`dragon-page-loader-flame-curtain-body`} className={`page-loader__flame-curtain-body`} />
           {[`top`, `bottom`].map(edge => (
             <div key={edge} id={`dragon-page-loader-flame-edge-${edge}`} className={`page-loader__flame-edge page-loader__flame-edge--${edge}`}>
-              {flameHeights.map((height, index) => (
-                <img
-                  alt={``}
-                  key={index}
-                  draggable={false}
-                  src={flameImageSource}
-                  style={{ height: `${height * 100}%` }}
-                  id={`dragon-page-loader-exit-flame-${edge}-${index}`}
-                  className={`page-loader__exit-flame`}
-                />
-              ))}
+              <img
+                alt={``}
+                draggable={false}
+                src={flameEdgeImageSource}
+                className={`page-loader__exit-flame`}
+                id={`dragon-page-loader-exit-flame-${edge}`}
+              />
             </div>
           ))}
         </div>

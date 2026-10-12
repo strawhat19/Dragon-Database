@@ -31,6 +31,7 @@ const PageLayout = ({ id, title, description, children }: PageLayoutProps) => {
         onScroll={onScroll}
         scrollEventThrottle={16}
         stickyHeaderIndices={[0]}
+        indicatorStyle={isDark ? `white` : `black`}
         automaticallyAdjustKeyboardInsets
         nativeID={`${id}-page-scroll`}
         keyboardShouldPersistTaps={`handled`}

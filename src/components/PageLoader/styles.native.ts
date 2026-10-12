@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     backgroundColor: `#e8ebef`,
   },
   frame: {
+    zIndex: 1,
     width: `88%`,
     maxWidth: 1100,
     paddingVertical: 24,
@@ -44,11 +45,12 @@ const styles = StyleSheet.create({
   sword: { width: `100%`, position: `relative` },
   swordBase: { opacity: 0.13 },
   swordFill: { top: 0, left: 0, overflow: `hidden`, position: `absolute` },
-  progressFlame: { position: `absolute` },
+  progressFlame: { position: `absolute`, transformOrigin: `50% 100%` },
+  viewportFlame: { left: 0, right: 0, position: `absolute` },
+  viewportFlameArtwork: { width: `100%`, height: `100%`, transformOrigin: `50% 100%` },
   flameCurtain: { top: 0, left: 0, right: 0, zIndex: 2, position: `absolute` },
   flameCurtainBody: { left: 0, right: 0, position: `absolute`, backgroundColor: `#101115` },
-  flameEdge: { left: 0, right: 0, position: `absolute`, alignItems: `flex-end`, flexDirection: `row` },
-  exitFlame: { flex: 1, minWidth: 0 },
+  flameEdge: { left: 0, right: 0, position: `absolute` },
   // Native uses a quiet offset ghost instead of relying on SVG filters across devices.
   digitTrail: { top: 0, left: -5, position: `absolute` },
   markTrail: { top: 4, left: -5, opacity: 0.07, position: `absolute` },

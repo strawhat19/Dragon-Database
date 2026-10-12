@@ -6,8 +6,7 @@ import { Platform, View } from 'react-native';
 import type { PropsWithChildren } from 'react';
 import { useAppFonts } from '../../shared/useAppFonts';
 import { useAuth } from '../../shared/authContext/useAuth';
-import { routes, resolveRouteAlias } from '../../shared/routes';
-import { resolveDragonFormName } from '../../shared/dragonForms';
+import { routes, resolveRouteAlias, resolveRouteLabel } from '../../shared/routes';
 import { useDragonData } from '../../shared/dragonDataContext/useDragonData';
 
 const AppShell = ({ children }: PropsWithChildren) => {
@@ -18,7 +17,7 @@ const AppShell = ({ children }: PropsWithChildren) => {
   const { isHydrated: authReady } = useAuth();
   const { isHydrated: dataReady } = useDragonData();
   const routePath = resolveRouteAlias(pathname) ?? pathname;
-  const pageName = routePath === routes.home.path ? `Home` : resolveDragonFormName(routePath) ?? Object.values(routes).find(route => route.path === routePath)?.label ?? `Home`;
+  const pageName = routePath === routes.home.path ? `Home` : resolveRouteLabel(routePath) ?? `Home`;
   const fontsReady = fontsLoaded || Boolean(fontError);
   const ready = fontsReady && authReady && dataReady;
   const progress = Math.round((Number(fontsReady) + Number(authReady) + Number(dataReady)) * 100 / 3);

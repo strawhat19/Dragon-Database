@@ -43,7 +43,7 @@ const PageLayout = ({ id, title, description, children }: PageLayoutProps) => {
           </div>
         </section>
         <section id={`${id}-body`} className={`page-layout__body`} aria-label={`${title} content`}>
-          <Reveal id={`${id}-body-reveal`} delay={0.08}>{children}</Reveal>
+          {children}
         </section>
       </main>
       <SiteFooter />

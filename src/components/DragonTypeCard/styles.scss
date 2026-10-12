@@ -65,7 +65,11 @@
     background: repeating-linear-gradient(0deg, #ffffff06 0, #ffffff06 1px, #0000000b 1px, #0000000b 3px), linear-gradient(105deg, #0b0c10, #30343b 48%, #111318);
   }
 }
-:root[data-theme='dark'] .dragon-type-metadata::before { opacity: 0; }
+:root[data-theme='dark'] .dragon-type-metadata {
+  color: var(--ink);
+  background-color: #101115;
+  .dragon-type-form-number { color: var(--ink); }
+}
 .dragon-type-title-group { gap: 8px; flex: 1; min-width: 0; display: flex; align-items: center; }
 .dragon-type-title-icon { width: 28px; height: 26px; flex-shrink: 0; display: block; color: var(--red); transform: scale(1.18); }
 .dragon-type-title-icon svg { width: 100%; height: 100%; display: block; }

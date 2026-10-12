@@ -17,7 +17,7 @@ const DragonTypeCard = ({ type }: DragonTypeCardProps) => {
   const [pressed, setPressed] = useState(false);
   const alternateRef = useRef<HTMLImageElement>(null);
   const [loadedAlternate, setLoadedAlternate] = useState<number>();
-  const { traits, iconXml, formNumber } = getDragonTypeCardContent(type);
+  const { traits, iconXml, formName, formNumber } = getDragonTypeCardContent(type);
 
   useEffect(() => {
     const alternate = alternateRef.current;
@@ -29,7 +29,7 @@ const DragonTypeCard = ({ type }: DragonTypeCardProps) => {
       <WebAnchor
         className={`dragon-type-card`}
         id={`dragon-type-card-${type.id}`}
-        aria-label={`Explore ${type.name} Examples And Artwork`}
+        aria-label={`Explore ${formName} Examples And Artwork`}
         onPointerUp={() => setPressed(false)}
         onPointerCancel={() => setPressed(false)}
         data-art-active={hovered || focused || pressed}
@@ -47,7 +47,7 @@ const DragonTypeCard = ({ type }: DragonTypeCardProps) => {
               className={`dragon-type-title-icon`}
               id={`dragon-type-title-icon-${type.id}`}
             />
-            <span className={`dragon-type-title`} id={`dragon-type-title-${type.id}`}>{type.name}</span>
+            <span className={`dragon-type-title`} id={`dragon-type-title-${type.id}`}>{formName}</span>
           </span>
           <span className={`dragon-type-form`} id={`dragon-type-form-${type.id}`}>
             <span className={`dragon-type-form-label`} id={`dragon-type-form-label-${type.id}`}>Form</span>

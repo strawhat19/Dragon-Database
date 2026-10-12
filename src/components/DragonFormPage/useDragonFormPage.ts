@@ -1,17 +1,16 @@
 import { Linking } from 'react-native';
+import { usePathname } from 'expo-router';
 import { dragonAPI } from '../../api/dragons';
-import { useLocalSearchParams } from 'expo-router';
 import type { DragonKind } from '../../types/types';
 import { useState, useEffect, useCallback } from 'react';
 import { errorMessage } from '../../shared/common/values';
-import { isDragonFormKind } from '../../shared/dragonForms';
+import { resolveDragonFormKind } from '../../shared/dragonForms';
 import type { DragonFormDetail, DragonFormArtwork } from '../../shared/models/dragons/DragonForm';
 
 type FormState = { kind?: DragonKind; loading: boolean; error: string | null; details: DragonFormDetail | null };
 const useDragonFormPage = () => {
-  const params = useLocalSearchParams<{ kind?: string | string[] }>();
-  const parameter = Array.isArray(params.kind) ? params.kind[0] : params.kind;
-  const kind = isDragonFormKind(parameter) ? parameter : undefined;
+  const pathname = usePathname();
+  const kind = resolveDragonFormKind(pathname);
   const [revision, setRevision] = useState(0);
   const [sourceError, setSourceError] = useState<string | null>(null);
   const [viewing, setViewing] = useState<{ kind: DragonKind; artwork: DragonFormArtwork }>();

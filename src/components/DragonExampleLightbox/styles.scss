@@ -1,0 +1,11 @@
+.dragon-example-lightbox { width: min(1400px, calc(100vw - 32px)); height: min(860px, calc(100dvh - 32px)); max-width: none; max-height: calc(100dvh - 32px); padding: 0; overflow: hidden; border: 1px solid var(--line); color: var(--ink); background: var(--paper); scrollbar-color: var(--ink) var(--paper); box-shadow: 0 24px 100px #0008; }
+.dragon-example-lightbox[open] { animation: dragon-example-lightbox-enter 280ms cubic-bezier(.16, 1, .3, 1) both; }
+.dragon-example-lightbox::backdrop { background: #080b12df; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); animation: dragon-example-backdrop-enter 250ms ease both; }
+.dragon-example-lightbox.is-closing { animation: dragon-example-lightbox-leave 180ms ease both; }
+.dragon-example-lightbox.is-closing::backdrop { animation: dragon-example-backdrop-leave 180ms ease both; }
+@keyframes dragon-example-lightbox-enter { from { opacity: 0; transform: translateY(18px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes dragon-example-lightbox-leave { to { opacity: 0; transform: translateY(10px) scale(.98); } }
+@keyframes dragon-example-backdrop-enter { from { background: #080b1200; } to { background: #080b12df; } }
+@keyframes dragon-example-backdrop-leave { to { background: #080b1200; } }
+@media (max-width: 720px) { .dragon-example-lightbox { width: calc(100vw - 16px); height: calc(100dvh - 16px); max-height: calc(100dvh - 16px); } }
+@media (prefers-reduced-motion: reduce) { .dragon-example-lightbox[open], .dragon-example-lightbox.is-closing, .dragon-example-lightbox::backdrop { animation: none; } }

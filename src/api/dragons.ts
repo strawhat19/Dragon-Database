@@ -1,12 +1,13 @@
 import { useSampleData } from '../shared/config';
 import type { DragonKind } from '../types/types';
-import { isDragonFormKind } from '../shared/dragonForms';
 import { isRecord, dataError } from '../shared/common/values';
 import { dragonFormDetails } from '../shared/dragonFormDetails';
 import type { DragonFormDetail } from '../shared/models/dragons/DragonForm';
+import { isDragonFormKind, getDragonFormName } from '../shared/dragonForms';
 import { parseCollection, type CollectionSnapshot } from '../shared/common/collection';
 import { storageKey, readSnapshot, writeSnapshot, withStorageLock } from '../shared/common/storage';
 import { orderDragonTypes, parseDragonType, type DragonTypeRecord } from '../shared/models/dragons/DragonType';
+import { getDragonExample as readDragonExample, getDragonExamples as readDragonExamples } from '../shared/dragonExamples';
 import {
   sampleDragonTypes,
   upgradeSampleHydra,
@@ -18,6 +19,11 @@ import {
 
 export const dragonTypesStorageKey = storageKey(`dragon-types`);
 export const searchQueryStorageKey = storageKey(`search-query`);
+
+const prepareDragonTypes = (records: DragonTypeRecord[]) => orderDragonTypes(records).map(record => ({
+  ...record,
+  searchTerms: [getDragonFormName(record.kind), ...record.searchTerms, ...dragonFormDetails[record.kind].examples.flatMap(example => [example.name, example.franchise])],
+}));
 
 interface DragonTypeSnapshot extends CollectionSnapshot<DragonTypeRecord> {
   demoRevision?: number;
@@ -40,7 +46,7 @@ export const getDragonTypes = () => withStorageLock(dragonTypesStorageKey, async
   const saved = await readSnapshot(dragonTypesStorageKey, parseDragonTypesSnapshot, `Saved Dragon Types`);
   if (saved !== null) {
     if (!useSampleData || !saved.records.length || (saved.demoRevision ?? 0) >= sampleDragonTypesRevision
-      || (saved.demoRevision === undefined && !isOriginalSampleCatalogue(saved.records))) return orderDragonTypes(saved.records);
+      || (saved.demoRevision === undefined && !isOriginalSampleCatalogue(saved.records))) return prepareDragonTypes(saved.records);
 
     // Mark the demo update once so a later removal stays removed.
     const missing = additionalSampleDragonTypes.filter((sample) => sample.introducedRevision > (saved.demoRevision ?? 0)
@@ -51,14 +57,14 @@ export const getDragonTypes = () => withStorageLock(dragonTypesStorageKey, async
     const additions = await Promise.all(missing.map((sample, index) => createSampleDragonType(sample, saved.nextNumber + index, created)));
     const records = [...saved.records.map((record) => upgradeSampleHydra(record, created)), ...additions];
     await writeSnapshot(dragonTypesStorageKey, { version: 1, records, nextNumber, demoRevision: sampleDragonTypesRevision }, `Dragon Types`);
-    return orderDragonTypes(records);
+    return prepareDragonTypes(records);
   }
 
   const records = useSampleData ? await sampleDragonTypes() : [];
   const snapshot: DragonTypeSnapshot = { version: 1, records, nextNumber: records.length + 1 };
   if (useSampleData) snapshot.demoRevision = sampleDragonTypesRevision;
   await writeSnapshot(dragonTypesStorageKey, snapshot, `Dragon Types`);
-  return orderDragonTypes(records);
+  return prepareDragonTypes(records);
 });
 
 export const getSearchQuery = () => withStorageLock(searchQueryStorageKey, async () =>
@@ -75,4 +81,10 @@ export const getDragonFormDetails = async (kind: DragonKind): Promise<DragonForm
   return dragonFormDetails[kind];
 };
 
-export const dragonAPI = { getDragonTypes, getSearchQuery, saveSearchQuery, getDragonFormDetails };
+export const getDragonExample = async (id: string) => readDragonExample(id) ?? null;
+export const getDragonExamples = async (kind?: DragonKind) => {
+  if (kind && !isDragonFormKind(kind)) throw new Error(`Dragon Form Not Found`);
+  return readDragonExamples(kind);
+};
+
+export const dragonAPI = { getDragonTypes, getSearchQuery, saveSearchQuery, getDragonExample, getDragonExamples, getDragonFormDetails };

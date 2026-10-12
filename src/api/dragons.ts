@@ -1,8 +1,12 @@
 import { useSampleData } from '../shared/config';
+import type { DragonKind } from '../types/types';
+import { isDragonFormKind } from '../shared/dragonForms';
 import { isRecord, dataError } from '../shared/common/values';
+import { dragonFormDetails } from '../shared/dragonFormDetails';
+import type { DragonFormDetail } from '../shared/models/dragons/DragonForm';
 import { parseCollection, type CollectionSnapshot } from '../shared/common/collection';
-import { orderDragonTypes, parseDragonType, type DragonTypeRecord } from '../shared/models/dragons/DragonType';
 import { storageKey, readSnapshot, writeSnapshot, withStorageLock } from '../shared/common/storage';
+import { orderDragonTypes, parseDragonType, type DragonTypeRecord } from '../shared/models/dragons/DragonType';
 import {
   sampleDragonTypes,
   upgradeSampleHydra,
@@ -66,4 +70,9 @@ export const saveSearchQuery = (query: string) => withStorageLock(searchQuerySto
   await writeSnapshot(searchQueryStorageKey, { version: 1, query }, `Search Query`);
 });
 
-export const dragonAPI = { getDragonTypes, getSearchQuery, saveSearchQuery };
+export const getDragonFormDetails = async (kind: DragonKind): Promise<DragonFormDetail> => {
+  if (!isDragonFormKind(kind)) throw new Error(`Dragon Form Not Found`);
+  return dragonFormDetails[kind];
+};
+
+export const dragonAPI = { getDragonTypes, getSearchQuery, saveSearchQuery, getDragonFormDetails };

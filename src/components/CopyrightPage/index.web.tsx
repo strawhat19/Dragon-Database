@@ -7,9 +7,13 @@ import { ArrowLeft, BookOpen, ExternalLink } from 'lucide-react';
 import { fontNotices, fontNoticeLinks } from '../../shared/fontNotices';
 
 const CopyrightPage = () => (
-  <PageLayout id={`copyright`} title={`Copyright`} description={`Font credits, original sources, and bundled license notices.`}>
+  <PageLayout id={`copyright`} title={`Copyright`} description={`Artwork credits, reference sources, and bundled font license notices.`}>
     <div id={`copyright-content`} className={`copyright-content`}>
       <p id={`copyright-site-credit`} className={`copyright-site-credit`}>{`© ${new Date().getFullYear()} Dragon Database`}</p>
+      <section id={`copyright-artwork`} className={`copyright-fonts`} aria-labelledby={`copyright-artwork-title`}>
+        <h2 id={`copyright-artwork-title`} className={`copyright-heading`}>Artwork &amp; Reference Credits</h2>
+        <p id={`copyright-artwork-copy`} className={`copyright-paragraph`}>Original form-gallery illustrations were created for Dragon Database. Franchise examples retain their original character names and classifications. Reference artwork is credited to its publisher, with source links on each example card.</p>
+      </section>
       <section id={`copyright-fonts`} className={`copyright-fonts`} aria-labelledby={`copyright-fonts-title`}>
         <h2 id={`copyright-fonts-title`} className={`copyright-heading`}>Font Credits</h2>
         <div id={`copyright-font-list`} className={`copyright-font-list`}>

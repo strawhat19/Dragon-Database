@@ -1,4 +1,5 @@
 export const routes = {
+  forms: { path: `/forms/[kind]`, label: `Dragon Forms`, icon: `flame` },
   home: { path: `/`, label: `Dragon Database`, icon: `home` },
   about: { path: `/about`, label: `About`, icon: `info` },
   contact: { path: `/contact`, label: `Contact`, icon: `mail` },

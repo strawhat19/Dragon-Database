@@ -17,9 +17,13 @@ const CopyrightPage = () => {
   const [noticesVisible, setNoticesVisible] = useState(false);
 
   return (
-    <PageLayout id={`copyright`} title={`Copyright`} description={`Font credits, original sources, and bundled license notices.`}>
+    <PageLayout id={`copyright`} title={`Copyright`} description={`Artwork credits, reference sources, and bundled font license notices.`}>
       <View nativeID={`copyright-content`} style={styles.content}>
         <Text nativeID={`copyright-site-credit`} style={styles.siteCredit}>{`© ${new Date().getFullYear()} Dragon Database`}</Text>
+        <View nativeID={`copyright-artwork`} style={styles.fonts}>
+          <Text nativeID={`copyright-artwork-title`} accessibilityRole={`header`} style={styles.heading}>Artwork &amp; Reference Credits</Text>
+          <Text nativeID={`copyright-artwork-copy`} style={styles.paragraph}>Original form-gallery illustrations were created for Dragon Database. Franchise examples retain their original character names and classifications. Reference artwork is credited to its publisher, with source links on each example card.</Text>
+        </View>
         <View nativeID={`copyright-fonts`} style={styles.fonts}>
           <Text nativeID={`copyright-fonts-title`} accessibilityRole={`header`} style={styles.heading}>Font Credits</Text>
           <View nativeID={`copyright-font-list`} style={styles.fontList}>

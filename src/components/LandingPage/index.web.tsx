@@ -187,7 +187,7 @@ const LandingPage = () => {
             <div id={`landing-type-grid`} className={`landing-type-grid`}>
               {filteredTypes.map((type, index) => (
                 <Reveal key={type.id} id={`landing-type-reveal-${type.id}`} delay={Math.min(0.16 + index * 0.09, 0.5)}>
-                  <DragonTypeCard type={type} onSelect={() => setQuery(type.name)} />
+                  <DragonTypeCard type={type} />
                 </Reveal>
               ))}
             </div>

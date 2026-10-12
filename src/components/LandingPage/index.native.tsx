@@ -348,7 +348,7 @@ const LandingPage = () => {
                 {filteredTypes.map((type, index) => (
                   <View key={type.id} style={[styles.card, cardGrid && styles.wideCard, cardGrid && { width: cardWidth }]} nativeID={`landing-type-slot-${type.id}`} testID={`landing-type-slot-${type.id}`}>
                     <Reveal id={`landing-type-reveal-${type.id}`} delay={Math.min(0.42 + index * 0.07, 0.7)}>
-                      <DragonTypeCard type={type} onSelect={() => setQuery(type.name)} />
+                      <DragonTypeCard type={type} />
                     </Reveal>
                   </View>
                 ))}

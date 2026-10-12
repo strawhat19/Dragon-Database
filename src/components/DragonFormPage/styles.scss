@@ -1,0 +1,67 @@
+.dragon-form-content { display: grid; gap: 48px; }
+.dragon-form-navigation, .dragon-form-back-link, .dragon-form-source-link, .dragon-form-related-link, .dragon-form-action { display: flex; align-items: center; gap: 10px; }
+.dragon-form-navigation { justify-content: space-between; flex-wrap: wrap; }
+.dragon-form-back-link, .dragon-form-source-link, .dragon-form-related-link { color: var(--ink); text-decoration: none; }
+.dragon-form-back-link:hover, .dragon-form-source-link:hover { color: var(--red); }
+.dragon-form-counts, .dragon-form-eyebrow { color: var(--muted); font-family: var(--font-control); font-size: 13px; }
+.dragon-form-eyebrow { margin: 0 0 10px; color: var(--red); letter-spacing: .06em; }
+.dragon-form-overview { display: grid; grid-template-columns: 1.35fr 1fr; gap: 34px; align-items: start; }
+.dragon-form-section-title { margin: 0; color: var(--ink); font: 400 32px/1.2 var(--font-brand); }
+.dragon-form-lead { margin: 18px 0 0; color: var(--muted); font-size: 22px; line-height: 1.5; }
+.dragon-form-anatomy { padding: 25px; border: 1px solid var(--line); background: var(--paper); clip-path: var(--angled-corners); }
+.dragon-form-anatomy h3 { margin: 0 0 17px; font: 400 24px/1.2 var(--font-brand); }
+.dragon-form-anatomy ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 19px; line-height: 1.45; }
+.dragon-form-anatomy li + li { margin-top: 10px; }
+.dragon-form-anatomy li::marker { color: var(--red); }
+.dragon-form-section { display: grid; gap: 22px; }
+.dragon-form-section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 26px; }
+.dragon-form-section-heading > p { max-width: 300px; margin: 0; color: var(--muted); font-size: 18px; line-height: 1.45; }
+.dragon-form-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.dragon-form-art { margin: 0; border: 1px solid var(--line); background: var(--paper); }
+.dragon-form-art-button { position: relative; display: block; width: 100%; padding: 0; border: 0; overflow: hidden; color: var(--paper); background: var(--silver); cursor: pointer; }
+.dragon-form-gallery-image { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: contain; }
+.dragon-form-art-expand { display: flex; align-items: center; gap: 7px; position: absolute; right: 14px; bottom: 14px; padding: 8px 10px; color: var(--paper); background: var(--ink); font-family: var(--font-control); font-size: 12px; opacity: .94; transform: translateY(0); transition: background 180ms ease, transform 180ms ease; }
+.dragon-form-art-button:hover .dragon-form-art-expand { background: var(--red); transform: translateY(-3px); }
+.dragon-form-art figcaption { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; padding: 16px 18px; font-size: 21px; }
+.dragon-form-art-credit, .dragon-form-reference-credit { color: var(--muted); font-size: 12px; line-height: 1.4; }
+.dragon-form-canon-note { margin: 0; padding-left: 18px; border-left: 2px solid var(--red); color: var(--muted); font-size: 19px; line-height: 1.5; }
+.dragon-form-examples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.dragon-form-example { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); background: var(--paper); }
+.dragon-form-example-art { display: grid; place-items: center; height: 230px; border-bottom: 1px solid var(--line); background: #fff; }
+.dragon-form-example-image { display: block; width: 100%; height: 100%; max-height: 230px; padding: 16px; object-fit: contain; }
+.dragon-form-example-reference { display: flex; width: 100%; height: 100%; align-items: center; justify-content: center; flex-direction: column; gap: 18px; color: var(--muted); background: var(--silver); font-size: 16px; }
+.dragon-form-example-symbol { width: 96px; height: 82px; color: var(--red); }
+.dragon-form-example-symbol svg { width: 100%; height: 100%; }
+.dragon-form-example-body { display: flex; flex: 1; flex-direction: column; gap: 14px; padding: 25px; }
+.dragon-form-example-body .dragon-form-eyebrow { margin: 0; }
+.dragon-form-example h3 { margin: 0; font: 400 29px/1.2 var(--font-brand); }
+.dragon-form-example-description { margin: 0; color: var(--muted); font-size: 20px; line-height: 1.5; }
+.dragon-form-example-canon { margin: 0; padding: 10px 0; border-block: 1px solid var(--line); color: var(--ink); font-size: 16px; line-height: 1.4; }
+.dragon-form-reference-credit { margin: 0; }
+.dragon-form-source-link { justify-content: space-between; margin-top: auto; padding-top: 5px; font-size: 17px; }
+.dragon-form-related { display: grid; gap: 22px; padding-top: 30px; border-top: 1px solid var(--line); }
+.dragon-form-related-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.dragon-form-related-link { justify-content: space-between; min-height: 48px; padding: 11px 16px; border: 1px solid var(--line); background: var(--paper); font-size: 18px; transition: border-color 180ms ease, color 180ms ease; }
+.dragon-form-related-link:hover { color: var(--red); border-color: var(--red); }
+.dragon-form-state { display: grid; justify-items: start; gap: 18px; padding: 30px; border: 1px solid var(--line); background: var(--paper); }
+.dragon-form-state h2, .dragon-form-state p { margin: 0; }
+.dragon-form-action { padding: 12px 18px; border: 1px solid var(--line); color: var(--ink); background: var(--silver); font: inherit; cursor: pointer; }
+.dragon-form-content :is(button, a):focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.dragon-form-art-viewer { width: min(1400px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 0; border: 1px solid var(--line); color: var(--ink); background: var(--paper); }
+.dragon-form-art-viewer::backdrop { background: #080b12db; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.dragon-form-viewer-content { padding: 18px; }
+.dragon-form-viewer-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 14px; }
+.dragon-form-viewer-heading h2 { margin: 0; font: 400 25px/1.2 var(--font-brand); }
+.dragon-form-viewer-close { display: grid; place-items: center; width: 38px; height: 38px; padding: 0; border: 1px solid var(--line); color: var(--ink); background: var(--silver); cursor: pointer; }
+.dragon-form-viewer-image { display: block; width: 100%; max-height: calc(100dvh - 150px); object-fit: contain; }
+.dragon-form-viewer-credit { margin: 12px 0 0; text-align: center; color: var(--muted); font-size: 13px; }
+@media (max-width: 720px) {
+  .dragon-form-content { gap: 36px; }
+  .dragon-form-overview, .dragon-form-gallery, .dragon-form-examples { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .dragon-form-section-heading { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .dragon-form-section-title { font-size: 28px; }
+  .dragon-form-lead { font-size: 21px; }
+  .dragon-form-anatomy, .dragon-form-example-body { padding: 20px; }
+  .dragon-form-art-expand { right: 10px; bottom: 10px; padding: 7px 8px; font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) { .dragon-form-art-expand, .dragon-form-related-link { transition: none; transform: none; } }

@@ -42,6 +42,7 @@ export const resolveRouteLabel = (path: string) => {
 };
 
 export const navigation = [
+  { id: `saved`, path: `/saved`, label: `Saved`, icon: `book`, available: true },
   { id: `home`, path: routes.home.path, label: `Home`, icon: routes.home.icon, available: true },
   { id: `about`, ...routes.about, available: true },
   { id: `blog`, path: ``, label: `Blog`, icon: `newspaper`, available: false },

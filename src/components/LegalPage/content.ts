@@ -69,10 +69,10 @@ export const legalPages: Record<LegalPageKind, LegalContent> = {
       },
       {
         id: `demo-authentication`,
-        title: `Local mock authentication`,
+        title: `Account previews and device library`,
         paragraphs: [
-          `Sign In is currently a placeholder. The app’s local mock authentication code can save a demo name, email address, optional picture URL, and session details in the same browser or device storage if that demo functionality is used.`,
-          `This code does not connect to Google OAuth or another live identity provider. Local demo records are not a cloud account or an external service subscription.`,
+          `Sign-in, sign-up and reset pages are disabled previews. The device library saves favorites, named collections, an optional display label and sidebar preferences on this installation only. No password is accepted or stored.`,
+          `These pages do not connect to Google OAuth or another live identity provider. Existing legacy demo data is not used to authenticate this release. Use Profile to clear the new device library; browser or app settings can clear other local records.`,
         ],
       },
       {

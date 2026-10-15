@@ -84,12 +84,10 @@ const SiteHeader = ({ sticky = true, scrolled = false }: HeaderProps) => {
             {isDark ? <SunIcon id={`site-theme-sun-icon`} size={19} fill={iconFill} aria-hidden={true} /> : <MoonIcon id={`site-theme-moon-icon`} size={19} fill={iconFill} aria-hidden={true} />}
           </button>
           <a
-            href={``}
-            aria-disabled={true}
+            href={`/signin`}
             id={`site-sign-in-link`}
             className={`site-sign-in-link`}
-            title={`Sign In — Coming soon`}
-            onClick={(event) => event.preventDefault()}
+            title={`Account setup preview`}
           >
             <UserIcon id={`site-sign-in-icon`} className={`site-sign-in-icon`} size={17} fill={iconFill} aria-hidden={true} />
             <span id={`site-sign-in-label`} className={`site-sign-in-label`}>Sign In</span>

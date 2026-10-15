@@ -3,7 +3,7 @@ import type { RefObject } from 'react';
 import baseStyles from './styles.native';
 import { SvgXml } from 'react-native-svg';
 import type { HeaderProps } from './types';
-import { Link, usePathname } from 'expo-router';
+import { Link, router, usePathname } from 'expo-router';
 import useSiteHeader from './useSiteHeader.native';
 import { filledHeaderIcons, filledHeaderIconNodes } from './icons';
 import { brandLogoXml } from '../../shared/artwork';
@@ -110,11 +110,10 @@ const SiteHeader = ({ sticky = true, scrolled = false, blurTarget }: NativeHeade
             {isDark ? <SunIcon size={18} color={palette.paper} fill={filledHeaderIcons ? palette.paper : `none`} accessibilityElementsHidden /> : <MoonIcon size={18} color={palette.paper} fill={filledHeaderIcons ? palette.paper : `none`} accessibilityElementsHidden />}
           </Pressable>
           <Pressable
-            disabled
+            onPress={() => router.push(`/signin`)}
             accessibilityRole={`button`}
             accessibilityLabel={`Sign In`}
-            accessibilityState={{ disabled: true }}
-            accessibilityHint={`Available in a future update`}
+            accessibilityHint={`Open disconnected account pages`}
             nativeID={`site-header-sign-in`}
             testID={`site-header-sign-in`}
             style={styles.signIn}

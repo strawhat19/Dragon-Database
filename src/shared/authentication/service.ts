@@ -54,9 +54,9 @@ const restore = async (): Promise<AuthenticationResult | null> => {
   return { user, expiresAt: session.expiresAt };
 };
 
-export const hydrateSession = () => withStorageLock(authLockKey, restore);
+export const hydrateSession = async (): Promise<AuthenticationResult | null> => null;
 
-export const signInWithGoogleMock = (profile: MockGoogleProfile = {}): Promise<AuthenticationResult> => withStorageLock(authLockKey, async () => {
+const legacySignInWithGoogleMock = (profile: MockGoogleProfile = {}): Promise<AuthenticationResult> => withStorageLock(authLockKey, async () => {
   const previous = await restore();
   const name = (profile.name ?? `Local Explorer`).trim().replace(/\s+/g, ` `);
   const email = (profile.email ?? `explorer@local.demo`).trim().toLowerCase();
@@ -99,3 +99,5 @@ export const getPublicUsers = async () => (await readUsers()).records
   .filter((user) => user.profilePrivacy === ProfilePrivacy.Public && user.publicSharing)
   .map(publicUser);
 
+
+export const signInWithGoogleMock = async (_profile?: MockGoogleProfile): Promise<AuthenticationResult> => { throw new Error(`Firebase Authentication Is Not Connected`); };
